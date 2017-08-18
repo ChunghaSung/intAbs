@@ -3,7 +3,7 @@
 This repository is about thread modular abstract interpretation (Using the APRON library) 
 for interrupt-driven programs by adopting priority information.
 
-The source code is a modified version of Markus Kusano's source code.
+The source code is a modified version from https://github.com/markus-kusano/watts
 
 Right now, all files are not cleaned up including test files.
 
