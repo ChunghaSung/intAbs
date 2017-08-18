@@ -1,0 +1,5757 @@
+Starting context insensitive PDG pass
+[0mIterating over use-def of:   %unused.addr = alloca i8*, align 8
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_0
+Instruction:   %unused.addr = alloca i8*, align 8
+Iterating over use-def of:   store i8* %unused, i8** %unused.addr, align 8
+createStore():
+	to:   %unused.addr = alloca i8*, align 8
+	fromi8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	toStr: **0
+saveAndGetID():
+	value: i8* %unused
+	value not found in map
+	fromStr: *1
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+	value not found in map
+createAssign():
+	preConvert from: **0
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: *1
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: 2
+Instruction:   store i8* %unused, i8** %unused.addr, align 8
+Iterating over use-def of:   br label %do.body
+Iterating over use-def of:   br label %do.end
+Iterating over use-def of:   ret i8* null
+Visiting RetInst:   ret i8* null
+	Function Name: writer1
+saveAndGetID():
+	value:   ret i8* null
+	value not found in map
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+saveAndGetID():
+	value:   ret i8* null
+createAssign():
+	preConvert from: 3
+Instruction:   ret i8* null
+Iterating over use-def of:   %unused.addr = alloca i8*, align 8
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_1
+Instruction:   %unused.addr = alloca i8*, align 8
+Iterating over use-def of:   store i8* %unused, i8** %unused.addr, align 8
+createStore():
+	to:   %unused.addr = alloca i8*, align 8
+	fromi8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	toStr: **4
+saveAndGetID():
+	value: i8* %unused
+	value not found in map
+	fromStr: *5
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+	value not found in map
+createAssign():
+	preConvert from: **4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: *5
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: 6
+Instruction:   store i8* %unused, i8** %unused.addr, align 8
+Iterating over use-def of:   br label %do.body
+Iterating over use-def of:   br label %do.end
+Iterating over use-def of:   ret i8* null
+Visiting RetInst:   ret i8* null
+	Function Name: writer2
+saveAndGetID():
+	value:   ret i8* null
+	value not found in map
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+saveAndGetID():
+	value:   ret i8* null
+createAssign():
+	preConvert from: 7
+Instruction:   ret i8* null
+Iterating over use-def of:   %unused.addr = alloca i8*, align 8
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_2
+Instruction:   %unused.addr = alloca i8*, align 8
+Iterating over use-def of:   store i8* %unused, i8** %unused.addr, align 8
+createStore():
+	to:   %unused.addr = alloca i8*, align 8
+	fromi8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	toStr: **8
+saveAndGetID():
+	value: i8* %unused
+	value not found in map
+	fromStr: *9
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+	value not found in map
+createAssign():
+	preConvert from: **8
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: *9
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: 10
+Instruction:   store i8* %unused, i8** %unused.addr, align 8
+Iterating over use-def of:   br label %do.body
+Iterating over use-def of:   br label %do.end
+Iterating over use-def of:   ret i8* null
+Visiting RetInst:   ret i8* null
+	Function Name: writer3
+saveAndGetID():
+	value:   ret i8* null
+	value not found in map
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+saveAndGetID():
+	value:   ret i8* null
+createAssign():
+	preConvert from: 11
+Instruction:   ret i8* null
+Iterating over use-def of:   %unused.addr = alloca i8*, align 8
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_3
+Instruction:   %unused.addr = alloca i8*, align 8
+Iterating over use-def of:   store i8* %unused, i8** %unused.addr, align 8
+createStore():
+	to:   %unused.addr = alloca i8*, align 8
+	fromi8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	toStr: **12
+saveAndGetID():
+	value: i8* %unused
+	value not found in map
+	fromStr: *13
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+	value not found in map
+createAssign():
+	preConvert from: **12
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: *13
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: 14
+Instruction:   store i8* %unused, i8** %unused.addr, align 8
+Iterating over use-def of:   br label %do.body
+Iterating over use-def of:   br label %do.end
+Iterating over use-def of:   ret i8* null
+Visiting RetInst:   ret i8* null
+	Function Name: writer4
+saveAndGetID():
+	value:   ret i8* null
+	value not found in map
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+saveAndGetID():
+	value:   ret i8* null
+createAssign():
+	preConvert from: 15
+Instruction:   ret i8* null
+Iterating over use-def of:   %unused.addr = alloca i8*, align 8
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_4
+Instruction:   %unused.addr = alloca i8*, align 8
+Iterating over use-def of:   store i8* %unused, i8** %unused.addr, align 8
+createStore():
+	to:   %unused.addr = alloca i8*, align 8
+	fromi8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	toStr: **16
+saveAndGetID():
+	value: i8* %unused
+	value not found in map
+	fromStr: *17
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+	value not found in map
+createAssign():
+	preConvert from: **16
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: *17
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: 18
+Instruction:   store i8* %unused, i8** %unused.addr, align 8
+Iterating over use-def of:   br label %do.body
+Iterating over use-def of:   br label %do.end
+Iterating over use-def of:   ret i8* null
+Visiting RetInst:   ret i8* null
+	Function Name: writer5
+saveAndGetID():
+	value:   ret i8* null
+	value not found in map
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+saveAndGetID():
+	value:   ret i8* null
+createAssign():
+	preConvert from: 19
+Instruction:   ret i8* null
+Iterating over use-def of:   %unused.addr = alloca i8*, align 8
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_5
+Instruction:   %unused.addr = alloca i8*, align 8
+Iterating over use-def of:   store i8* %unused, i8** %unused.addr, align 8
+createStore():
+	to:   %unused.addr = alloca i8*, align 8
+	fromi8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	toStr: **20
+saveAndGetID():
+	value: i8* %unused
+	value not found in map
+	fromStr: *21
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+	value not found in map
+createAssign():
+	preConvert from: **20
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: *21
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: 22
+Instruction:   store i8* %unused, i8** %unused.addr, align 8
+Iterating over use-def of:   br label %do.body
+Iterating over use-def of:   br label %do.end
+Iterating over use-def of:   ret i8* null
+Visiting RetInst:   ret i8* null
+	Function Name: writer6
+saveAndGetID():
+	value:   ret i8* null
+	value not found in map
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+saveAndGetID():
+	value:   ret i8* null
+createAssign():
+	preConvert from: 23
+Instruction:   ret i8* null
+Iterating over use-def of:   %unused.addr = alloca i8*, align 8
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_6
+Instruction:   %unused.addr = alloca i8*, align 8
+Iterating over use-def of:   store i8* %unused, i8** %unused.addr, align 8
+createStore():
+	to:   %unused.addr = alloca i8*, align 8
+	fromi8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	toStr: **24
+saveAndGetID():
+	value: i8* %unused
+	value not found in map
+	fromStr: *25
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+	value not found in map
+createAssign():
+	preConvert from: **24
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: *25
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: 26
+Instruction:   store i8* %unused, i8** %unused.addr, align 8
+Iterating over use-def of:   br label %do.body
+Iterating over use-def of:   br label %do.end
+Iterating over use-def of:   ret i8* null
+Visiting RetInst:   ret i8* null
+	Function Name: writer7
+saveAndGetID():
+	value:   ret i8* null
+	value not found in map
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+saveAndGetID():
+	value:   ret i8* null
+createAssign():
+	preConvert from: 27
+Instruction:   ret i8* null
+Iterating over use-def of:   %unused.addr = alloca i8*, align 8
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_7
+Instruction:   %unused.addr = alloca i8*, align 8
+Iterating over use-def of:   store i8* %unused, i8** %unused.addr, align 8
+createStore():
+	to:   %unused.addr = alloca i8*, align 8
+	fromi8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	toStr: **28
+saveAndGetID():
+	value: i8* %unused
+	value not found in map
+	fromStr: *29
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+	value not found in map
+createAssign():
+	preConvert from: **28
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: *29
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: 30
+Instruction:   store i8* %unused, i8** %unused.addr, align 8
+Iterating over use-def of:   br label %do.body
+Iterating over use-def of:   br label %do.end
+Iterating over use-def of:   ret i8* null
+Visiting RetInst:   ret i8* null
+	Function Name: writer8
+saveAndGetID():
+	value:   ret i8* null
+	value not found in map
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+saveAndGetID():
+	value:   ret i8* null
+createAssign():
+	preConvert from: 31
+Instruction:   ret i8* null
+Iterating over use-def of:   %unused.addr = alloca i8*, align 8
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_8
+Instruction:   %unused.addr = alloca i8*, align 8
+Iterating over use-def of:   store i8* %unused, i8** %unused.addr, align 8
+createStore():
+	to:   %unused.addr = alloca i8*, align 8
+	fromi8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	toStr: **32
+saveAndGetID():
+	value: i8* %unused
+	value not found in map
+	fromStr: *33
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+	value not found in map
+createAssign():
+	preConvert from: **32
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: *33
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: 34
+Instruction:   store i8* %unused, i8** %unused.addr, align 8
+Iterating over use-def of:   br label %do.body
+Iterating over use-def of:   br label %do.end
+Iterating over use-def of:   ret i8* null
+Visiting RetInst:   ret i8* null
+	Function Name: writer9
+saveAndGetID():
+	value:   ret i8* null
+	value not found in map
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+saveAndGetID():
+	value:   ret i8* null
+createAssign():
+	preConvert from: 35
+Instruction:   ret i8* null
+Iterating over use-def of:   %unused.addr = alloca i8*, align 8
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_9
+Instruction:   %unused.addr = alloca i8*, align 8
+Iterating over use-def of:   store i8* %unused, i8** %unused.addr, align 8
+createStore():
+	to:   %unused.addr = alloca i8*, align 8
+	fromi8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	toStr: **36
+saveAndGetID():
+	value: i8* %unused
+	value not found in map
+	fromStr: *37
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+	value not found in map
+createAssign():
+	preConvert from: **36
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: *37
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: 38
+Instruction:   store i8* %unused, i8** %unused.addr, align 8
+Iterating over use-def of:   br label %do.body
+Iterating over use-def of:   br label %do.end
+Iterating over use-def of:   ret i8* null
+Visiting RetInst:   ret i8* null
+	Function Name: writer10
+saveAndGetID():
+	value:   ret i8* null
+	value not found in map
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+saveAndGetID():
+	value:   ret i8* null
+createAssign():
+	preConvert from: 39
+Instruction:   ret i8* null
+Iterating over use-def of:   %unused.addr = alloca i8*, align 8
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_10
+Instruction:   %unused.addr = alloca i8*, align 8
+Iterating over use-def of:   store i8* %unused, i8** %unused.addr, align 8
+createStore():
+	to:   %unused.addr = alloca i8*, align 8
+	fromi8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	toStr: **40
+saveAndGetID():
+	value: i8* %unused
+	value not found in map
+	fromStr: *41
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+	value not found in map
+createAssign():
+	preConvert from: **40
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: *41
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: 42
+Instruction:   store i8* %unused, i8** %unused.addr, align 8
+Iterating over use-def of:   br label %do.body
+Iterating over use-def of:   br label %do.end
+Iterating over use-def of:   ret i8* null
+Visiting RetInst:   ret i8* null
+	Function Name: writer11
+saveAndGetID():
+	value:   ret i8* null
+	value not found in map
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+saveAndGetID():
+	value:   ret i8* null
+createAssign():
+	preConvert from: 43
+Instruction:   ret i8* null
+Iterating over use-def of:   %unused.addr = alloca i8*, align 8
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_11
+Instruction:   %unused.addr = alloca i8*, align 8
+Iterating over use-def of:   store i8* %unused, i8** %unused.addr, align 8
+createStore():
+	to:   %unused.addr = alloca i8*, align 8
+	fromi8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	toStr: **44
+saveAndGetID():
+	value: i8* %unused
+	value not found in map
+	fromStr: *45
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+	value not found in map
+createAssign():
+	preConvert from: **44
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: *45
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: 46
+Instruction:   store i8* %unused, i8** %unused.addr, align 8
+Iterating over use-def of:   br label %do.body
+Iterating over use-def of:   br label %do.end
+Iterating over use-def of:   ret i8* null
+Visiting RetInst:   ret i8* null
+	Function Name: writer12
+saveAndGetID():
+	value:   ret i8* null
+	value not found in map
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+saveAndGetID():
+	value:   ret i8* null
+createAssign():
+	preConvert from: 47
+Instruction:   ret i8* null
+Iterating over use-def of:   %unused.addr = alloca i8*, align 8
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_12
+Instruction:   %unused.addr = alloca i8*, align 8
+Iterating over use-def of:   store i8* %unused, i8** %unused.addr, align 8
+createStore():
+	to:   %unused.addr = alloca i8*, align 8
+	fromi8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	toStr: **48
+saveAndGetID():
+	value: i8* %unused
+	value not found in map
+	fromStr: *49
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+	value not found in map
+createAssign():
+	preConvert from: **48
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: *49
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: 50
+Instruction:   store i8* %unused, i8** %unused.addr, align 8
+Iterating over use-def of:   br label %do.body
+Iterating over use-def of:   br label %do.end
+Iterating over use-def of:   ret i8* null
+Visiting RetInst:   ret i8* null
+	Function Name: writer13
+saveAndGetID():
+	value:   ret i8* null
+	value not found in map
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+saveAndGetID():
+	value:   ret i8* null
+createAssign():
+	preConvert from: 51
+Instruction:   ret i8* null
+Iterating over use-def of:   %unused.addr = alloca i8*, align 8
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_13
+Instruction:   %unused.addr = alloca i8*, align 8
+Iterating over use-def of:   store i8* %unused, i8** %unused.addr, align 8
+createStore():
+	to:   %unused.addr = alloca i8*, align 8
+	fromi8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	toStr: **52
+saveAndGetID():
+	value: i8* %unused
+	value not found in map
+	fromStr: *53
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+	value not found in map
+createAssign():
+	preConvert from: **52
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: *53
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: 54
+Instruction:   store i8* %unused, i8** %unused.addr, align 8
+Iterating over use-def of:   br label %do.body
+Iterating over use-def of:   br label %do.end
+Iterating over use-def of:   ret i8* null
+Visiting RetInst:   ret i8* null
+	Function Name: writer14
+saveAndGetID():
+	value:   ret i8* null
+	value not found in map
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+saveAndGetID():
+	value:   ret i8* null
+createAssign():
+	preConvert from: 55
+Instruction:   ret i8* null
+Iterating over use-def of:   %unused.addr = alloca i8*, align 8
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_14
+Instruction:   %unused.addr = alloca i8*, align 8
+Iterating over use-def of:   store i8* %unused, i8** %unused.addr, align 8
+createStore():
+	to:   %unused.addr = alloca i8*, align 8
+	fromi8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	toStr: **56
+saveAndGetID():
+	value: i8* %unused
+	value not found in map
+	fromStr: *57
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+	value not found in map
+createAssign():
+	preConvert from: **56
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: *57
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: 58
+Instruction:   store i8* %unused, i8** %unused.addr, align 8
+Iterating over use-def of:   br label %do.body
+Iterating over use-def of:   br label %do.end
+Iterating over use-def of:   ret i8* null
+Visiting RetInst:   ret i8* null
+	Function Name: writer15
+saveAndGetID():
+	value:   ret i8* null
+	value not found in map
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+saveAndGetID():
+	value:   ret i8* null
+createAssign():
+	preConvert from: 59
+Instruction:   ret i8* null
+Iterating over use-def of:   %unused.addr = alloca i8*, align 8
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_15
+Instruction:   %unused.addr = alloca i8*, align 8
+Iterating over use-def of:   store i8* %unused, i8** %unused.addr, align 8
+createStore():
+	to:   %unused.addr = alloca i8*, align 8
+	fromi8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	toStr: **60
+saveAndGetID():
+	value: i8* %unused
+	value not found in map
+	fromStr: *61
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+	value not found in map
+createAssign():
+	preConvert from: **60
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: *61
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: 62
+Instruction:   store i8* %unused, i8** %unused.addr, align 8
+Iterating over use-def of:   br label %do.body
+Iterating over use-def of:   br label %do.end
+Iterating over use-def of:   ret i8* null
+Visiting RetInst:   ret i8* null
+	Function Name: writer16
+saveAndGetID():
+	value:   ret i8* null
+	value not found in map
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+saveAndGetID():
+	value:   ret i8* null
+createAssign():
+	preConvert from: 63
+Instruction:   ret i8* null
+Iterating over use-def of:   %unused.addr = alloca i8*, align 8
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_16
+Instruction:   %unused.addr = alloca i8*, align 8
+Iterating over use-def of:   store i8* %unused, i8** %unused.addr, align 8
+createStore():
+	to:   %unused.addr = alloca i8*, align 8
+	fromi8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	toStr: **64
+saveAndGetID():
+	value: i8* %unused
+	value not found in map
+	fromStr: *65
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+	value not found in map
+createAssign():
+	preConvert from: **64
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: *65
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: 66
+Instruction:   store i8* %unused, i8** %unused.addr, align 8
+Iterating over use-def of:   br label %do.body
+Iterating over use-def of:   br label %do.end
+Iterating over use-def of:   ret i8* null
+Visiting RetInst:   ret i8* null
+	Function Name: writer17
+saveAndGetID():
+	value:   ret i8* null
+	value not found in map
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+saveAndGetID():
+	value:   ret i8* null
+createAssign():
+	preConvert from: 67
+Instruction:   ret i8* null
+Iterating over use-def of:   %unused.addr = alloca i8*, align 8
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_17
+Instruction:   %unused.addr = alloca i8*, align 8
+Iterating over use-def of:   store i8* %unused, i8** %unused.addr, align 8
+createStore():
+	to:   %unused.addr = alloca i8*, align 8
+	fromi8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	toStr: **68
+saveAndGetID():
+	value: i8* %unused
+	value not found in map
+	fromStr: *69
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+	value not found in map
+createAssign():
+	preConvert from: **68
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: *69
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: 70
+Instruction:   store i8* %unused, i8** %unused.addr, align 8
+Iterating over use-def of:   br label %do.body
+Iterating over use-def of:   br label %do.end
+Iterating over use-def of:   ret i8* null
+Visiting RetInst:   ret i8* null
+	Function Name: writer18
+saveAndGetID():
+	value:   ret i8* null
+	value not found in map
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+saveAndGetID():
+	value:   ret i8* null
+createAssign():
+	preConvert from: 71
+Instruction:   ret i8* null
+Iterating over use-def of:   %unused.addr = alloca i8*, align 8
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_18
+Instruction:   %unused.addr = alloca i8*, align 8
+Iterating over use-def of:   store i8* %unused, i8** %unused.addr, align 8
+createStore():
+	to:   %unused.addr = alloca i8*, align 8
+	fromi8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	toStr: **72
+saveAndGetID():
+	value: i8* %unused
+	value not found in map
+	fromStr: *73
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+	value not found in map
+createAssign():
+	preConvert from: **72
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: *73
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: 74
+Instruction:   store i8* %unused, i8** %unused.addr, align 8
+Iterating over use-def of:   br label %do.body
+Iterating over use-def of:   br label %do.end
+Iterating over use-def of:   ret i8* null
+Visiting RetInst:   ret i8* null
+	Function Name: writer19
+saveAndGetID():
+	value:   ret i8* null
+	value not found in map
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+saveAndGetID():
+	value:   ret i8* null
+createAssign():
+	preConvert from: 75
+Instruction:   ret i8* null
+Iterating over use-def of:   %unused.addr = alloca i8*, align 8
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_19
+Instruction:   %unused.addr = alloca i8*, align 8
+Iterating over use-def of:   store i8* %unused, i8** %unused.addr, align 8
+createStore():
+	to:   %unused.addr = alloca i8*, align 8
+	fromi8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	toStr: **76
+saveAndGetID():
+	value: i8* %unused
+	value not found in map
+	fromStr: *77
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+	value not found in map
+createAssign():
+	preConvert from: **76
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: *77
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: 78
+Instruction:   store i8* %unused, i8** %unused.addr, align 8
+Iterating over use-def of:   br label %do.body
+Iterating over use-def of:   br label %do.end
+Iterating over use-def of:   ret i8* null
+Visiting RetInst:   ret i8* null
+	Function Name: writer20
+saveAndGetID():
+	value:   ret i8* null
+	value not found in map
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+saveAndGetID():
+	value:   ret i8* null
+createAssign():
+	preConvert from: 79
+Instruction:   ret i8* null
+Iterating over use-def of:   %unused.addr = alloca i8*, align 8
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_20
+Instruction:   %unused.addr = alloca i8*, align 8
+Iterating over use-def of:   store i8* %unused, i8** %unused.addr, align 8
+createStore():
+	to:   %unused.addr = alloca i8*, align 8
+	fromi8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	toStr: **80
+saveAndGetID():
+	value: i8* %unused
+	value not found in map
+	fromStr: *81
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+	value not found in map
+createAssign():
+	preConvert from: **80
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: *81
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: 82
+Instruction:   store i8* %unused, i8** %unused.addr, align 8
+Iterating over use-def of:   br label %do.body
+Iterating over use-def of:   br label %do.end
+Iterating over use-def of:   ret i8* null
+Visiting RetInst:   ret i8* null
+	Function Name: writer21
+saveAndGetID():
+	value:   ret i8* null
+	value not found in map
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+saveAndGetID():
+	value:   ret i8* null
+createAssign():
+	preConvert from: 83
+Instruction:   ret i8* null
+Iterating over use-def of:   %unused.addr = alloca i8*, align 8
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_21
+Instruction:   %unused.addr = alloca i8*, align 8
+Iterating over use-def of:   store i8* %unused, i8** %unused.addr, align 8
+createStore():
+	to:   %unused.addr = alloca i8*, align 8
+	fromi8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	toStr: **84
+saveAndGetID():
+	value: i8* %unused
+	value not found in map
+	fromStr: *85
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+	value not found in map
+createAssign():
+	preConvert from: **84
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: *85
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: 86
+Instruction:   store i8* %unused, i8** %unused.addr, align 8
+Iterating over use-def of:   br label %do.body
+Iterating over use-def of:   br label %do.end
+Iterating over use-def of:   ret i8* null
+Visiting RetInst:   ret i8* null
+	Function Name: writer22
+saveAndGetID():
+	value:   ret i8* null
+	value not found in map
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+saveAndGetID():
+	value:   ret i8* null
+createAssign():
+	preConvert from: 87
+Instruction:   ret i8* null
+Iterating over use-def of:   %unused.addr = alloca i8*, align 8
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_22
+Instruction:   %unused.addr = alloca i8*, align 8
+Iterating over use-def of:   store i8* %unused, i8** %unused.addr, align 8
+createStore():
+	to:   %unused.addr = alloca i8*, align 8
+	fromi8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	toStr: **88
+saveAndGetID():
+	value: i8* %unused
+	value not found in map
+	fromStr: *89
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+	value not found in map
+createAssign():
+	preConvert from: **88
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: *89
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: 90
+Instruction:   store i8* %unused, i8** %unused.addr, align 8
+Iterating over use-def of:   store i8 86, i8* @fops_write_buf, align 1
+createStore():
+	to: @fops_write_buf = common global i8 0, align 1
+	fromi8 86
+saveAndGetID():
+	value: @fops_write_buf = common global i8 0, align 1
+	value not found in map
+	toStr: *91
+saveAndGetID():
+	value: i8 86
+	fromStr: 86CONST_INT
+saveAndGetID():
+	value:   store i8 86, i8* @fops_write_buf, align 1
+	value not found in map
+createAssign():
+	preConvert from: *91
+saveAndGetID():
+	value:   store i8 86, i8* @fops_write_buf, align 1
+createAssign():
+	preConvert from: 86CONST_INT
+saveAndGetID():
+	value:   store i8 86, i8* @fops_write_buf, align 1
+createAssign():
+	preConvert from: 92
+Instruction:   store i8 86, i8* @fops_write_buf, align 1
+Iterating over use-def of:   br label %do.body
+Iterating over use-def of:   %0 = load i32* @nowayout, align 4
+saveAndGetID():
+	value:   %0 = load i32* @nowayout, align 4
+	value not found in map
+saveAndGetID():
+	value: @nowayout = global i32 0, align 4
+	value not found in map
+saveAndGetID():
+	value:   %0 = load i32* @nowayout, align 4
+createAssign():
+	preConvert from: *94
+createAssign():
+	preConvert from: 94
+Instruction:   %0 = load i32* @nowayout, align 4
+Iterating over use-def of:   %tobool = icmp ne i32 %0, 0
+saveAndGetID():
+	value:   %tobool = icmp ne i32 %0, 0
+	value not found in map
+saveAndGetID():
+	value:   %0 = load i32* @nowayout, align 4
+createAssign():
+	preConvert from: 93
+saveAndGetID():
+	value:   %tobool = icmp ne i32 %0, 0
+saveAndGetID():
+	value: i32 0
+createAssign():
+	preConvert from: 0CONST_INT
+Instruction:   %tobool = icmp ne i32 %0, 0
+Iterating over use-def of:   br i1 %tobool, label %if.end3, label %if.then
+saveAndGetID():
+	value:   br i1 %tobool, label %if.end3, label %if.then
+	value not found in map
+saveAndGetID():
+	value:   %tobool = icmp ne i32 %0, 0
+createAssign():
+	preConvert from: 95
+Instruction:   br i1 %tobool, label %if.end3, label %if.then
+createCDep():
+	to:   store i8 0, i8* @expect_close, align 1 0x232e2d0
+	from:   br i1 %tobool, label %if.end3, label %if.then
+saveAndGetID():
+	value:   store i8 0, i8* @expect_close, align 1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %tobool, label %if.end3, label %if.then
+	toStrID: 97
+	fromStrID: 96
+Iterating over use-def of:   store i8 0, i8* @expect_close, align 1
+createStore():
+	to: @expect_close = common global i8 0, align 1
+	fromi8 0
+saveAndGetID():
+	value: @expect_close = common global i8 0, align 1
+	value not found in map
+	toStr: *98
+saveAndGetID():
+	value: i8 0
+	fromStr: 0CONST_INT
+saveAndGetID():
+	value:   store i8 0, i8* @expect_close, align 1
+createAssign():
+	preConvert from: *98
+saveAndGetID():
+	value:   store i8 0, i8* @expect_close, align 1
+createAssign():
+	preConvert from: 0CONST_INT
+saveAndGetID():
+	value:   store i8 0, i8* @expect_close, align 1
+createAssign():
+	preConvert from: 97
+Instruction:   store i8 0, i8* @expect_close, align 1
+createCDep():
+	to:   %1 = load i8* @fops_write_buf, align 1 0x232e348
+	from:   br i1 %tobool, label %if.end3, label %if.then
+saveAndGetID():
+	value:   %1 = load i8* @fops_write_buf, align 1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %tobool, label %if.end3, label %if.then
+	toStrID: 99
+	fromStrID: 96
+Iterating over use-def of:   %1 = load i8* @fops_write_buf, align 1
+saveAndGetID():
+	value:   %1 = load i8* @fops_write_buf, align 1
+saveAndGetID():
+	value: @fops_write_buf = common global i8 0, align 1
+saveAndGetID():
+	value:   %1 = load i8* @fops_write_buf, align 1
+createAssign():
+	preConvert from: *91
+createAssign():
+	preConvert from: 91
+Instruction:   %1 = load i8* @fops_write_buf, align 1
+createCDep():
+	to:   %conv = sext i8 %1 to i32 0x232e3d8
+	from:   br i1 %tobool, label %if.end3, label %if.then
+saveAndGetID():
+	value:   %conv = sext i8 %1 to i32
+	value not found in map
+saveAndGetID():
+	value:   br i1 %tobool, label %if.end3, label %if.then
+	toStrID: 100
+	fromStrID: 96
+Iterating over use-def of:   %conv = sext i8 %1 to i32
+saveAndGetID():
+	value:   %conv = sext i8 %1 to i32
+saveAndGetID():
+	value:   %1 = load i8* @fops_write_buf, align 1
+createAssign():
+	preConvert from: 99
+Instruction:   %conv = sext i8 %1 to i32
+createCDep():
+	to:   %cmp = icmp eq i32 %conv, 86 0x232e4b0
+	from:   br i1 %tobool, label %if.end3, label %if.then
+saveAndGetID():
+	value:   %cmp = icmp eq i32 %conv, 86
+	value not found in map
+saveAndGetID():
+	value:   br i1 %tobool, label %if.end3, label %if.then
+	toStrID: 101
+	fromStrID: 96
+Iterating over use-def of:   %cmp = icmp eq i32 %conv, 86
+saveAndGetID():
+	value:   %cmp = icmp eq i32 %conv, 86
+saveAndGetID():
+	value:   %conv = sext i8 %1 to i32
+createAssign():
+	preConvert from: 100
+saveAndGetID():
+	value:   %cmp = icmp eq i32 %conv, 86
+saveAndGetID():
+	value: i32 86
+createAssign():
+	preConvert from: 86CONST_INT
+Instruction:   %cmp = icmp eq i32 %conv, 86
+createCDep():
+	to:   br i1 %cmp, label %if.then2, label %if.end 0x232e6f8
+	from:   br i1 %tobool, label %if.end3, label %if.then
+saveAndGetID():
+	value:   br i1 %cmp, label %if.then2, label %if.end
+	value not found in map
+saveAndGetID():
+	value:   br i1 %tobool, label %if.end3, label %if.then
+	toStrID: 102
+	fromStrID: 96
+Iterating over use-def of:   br i1 %cmp, label %if.then2, label %if.end
+saveAndGetID():
+	value:   br i1 %cmp, label %if.then2, label %if.end
+saveAndGetID():
+	value:   %cmp = icmp eq i32 %conv, 86
+createAssign():
+	preConvert from: 101
+Instruction:   br i1 %cmp, label %if.then2, label %if.end
+createCDep():
+	to:   store i8 42, i8* @expect_close, align 1 0x232e7d0
+	from:   br i1 %cmp, label %if.then2, label %if.end
+saveAndGetID():
+	value:   store i8 42, i8* @expect_close, align 1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp, label %if.then2, label %if.end
+	toStrID: 103
+	fromStrID: 102
+Iterating over use-def of:   store i8 42, i8* @expect_close, align 1
+createStore():
+	to: @expect_close = common global i8 0, align 1
+	fromi8 42
+saveAndGetID():
+	value: @expect_close = common global i8 0, align 1
+	toStr: *98
+saveAndGetID():
+	value: i8 42
+	fromStr: 42CONST_INT
+saveAndGetID():
+	value:   store i8 42, i8* @expect_close, align 1
+createAssign():
+	preConvert from: *98
+saveAndGetID():
+	value:   store i8 42, i8* @expect_close, align 1
+createAssign():
+	preConvert from: 42CONST_INT
+saveAndGetID():
+	value:   store i8 42, i8* @expect_close, align 1
+createAssign():
+	preConvert from: 103
+Instruction:   store i8 42, i8* @expect_close, align 1
+createCDep():
+	to:   br label %if.end 0x232e848
+	from:   br i1 %cmp, label %if.then2, label %if.end
+saveAndGetID():
+	value:   br label %if.end
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp, label %if.then2, label %if.end
+	toStrID: 104
+	fromStrID: 102
+Iterating over use-def of:   br label %if.end
+createCDep():
+	to:   br label %if.end3 0x232e8b8
+	from:   br i1 %tobool, label %if.end3, label %if.then
+saveAndGetID():
+	value:   br label %if.end3
+	value not found in map
+saveAndGetID():
+	value:   br i1 %tobool, label %if.end3, label %if.then
+	toStrID: 105
+	fromStrID: 96
+Iterating over use-def of:   br label %if.end3
+Iterating over use-def of:   br label %do.end
+Iterating over use-def of:   br label %do.body4
+Iterating over use-def of:   %2 = load i8* @expect_close, align 1
+saveAndGetID():
+	value:   %2 = load i8* @expect_close, align 1
+	value not found in map
+saveAndGetID():
+	value: @expect_close = common global i8 0, align 1
+saveAndGetID():
+	value:   %2 = load i8* @expect_close, align 1
+createAssign():
+	preConvert from: *98
+createAssign():
+	preConvert from: 98
+Instruction:   %2 = load i8* @expect_close, align 1
+Iterating over use-def of:   %conv5 = sext i8 %2 to i32
+saveAndGetID():
+	value:   %conv5 = sext i8 %2 to i32
+	value not found in map
+saveAndGetID():
+	value:   %2 = load i8* @expect_close, align 1
+createAssign():
+	preConvert from: 106
+Instruction:   %conv5 = sext i8 %2 to i32
+Iterating over use-def of:   %cmp6 = icmp eq i32 %conv5, 42
+saveAndGetID():
+	value:   %cmp6 = icmp eq i32 %conv5, 42
+	value not found in map
+saveAndGetID():
+	value:   %conv5 = sext i8 %2 to i32
+createAssign():
+	preConvert from: 107
+saveAndGetID():
+	value:   %cmp6 = icmp eq i32 %conv5, 42
+saveAndGetID():
+	value: i32 42
+createAssign():
+	preConvert from: 42CONST_INT
+Instruction:   %cmp6 = icmp eq i32 %conv5, 42
+Iterating over use-def of:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	value not found in map
+saveAndGetID():
+	value:   %cmp6 = icmp eq i32 %conv5, 42
+createAssign():
+	preConvert from: 108
+Instruction:   br i1 %cmp6, label %if.then8, label %if.else
+createCDep():
+	to:   br label %do.body9 0x232efc8
+	from:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   br label %do.body9
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	toStrID: 110
+	fromStrID: 109
+Iterating over use-def of:   br label %do.body9
+createCDep():
+	to:   br label %do.body10 0x232f098
+	from:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   br label %do.body10
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	toStrID: 111
+	fromStrID: 109
+Iterating over use-def of:   br label %do.body10
+createCDep():
+	to:   br label %do.body11 0x232f1c8
+	from:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   br label %do.body11
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	toStrID: 112
+	fromStrID: 109
+Iterating over use-def of:   br label %do.body11
+createCDep():
+	to:   br label %while.cond 0x232f298
+	from:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   br label %while.cond
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	toStrID: 113
+	fromStrID: 109
+Iterating over use-def of:   br label %while.cond
+createCDep():
+	to:   %3 = load i8* @sc1200wdt_lock, align 1 0x232f308
+	from:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   %3 = load i8* @sc1200wdt_lock, align 1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	toStrID: 114
+	fromStrID: 109
+Iterating over use-def of:   %3 = load i8* @sc1200wdt_lock, align 1
+saveAndGetID():
+	value:   %3 = load i8* @sc1200wdt_lock, align 1
+saveAndGetID():
+	value: @sc1200wdt_lock = common global i8 0, align 1
+	value not found in map
+saveAndGetID():
+	value:   %3 = load i8* @sc1200wdt_lock, align 1
+createAssign():
+	preConvert from: *115
+createAssign():
+	preConvert from: 115
+Instruction:   %3 = load i8* @sc1200wdt_lock, align 1
+createCDep():
+	to:   %tobool12 = trunc i8 %3 to i1 0x232f378
+	from:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   %tobool12 = trunc i8 %3 to i1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	toStrID: 116
+	fromStrID: 109
+Iterating over use-def of:   %tobool12 = trunc i8 %3 to i1
+saveAndGetID():
+	value:   %tobool12 = trunc i8 %3 to i1
+saveAndGetID():
+	value:   %3 = load i8* @sc1200wdt_lock, align 1
+createAssign():
+	preConvert from: 114
+Instruction:   %tobool12 = trunc i8 %3 to i1
+createCDep():
+	to:   br i1 %tobool12, label %while.body, label %while.end 0x232f618
+	from:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   br i1 %tobool12, label %while.body, label %while.end
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	toStrID: 117
+	fromStrID: 109
+Iterating over use-def of:   br i1 %tobool12, label %while.body, label %while.end
+saveAndGetID():
+	value:   br i1 %tobool12, label %while.body, label %while.end
+saveAndGetID():
+	value:   %tobool12 = trunc i8 %3 to i1
+createAssign():
+	preConvert from: 116
+Instruction:   br i1 %tobool12, label %while.body, label %while.end
+createCDep():
+	to:   br label %while.cond 0x232f688
+	from:   br i1 %tobool12, label %while.body, label %while.end
+saveAndGetID():
+	value:   br label %while.cond
+	value not found in map
+saveAndGetID():
+	value:   br i1 %tobool12, label %while.body, label %while.end
+	toStrID: 118
+	fromStrID: 117
+Iterating over use-def of:   br label %while.cond
+createCDep():
+	to:   br label %do.end13 0x232ea78
+	from:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   br label %do.end13
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	toStrID: 119
+	fromStrID: 109
+Iterating over use-def of:   br label %do.end13
+createCDep():
+	to:   br label %do.body14 0x232eb48
+	from:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   br label %do.body14
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	toStrID: 120
+	fromStrID: 109
+Iterating over use-def of:   br label %do.body14
+createCDep():
+	to:   store i8 5, i8* @pmir_port, align 1 0x232fac0
+	from:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   store i8 5, i8* @pmir_port, align 1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	toStrID: 121
+	fromStrID: 109
+Iterating over use-def of:   store i8 5, i8* @pmir_port, align 1
+createStore():
+	to: @pmir_port = common global i8 0, align 1
+	fromi8 5
+saveAndGetID():
+	value: @pmir_port = common global i8 0, align 1
+	value not found in map
+	toStr: *122
+saveAndGetID():
+	value: i8 5
+	fromStr: 5CONST_INT
+saveAndGetID():
+	value:   store i8 5, i8* @pmir_port, align 1
+createAssign():
+	preConvert from: *122
+saveAndGetID():
+	value:   store i8 5, i8* @pmir_port, align 1
+createAssign():
+	preConvert from: 5CONST_INT
+saveAndGetID():
+	value:   store i8 5, i8* @pmir_port, align 1
+createAssign():
+	preConvert from: 121
+Instruction:   store i8 5, i8* @pmir_port, align 1
+createCDep():
+	to:   br label %do.end15 0x232fbf8
+	from:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   br label %do.end15
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	toStrID: 123
+	fromStrID: 109
+Iterating over use-def of:   br label %do.end15
+createCDep():
+	to:   br label %do.body16 0x232fcc8
+	from:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   br label %do.body16
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	toStrID: 124
+	fromStrID: 109
+Iterating over use-def of:   br label %do.body16
+createCDep():
+	to:   store i8 0, i8* @pmdr_port, align 1 0x232fd50
+	from:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   store i8 0, i8* @pmdr_port, align 1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	toStrID: 125
+	fromStrID: 109
+Iterating over use-def of:   store i8 0, i8* @pmdr_port, align 1
+createStore():
+	to: @pmdr_port = common global i8 0, align 1
+	fromi8 0
+saveAndGetID():
+	value: @pmdr_port = common global i8 0, align 1
+	value not found in map
+	toStr: *126
+saveAndGetID():
+	value: i8 0
+	fromStr: 0CONST_INT
+saveAndGetID():
+	value:   store i8 0, i8* @pmdr_port, align 1
+createAssign():
+	preConvert from: *126
+saveAndGetID():
+	value:   store i8 0, i8* @pmdr_port, align 1
+createAssign():
+	preConvert from: 0CONST_INT
+saveAndGetID():
+	value:   store i8 0, i8* @pmdr_port, align 1
+createAssign():
+	preConvert from: 125
+Instruction:   store i8 0, i8* @pmdr_port, align 1
+createCDep():
+	to:   br label %do.end17 0x232fe88
+	from:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   br label %do.end17
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	toStrID: 127
+	fromStrID: 109
+Iterating over use-def of:   br label %do.end17
+createCDep():
+	to:   br label %do.body18 0x232ff58
+	from:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   br label %do.body18
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	toStrID: 128
+	fromStrID: 109
+Iterating over use-def of:   br label %do.body18
+createCDep():
+	to:   store i8 0, i8* @sc1200wdt_lock, align 1 0x232ffe0
+	from:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   store i8 0, i8* @sc1200wdt_lock, align 1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	toStrID: 129
+	fromStrID: 109
+Iterating over use-def of:   store i8 0, i8* @sc1200wdt_lock, align 1
+createStore():
+	to: @sc1200wdt_lock = common global i8 0, align 1
+	fromi8 0
+saveAndGetID():
+	value: @sc1200wdt_lock = common global i8 0, align 1
+	toStr: *115
+saveAndGetID():
+	value: i8 0
+	fromStr: 0CONST_INT
+saveAndGetID():
+	value:   store i8 0, i8* @sc1200wdt_lock, align 1
+createAssign():
+	preConvert from: *115
+saveAndGetID():
+	value:   store i8 0, i8* @sc1200wdt_lock, align 1
+createAssign():
+	preConvert from: 0CONST_INT
+saveAndGetID():
+	value:   store i8 0, i8* @sc1200wdt_lock, align 1
+createAssign():
+	preConvert from: 129
+Instruction:   store i8 0, i8* @sc1200wdt_lock, align 1
+createCDep():
+	to:   br label %do.end19 0x23300e8
+	from:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   br label %do.end19
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	toStrID: 130
+	fromStrID: 109
+Iterating over use-def of:   br label %do.end19
+createCDep():
+	to:   br label %do.end20 0x2330218
+	from:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   br label %do.end20
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	toStrID: 131
+	fromStrID: 109
+Iterating over use-def of:   br label %do.end20
+createCDep():
+	to:   br label %do.end21 0x2330318
+	from:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   br label %do.end21
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	toStrID: 132
+	fromStrID: 109
+Iterating over use-def of:   br label %do.end21
+createCDep():
+	to:   br label %if.end22 0x2330418
+	from:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   br label %if.end22
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	toStrID: 133
+	fromStrID: 109
+Iterating over use-def of:   br label %if.end22
+createCDep():
+	to:   call void @__assert_fail(i8* getelementptr inbounds ([2 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8]* @.str1, i32 0, i32 0), i32 682, i8* getelementptr inbounds ([21 x i8]* @__PRETTY_FUNCTION__.closer, i32 0, i32 0)) #3 0x23309c8
+	from:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   call void @__assert_fail(i8* getelementptr inbounds ([2 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8]* @.str1, i32 0, i32 0), i32 682, i8* getelementptr inbounds ([21 x i8]* @__PRETTY_FUNCTION__.closer, i32 0, i32 0)) #3
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	toStrID: 134
+	fromStrID: 109
+Iterating over use-def of:   call void @__assert_fail(i8* getelementptr inbounds ([2 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8]* @.str1, i32 0, i32 0), i32 682, i8* getelementptr inbounds ([21 x i8]* @__PRETTY_FUNCTION__.closer, i32 0, i32 0)) #3
+createCDep():
+	to:   unreachable 0x2330a80
+	from:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   unreachable
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	toStrID: 135
+	fromStrID: 109
+Iterating over use-def of:   unreachable
+createCDep():
+	to:   br label %do.body23 0x2330b88
+	from:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   br label %do.body23
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	toStrID: 136
+	fromStrID: 109
+Iterating over use-def of:   br label %do.body23
+createCDep():
+	to:   %4 = load i32* @open_sem, align 4 0x2330bf8
+	from:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   %4 = load i32* @open_sem, align 4
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	toStrID: 137
+	fromStrID: 109
+Iterating over use-def of:   %4 = load i32* @open_sem, align 4
+saveAndGetID():
+	value:   %4 = load i32* @open_sem, align 4
+saveAndGetID():
+	value: @open_sem = common global i32 0, align 4
+	value not found in map
+saveAndGetID():
+	value:   %4 = load i32* @open_sem, align 4
+createAssign():
+	preConvert from: *138
+createAssign():
+	preConvert from: 138
+Instruction:   %4 = load i32* @open_sem, align 4
+createCDep():
+	to:   %add = add nsw i32 %4, 1 0x2330cd0
+	from:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   %add = add nsw i32 %4, 1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	toStrID: 139
+	fromStrID: 109
+Iterating over use-def of:   %add = add nsw i32 %4, 1
+saveAndGetID():
+	value:   %add = add nsw i32 %4, 1
+saveAndGetID():
+	value:   %4 = load i32* @open_sem, align 4
+createAssign():
+	preConvert from: 137
+saveAndGetID():
+	value:   %add = add nsw i32 %4, 1
+saveAndGetID():
+	value: i32 1
+createAssign():
+	preConvert from: 1CONST_INT
+Instruction:   %add = add nsw i32 %4, 1
+createCDep():
+	to:   store i32 %add, i32* @open_sem, align 4 0x2330d60
+	from:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   store i32 %add, i32* @open_sem, align 4
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	toStrID: 140
+	fromStrID: 109
+Iterating over use-def of:   store i32 %add, i32* @open_sem, align 4
+createStore():
+	to: @open_sem = common global i32 0, align 4
+	from  %add = add nsw i32 %4, 1
+saveAndGetID():
+	value: @open_sem = common global i32 0, align 4
+	toStr: *138
+saveAndGetID():
+	value:   %add = add nsw i32 %4, 1
+	fromStr: 139
+saveAndGetID():
+	value:   store i32 %add, i32* @open_sem, align 4
+createAssign():
+	preConvert from: *138
+saveAndGetID():
+	value:   store i32 %add, i32* @open_sem, align 4
+createAssign():
+	preConvert from: 139
+saveAndGetID():
+	value:   store i32 %add, i32* @open_sem, align 4
+createAssign():
+	preConvert from: 140
+Instruction:   store i32 %add, i32* @open_sem, align 4
+createCDep():
+	to:   br label %do.end24 0x2330e98
+	from:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   br label %do.end24
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	toStrID: 141
+	fromStrID: 109
+Iterating over use-def of:   br label %do.end24
+createCDep():
+	to:   store i8 0, i8* @expect_close, align 1 0x2330f20
+	from:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   store i8 0, i8* @expect_close, align 1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	toStrID: 142
+	fromStrID: 109
+Iterating over use-def of:   store i8 0, i8* @expect_close, align 1
+createStore():
+	to: @expect_close = common global i8 0, align 1
+	fromi8 0
+saveAndGetID():
+	value: @expect_close = common global i8 0, align 1
+	toStr: *98
+saveAndGetID():
+	value: i8 0
+	fromStr: 0CONST_INT
+saveAndGetID():
+	value:   store i8 0, i8* @expect_close, align 1
+createAssign():
+	preConvert from: *98
+saveAndGetID():
+	value:   store i8 0, i8* @expect_close, align 1
+createAssign():
+	preConvert from: 0CONST_INT
+saveAndGetID():
+	value:   store i8 0, i8* @expect_close, align 1
+createAssign():
+	preConvert from: 142
+Instruction:   store i8 0, i8* @expect_close, align 1
+createCDep():
+	to:   br label %do.end25 0x2330ff8
+	from:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   br label %do.end25
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	toStrID: 143
+	fromStrID: 109
+Iterating over use-def of:   br label %do.end25
+createCDep():
+	to:   ret i8* null 0x2331068
+	from:   br i1 %cmp6, label %if.then8, label %if.else
+saveAndGetID():
+	value:   ret i8* null
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else
+	toStrID: 144
+	fromStrID: 109
+Iterating over use-def of:   ret i8* null
+Visiting RetInst:   ret i8* null
+	Function Name: closer
+saveAndGetID():
+	value:   ret i8* null
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+saveAndGetID():
+	value:   ret i8* null
+createAssign():
+	preConvert from: 144
+Instruction:   ret i8* null
+Iterating over use-def of:   %retval = alloca i32, align 4
+saveAndGetID():
+	value:   %retval = alloca i32, align 4
+	value not found in map
+createAssign():
+	preConvert from: stack_23
+Instruction:   %retval = alloca i32, align 4
+Iterating over use-def of:   %argc.addr = alloca i32, align 4
+saveAndGetID():
+	value:   %argc.addr = alloca i32, align 4
+	value not found in map
+createAssign():
+	preConvert from: stack_24
+Instruction:   %argc.addr = alloca i32, align 4
+Iterating over use-def of:   %argv.addr = alloca i8**, align 8
+saveAndGetID():
+	value:   %argv.addr = alloca i8**, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_25
+Instruction:   %argv.addr = alloca i8**, align 8
+Iterating over use-def of:   %t1 = alloca i64, align 8
+saveAndGetID():
+	value:   %t1 = alloca i64, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_26
+Instruction:   %t1 = alloca i64, align 8
+Iterating over use-def of:   %t2 = alloca i64, align 8
+saveAndGetID():
+	value:   %t2 = alloca i64, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_27
+Instruction:   %t2 = alloca i64, align 8
+Iterating over use-def of:   store i32 0, i32* %retval
+createStore():
+	to:   %retval = alloca i32, align 4
+	fromi32 0
+saveAndGetID():
+	value:   %retval = alloca i32, align 4
+	toStr: *145
+saveAndGetID():
+	value: i32 0
+	fromStr: 0CONST_INT
+saveAndGetID():
+	value:   store i32 0, i32* %retval
+	value not found in map
+createAssign():
+	preConvert from: *145
+saveAndGetID():
+	value:   store i32 0, i32* %retval
+createAssign():
+	preConvert from: 0CONST_INT
+saveAndGetID():
+	value:   store i32 0, i32* %retval
+createAssign():
+	preConvert from: 150
+Instruction:   store i32 0, i32* %retval
+Iterating over use-def of:   store i32 %argc, i32* %argc.addr, align 4
+createStore():
+	to:   %argc.addr = alloca i32, align 4
+	fromi32 %argc
+saveAndGetID():
+	value:   %argc.addr = alloca i32, align 4
+	toStr: *146
+saveAndGetID():
+	value: i32 %argc
+	value not found in map
+	fromStr: 151
+saveAndGetID():
+	value:   store i32 %argc, i32* %argc.addr, align 4
+	value not found in map
+createAssign():
+	preConvert from: *146
+saveAndGetID():
+	value:   store i32 %argc, i32* %argc.addr, align 4
+createAssign():
+	preConvert from: 151
+saveAndGetID():
+	value:   store i32 %argc, i32* %argc.addr, align 4
+createAssign():
+	preConvert from: 152
+Instruction:   store i32 %argc, i32* %argc.addr, align 4
+Iterating over use-def of:   store i8** %argv, i8*** %argv.addr, align 8
+createStore():
+	to:   %argv.addr = alloca i8**, align 8
+	fromi8** %argv
+saveAndGetID():
+	value:   %argv.addr = alloca i8**, align 8
+	toStr: ***147
+saveAndGetID():
+	value: i8** %argv
+	value not found in map
+	fromStr: **153
+saveAndGetID():
+	value:   store i8** %argv, i8*** %argv.addr, align 8
+	value not found in map
+createAssign():
+	preConvert from: ***147
+saveAndGetID():
+	value:   store i8** %argv, i8*** %argv.addr, align 8
+createAssign():
+	preConvert from: **153
+saveAndGetID():
+	value:   store i8** %argv, i8*** %argv.addr, align 8
+createAssign():
+	preConvert from: 154
+Instruction:   store i8** %argv, i8*** %argv.addr, align 8
+Iterating over use-def of:   store i8 0, i8* @expect_close, align 1
+createStore():
+	to: @expect_close = common global i8 0, align 1
+	fromi8 0
+saveAndGetID():
+	value: @expect_close = common global i8 0, align 1
+	toStr: *98
+saveAndGetID():
+	value: i8 0
+	fromStr: 0CONST_INT
+saveAndGetID():
+	value:   store i8 0, i8* @expect_close, align 1
+	value not found in map
+createAssign():
+	preConvert from: *98
+saveAndGetID():
+	value:   store i8 0, i8* @expect_close, align 1
+createAssign():
+	preConvert from: 0CONST_INT
+saveAndGetID():
+	value:   store i8 0, i8* @expect_close, align 1
+createAssign():
+	preConvert from: 155
+Instruction:   store i8 0, i8* @expect_close, align 1
+Iterating over use-def of:   store i32 0, i32* @open_sem, align 4
+createStore():
+	to: @open_sem = common global i32 0, align 4
+	fromi32 0
+saveAndGetID():
+	value: @open_sem = common global i32 0, align 4
+	toStr: *138
+saveAndGetID():
+	value: i32 0
+	fromStr: 0CONST_INT
+saveAndGetID():
+	value:   store i32 0, i32* @open_sem, align 4
+	value not found in map
+createAssign():
+	preConvert from: *138
+saveAndGetID():
+	value:   store i32 0, i32* @open_sem, align 4
+createAssign():
+	preConvert from: 0CONST_INT
+saveAndGetID():
+	value:   store i32 0, i32* @open_sem, align 4
+createAssign():
+	preConvert from: 156
+Instruction:   store i32 0, i32* @open_sem, align 4
+Iterating over use-def of:   %call = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer1, i8* null) #3
+Visiting CallSite:   %call = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer1, i8* null) #3
+	Type? i32
+	Found 1 matching function(s)
+saveAndGetID():
+	value:   %call = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer1, i8* null) #3
+	value not found in map
+createAssign():
+	preConvert from: pthread_create_RETURN
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i64* %0
+	value not found in map
+saveAndGetID():
+	value:   %t1 = alloca i64, align 8
+createAssign():
+	preConvert from: *148
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: %union.pthread_attr_t* %1
+	value not found in map
+saveAndGetID():
+	value: %union.pthread_attr_t* null
+createAssign():
+	preConvert from: NULL
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* (i8*)* %2
+	value not found in map
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer1(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8
+  store i8* %unused, i8** %unused.addr, align 8
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null
+}
+
+	value not found in map
+createAssign():
+	preConvert from: *161
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* %3
+	value not found in map
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+Finished callsite
+Instruction:   %call = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer1, i8* null) #3
+Iterating over use-def of:   %call1 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer2, i8* null) #3
+Visiting CallSite:   %call1 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer2, i8* null) #3
+	Type? i32
+	Found 1 matching function(s)
+saveAndGetID():
+	value:   %call1 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer2, i8* null) #3
+	value not found in map
+createAssign():
+	preConvert from: pthread_create_RETURN
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i64* %0
+saveAndGetID():
+	value:   %t1 = alloca i64, align 8
+createAssign():
+	preConvert from: *148
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: %union.pthread_attr_t* %1
+saveAndGetID():
+	value: %union.pthread_attr_t* null
+createAssign():
+	preConvert from: NULL
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* (i8*)* %2
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer2(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8
+  store i8* %unused, i8** %unused.addr, align 8
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null
+}
+
+	value not found in map
+createAssign():
+	preConvert from: *164
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* %3
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+Finished callsite
+Instruction:   %call1 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer2, i8* null) #3
+Iterating over use-def of:   %call2 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer3, i8* null) #3
+Visiting CallSite:   %call2 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer3, i8* null) #3
+	Type? i32
+	Found 1 matching function(s)
+saveAndGetID():
+	value:   %call2 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer3, i8* null) #3
+	value not found in map
+createAssign():
+	preConvert from: pthread_create_RETURN
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i64* %0
+saveAndGetID():
+	value:   %t1 = alloca i64, align 8
+createAssign():
+	preConvert from: *148
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: %union.pthread_attr_t* %1
+saveAndGetID():
+	value: %union.pthread_attr_t* null
+createAssign():
+	preConvert from: NULL
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* (i8*)* %2
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer3(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8
+  store i8* %unused, i8** %unused.addr, align 8
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null
+}
+
+	value not found in map
+createAssign():
+	preConvert from: *166
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* %3
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+Finished callsite
+Instruction:   %call2 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer3, i8* null) #3
+Iterating over use-def of:   %call3 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer4, i8* null) #3
+Visiting CallSite:   %call3 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer4, i8* null) #3
+	Type? i32
+	Found 1 matching function(s)
+saveAndGetID():
+	value:   %call3 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer4, i8* null) #3
+	value not found in map
+createAssign():
+	preConvert from: pthread_create_RETURN
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i64* %0
+saveAndGetID():
+	value:   %t1 = alloca i64, align 8
+createAssign():
+	preConvert from: *148
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: %union.pthread_attr_t* %1
+saveAndGetID():
+	value: %union.pthread_attr_t* null
+createAssign():
+	preConvert from: NULL
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* (i8*)* %2
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer4(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8
+  store i8* %unused, i8** %unused.addr, align 8
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null
+}
+
+	value not found in map
+createAssign():
+	preConvert from: *168
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* %3
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+Finished callsite
+Instruction:   %call3 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer4, i8* null) #3
+Iterating over use-def of:   %call4 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer5, i8* null) #3
+Visiting CallSite:   %call4 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer5, i8* null) #3
+	Type? i32
+	Found 1 matching function(s)
+saveAndGetID():
+	value:   %call4 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer5, i8* null) #3
+	value not found in map
+createAssign():
+	preConvert from: pthread_create_RETURN
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i64* %0
+saveAndGetID():
+	value:   %t1 = alloca i64, align 8
+createAssign():
+	preConvert from: *148
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: %union.pthread_attr_t* %1
+saveAndGetID():
+	value: %union.pthread_attr_t* null
+createAssign():
+	preConvert from: NULL
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* (i8*)* %2
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer5(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8
+  store i8* %unused, i8** %unused.addr, align 8
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null
+}
+
+	value not found in map
+createAssign():
+	preConvert from: *170
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* %3
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+Finished callsite
+Instruction:   %call4 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer5, i8* null) #3
+Iterating over use-def of:   %call5 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer6, i8* null) #3
+Visiting CallSite:   %call5 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer6, i8* null) #3
+	Type? i32
+	Found 1 matching function(s)
+saveAndGetID():
+	value:   %call5 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer6, i8* null) #3
+	value not found in map
+createAssign():
+	preConvert from: pthread_create_RETURN
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i64* %0
+saveAndGetID():
+	value:   %t1 = alloca i64, align 8
+createAssign():
+	preConvert from: *148
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: %union.pthread_attr_t* %1
+saveAndGetID():
+	value: %union.pthread_attr_t* null
+createAssign():
+	preConvert from: NULL
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* (i8*)* %2
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer6(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8
+  store i8* %unused, i8** %unused.addr, align 8
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null
+}
+
+	value not found in map
+createAssign():
+	preConvert from: *172
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* %3
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+Finished callsite
+Instruction:   %call5 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer6, i8* null) #3
+Iterating over use-def of:   %call6 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer7, i8* null) #3
+Visiting CallSite:   %call6 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer7, i8* null) #3
+	Type? i32
+	Found 1 matching function(s)
+saveAndGetID():
+	value:   %call6 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer7, i8* null) #3
+	value not found in map
+createAssign():
+	preConvert from: pthread_create_RETURN
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i64* %0
+saveAndGetID():
+	value:   %t1 = alloca i64, align 8
+createAssign():
+	preConvert from: *148
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: %union.pthread_attr_t* %1
+saveAndGetID():
+	value: %union.pthread_attr_t* null
+createAssign():
+	preConvert from: NULL
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* (i8*)* %2
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer7(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8
+  store i8* %unused, i8** %unused.addr, align 8
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null
+}
+
+	value not found in map
+createAssign():
+	preConvert from: *174
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* %3
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+Finished callsite
+Instruction:   %call6 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer7, i8* null) #3
+Iterating over use-def of:   %call7 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer8, i8* null) #3
+Visiting CallSite:   %call7 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer8, i8* null) #3
+	Type? i32
+	Found 1 matching function(s)
+saveAndGetID():
+	value:   %call7 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer8, i8* null) #3
+	value not found in map
+createAssign():
+	preConvert from: pthread_create_RETURN
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i64* %0
+saveAndGetID():
+	value:   %t1 = alloca i64, align 8
+createAssign():
+	preConvert from: *148
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: %union.pthread_attr_t* %1
+saveAndGetID():
+	value: %union.pthread_attr_t* null
+createAssign():
+	preConvert from: NULL
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* (i8*)* %2
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer8(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8
+  store i8* %unused, i8** %unused.addr, align 8
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null
+}
+
+	value not found in map
+createAssign():
+	preConvert from: *176
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* %3
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+Finished callsite
+Instruction:   %call7 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer8, i8* null) #3
+Iterating over use-def of:   %call8 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer9, i8* null) #3
+Visiting CallSite:   %call8 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer9, i8* null) #3
+	Type? i32
+	Found 1 matching function(s)
+saveAndGetID():
+	value:   %call8 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer9, i8* null) #3
+	value not found in map
+createAssign():
+	preConvert from: pthread_create_RETURN
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i64* %0
+saveAndGetID():
+	value:   %t1 = alloca i64, align 8
+createAssign():
+	preConvert from: *148
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: %union.pthread_attr_t* %1
+saveAndGetID():
+	value: %union.pthread_attr_t* null
+createAssign():
+	preConvert from: NULL
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* (i8*)* %2
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer9(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8
+  store i8* %unused, i8** %unused.addr, align 8
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null
+}
+
+	value not found in map
+createAssign():
+	preConvert from: *178
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* %3
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+Finished callsite
+Instruction:   %call8 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer9, i8* null) #3
+Iterating over use-def of:   %call9 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer10, i8* null) #3
+Visiting CallSite:   %call9 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer10, i8* null) #3
+	Type? i32
+	Found 1 matching function(s)
+saveAndGetID():
+	value:   %call9 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer10, i8* null) #3
+	value not found in map
+createAssign():
+	preConvert from: pthread_create_RETURN
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i64* %0
+saveAndGetID():
+	value:   %t1 = alloca i64, align 8
+createAssign():
+	preConvert from: *148
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: %union.pthread_attr_t* %1
+saveAndGetID():
+	value: %union.pthread_attr_t* null
+createAssign():
+	preConvert from: NULL
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* (i8*)* %2
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer10(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8
+  store i8* %unused, i8** %unused.addr, align 8
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null
+}
+
+	value not found in map
+createAssign():
+	preConvert from: *180
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* %3
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+Finished callsite
+Instruction:   %call9 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer10, i8* null) #3
+Iterating over use-def of:   %call10 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer11, i8* null) #3
+Visiting CallSite:   %call10 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer11, i8* null) #3
+	Type? i32
+	Found 1 matching function(s)
+saveAndGetID():
+	value:   %call10 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer11, i8* null) #3
+	value not found in map
+createAssign():
+	preConvert from: pthread_create_RETURN
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i64* %0
+saveAndGetID():
+	value:   %t1 = alloca i64, align 8
+createAssign():
+	preConvert from: *148
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: %union.pthread_attr_t* %1
+saveAndGetID():
+	value: %union.pthread_attr_t* null
+createAssign():
+	preConvert from: NULL
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* (i8*)* %2
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer11(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8
+  store i8* %unused, i8** %unused.addr, align 8
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null
+}
+
+	value not found in map
+createAssign():
+	preConvert from: *182
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* %3
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+Finished callsite
+Instruction:   %call10 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer11, i8* null) #3
+Iterating over use-def of:   %call11 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer12, i8* null) #3
+Visiting CallSite:   %call11 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer12, i8* null) #3
+	Type? i32
+	Found 1 matching function(s)
+saveAndGetID():
+	value:   %call11 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer12, i8* null) #3
+	value not found in map
+createAssign():
+	preConvert from: pthread_create_RETURN
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i64* %0
+saveAndGetID():
+	value:   %t1 = alloca i64, align 8
+createAssign():
+	preConvert from: *148
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: %union.pthread_attr_t* %1
+saveAndGetID():
+	value: %union.pthread_attr_t* null
+createAssign():
+	preConvert from: NULL
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* (i8*)* %2
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer12(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8
+  store i8* %unused, i8** %unused.addr, align 8
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null
+}
+
+	value not found in map
+createAssign():
+	preConvert from: *184
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* %3
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+Finished callsite
+Instruction:   %call11 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer12, i8* null) #3
+Iterating over use-def of:   %call12 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer13, i8* null) #3
+Visiting CallSite:   %call12 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer13, i8* null) #3
+	Type? i32
+	Found 1 matching function(s)
+saveAndGetID():
+	value:   %call12 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer13, i8* null) #3
+	value not found in map
+createAssign():
+	preConvert from: pthread_create_RETURN
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i64* %0
+saveAndGetID():
+	value:   %t1 = alloca i64, align 8
+createAssign():
+	preConvert from: *148
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: %union.pthread_attr_t* %1
+saveAndGetID():
+	value: %union.pthread_attr_t* null
+createAssign():
+	preConvert from: NULL
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* (i8*)* %2
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer13(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8
+  store i8* %unused, i8** %unused.addr, align 8
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null
+}
+
+	value not found in map
+createAssign():
+	preConvert from: *186
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* %3
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+Finished callsite
+Instruction:   %call12 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer13, i8* null) #3
+Iterating over use-def of:   %call13 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer14, i8* null) #3
+Visiting CallSite:   %call13 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer14, i8* null) #3
+	Type? i32
+	Found 1 matching function(s)
+saveAndGetID():
+	value:   %call13 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer14, i8* null) #3
+	value not found in map
+createAssign():
+	preConvert from: pthread_create_RETURN
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i64* %0
+saveAndGetID():
+	value:   %t1 = alloca i64, align 8
+createAssign():
+	preConvert from: *148
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: %union.pthread_attr_t* %1
+saveAndGetID():
+	value: %union.pthread_attr_t* null
+createAssign():
+	preConvert from: NULL
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* (i8*)* %2
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer14(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8
+  store i8* %unused, i8** %unused.addr, align 8
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null
+}
+
+	value not found in map
+createAssign():
+	preConvert from: *188
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* %3
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+Finished callsite
+Instruction:   %call13 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer14, i8* null) #3
+Iterating over use-def of:   %call14 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer15, i8* null) #3
+Visiting CallSite:   %call14 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer15, i8* null) #3
+	Type? i32
+	Found 1 matching function(s)
+saveAndGetID():
+	value:   %call14 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer15, i8* null) #3
+	value not found in map
+createAssign():
+	preConvert from: pthread_create_RETURN
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i64* %0
+saveAndGetID():
+	value:   %t1 = alloca i64, align 8
+createAssign():
+	preConvert from: *148
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: %union.pthread_attr_t* %1
+saveAndGetID():
+	value: %union.pthread_attr_t* null
+createAssign():
+	preConvert from: NULL
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* (i8*)* %2
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer15(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8
+  store i8* %unused, i8** %unused.addr, align 8
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null
+}
+
+	value not found in map
+createAssign():
+	preConvert from: *190
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* %3
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+Finished callsite
+Instruction:   %call14 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer15, i8* null) #3
+Iterating over use-def of:   %call15 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer16, i8* null) #3
+Visiting CallSite:   %call15 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer16, i8* null) #3
+	Type? i32
+	Found 1 matching function(s)
+saveAndGetID():
+	value:   %call15 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer16, i8* null) #3
+	value not found in map
+createAssign():
+	preConvert from: pthread_create_RETURN
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i64* %0
+saveAndGetID():
+	value:   %t1 = alloca i64, align 8
+createAssign():
+	preConvert from: *148
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: %union.pthread_attr_t* %1
+saveAndGetID():
+	value: %union.pthread_attr_t* null
+createAssign():
+	preConvert from: NULL
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* (i8*)* %2
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer16(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8
+  store i8* %unused, i8** %unused.addr, align 8
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null
+}
+
+	value not found in map
+createAssign():
+	preConvert from: *192
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* %3
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+Finished callsite
+Instruction:   %call15 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer16, i8* null) #3
+Iterating over use-def of:   %call16 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer17, i8* null) #3
+Visiting CallSite:   %call16 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer17, i8* null) #3
+	Type? i32
+	Found 1 matching function(s)
+saveAndGetID():
+	value:   %call16 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer17, i8* null) #3
+	value not found in map
+createAssign():
+	preConvert from: pthread_create_RETURN
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i64* %0
+saveAndGetID():
+	value:   %t1 = alloca i64, align 8
+createAssign():
+	preConvert from: *148
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: %union.pthread_attr_t* %1
+saveAndGetID():
+	value: %union.pthread_attr_t* null
+createAssign():
+	preConvert from: NULL
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* (i8*)* %2
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer17(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8
+  store i8* %unused, i8** %unused.addr, align 8
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null
+}
+
+	value not found in map
+createAssign():
+	preConvert from: *194
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* %3
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+Finished callsite
+Instruction:   %call16 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer17, i8* null) #3
+Iterating over use-def of:   %call17 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer18, i8* null) #3
+Visiting CallSite:   %call17 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer18, i8* null) #3
+	Type? i32
+	Found 1 matching function(s)
+saveAndGetID():
+	value:   %call17 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer18, i8* null) #3
+	value not found in map
+createAssign():
+	preConvert from: pthread_create_RETURN
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i64* %0
+saveAndGetID():
+	value:   %t1 = alloca i64, align 8
+createAssign():
+	preConvert from: *148
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: %union.pthread_attr_t* %1
+saveAndGetID():
+	value: %union.pthread_attr_t* null
+createAssign():
+	preConvert from: NULL
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* (i8*)* %2
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer18(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8
+  store i8* %unused, i8** %unused.addr, align 8
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null
+}
+
+	value not found in map
+createAssign():
+	preConvert from: *196
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* %3
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+Finished callsite
+Instruction:   %call17 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer18, i8* null) #3
+Iterating over use-def of:   %call18 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer19, i8* null) #3
+Visiting CallSite:   %call18 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer19, i8* null) #3
+	Type? i32
+	Found 1 matching function(s)
+saveAndGetID():
+	value:   %call18 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer19, i8* null) #3
+	value not found in map
+createAssign():
+	preConvert from: pthread_create_RETURN
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i64* %0
+saveAndGetID():
+	value:   %t1 = alloca i64, align 8
+createAssign():
+	preConvert from: *148
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: %union.pthread_attr_t* %1
+saveAndGetID():
+	value: %union.pthread_attr_t* null
+createAssign():
+	preConvert from: NULL
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* (i8*)* %2
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer19(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8
+  store i8* %unused, i8** %unused.addr, align 8
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null
+}
+
+	value not found in map
+createAssign():
+	preConvert from: *198
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* %3
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+Finished callsite
+Instruction:   %call18 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer19, i8* null) #3
+Iterating over use-def of:   %call19 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer20, i8* null) #3
+Visiting CallSite:   %call19 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer20, i8* null) #3
+	Type? i32
+	Found 1 matching function(s)
+saveAndGetID():
+	value:   %call19 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer20, i8* null) #3
+	value not found in map
+createAssign():
+	preConvert from: pthread_create_RETURN
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i64* %0
+saveAndGetID():
+	value:   %t1 = alloca i64, align 8
+createAssign():
+	preConvert from: *148
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: %union.pthread_attr_t* %1
+saveAndGetID():
+	value: %union.pthread_attr_t* null
+createAssign():
+	preConvert from: NULL
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* (i8*)* %2
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer20(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8
+  store i8* %unused, i8** %unused.addr, align 8
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null
+}
+
+	value not found in map
+createAssign():
+	preConvert from: *200
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* %3
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+Finished callsite
+Instruction:   %call19 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer20, i8* null) #3
+Iterating over use-def of:   %call20 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer21, i8* null) #3
+Visiting CallSite:   %call20 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer21, i8* null) #3
+	Type? i32
+	Found 1 matching function(s)
+saveAndGetID():
+	value:   %call20 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer21, i8* null) #3
+	value not found in map
+createAssign():
+	preConvert from: pthread_create_RETURN
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i64* %0
+saveAndGetID():
+	value:   %t1 = alloca i64, align 8
+createAssign():
+	preConvert from: *148
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: %union.pthread_attr_t* %1
+saveAndGetID():
+	value: %union.pthread_attr_t* null
+createAssign():
+	preConvert from: NULL
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* (i8*)* %2
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer21(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8
+  store i8* %unused, i8** %unused.addr, align 8
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null
+}
+
+	value not found in map
+createAssign():
+	preConvert from: *202
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* %3
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+Finished callsite
+Instruction:   %call20 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer21, i8* null) #3
+Iterating over use-def of:   %call21 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer22, i8* null) #3
+Visiting CallSite:   %call21 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer22, i8* null) #3
+	Type? i32
+	Found 1 matching function(s)
+saveAndGetID():
+	value:   %call21 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer22, i8* null) #3
+	value not found in map
+createAssign():
+	preConvert from: pthread_create_RETURN
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i64* %0
+saveAndGetID():
+	value:   %t1 = alloca i64, align 8
+createAssign():
+	preConvert from: *148
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: %union.pthread_attr_t* %1
+saveAndGetID():
+	value: %union.pthread_attr_t* null
+createAssign():
+	preConvert from: NULL
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* (i8*)* %2
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer22(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8
+  store i8* %unused, i8** %unused.addr, align 8
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null
+}
+
+	value not found in map
+createAssign():
+	preConvert from: *204
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* %3
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+Finished callsite
+Instruction:   %call21 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer22, i8* null) #3
+Iterating over use-def of:   %call22 = call i32 @pthread_create(i64* %t2, %union.pthread_attr_t* null, i8* (i8*)* @closer, i8* null) #3
+Visiting CallSite:   %call22 = call i32 @pthread_create(i64* %t2, %union.pthread_attr_t* null, i8* (i8*)* @closer, i8* null) #3
+	Type? i32
+	Found 1 matching function(s)
+saveAndGetID():
+	value:   %call22 = call i32 @pthread_create(i64* %t2, %union.pthread_attr_t* null, i8* (i8*)* @closer, i8* null) #3
+	value not found in map
+createAssign():
+	preConvert from: pthread_create_RETURN
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i64* %0
+saveAndGetID():
+	value:   %t2 = alloca i64, align 8
+createAssign():
+	preConvert from: *149
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: %union.pthread_attr_t* %1
+saveAndGetID():
+	value: %union.pthread_attr_t* null
+createAssign():
+	preConvert from: NULL
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* (i8*)* %2
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @closer(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8
+  store i8* %unused, i8** %unused.addr, align 8
+  store i8 86, i8* @fops_write_buf, align 1
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  %0 = load i32* @nowayout, align 4
+  %tobool = icmp ne i32 %0, 0
+  br i1 %tobool, label %if.end3, label %if.then
+
+if.then:                                          ; preds = %do.body
+  store i8 0, i8* @expect_close, align 1
+  %1 = load i8* @fops_write_buf, align 1
+  %conv = sext i8 %1 to i32
+  %cmp = icmp eq i32 %conv, 86
+  br i1 %cmp, label %if.then2, label %if.end
+
+if.then2:                                         ; preds = %if.then
+  store i8 42, i8* @expect_close, align 1
+  br label %if.end
+
+if.end:                                           ; preds = %if.then2, %if.then
+  br label %if.end3
+
+if.end3:                                          ; preds = %if.end, %do.body
+  br label %do.end
+
+do.end:                                           ; preds = %if.end3
+  br label %do.body4
+
+do.body4:                                         ; preds = %do.end
+  %2 = load i8* @expect_close, align 1
+  %conv5 = sext i8 %2 to i32
+  %cmp6 = icmp eq i32 %conv5, 42
+  br i1 %cmp6, label %if.then8, label %if.else
+
+if.then8:                                         ; preds = %do.body4
+  br label %do.body9
+
+do.body9:                                         ; preds = %if.then8
+  br label %do.body10
+
+do.body10:                                        ; preds = %do.body9
+  br label %do.body11
+
+do.body11:                                        ; preds = %do.body10
+  br label %while.cond
+
+while.cond:                                       ; preds = %while.body, %do.body11
+  %3 = load i8* @sc1200wdt_lock, align 1
+  %tobool12 = trunc i8 %3 to i1
+  br i1 %tobool12, label %while.body, label %while.end
+
+while.body:                                       ; preds = %while.cond
+  br label %while.cond
+
+while.end:                                        ; preds = %while.cond
+  br label %do.end13
+
+do.end13:                                         ; preds = %while.end
+  br label %do.body14
+
+do.body14:                                        ; preds = %do.end13
+  store i8 5, i8* @pmir_port, align 1
+  br label %do.end15
+
+do.end15:                                         ; preds = %do.body14
+  br label %do.body16
+
+do.body16:                                        ; preds = %do.end15
+  store i8 0, i8* @pmdr_port, align 1
+  br label %do.end17
+
+do.end17:                                         ; preds = %do.body16
+  br label %do.body18
+
+do.body18:                                        ; preds = %do.end17
+  store i8 0, i8* @sc1200wdt_lock, align 1
+  br label %do.end19
+
+do.end19:                                         ; preds = %do.body18
+  br label %do.end20
+
+do.end20:                                         ; preds = %do.end19
+  br label %do.end21
+
+do.end21:                                         ; preds = %do.end20
+  br label %if.end22
+
+if.else:                                          ; preds = %do.body4
+  call void @__assert_fail(i8* getelementptr inbounds ([2 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8]* @.str1, i32 0, i32 0), i32 682, i8* getelementptr inbounds ([21 x i8]* @__PRETTY_FUNCTION__.closer, i32 0, i32 0)) #3
+  unreachable
+
+if.end22:                                         ; preds = %do.end21
+  br label %do.body23
+
+do.body23:                                        ; preds = %if.end22
+  %4 = load i32* @open_sem, align 4
+  %add = add nsw i32 %4, 1
+  store i32 %add, i32* @open_sem, align 4
+  br label %do.end24
+
+do.end24:                                         ; preds = %do.body23
+  store i8 0, i8* @expect_close, align 1
+  br label %do.end25
+
+do.end25:                                         ; preds = %do.end24
+  ret i8* null
+}
+
+	value not found in map
+createAssign():
+	preConvert from: *206
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* %3
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+Finished callsite
+Instruction:   %call22 = call i32 @pthread_create(i64* %t2, %union.pthread_attr_t* null, i8* (i8*)* @closer, i8* null) #3
+Iterating over use-def of:   ret i32 0
+Visiting RetInst:   ret i32 0
+	Function Name: main
+saveAndGetID():
+	value:   ret i32 0
+	value not found in map
+saveAndGetID():
+	value: i32 0
+createAssign():
+	preConvert from: 0CONST_INT
+saveAndGetID():
+	value:   ret i32 0
+createAssign():
+	preConvert from: 207
+Instruction:   ret i32 0
+ValToStrDB: Visiting Global: @pmdr_port = common global i8 0, align 1
+ValToStrDB: Visiting Global: @open_sem = common global i32 0, align 4
+Dumping instruction to module
+	  %unused.addr = alloca i8*, align 8
+Dumping instruction to module
+	  store i8* %unused, i8** %unused.addr, align 8
+Dumping instruction to module
+	  ret i8* null
+Dumping argument to module
+	i8* %unused
+Dumping instruction to module
+	  %unused.addr = alloca i8*, align 8
+Dumping instruction to module
+	  store i8* %unused, i8** %unused.addr, align 8
+Dumping instruction to module
+	  ret i8* null
+Dumping argument to module
+	i8* %unused
+Dumping instruction to module
+	  %unused.addr = alloca i8*, align 8
+Dumping instruction to module
+	  store i8* %unused, i8** %unused.addr, align 8
+Dumping instruction to module
+	  ret i8* null
+Dumping argument to module
+	i8* %unused
+Dumping instruction to module
+	  %unused.addr = alloca i8*, align 8
+Dumping instruction to module
+	  store i8* %unused, i8** %unused.addr, align 8
+Dumping instruction to module
+	  ret i8* null
+Dumping argument to module
+	i8* %unused
+Dumping instruction to module
+	  %unused.addr = alloca i8*, align 8
+Dumping instruction to module
+	  store i8* %unused, i8** %unused.addr, align 8
+Dumping instruction to module
+	  ret i8* null
+Dumping instruction to module
+	  %unused.addr = alloca i8*, align 8
+Dumping instruction to module
+	  store i8* %unused, i8** %unused.addr, align 8
+Dumping instruction to module
+	  ret i8* null
+Dumping argument to module
+	i8* %unused
+Dumping instruction to module
+	  %unused.addr = alloca i8*, align 8
+Dumping instruction to module
+	  store i8* %unused, i8** %unused.addr, align 8
+Dumping argument to module
+	i8* %unused
+Dumping argument to module
+	i8* %unused
+Dumping instruction to module
+	  %unused.addr = alloca i8*, align 8
+Dumping instruction to module
+	  store i8* %unused, i8** %unused.addr, align 8
+Dumping instruction to module
+	  ret i8* null
+Dumping instruction to module
+	  %unused.addr = alloca i8*, align 8
+Dumping instruction to module
+	  ret i8* null
+Dumping argument to module
+	i8* %unused
+Dumping instruction to module
+	  %unused.addr = alloca i8*, align 8
+Dumping instruction to module
+	  store i8* %unused, i8** %unused.addr, align 8
+Dumping instruction to module
+	  ret i8* null
+Dumping argument to module
+	i8* %unused
+Dumping instruction to module
+	  %unused.addr = alloca i8*, align 8
+Dumping instruction to module
+	  store i8* %unused, i8** %unused.addr, align 8
+Dumping instruction to module
+	  ret i8* null
+Dumping argument to module
+	i8* %unused
+Dumping instruction to module
+	  %unused.addr = alloca i8*, align 8
+Dumping instruction to module
+	  store i8* %unused, i8** %unused.addr, align 8
+Dumping instruction to module
+	  ret i8* null
+Dumping argument to module
+	i8* %unused
+Dumping instruction to module
+	  %unused.addr = alloca i8*, align 8
+Dumping instruction to module
+	  store i8* %unused, i8** %unused.addr, align 8
+Dumping instruction to module
+	  ret i8* null
+Dumping argument to module
+	i8* %unused
+Dumping instruction to module
+	  %unused.addr = alloca i8*, align 8
+Dumping instruction to module
+	  store i8* %unused, i8** %unused.addr, align 8
+Dumping instruction to module
+	  ret i8* null
+Dumping argument to module
+	i8* %unused
+Dumping instruction to module
+	  %unused.addr = alloca i8*, align 8
+Dumping instruction to module
+	  store i8* %unused, i8** %unused.addr, align 8
+Dumping instruction to module
+	  ret i8* null
+Dumping argument to module
+	i8* %unused
+Dumping instruction to module
+	  %unused.addr = alloca i8*, align 8
+Dumping instruction to module
+	  store i8* %unused, i8** %unused.addr, align 8
+Dumping instruction to module
+	  ret i8* null
+Dumping argument to module
+	i8* %unused
+Dumping instruction to module
+	  %unused.addr = alloca i8*, align 8
+Dumping instruction to module
+	  store i8* %unused, i8** %unused.addr, align 8
+Dumping instruction to module
+	  ret i8* null
+Dumping argument to module
+	i8* %unused
+Dumping instruction to module
+	  store i8* %unused, i8** %unused.addr, align 8
+Dumping instruction to module
+	  ret i8* null
+Dumping argument to module
+	i8* %unused
+Dumping instruction to module
+	  %unused.addr = alloca i8*, align 8
+Dumping instruction to module
+	  store i8* %unused, i8** %unused.addr, align 8
+Dumping instruction to module
+	  ret i8* null
+Dumping argument to module
+	i8* %unused
+Dumping instruction to module
+	  %unused.addr = alloca i8*, align 8
+Dumping instruction to module
+	  store i8* %unused, i8** %unused.addr, align 8
+Dumping instruction to module
+	  ret i8* null
+Dumping argument to module
+	i8* %unused
+Dumping instruction to module
+	  %unused.addr = alloca i8*, align 8
+Dumping instruction to module
+	  store i8* %unused, i8** %unused.addr, align 8
+Dumping instruction to module
+	  ret i8* null
+Dumping argument to module
+	i8* %unused
+ValToStrDB: Visiting Global: @nowayout = global i32 0, align 4
+ValToStrDB: Visiting Global: @fops_write_buf = common global i8 0, align 1
+ValToStrDB: Visiting Global: @expect_close = common global i8 0, align 1
+ValToStrDB: Visiting Global: @sc1200wdt_lock = common global i8 0, align 1
+ValToStrDB: Visiting Global: @pmir_port = common global i8 0, align 1
+Dumping argument to module
+	i8* %unused
+Dumping instruction to module
+	  %unused.addr = alloca i8*, align 8
+Dumping instruction to module
+	  store i8* %unused, i8** %unused.addr, align 8
+Dumping instruction to module
+	  ret i8* null
+Dumping argument to module
+	i8* %unused
+Dumping instruction to module
+	  %unused.addr = alloca i8*, align 8
+Dumping instruction to module
+	  store i8* %unused, i8** %unused.addr, align 8
+Dumping instruction to module
+	  ret i8* null
+Dumping argument to module
+	i8* %unused
+Dumping instruction to module
+	  %2 = load i8* @expect_close, align 1
+Dumping instruction to module
+	  %unused.addr = alloca i8*, align 8
+Dumping instruction to module
+	  store i8* %unused, i8** %unused.addr, align 8
+Dumping instruction to module
+	  store i8 86, i8* @fops_write_buf, align 1
+Dumping instruction to module
+	  %0 = load i32* @nowayout, align 4
+Dumping instruction to module
+	  %tobool = icmp ne i32 %0, 0
+Dumping instruction to module
+	  br i1 %tobool, label %if.end3, label %if.then
+Dumping instruction to module
+	  store i8 0, i8* @expect_close, align 1
+Dumping instruction to module
+	  %1 = load i8* @fops_write_buf, align 1
+Dumping instruction to module
+	  %conv = sext i8 %1 to i32
+Dumping instruction to module
+	  %cmp = icmp eq i32 %conv, 86
+Dumping instruction to module
+	  br i1 %cmp, label %if.then2, label %if.end
+Dumping instruction to module
+	  store i8 42, i8* @expect_close, align 1
+Dumping instruction to module
+	  br label %if.end
+Dumping instruction to module
+	  br label %if.end3
+Dumping instruction to module
+	  br label %do.end13
+Dumping instruction to module
+	  br label %do.body14
+Dumping instruction to module
+	  %conv5 = sext i8 %2 to i32
+Dumping instruction to module
+	  %cmp6 = icmp eq i32 %conv5, 42
+Dumping instruction to module
+	  br i1 %cmp6, label %if.then8, label %if.else
+Dumping instruction to module
+	  br label %do.body9
+Dumping instruction to module
+	  br label %do.body10
+Dumping instruction to module
+	  br label %do.body11
+Dumping instruction to module
+	  br label %while.cond
+Dumping instruction to module
+	  %3 = load i8* @sc1200wdt_lock, align 1
+Dumping instruction to module
+	  %tobool12 = trunc i8 %3 to i1
+Dumping instruction to module
+	  br i1 %tobool12, label %while.body, label %while.end
+Dumping instruction to module
+	  br label %while.cond
+Dumping instruction to module
+	  store i8 5, i8* @pmir_port, align 1
+Dumping instruction to module
+	  br label %do.end15
+Dumping instruction to module
+	  br label %do.body16
+Dumping instruction to module
+	  store i8 0, i8* @pmdr_port, align 1
+Dumping instruction to module
+	  br label %do.end17
+Dumping instruction to module
+	  br label %do.body18
+Dumping instruction to module
+	  store i8 0, i8* @sc1200wdt_lock, align 1
+Dumping instruction to module
+	  br label %do.end19
+Dumping instruction to module
+	  br label %do.end20
+Dumping instruction to module
+	  br label %do.end21
+Dumping instruction to module
+	  br label %if.end22
+Dumping instruction to module
+	  call void @__assert_fail(i8* getelementptr inbounds ([2 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8]* @.str1, i32 0, i32 0), i32 682, i8* getelementptr inbounds ([21 x i8]* @__PRETTY_FUNCTION__.closer, i32 0, i32 0)) #3
+Dumping instruction to module
+	  unreachable
+Dumping instruction to module
+	  br label %do.body23
+Dumping instruction to module
+	  %4 = load i32* @open_sem, align 4
+Dumping instruction to module
+	  %add = add nsw i32 %4, 1
+Dumping instruction to module
+	  store i32 %add, i32* @open_sem, align 4
+Dumping instruction to module
+	  br label %do.end24
+Dumping instruction to module
+	  store i8 0, i8* @expect_close, align 1
+Dumping instruction to module
+	  br label %do.end25
+Dumping instruction to module
+	  ret i8* null
+Dumping argument to module
+	i32 %argc
+Dumping argument to module
+	i8** %argv
+Dumping instruction to module
+	  %retval = alloca i32, align 4
+Dumping instruction to module
+	  %argc.addr = alloca i32, align 4
+Dumping instruction to module
+	  %argv.addr = alloca i8**, align 8
+Dumping instruction to module
+	  %t1 = alloca i64, align 8
+Dumping instruction to module
+	  %t2 = alloca i64, align 8
+Dumping instruction to module
+	  store i32 0, i32* %retval
+Dumping instruction to module
+	  store i32 %argc, i32* %argc.addr, align 4
+Dumping instruction to module
+	  store i8** %argv, i8*** %argv.addr, align 8
+Dumping instruction to module
+	  store i8 0, i8* @expect_close, align 1
+Dumping instruction to module
+	  store i32 0, i32* @open_sem, align 4
+Dumping instruction to module
+	  %call = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer1, i8* null) #3
+Dumping instruction to module
+	  %call1 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer2, i8* null) #3
+Dumping instruction to module
+	  %call2 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer3, i8* null) #3
+Dumping instruction to module
+	  %call3 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer4, i8* null) #3
+Dumping instruction to module
+	  %call4 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer5, i8* null) #3
+Dumping instruction to module
+	  %call17 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer18, i8* null) #3
+Dumping instruction to module
+	  %call5 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer6, i8* null) #3
+Dumping instruction to module
+	  %call6 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer7, i8* null) #3
+Dumping instruction to module
+	  %call7 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer8, i8* null) #3
+Dumping instruction to module
+	  %call8 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer9, i8* null) #3
+Dumping instruction to module
+	  %call9 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer10, i8* null) #3
+Dumping instruction to module
+	  %call10 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer11, i8* null) #3
+Dumping instruction to module
+	  %call11 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer12, i8* null) #3
+Dumping instruction to module
+	  %call12 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer13, i8* null) #3
+Dumping instruction to module
+	  %call13 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer14, i8* null) #3
+Dumping instruction to module
+	  %call14 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer15, i8* null) #3
+Dumping instruction to module
+	  %call15 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer16, i8* null) #3
+Dumping instruction to module
+	  %call16 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer17, i8* null) #3
+Dumping instruction to module
+	  %call18 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer19, i8* null) #3
+Dumping instruction to module
+	  %call19 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer20, i8* null) #3
+Dumping instruction to module
+	  %call20 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer21, i8* null) #3
+Dumping instruction to module
+	  %call21 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer22, i8* null) #3
+Dumping instruction to module
+	  %call22 = call i32 @pthread_create(i64* %t2, %union.pthread_attr_t* null, i8* (i8*)* @closer, i8* null) #3
+Dumping instruction to module
+	  ret i32 0
+Dumping argument to module
+	i64* %0
+Dumping argument to module
+	%union.pthread_attr_t* %1
+Dumping argument to module
+	i8* (i8*)* %2
+Dumping argument to module
+	i8* %3
+Found instruction with metadata: #x00000000
+Found instruction with metadata: #x00000003
+Found instruction with metadata: #x00000005
+Found instruction with metadata: #x00000008
+Found instruction with metadata: #x0000000b
+Found instruction with metadata: #x0000000d
+Found instruction with metadata: #x0000000f
+Found instruction with metadata: #x00000012
+Found instruction with metadata: #x00000014
+Found instruction with metadata: #x00000016
+Found instruction with metadata: #x00000019
+Found instruction with metadata: #x0000001b
+Found instruction with metadata: #x0000001d
+Found instruction with metadata: #x00000020
+Found instruction with metadata: #x00000022
+Found instruction with metadata: #x00000024
+Found instruction with metadata: #x00000027
+Found instruction with metadata: #x00000029
+Found instruction with metadata: #x0000002b
+Found instruction with metadata: #x0000002e
+Found instruction with metadata: #x00000030
+Found instruction with metadata: #x00000032
+Found instruction with metadata: #x00000035
+Found instruction with metadata: #x00000037
+Found instruction with metadata: #x00000039
+Found instruction with metadata: #x0000003c
+Found instruction with metadata: #x0000003e
+Found instruction with metadata: #x00000040
+Found instruction with metadata: #x00000043
+Found instruction with metadata: #x00000045
+Found instruction with metadata: #x00000047
+Found instruction with metadata: #x0000004a
+Found instruction with metadata: #x0000004c
+Found instruction with metadata: #x0000004e
+Found instruction with metadata: #x00000051
+Found instruction with metadata: #x00000053
+Found instruction with metadata: #x00000055
+Found instruction with metadata: #x00000058
+Found instruction with metadata: #x0000005a
+Found instruction with metadata: #x0000005c
+Found instruction with metadata: #x0000005f
+Found instruction with metadata: #x00000061
+Found instruction with metadata: #x00000063
+Found instruction with metadata: #x00000066
+Found instruction with metadata: #x00000068
+Found instruction with metadata: #x0000006a
+Found instruction with metadata: #x0000006d
+Found instruction with metadata: #x0000006f
+Found instruction with metadata: #x00000071
+Found instruction with metadata: #x00000074
+Found instruction with metadata: #x00000076
+Found instruction with metadata: #x00000078
+Found instruction with metadata: #x0000007b
+Found instruction with metadata: #x0000007d
+Found instruction with metadata: #x0000007f
+Found instruction with metadata: #x00000082
+Found instruction with metadata: #x00000084
+Found instruction with metadata: #x00000086
+Found instruction with metadata: #x00000089
+Found instruction with metadata: #x0000008b
+Found instruction with metadata: #x0000008d
+Found instruction with metadata: #x00000090
+Found instruction with metadata: #x00000092
+Found instruction with metadata: #x00000094
+Found instruction with metadata: #x00000097
+Found instruction with metadata: #x00000099
+Found instruction with metadata: #x0000009b
+Found instruction with metadata: #x0000009e
+Found instruction with metadata: #x000000a1
+Found instruction with metadata: #x000000a4
+Found instruction with metadata: #x000000a7
+Found instruction with metadata: #x000000a9
+Found instruction with metadata: #x000000aa
+Found instruction with metadata: #x000000ad
+Found instruction with metadata: #x000000ae
+Found instruction with metadata: #x000000af
+Found instruction with metadata: #x000000b0
+Found instruction with metadata: #x000000b1
+Found instruction with metadata: #x000000b3
+Found instruction with metadata: #x000000b4
+Found instruction with metadata: #x000000b5
+Found instruction with metadata: #x000000b6
+Found instruction with metadata: #x000000b7
+Found instruction with metadata: #x000000b8
+Found instruction with metadata: #x000000b9
+Found instruction with metadata: #x000000ba
+Found instruction with metadata: #x000000bb
+Found instruction with metadata: #x000000bc
+Found instruction with metadata: #x000000bd
+Found instruction with metadata: #x000000c0
+Found instruction with metadata: #x000000c1
+Found instruction with metadata: #x000000c2
+Found instruction with metadata: #x000000c3
+Found instruction with metadata: #x000000c4
+Found instruction with metadata: #x000000c5
+Found instruction with metadata: #x000000c9
+Found instruction with metadata: #x000000ca
+Found instruction with metadata: #x000000cb
+Found instruction with metadata: #x000000ce
+Found instruction with metadata: #x000000cf
+Found instruction with metadata: #x000000d0
+Found instruction with metadata: #x000000d1
+Found instruction with metadata: #x000000d2
+Found instruction with metadata: #x000000d3
+Found instruction with metadata: #x000000d4
+Found instruction with metadata: #x000000d5
+Found instruction with metadata: #x000000d6
+Found instruction with metadata: #x000000d7
+Found instruction with metadata: #x000000d8
+Found instruction with metadata: #x000000db
+Found instruction with metadata: #x000000dd
+Found instruction with metadata: #x000000de
+Found instruction with metadata: #x000000df
+Found instruction with metadata: #x000000e0
+Found instruction with metadata: #x000000e1
+Found instruction with metadata: #x000000e3
+Found instruction with metadata: #x000000e5
+Found instruction with metadata: #x000000e7
+Found instruction with metadata: #x000000e9
+Found instruction with metadata: #x000000eb
+Found instruction with metadata: #x000000ed
+Found instruction with metadata: #x000000f0
+Found instruction with metadata: #x000000f3
+Found instruction with metadata: #x000000f5
+Found instruction with metadata: #x000000f6
+Found instruction with metadata: #x000000f7
+Found instruction with metadata: #x000000fe
+Found instruction with metadata: #x00000100
+Found instruction with metadata: #x00000102
+Found instruction with metadata: #x00000104
+Found instruction with metadata: #x00000106
+Found instruction with metadata: #x00000108
+Found instruction with metadata: #x0000010a
+Found instruction with metadata: #x0000010c
+Found instruction with metadata: #x0000010e
+Found instruction with metadata: #x00000110
+Found instruction with metadata: #x00000112
+Found instruction with metadata: #x00000114
+Found instruction with metadata: #x00000116
+Found instruction with metadata: #x00000118
+Found instruction with metadata: #x0000011a
+Found instruction with metadata: #x0000011c
+Found instruction with metadata: #x0000011e
+Found instruction with metadata: #x00000120
+Found instruction with metadata: #x00000122
+Found instruction with metadata: #x00000124
+Found instruction with metadata: #x00000126
+Found instruction with metadata: #x00000128
+Found instruction with metadata: #x0000012a
+Found Function argument metadata
+	ID: #x0000002d
+Found Function argument metadata
+	ID: #x00000034
+Found Function argument metadata
+	ID: #x0000003b
+Found Function argument metadata
+	ID: #x00000042
+Found Function argument metadata
+	ID: #x00000050
+Found Function argument metadata
+	ID: #x00000049
+Found Function argument metadata
+	ID: #x00000002
+Found Function argument metadata
+	ID: #x00000057
+Found Function argument metadata
+	ID: #x0000005e
+Found Function argument metadata
+	ID: #x00000065
+Found Function argument metadata
+	ID: #x0000006c
+Found Function argument metadata
+	ID: #x00000073
+Found Function argument metadata
+	ID: #x0000007a
+Found Function argument metadata
+	ID: #x00000081
+Found Function argument metadata
+	ID: #x00000088
+Found Function argument metadata
+	ID: #x0000000a
+Found Function argument metadata
+	ID: #x00000011
+Found Function argument metadata
+	ID: #x00000018
+Found Function argument metadata
+	ID: #x0000001f
+Found Function argument metadata
+	ID: #x00000026
+Found Function argument metadata
+	ID: #x0000008f
+Found Function argument metadata
+	ID: #x00000096
+Found Function argument metadata
+	ID: #x0000009d
+Found Function argument metadata
+	ID: #x000000ef
+Found Function argument metadata
+	ID: #x000000f2
+Found Function argument metadata
+	ID: #x000000f9
+Found Function argument metadata
+	ID: #x000000fa
+Found Function argument metadata
+	ID: #x000000fb
+Found Function argument metadata
+	ID: #x000000fd
+Parsed ID Map: Size: 208
+saveAndGetID():
+	value: @pmdr_port = common global i8 0, align 1
+saveAndGetID():
+	value: @open_sem = common global i32 0, align 4
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer1(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer7(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer8(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer9(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer10(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer11(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer12(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer13(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer14(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer15(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer16(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer17(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer18(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer19(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer20(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer2(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer3(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer4(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer5(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer6(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value: @nowayout = global i32 0, align 4
+saveAndGetID():
+	value: @fops_write_buf = common global i8 0, align 1
+saveAndGetID():
+	value: @expect_close = common global i8 0, align 1
+saveAndGetID():
+	value: @sc1200wdt_lock = common global i8 0, align 1
+saveAndGetID():
+	value: @pmir_port = common global i8 0, align 1
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer21(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer22(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @closer(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  store i8 86, i8* @fops_write_buf, align 1, !CIAA_INFO !6
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  %0 = load i32* @nowayout, align 4, !CIAA_INFO !7
+  %tobool = icmp ne i32 %0, 0, !CIAA_INFO !8
+  br i1 %tobool, label %if.end3, label %if.then, !CIAA_INFO !9
+
+if.then:                                          ; preds = %do.body
+  store i8 0, i8* @expect_close, align 1, !CIAA_INFO !10
+  %1 = load i8* @fops_write_buf, align 1, !CIAA_INFO !11
+  %conv = sext i8 %1 to i32, !CIAA_INFO !12
+  %cmp = icmp eq i32 %conv, 86, !CIAA_INFO !13
+  br i1 %cmp, label %if.then2, label %if.end, !CIAA_INFO !14
+
+if.then2:                                         ; preds = %if.then
+  store i8 42, i8* @expect_close, align 1, !CIAA_INFO !15
+  br label %if.end, !CIAA_INFO !16
+
+if.end:                                           ; preds = %if.then2, %if.then
+  br label %if.end3, !CIAA_INFO !17
+
+if.end3:                                          ; preds = %if.end, %do.body
+  br label %do.end
+
+do.end:                                           ; preds = %if.end3
+  br label %do.body4
+
+do.body4:                                         ; preds = %do.end
+  %2 = load i8* @expect_close, align 1, !CIAA_INFO !18
+  %conv5 = sext i8 %2 to i32, !CIAA_INFO !19
+  %cmp6 = icmp eq i32 %conv5, 42, !CIAA_INFO !20
+  br i1 %cmp6, label %if.then8, label %if.else, !CIAA_INFO !21
+
+if.then8:                                         ; preds = %do.body4
+  br label %do.body9, !CIAA_INFO !22
+
+do.body9:                                         ; preds = %if.then8
+  br label %do.body10, !CIAA_INFO !23
+
+do.body10:                                        ; preds = %do.body9
+  br label %do.body11, !CIAA_INFO !24
+
+do.body11:                                        ; preds = %do.body10
+  br label %while.cond, !CIAA_INFO !25
+
+while.cond:                                       ; preds = %while.body, %do.body11
+  %3 = load i8* @sc1200wdt_lock, align 1, !CIAA_INFO !26
+  %tobool12 = trunc i8 %3 to i1, !CIAA_INFO !27
+  br i1 %tobool12, label %while.body, label %while.end, !CIAA_INFO !28
+
+while.body:                                       ; preds = %while.cond
+  br label %while.cond, !CIAA_INFO !29
+
+while.end:                                        ; preds = %while.cond
+  br label %do.end13, !CIAA_INFO !30
+
+do.end13:                                         ; preds = %while.end
+  br label %do.body14, !CIAA_INFO !31
+
+do.body14:                                        ; preds = %do.end13
+  store i8 5, i8* @pmir_port, align 1, !CIAA_INFO !32
+  br label %do.end15, !CIAA_INFO !33
+
+do.end15:                                         ; preds = %do.body14
+  br label %do.body16, !CIAA_INFO !34
+
+do.body16:                                        ; preds = %do.end15
+  store i8 0, i8* @pmdr_port, align 1, !CIAA_INFO !35
+  br label %do.end17, !CIAA_INFO !36
+
+do.end17:                                         ; preds = %do.body16
+  br label %do.body18, !CIAA_INFO !37
+
+do.body18:                                        ; preds = %do.end17
+  store i8 0, i8* @sc1200wdt_lock, align 1, !CIAA_INFO !38
+  br label %do.end19, !CIAA_INFO !39
+
+do.end19:                                         ; preds = %do.body18
+  br label %do.end20, !CIAA_INFO !40
+
+do.end20:                                         ; preds = %do.end19
+  br label %do.end21, !CIAA_INFO !41
+
+do.end21:                                         ; preds = %do.end20
+  br label %if.end22, !CIAA_INFO !42
+
+if.else:                                          ; preds = %do.body4
+  call void @__assert_fail(i8* getelementptr inbounds ([2 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8]* @.str1, i32 0, i32 0), i32 682, i8* getelementptr inbounds ([21 x i8]* @__PRETTY_FUNCTION__.closer, i32 0, i32 0)) #3, !CIAA_INFO !43
+  unreachable, !CIAA_INFO !44
+
+if.end22:                                         ; preds = %do.end21
+  br label %do.body23, !CIAA_INFO !45
+
+do.body23:                                        ; preds = %if.end22
+  %4 = load i32* @open_sem, align 4, !CIAA_INFO !46
+  %add = add nsw i32 %4, 1, !CIAA_INFO !47
+  store i32 %add, i32* @open_sem, align 4, !CIAA_INFO !48
+  br label %do.end24, !CIAA_INFO !49
+
+do.end24:                                         ; preds = %do.body23
+  store i8 0, i8* @expect_close, align 1, !CIAA_INFO !50
+  br label %do.end25, !CIAA_INFO !51
+
+do.end25:                                         ; preds = %do.end24
+  ret i8* null, !CIAA_INFO !52
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %2 = load i8* @expect_close, align 1, !CIAA_INFO !18
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   store i8 86, i8* @fops_write_buf, align 1, !CIAA_INFO !6
+saveAndGetID():
+	value:   %0 = load i32* @nowayout, align 4, !CIAA_INFO !7
+saveAndGetID():
+	value:   %tobool = icmp ne i32 %0, 0, !CIAA_INFO !8
+saveAndGetID():
+	value:   br i1 %tobool, label %if.end3, label %if.then, !CIAA_INFO !9
+saveAndGetID():
+	value:   store i8 0, i8* @expect_close, align 1, !CIAA_INFO !10
+saveAndGetID():
+	value:   %1 = load i8* @fops_write_buf, align 1, !CIAA_INFO !11
+saveAndGetID():
+	value:   %conv = sext i8 %1 to i32, !CIAA_INFO !12
+saveAndGetID():
+	value:   %cmp = icmp eq i32 %conv, 86, !CIAA_INFO !13
+saveAndGetID():
+	value:   br i1 %cmp, label %if.then2, label %if.end, !CIAA_INFO !14
+saveAndGetID():
+	value:   store i8 42, i8* @expect_close, align 1, !CIAA_INFO !15
+saveAndGetID():
+	value:   br label %if.end, !CIAA_INFO !16
+saveAndGetID():
+	value:   br label %if.end3, !CIAA_INFO !17
+saveAndGetID():
+	value:   br label %do.end13, !CIAA_INFO !30
+saveAndGetID():
+	value:   br label %do.body14, !CIAA_INFO !31
+saveAndGetID():
+	value:   %conv5 = sext i8 %2 to i32, !CIAA_INFO !19
+saveAndGetID():
+	value:   %cmp6 = icmp eq i32 %conv5, 42, !CIAA_INFO !20
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else, !CIAA_INFO !21
+saveAndGetID():
+	value:   br label %do.body9, !CIAA_INFO !22
+saveAndGetID():
+	value:   br label %do.body10, !CIAA_INFO !23
+saveAndGetID():
+	value:   br label %do.body11, !CIAA_INFO !24
+saveAndGetID():
+	value:   br label %while.cond, !CIAA_INFO !25
+saveAndGetID():
+	value:   %3 = load i8* @sc1200wdt_lock, align 1, !CIAA_INFO !26
+saveAndGetID():
+	value:   %tobool12 = trunc i8 %3 to i1, !CIAA_INFO !27
+saveAndGetID():
+	value:   br i1 %tobool12, label %while.body, label %while.end, !CIAA_INFO !28
+saveAndGetID():
+	value:   br label %while.cond, !CIAA_INFO !29
+saveAndGetID():
+	value:   store i8 5, i8* @pmir_port, align 1, !CIAA_INFO !32
+saveAndGetID():
+	value:   br label %do.end15, !CIAA_INFO !33
+saveAndGetID():
+	value:   br label %do.body16, !CIAA_INFO !34
+saveAndGetID():
+	value:   store i8 0, i8* @pmdr_port, align 1, !CIAA_INFO !35
+saveAndGetID():
+	value:   br label %do.end17, !CIAA_INFO !36
+saveAndGetID():
+	value:   br label %do.body18, !CIAA_INFO !37
+saveAndGetID():
+	value:   store i8 0, i8* @sc1200wdt_lock, align 1, !CIAA_INFO !38
+saveAndGetID():
+	value:   br label %do.end19, !CIAA_INFO !39
+saveAndGetID():
+	value:   br label %do.end20, !CIAA_INFO !40
+saveAndGetID():
+	value:   br label %do.end21, !CIAA_INFO !41
+saveAndGetID():
+	value:   br label %if.end22, !CIAA_INFO !42
+saveAndGetID():
+	value:   call void @__assert_fail(i8* getelementptr inbounds ([2 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8]* @.str1, i32 0, i32 0), i32 682, i8* getelementptr inbounds ([21 x i8]* @__PRETTY_FUNCTION__.closer, i32 0, i32 0)) #3, !CIAA_INFO !43
+saveAndGetID():
+	value:   unreachable, !CIAA_INFO !44
+saveAndGetID():
+	value:   br label %do.body23, !CIAA_INFO !45
+saveAndGetID():
+	value:   %4 = load i32* @open_sem, align 4, !CIAA_INFO !46
+saveAndGetID():
+	value:   %add = add nsw i32 %4, 1, !CIAA_INFO !47
+saveAndGetID():
+	value:   store i32 %add, i32* @open_sem, align 4, !CIAA_INFO !48
+saveAndGetID():
+	value:   br label %do.end24, !CIAA_INFO !49
+saveAndGetID():
+	value:   store i8 0, i8* @expect_close, align 1, !CIAA_INFO !50
+saveAndGetID():
+	value:   br label %do.end25, !CIAA_INFO !51
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !52
+saveAndGetID():
+	value: i32 %argc
+saveAndGetID():
+	value: i8** %argv
+saveAndGetID():
+	value:   %retval = alloca i32, align 4, !CIAA_INFO !4
+saveAndGetID():
+	value:   %argc.addr = alloca i32, align 4, !CIAA_INFO !5
+saveAndGetID():
+	value:   %argv.addr = alloca i8**, align 8, !CIAA_INFO !6
+saveAndGetID():
+	value:   %t1 = alloca i64, align 8, !CIAA_INFO !7
+saveAndGetID():
+	value:   %t2 = alloca i64, align 8, !CIAA_INFO !8
+saveAndGetID():
+	value:   store i32 0, i32* %retval, !CIAA_INFO !9
+saveAndGetID():
+	value:   store i32 %argc, i32* %argc.addr, align 4, !CIAA_INFO !10
+saveAndGetID():
+	value:   store i8** %argv, i8*** %argv.addr, align 8, !CIAA_INFO !11
+saveAndGetID():
+	value:   store i8 0, i8* @expect_close, align 1, !CIAA_INFO !12
+saveAndGetID():
+	value:   store i32 0, i32* @open_sem, align 4, !CIAA_INFO !13
+saveAndGetID():
+	value:   %call = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer1, i8* null) #3, !CIAA_INFO !14
+saveAndGetID():
+	value:   %call1 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer2, i8* null) #3, !CIAA_INFO !15
+saveAndGetID():
+	value:   %call2 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer3, i8* null) #3, !CIAA_INFO !16
+saveAndGetID():
+	value:   %call3 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer4, i8* null) #3, !CIAA_INFO !17
+saveAndGetID():
+	value:   %call4 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer5, i8* null) #3, !CIAA_INFO !18
+saveAndGetID():
+	value:   %call17 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer18, i8* null) #3, !CIAA_INFO !31
+saveAndGetID():
+	value:   %call5 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer6, i8* null) #3, !CIAA_INFO !19
+saveAndGetID():
+	value:   %call6 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer7, i8* null) #3, !CIAA_INFO !20
+saveAndGetID():
+	value:   %call7 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer8, i8* null) #3, !CIAA_INFO !21
+saveAndGetID():
+	value:   %call8 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer9, i8* null) #3, !CIAA_INFO !22
+saveAndGetID():
+	value:   %call9 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer10, i8* null) #3, !CIAA_INFO !23
+saveAndGetID():
+	value:   %call10 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer11, i8* null) #3, !CIAA_INFO !24
+saveAndGetID():
+	value:   %call11 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer12, i8* null) #3, !CIAA_INFO !25
+saveAndGetID():
+	value:   %call12 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer13, i8* null) #3, !CIAA_INFO !26
+saveAndGetID():
+	value:   %call13 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer14, i8* null) #3, !CIAA_INFO !27
+saveAndGetID():
+	value:   %call14 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer15, i8* null) #3, !CIAA_INFO !28
+saveAndGetID():
+	value:   %call15 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer16, i8* null) #3, !CIAA_INFO !29
+saveAndGetID():
+	value:   %call16 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer17, i8* null) #3, !CIAA_INFO !30
+saveAndGetID():
+	value:   %call18 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer19, i8* null) #3, !CIAA_INFO !32
+saveAndGetID():
+	value:   %call19 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer20, i8* null) #3, !CIAA_INFO !33
+saveAndGetID():
+	value:   %call20 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer21, i8* null) #3, !CIAA_INFO !34
+saveAndGetID():
+	value:   %call21 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer22, i8* null) #3, !CIAA_INFO !35
+saveAndGetID():
+	value:   %call22 = call i32 @pthread_create(i64* %t2, %union.pthread_attr_t* null, i8* (i8*)* @closer, i8* null) #3, !CIAA_INFO !36
+saveAndGetID():
+	value:   ret i32 0, !CIAA_INFO !37
+saveAndGetID():
+	value: i64* %0
+saveAndGetID():
+	value: %union.pthread_attr_t* %1
+saveAndGetID():
+	value: i8* (i8*)* %2
+saveAndGetID():
+	value: i8* %3
+saveAndGetID():
+	value: @pmdr_port = common global i8 0, align 1
+saveAndGetID():
+	value: @open_sem = common global i32 0, align 4
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer1(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer7(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer8(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer9(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer10(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer11(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer12(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer13(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer14(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer15(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer16(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer17(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer18(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer19(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer20(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer2(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer3(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer4(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer5(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer6(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value: @nowayout = global i32 0, align 4
+saveAndGetID():
+	value: @fops_write_buf = common global i8 0, align 1
+saveAndGetID():
+	value: @expect_close = common global i8 0, align 1
+saveAndGetID():
+	value: @sc1200wdt_lock = common global i8 0, align 1
+saveAndGetID():
+	value: @pmir_port = common global i8 0, align 1
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer21(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer22(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.end
+
+do.end:                                           ; preds = %do.body
+  ret i8* null, !CIAA_INFO !6
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !6
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @closer(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  store i8 86, i8* @fops_write_buf, align 1, !CIAA_INFO !6
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  %0 = load i32* @nowayout, align 4, !CIAA_INFO !7
+  %tobool = icmp ne i32 %0, 0, !CIAA_INFO !8
+  br i1 %tobool, label %if.end3, label %if.then, !CIAA_INFO !9
+
+if.then:                                          ; preds = %do.body
+  store i8 0, i8* @expect_close, align 1, !CIAA_INFO !10
+  %1 = load i8* @fops_write_buf, align 1, !CIAA_INFO !11
+  %conv = sext i8 %1 to i32, !CIAA_INFO !12
+  %cmp = icmp eq i32 %conv, 86, !CIAA_INFO !13
+  br i1 %cmp, label %if.then2, label %if.end, !CIAA_INFO !14
+
+if.then2:                                         ; preds = %if.then
+  store i8 42, i8* @expect_close, align 1, !CIAA_INFO !15
+  br label %if.end, !CIAA_INFO !16
+
+if.end:                                           ; preds = %if.then2, %if.then
+  br label %if.end3, !CIAA_INFO !17
+
+if.end3:                                          ; preds = %if.end, %do.body
+  br label %do.end
+
+do.end:                                           ; preds = %if.end3
+  br label %do.body4
+
+do.body4:                                         ; preds = %do.end
+  %2 = load i8* @expect_close, align 1, !CIAA_INFO !18
+  %conv5 = sext i8 %2 to i32, !CIAA_INFO !19
+  %cmp6 = icmp eq i32 %conv5, 42, !CIAA_INFO !20
+  br i1 %cmp6, label %if.then8, label %if.else, !CIAA_INFO !21
+
+if.then8:                                         ; preds = %do.body4
+  br label %do.body9, !CIAA_INFO !22
+
+do.body9:                                         ; preds = %if.then8
+  br label %do.body10, !CIAA_INFO !23
+
+do.body10:                                        ; preds = %do.body9
+  br label %do.body11, !CIAA_INFO !24
+
+do.body11:                                        ; preds = %do.body10
+  br label %while.cond, !CIAA_INFO !25
+
+while.cond:                                       ; preds = %while.body, %do.body11
+  %3 = load i8* @sc1200wdt_lock, align 1, !CIAA_INFO !26
+  %tobool12 = trunc i8 %3 to i1, !CIAA_INFO !27
+  br i1 %tobool12, label %while.body, label %while.end, !CIAA_INFO !28
+
+while.body:                                       ; preds = %while.cond
+  br label %while.cond, !CIAA_INFO !29
+
+while.end:                                        ; preds = %while.cond
+  br label %do.end13, !CIAA_INFO !30
+
+do.end13:                                         ; preds = %while.end
+  br label %do.body14, !CIAA_INFO !31
+
+do.body14:                                        ; preds = %do.end13
+  store i8 5, i8* @pmir_port, align 1, !CIAA_INFO !32
+  br label %do.end15, !CIAA_INFO !33
+
+do.end15:                                         ; preds = %do.body14
+  br label %do.body16, !CIAA_INFO !34
+
+do.body16:                                        ; preds = %do.end15
+  store i8 0, i8* @pmdr_port, align 1, !CIAA_INFO !35
+  br label %do.end17, !CIAA_INFO !36
+
+do.end17:                                         ; preds = %do.body16
+  br label %do.body18, !CIAA_INFO !37
+
+do.body18:                                        ; preds = %do.end17
+  store i8 0, i8* @sc1200wdt_lock, align 1, !CIAA_INFO !38
+  br label %do.end19, !CIAA_INFO !39
+
+do.end19:                                         ; preds = %do.body18
+  br label %do.end20, !CIAA_INFO !40
+
+do.end20:                                         ; preds = %do.end19
+  br label %do.end21, !CIAA_INFO !41
+
+do.end21:                                         ; preds = %do.end20
+  br label %if.end22, !CIAA_INFO !42
+
+if.else:                                          ; preds = %do.body4
+  call void @__assert_fail(i8* getelementptr inbounds ([2 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8]* @.str1, i32 0, i32 0), i32 682, i8* getelementptr inbounds ([21 x i8]* @__PRETTY_FUNCTION__.closer, i32 0, i32 0)) #3, !CIAA_INFO !43
+  unreachable, !CIAA_INFO !44
+
+if.end22:                                         ; preds = %do.end21
+  br label %do.body23, !CIAA_INFO !45
+
+do.body23:                                        ; preds = %if.end22
+  %4 = load i32* @open_sem, align 4, !CIAA_INFO !46
+  %add = add nsw i32 %4, 1, !CIAA_INFO !47
+  store i32 %add, i32* @open_sem, align 4, !CIAA_INFO !48
+  br label %do.end24, !CIAA_INFO !49
+
+do.end24:                                         ; preds = %do.body23
+  store i8 0, i8* @expect_close, align 1, !CIAA_INFO !50
+  br label %do.end25, !CIAA_INFO !51
+
+do.end25:                                         ; preds = %do.end24
+  ret i8* null, !CIAA_INFO !52
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %2 = load i8* @expect_close, align 1, !CIAA_INFO !18
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   store i8 86, i8* @fops_write_buf, align 1, !CIAA_INFO !6
+saveAndGetID():
+	value:   %0 = load i32* @nowayout, align 4, !CIAA_INFO !7
+saveAndGetID():
+	value:   %tobool = icmp ne i32 %0, 0, !CIAA_INFO !8
+saveAndGetID():
+	value:   br i1 %tobool, label %if.end3, label %if.then, !CIAA_INFO !9
+saveAndGetID():
+	value:   store i8 0, i8* @expect_close, align 1, !CIAA_INFO !10
+saveAndGetID():
+	value:   %1 = load i8* @fops_write_buf, align 1, !CIAA_INFO !11
+saveAndGetID():
+	value:   %conv = sext i8 %1 to i32, !CIAA_INFO !12
+saveAndGetID():
+	value:   %cmp = icmp eq i32 %conv, 86, !CIAA_INFO !13
+saveAndGetID():
+	value:   br i1 %cmp, label %if.then2, label %if.end, !CIAA_INFO !14
+saveAndGetID():
+	value:   store i8 42, i8* @expect_close, align 1, !CIAA_INFO !15
+saveAndGetID():
+	value:   br label %if.end, !CIAA_INFO !16
+saveAndGetID():
+	value:   br label %if.end3, !CIAA_INFO !17
+saveAndGetID():
+	value:   br label %do.end13, !CIAA_INFO !30
+saveAndGetID():
+	value:   br label %do.body14, !CIAA_INFO !31
+saveAndGetID():
+	value:   %conv5 = sext i8 %2 to i32, !CIAA_INFO !19
+saveAndGetID():
+	value:   %cmp6 = icmp eq i32 %conv5, 42, !CIAA_INFO !20
+saveAndGetID():
+	value:   br i1 %cmp6, label %if.then8, label %if.else, !CIAA_INFO !21
+saveAndGetID():
+	value:   br label %do.body9, !CIAA_INFO !22
+saveAndGetID():
+	value:   br label %do.body10, !CIAA_INFO !23
+saveAndGetID():
+	value:   br label %do.body11, !CIAA_INFO !24
+saveAndGetID():
+	value:   br label %while.cond, !CIAA_INFO !25
+saveAndGetID():
+	value:   %3 = load i8* @sc1200wdt_lock, align 1, !CIAA_INFO !26
+saveAndGetID():
+	value:   %tobool12 = trunc i8 %3 to i1, !CIAA_INFO !27
+saveAndGetID():
+	value:   br i1 %tobool12, label %while.body, label %while.end, !CIAA_INFO !28
+saveAndGetID():
+	value:   br label %while.cond, !CIAA_INFO !29
+saveAndGetID():
+	value:   store i8 5, i8* @pmir_port, align 1, !CIAA_INFO !32
+saveAndGetID():
+	value:   br label %do.end15, !CIAA_INFO !33
+saveAndGetID():
+	value:   br label %do.body16, !CIAA_INFO !34
+saveAndGetID():
+	value:   store i8 0, i8* @pmdr_port, align 1, !CIAA_INFO !35
+saveAndGetID():
+	value:   br label %do.end17, !CIAA_INFO !36
+saveAndGetID():
+	value:   br label %do.body18, !CIAA_INFO !37
+saveAndGetID():
+	value:   store i8 0, i8* @sc1200wdt_lock, align 1, !CIAA_INFO !38
+saveAndGetID():
+	value:   br label %do.end19, !CIAA_INFO !39
+saveAndGetID():
+	value:   br label %do.end20, !CIAA_INFO !40
+saveAndGetID():
+	value:   br label %do.end21, !CIAA_INFO !41
+saveAndGetID():
+	value:   br label %if.end22, !CIAA_INFO !42
+saveAndGetID():
+	value:   call void @__assert_fail(i8* getelementptr inbounds ([2 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8]* @.str1, i32 0, i32 0), i32 682, i8* getelementptr inbounds ([21 x i8]* @__PRETTY_FUNCTION__.closer, i32 0, i32 0)) #3, !CIAA_INFO !43
+saveAndGetID():
+	value:   unreachable, !CIAA_INFO !44
+saveAndGetID():
+	value:   br label %do.body23, !CIAA_INFO !45
+saveAndGetID():
+	value:   %4 = load i32* @open_sem, align 4, !CIAA_INFO !46
+saveAndGetID():
+	value:   %add = add nsw i32 %4, 1, !CIAA_INFO !47
+saveAndGetID():
+	value:   store i32 %add, i32* @open_sem, align 4, !CIAA_INFO !48
+saveAndGetID():
+	value:   br label %do.end24, !CIAA_INFO !49
+saveAndGetID():
+	value:   store i8 0, i8* @expect_close, align 1, !CIAA_INFO !50
+saveAndGetID():
+	value:   br label %do.end25, !CIAA_INFO !51
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !52
+saveAndGetID():
+	value: i32 %argc
+saveAndGetID():
+	value: i8** %argv
+saveAndGetID():
+	value:   %retval = alloca i32, align 4, !CIAA_INFO !4
+saveAndGetID():
+	value:   %argc.addr = alloca i32, align 4, !CIAA_INFO !5
+saveAndGetID():
+	value:   %argv.addr = alloca i8**, align 8, !CIAA_INFO !6
+saveAndGetID():
+	value:   %t1 = alloca i64, align 8, !CIAA_INFO !7
+saveAndGetID():
+	value:   %t2 = alloca i64, align 8, !CIAA_INFO !8
+saveAndGetID():
+	value:   store i32 0, i32* %retval, !CIAA_INFO !9
+saveAndGetID():
+	value:   store i32 %argc, i32* %argc.addr, align 4, !CIAA_INFO !10
+saveAndGetID():
+	value:   store i8** %argv, i8*** %argv.addr, align 8, !CIAA_INFO !11
+saveAndGetID():
+	value:   store i8 0, i8* @expect_close, align 1, !CIAA_INFO !12
+saveAndGetID():
+	value:   store i32 0, i32* @open_sem, align 4, !CIAA_INFO !13
+saveAndGetID():
+	value:   %call = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer1, i8* null) #3, !CIAA_INFO !14
+saveAndGetID():
+	value:   %call1 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer2, i8* null) #3, !CIAA_INFO !15
+saveAndGetID():
+	value:   %call2 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer3, i8* null) #3, !CIAA_INFO !16
+saveAndGetID():
+	value:   %call3 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer4, i8* null) #3, !CIAA_INFO !17
+saveAndGetID():
+	value:   %call4 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer5, i8* null) #3, !CIAA_INFO !18
+saveAndGetID():
+	value:   %call17 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer18, i8* null) #3, !CIAA_INFO !31
+saveAndGetID():
+	value:   %call5 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer6, i8* null) #3, !CIAA_INFO !19
+saveAndGetID():
+	value:   %call6 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer7, i8* null) #3, !CIAA_INFO !20
+saveAndGetID():
+	value:   %call7 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer8, i8* null) #3, !CIAA_INFO !21
+saveAndGetID():
+	value:   %call8 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer9, i8* null) #3, !CIAA_INFO !22
+saveAndGetID():
+	value:   %call9 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer10, i8* null) #3, !CIAA_INFO !23
+saveAndGetID():
+	value:   %call10 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer11, i8* null) #3, !CIAA_INFO !24
+saveAndGetID():
+	value:   %call11 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer12, i8* null) #3, !CIAA_INFO !25
+saveAndGetID():
+	value:   %call12 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer13, i8* null) #3, !CIAA_INFO !26
+saveAndGetID():
+	value:   %call13 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer14, i8* null) #3, !CIAA_INFO !27
+saveAndGetID():
+	value:   %call14 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer15, i8* null) #3, !CIAA_INFO !28
+saveAndGetID():
+	value:   %call15 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer16, i8* null) #3, !CIAA_INFO !29
+saveAndGetID():
+	value:   %call16 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer17, i8* null) #3, !CIAA_INFO !30
+saveAndGetID():
+	value:   %call18 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer19, i8* null) #3, !CIAA_INFO !32
+saveAndGetID():
+	value:   %call19 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer20, i8* null) #3, !CIAA_INFO !33
+saveAndGetID():
+	value:   %call20 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer21, i8* null) #3, !CIAA_INFO !34
+saveAndGetID():
+	value:   %call21 = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer22, i8* null) #3, !CIAA_INFO !35
+saveAndGetID():
+	value:   %call22 = call i32 @pthread_create(i64* %t2, %union.pthread_attr_t* null, i8* (i8*)* @closer, i8* null) #3, !CIAA_INFO !36
+saveAndGetID():
+	value:   ret i32 0, !CIAA_INFO !37
+saveAndGetID():
+	value: i64* %0
+saveAndGetID():
+	value: %union.pthread_attr_t* %1
+saveAndGetID():
+	value: i8* (i8*)* %2
+saveAndGetID():
+	value: i8* %3
+saveAndGetID():
+	value:   call void @__assert_fail(i8* getelementptr inbounds ([2 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8]* @.str1, i32 0, i32 0), i32 682, i8* getelementptr inbounds ([21 x i8]* @__PRETTY_FUNCTION__.closer, i32 0, i32 0)) #3, !CIAA_INFO !43
+Done
+  line: 000000b8
+[DEBUG] getValueOrNULL(unsigned)
+id: 184
+  line: 000000b7
+[DEBUG] getValueOrNULL(unsigned)
+id: 183
+  line: 000000b6
+[DEBUG] getValueOrNULL(unsigned)
+id: 182
+  line: 000000b2
+[DEBUG] getValueOrNULL(unsigned)
+id: 178
+	not found in RevStrIDToInt
+  line: 000000b5
+[DEBUG] getValueOrNULL(unsigned)
+id: 181
+  line: 000000ac
+[DEBUG] getValueOrNULL(unsigned)
+id: 172
+	not found in RevStrIDToInt
+  line: 000000ab
+[DEBUG] getValueOrNULL(unsigned)
+id: 171
+  line: 000000f5
+[DEBUG] getValueOrNULL(unsigned)
+id: 245
+  line: 000000df
+[DEBUG] getValueOrNULL(unsigned)
+id: 223
+  line: 000000b1
+[DEBUG] getValueOrNULL(unsigned)
+id: 177
+  line: 000000aa
+[DEBUG] getValueOrNULL(unsigned)
+id: 170
+  line: 000000a9
+[DEBUG] getValueOrNULL(unsigned)
+id: 169
+  line: 000000af
+[DEBUG] getValueOrNULL(unsigned)
+id: 175
+  line: 000000a7
+[DEBUG] getValueOrNULL(unsigned)
+id: 167
+  line: 000000a8
+[DEBUG] getValueOrNULL(unsigned)
+id: 168
+	not found in RevStrIDToInt
+  line: 000000b0
+[DEBUG] getValueOrNULL(unsigned)
+id: 176
+  line: 000000ae
+[DEBUG] getValueOrNULL(unsigned)
+id: 174
+  line: 000000a2
+[DEBUG] getValueOrNULL(unsigned)
+id: 162
+	not found in RevStrIDToInt
+  line: 000000a4
+[DEBUG] getValueOrNULL(unsigned)
+id: 164
+  line: 000000ad
+[DEBUG] getValueOrNULL(unsigned)
+id: 173
+  line: 000000a6
+[DEBUG] getValueOrNULL(unsigned)
+id: 166
+	not found in RevStrIDToInt
+  line: 000000a5
+[DEBUG] getValueOrNULL(unsigned)
+id: 165
+  line: 000000a3
+[DEBUG] getValueOrNULL(unsigned)
+id: 163
+	not found in RevStrIDToInt
+  line: 000000a0
+[DEBUG] getValueOrNULL(unsigned)
+id: 160
+  line: 000000a1
+[DEBUG] getValueOrNULL(unsigned)
+id: 161

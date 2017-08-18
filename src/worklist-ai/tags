@@ -1,0 +1,338 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AtEnd	cartesianprod.h	/^  bool AtEnd() {$/;"	f	class:CartesianProduct
+BBOps	bbops.h	/^namespace BBOps {$/;"	n
+CartesianProduct	cartesianprod.h	/^  CartesianProduct(std::vector<int> sizes_of_rows){$/;"	f	class:CartesianProduct
+CartesianProduct	cartesianprod.h	/^class CartesianProduct{$/;"	c
+HasNext	cartesianprod.h	/^  bool HasNext(){$/;"	f	class:CartesianProduct
+ID	worklistai.cpp	/^  static char ID;$/;"	m	struct:WorklistAI	file:
+ID	worklistai.cpp	/^char WorklistAI::ID = 0;$/;"	m	class:WorklistAI	file:
+Increment	cartesianprod.h	/^ void Increment(){$/;"	f	class:CartesianProduct
+IncrementAndTest	cartesianprod.h	/^  void IncrementAndTest(int row_to_increment){$/;"	f	class:CartesianProduct
+LatticeFact	latticefact.cpp	/^LatticeFact::LatticeFact(LatticeFact&& other) {$/;"	f	class:LatticeFact
+LatticeFact	latticefact.cpp	/^LatticeFact::LatticeFact(ap_abstract1_t *av) {$/;"	f	class:LatticeFact
+LatticeFact	latticefact.cpp	/^LatticeFact::LatticeFact(const LatticeFact &other) {$/;"	f	class:LatticeFact
+LatticeFact	latticefact.h	/^class LatticeFact {$/;"	c
+PrintPermutation	cartesianprod.h	/^  void PrintPermutation(){$/;"	f	class:CartesianProduct
+Utils	utils.h	/^namespace Utils {$/;"	n
+VarVisitor	varvisit.h	/^class VarVisitor : public llvm::InstVisitor<VarVisitor> {$/;"	c
+Vars	varvisit.h	/^    struct Vars {$/;"	s	class:VarVisitor
+WorklistAI	worklistai.cpp	/^  WorklistAI() : ModulePass(ID) { }$/;"	f	struct:WorklistAI
+WorklistAI	worklistai.cpp	/^struct WorklistAI : public ModulePass {$/;"	s	file:
+Z3_BV_SIZE	worklistai.cpp	/^static const unsigned Z3_BV_SIZE = 16;$/;"	v	file:
+ZeroOutPermutation	cartesianprod.h	/^  void ZeroOutPermutation(){$/;"	f	class:CartesianProduct
+abs_vals_	latticefact.h	/^    ap_abstract1_t abs_vals_;$/;"	m	class:LatticeFact
+add	latticefact.cpp	/^LatticeFact LatticeFact::add(const std::string to$/;"	f	class:LatticeFact
+add	latticefact.cpp	/^LatticeFact LatticeFact::add(const std::string to, const std::string op1$/;"	f	class:LatticeFact
+addCreateFacts	worklistai.cpp	/^  void addCreateFacts(Module &M, z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addCreateStoreLoadFacts	worklistai.cpp	/^  void addCreateStoreLoadFacts(z3::context &ctx, Z3_fixedpoint &zfp$/;"	f	struct:WorklistAI
+addDomFact	worklistai.cpp	/^  void addDomFact(z3::context &ctx$/;"	f	struct:WorklistAI
+addDomFenceFunc2	worklistai.cpp	/^  void addDomFenceFunc2(z3::context &ctx, Z3_fixedpoint &zfp$/;"	f	struct:WorklistAI
+addDomFunc2Fence	worklistai.cpp	/^  void addDomFunc2Fence(z3::context &ctx, Z3_fixedpoint &zfp$/;"	f	struct:WorklistAI
+addDomLoadStoreFacts	worklistai.cpp	/^  void addDomLoadStoreFacts(std::set<Function*> threadFuncs$/;"	f	struct:WorklistAI
+addDomNotReachReorderRule	worklistai.cpp	/^  void addDomNotReachReorderRule(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addDomNotReachRule	worklistai.cpp	/^  void addDomNotReachRule(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addDomRel	worklistai.cpp	/^  void addDomRel(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addDomStoreStorePSO	worklistai.cpp	/^  void addDomStoreStorePSO(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addDomStoreStoreTSO	worklistai.cpp	/^  void addDomStoreStoreTSO(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addFact1	worklistai.cpp	/^  void addFact1(z3::context &ctx$/;"	f	struct:WorklistAI
+addFact2	worklistai.cpp	/^  void addFact2(z3::context &ctx$/;"	f	struct:WorklistAI
+addFenceFact	worklistai.cpp	/^  void addFenceFact(z3::context &ctx$/;"	f	struct:WorklistAI
+addFenceFacts	worklistai.cpp	/^  void addFenceFacts(std::set<Function*> threadFuncs$/;"	f	struct:WorklistAI
+addFenceRel	worklistai.cpp	/^  void addFenceRel(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addFenceReorderRules	worklistai.cpp	/^  void addFenceReorderRules(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addInternalDomFacts	worklistai.cpp	/^  void addInternalDomFacts(BasicBlock *b, z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addJoinFacts	worklistai.cpp	/^	void addJoinFacts(CallInst *i, z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addJoinFacts	worklistai.cpp	/^  void addJoinFacts(Module &M, z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addLinePriFact	worklistai.cpp	/^  void addLinePriFact(z3::context &ctx$/;"	f	struct:WorklistAI
+addLoadFact	worklistai.cpp	/^  void addLoadFact(z3::context &ctx$/;"	f	struct:WorklistAI
+addLoadLoadMHB	worklistai.cpp	/^  void addLoadLoadMHB(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addLoadStoreFacts	worklistai.cpp	/^  void addLoadStoreFacts(BasicBlock *b, z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addLoadStoreFacts	worklistai.cpp	/^  void addLoadStoreFacts(BasicBlock *b, z3::context &ctx, Z3_fixedpoint &zfp, unsigned priority) {$/;"	f	struct:WorklistAI
+addLoadStoreMHB	worklistai.cpp	/^  void addLoadStoreMHB(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addLoadStoreRels	worklistai.cpp	/^  void addLoadStoreRels(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addLwSyncFact	worklistai.cpp	/^  void addLwSyncFact(z3::context &ctx$/;"	f	struct:WorklistAI
+addLwSyncRel	worklistai.cpp	/^  void addLwSyncRel(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addMHBFact	worklistai.cpp	/^  void addMHBFact(z3::context &ctx, Z3_fixedpoint &zfp, Instruction *from$/;"	f	struct:WorklistAI
+addMHBNRFRule	worklistai.cpp	/^  void addMHBNRFRule(z3::context &ctx, Z3_fixedpoint &zfp) const {$/;"	f	struct:WorklistAI
+addMHBNotReads	worklistai.cpp	/^  void addMHBNotReads(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addMHBRel	worklistai.cpp	/^  void addMHBRel(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addMHBTrans	worklistai.cpp	/^  void addMHBTrans(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addNoReoDomFunc2Func2Func1	worklistai.cpp	/^  void addNoReoDomFunc2Func2Func1(z3::context, Z3_fixedpoint &zfp$/;"	f	struct:WorklistAI
+addNoReoFunc1Func2	worklistai.cpp	/^  void addNoReoFunc1Func2(z3::context &ctx, Z3_fixedpoint &zfp$/;"	f	struct:WorklistAI
+addNoReoFunc2Func1	worklistai.cpp	/^  void addNoReoFunc2Func1(z3::context &ctx, Z3_fixedpoint &zfp$/;"	f	struct:WorklistAI
+addNoReoFunc2Func2	worklistai.cpp	/^  void addNoReoFunc2Func2(z3::context &ctx, Z3_fixedpoint &zfp$/;"	f	struct:WorklistAI
+addNoReorderRel	worklistai.cpp	/^  void addNoReorderRel(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addNoReorderRules	worklistai.cpp	/^  void addNoReorderRules(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addNotReachFact	worklistai.cpp	/^  void addNotReachFact(z3::context &ctx$/;"	f	struct:WorklistAI
+addNotReachRel	worklistai.cpp	/^  void addNotReachRel(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addNotReachableFacts	worklistai.cpp	/^  void addNotReachableFacts(Module &M, z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addNotReadFact	worklistai.cpp	/^  void addNotReadFact(z3::context &ctx$/;"	f	struct:WorklistAI
+addNotReadsFromRel	worklistai.cpp	/^  void addNotReadsFromRel(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addOverwriteNotReads	worklistai.cpp	/^  void addOverwriteNotReads(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addPOFunc2Func2MHB	worklistai.cpp	/^  void addPOFunc2Func2MHB(z3::context &ctx, Z3_fixedpoint &zfp$/;"	f	struct:WorklistAI
+addPOLoadStoreFence	worklistai.cpp	/^  void addPOLoadStoreFence(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addPSOPruningRules	worklistai.cpp	/^  void addPSOPruningRules(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addPSOReorderRules	worklistai.cpp	/^  void addPSOReorderRules(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addPriHighRel	worklistai.cpp	/^  void addPriHighRel(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addPruningRules	worklistai.cpp	/^  void addPruningRules(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addRMOReorderRules	worklistai.cpp	/^  void addRMOReorderRules(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addReadsFromFact	worklistai.cpp	/^  void addReadsFromFact(z3::context &ctx$/;"	f	struct:WorklistAI
+addReadsFromIsMHB	worklistai.cpp	/^  void addReadsFromIsMHB(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addReadsFromMHB	worklistai.cpp	/^  void addReadsFromMHB(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addReadsFromRel	worklistai.cpp	/^  void addReadsFromRel(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addSCReorderRules	worklistai.cpp	/^  void addSCReorderRules(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addStoreCreateLoadFact	worklistai.cpp	/^  void addStoreCreateLoadFact(z3::context &ctx, Z3_fixedpoint &zfp$/;"	f	struct:WorklistAI
+addStoreFact	worklistai.cpp	/^  void addStoreFact(z3::context &ctx$/;"	f	struct:WorklistAI
+addStoreLoadMHB	worklistai.cpp	/^  void addStoreLoadMHB(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addStoreStoreMHB	worklistai.cpp	/^  void addStoreStoreMHB(z3::context &ctx, Z3_fixedpoint &zfp, bool sameVar) {$/;"	f	struct:WorklistAI
+addTSOPruningRules	worklistai.cpp	/^  void addTSOPruningRules(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addTSOReorderRules	worklistai.cpp	/^  void addTSOReorderRules(z3::context &ctx, Z3_fixedpoint &zfp) {$/;"	f	struct:WorklistAI
+addThreadLocalNotRead	worklistai.cpp	/^  void addThreadLocalNotRead(z3::context &ctx, Z3_fixedpoint &zfp, CallInst *ci$/;"	f	struct:WorklistAI
+addVector	utils.h	/^  void addVector(std::vector<K> &base, const std::vector<K> a) {$/;"	f	namespace:Utils
+analyzeFunc	worklistai.cpp	/^  std::map<BasicBlock *, LatticeFact> analyzeFunc(ap_manager_t *man$/;"	f	struct:WorklistAI
+analyzeFuncNoInterf	worklistai.cpp	/^  std::map<BasicBlock *, LatticeFact> analyzeFuncNoInterf(ap_manager_t *man$/;"	f	struct:WorklistAI
+analyzeThreadInterf	worklistai.cpp	/^  std::map<BasicBlock *, LatticeFact> analyzeThreadInterf($/;"	f	struct:WorklistAI
+areValsEq	latticefact.cpp	/^bool LatticeFact::areValsEq(LatticeFact f1, LatticeFact f2) {$/;"	f	class:LatticeFact
+areValsGEq	latticefact.cpp	/^bool LatticeFact::areValsGEq(LatticeFact f1, LatticeFact f2) {$/;"	f	class:LatticeFact
+areValsLEq	latticefact.cpp	/^bool LatticeFact::areValsLEq(LatticeFact f1, LatticeFact f2) {$/;"	f	class:LatticeFact
+assign	latticefact.cpp	/^LatticeFact LatticeFact::assign(const std::string to$/;"	f	class:LatticeFact
+assign	latticefact.cpp	/^LatticeFact LatticeFact::assign(const std::string to, const int from) const {$/;"	f	class:LatticeFact
+assignInterval	latticefact.cpp	/^LatticeFact LatticeFact::assignInterval(llvm::Value *v$/;"	f	class:LatticeFact
+assignInterval	latticefact.cpp	/^LatticeFact LatticeFact::assignInterval(std::string v, ap_interval_t *interv) {$/;"	f	class:LatticeFact
+assignLinExprAndClearDestr	latticefact.cpp	/^void LatticeFact::assignLinExprAndClearDestr(ap_var_t var, ap_linexpr1_t *expr) { $/;"	f	class:LatticeFact
+assignLinExprDestr	latticefact.cpp	/^void LatticeFact::assignLinExprDestr(ap_var_t var, ap_linexpr1_t *expr) { $/;"	f	class:LatticeFact
+assignTexprAndClearDestr	latticefact.cpp	/^void LatticeFact::assignTexprAndClearDestr(ap_var_t var, ap_texpr1_t *cons) {$/;"	f	class:LatticeFact
+assignTexprDestr	latticefact.cpp	/^void LatticeFact::assignTexprDestr(ap_var_t var, ap_texpr1_t *texpr) {$/;"	f	class:LatticeFact
+assignTrueFalse	latticefact.cpp	/^LatticeFact LatticeFact::assignTrueFalse(std::string to, bool setTrue, bool setFalse) {$/;"	f	class:LatticeFact
+checkCommandLineArgs	worklistai.cpp	/^  void checkCommandLineArgs() const {$/;"	f	struct:WorklistAI
+constrainFact	latticefact.cpp	/^LatticeFact LatticeFact::constrainFact(Value *op0$/;"	f	class:LatticeFact
+constrainFact	latticefact.cpp	/^LatticeFact LatticeFact::constrainFact(const int cv0, std::string op1$/;"	f	class:LatticeFact
+constrainFact	latticefact.cpp	/^LatticeFact LatticeFact::constrainFact(const std::string op0$/;"	f	class:LatticeFact
+constrainFact	latticefact.cpp	/^LatticeFact LatticeFact::constrainFact(std::string op0, const int cv1$/;"	f	class:LatticeFact
+constrainICmp	latticefact.cpp	/^LatticeFact LatticeFact::constrainICmp(ICmpInst *ic, const bool tf$/;"	f	class:LatticeFact
+constrainTF	latticefact.cpp	/^LatticeFact LatticeFact::constrainTF(Value *v, const bool tf$/;"	f	class:LatticeFact
+constrainTF	latticefact.cpp	/^LatticeFact LatticeFact::constrainTF(std::string b, const bool tf) {$/;"	f	class:LatticeFact
+constraintFile	worklistai.cpp	/^  static constexpr const char * const constraintFile = "poconstr.smt2";$/;"	m	struct:WorklistAI	file:
+createEnvironment	worklistai.cpp	/^  ap_environment_t *createEnvironment(std::map<Value *, std::string> &valToName$/;"	f	struct:WorklistAI
+createSubConstr	latticefact.cpp	/^ap_lincons1_t LatticeFact::createSubConstr(const int op0, const std::string op1$/;"	f	class:LatticeFact
+createSubConstr	latticefact.cpp	/^ap_lincons1_t LatticeFact::createSubConstr(const std::string op0$/;"	f	class:LatticeFact
+factJoin	latticefact.cpp	/^LatticeFact LatticeFact::factJoin(const LatticeFact lf1, const LatticeFact lf2) {$/;"	f	class:LatticeFact
+factJoinDestr	latticefact.cpp	/^void LatticeFact::factJoinDestr(LatticeFact other) {$/;"	f	class:LatticeFact
+filterMHBInterfs	worklistai.cpp	/^  std::map<Instruction *, std::vector<Instruction *>> filterMHBInterfs($/;"	f	struct:WorklistAI
+filterPriInterfs	worklistai.cpp	/^  std::map<Instruction*, std::vector<Instruction *>> filterPriInterfs($/;"	f	struct:WorklistAI
+findCreateFromJoin	worklistai.cpp	/^  Function* findCreateFromJoin(Value *pt) {$/;"	f	struct:WorklistAI
+flattenReachStores	worklistai.cpp	/^  std::map<Instruction *, LatticeFact> flattenReachStores($/;"	f	struct:WorklistAI
+floats	varvisit.h	/^      std::vector<llvm::Value*> floats;$/;"	m	struct:VarVisitor::Vars
+foldConstExpr	bbops.cpp	/^Constant *BBOps::foldConstExpr(ConstantExpr *ce, const Module *m) {$/;"	f	class:BBOps
+forwardDfs	worklistai.cpp	/^  std::set<BasicBlock *> forwardDfs(BasicBlock *b) {$/;"	f	struct:WorklistAI
+forwardSearchCreate	worklistai.cpp	/^  Function *forwardSearchCreate(AllocaInst *ai) {$/;"	f	struct:WorklistAI
+fprint	latticefact.cpp	/^void LatticeFact::fprint(FILE *s) const {$/;"	f	class:LatticeFact
+getAllBBs	worklistai.cpp	/^  std::set<BasicBlock *> getAllBBs(Function *F) {$/;"	f	struct:WorklistAI
+getAllVarNames	worklistai.cpp	/^  VarVisitor::Vars getAllVarNames(Module &M) const {$/;"	f	struct:WorklistAI
+getAnalysisUsage	worklistai.cpp	/^  virtual void getAnalysisUsage(AnalysisUsage &AU) const {$/;"	f	struct:WorklistAI
+getAssertSliceInvIfEnabled	worklistai.cpp	/^	std::set<Instruction *> getAssertSliceInvIfEnabled(Module &M) {$/;"	f	struct:WorklistAI
+getBVBVFuncDecl	worklistai.cpp	/^  z3::func_decl getBVBVFuncDecl(z3::context &ctx, const char *name) const {$/;"	f	struct:WorklistAI
+getBVFuncDecl	worklistai.cpp	/^  z3::func_decl getBVFuncDecl(z3::context &ctx, const char *name) const {$/;"	f	struct:WorklistAI
+getBitWidth	bbops.cpp	/^unsigned BBOps::getBitWidth(Value *v) {$/;"	f	class:BBOps
+getBody	bbops.cpp	/^std::vector<Instruction*> BBOps::getBody(BasicBlock *b) {$/;"	f	class:BBOps
+getConstantIntUnsafe	utils.cpp	/^int Utils::getConstantIntUnsafe(const ConstantInt * const ci) {$/;"	f	class:Utils
+getDomFuncDecl	worklistai.cpp	/^  z3::func_decl getDomFuncDecl(z3::context &ctx) const {$/;"	f	struct:WorklistAI
+getFactInBBAfter	bbops.cpp	/^LatticeFact BBOps::getFactInBBAfter(BasicBlock *b$/;"	f	class:BBOps
+getFactInBBBefore	bbops.cpp	/^LatticeFact BBOps::getFactInBBBefore(BasicBlock *b$/;"	f	class:BBOps
+getFenceFuncDecl	worklistai.cpp	/^  z3::func_decl getFenceFuncDecl(z3::context &ctx) const {$/;"	f	struct:WorklistAI
+getFirstInst	worklistai.cpp	/^  Instruction *getFirstInst(Function *f) {$/;"	f	struct:WorklistAI
+getFirstLoadStoreCallTerm	worklistai.cpp	/^  static Instruction *getFirstLoadStoreCallTerm(BasicBlock *b) {$/;"	f	struct:WorklistAI
+getFirstLoadStoreTerm	worklistai.cpp	/^  static Instruction *getFirstLoadStoreTerm(BasicBlock *b) {$/;"	f	struct:WorklistAI
+getFuncParamNames	worklistai.cpp	/^  VarVisitor::Vars getFuncParamNames(Module &M) const {$/;"	f	struct:WorklistAI
+getGen	worklistai.cpp	/^  static std::set<Instruction *> getGen(BasicBlock *B) {$/;"	f	struct:WorklistAI
+getHighFuncDecl	worklistai.cpp	/^  z3::func_decl getHighFuncDecl(z3::context &ctx) const {$/;"	f	struct:WorklistAI
+getImpactedIfEnabled	worklistai.cpp	/^  std::set<Instruction *> getImpactedIfEnabled(Module &M) {$/;"	f	struct:WorklistAI
+getInitState	worklistai.cpp	/^  LatticeFact getInitState(Module *M$/;"	f	struct:WorklistAI
+getInterferingStores	worklistai.cpp	/^  std::map<Instruction *, std::vector<Instruction*>> getInterferingStores($/;"	f	struct:WorklistAI
+getLdFuncDecl	worklistai.cpp	/^  z3::func_decl getLdFuncDecl(z3::context &ctx) const {$/;"	f	struct:WorklistAI
+getLineHighFuncDecl	worklistai.cpp	/^  z3::func_decl getLineHighFuncDecl(z3::context &ctx) const {$/;"	f	struct:WorklistAI
+getLinePriFuncDecl	worklistai.cpp	/^  z3::func_decl getLinePriFuncDecl(z3::context &ctx) const {$/;"	f	struct:WorklistAI
+getLoadStoreCallOrdered	worklistai.cpp	/^  static std::vector<Instruction *> getLoadStoreCallOrdered(BasicBlock *b) {$/;"	f	struct:WorklistAI
+getLoadStoreOrdered	worklistai.cpp	/^  static std::vector<Instruction *> getLoadStoreOrdered(BasicBlock *b) {$/;"	f	struct:WorklistAI
+getLoads	worklistai.cpp	/^  std::vector<Instruction *> getLoads(Function *f) const {$/;"	f	struct:WorklistAI
+getLwSyncFuncDecl	worklistai.cpp	/^  z3::func_decl getLwSyncFuncDecl(z3::context &ctx) const {$/;"	f	struct:WorklistAI
+getMHBFuncDecl	worklistai.cpp	/^  z3::func_decl getMHBFuncDecl(z3::context &ctx) const {$/;"	f	struct:WorklistAI
+getMainFuncOrNULL	worklistai.cpp	/^  Function *getMainFuncOrNULL(Module &M) const {$/;"	f	struct:WorklistAI
+getManager	utils.cpp	/^ap_manager_t *Utils::getManager() {$/;"	f	class:Utils
+getMayImpactIfEnabled	worklistai.cpp	/^  std::set<Instruction *> getMayImpactIfEnabled(Module &M) {$/;"	f	struct:WorklistAI
+getName	worklistai.cpp	/^  std::string getName(std::map<Value *, std::string> &valToName$/;"	f	struct:WorklistAI
+getNoReorderFuncDecl	worklistai.cpp	/^  z3::func_decl getNoReorderFuncDecl(z3::context &ctx) const {$/;"	f	struct:WorklistAI
+getNotReachFuncDecl	worklistai.cpp	/^  z3::func_decl getNotReachFuncDecl(z3::context &ctx) const {$/;"	f	struct:WorklistAI
+getNotReadFrom	worklistai.cpp	/^  void getNotReadFrom(std::map<Function *, Function*> &child2parent$/;"	f	struct:WorklistAI
+getNotReadsFromFuncDecl	worklistai.cpp	/^  z3::func_decl getNotReadsFromFuncDecl(z3::context &ctx) const {$/;"	f	struct:WorklistAI
+getPThreadThreadFunc	worklistai.cpp	/^  Function *getPThreadThreadFunc(CallInst *ci) {$/;"	f	struct:WorklistAI
+getParentNotRead	worklistai.cpp	/^  std::vector<StoreInst *> getParentNotRead(Function *f$/;"	f	struct:WorklistAI
+getParents	worklistai.cpp	/^  std::vector<Function *> getParents(Function *child$/;"	f	struct:WorklistAI
+getPreviousStore	worklistai.cpp	/^  static std::vector<Instruction *> getPreviousStore(Instruction *i) {$/;"	f	struct:WorklistAI
+getPreviousStores	worklistai.cpp	/^  static std::vector<Instruction *> getPreviousStores(Instruction *i, Value *v) {$/;"	f	struct:WorklistAI
+getPreviousStoresWithCreate	worklistai.cpp	/^  static std::vector<Instruction *> getPreviousStoresWithCreate(Instruction *i$/;"	f	struct:WorklistAI
+getPriFuncDecl	worklistai.cpp	/^  z3::func_decl getPriFuncDecl(z3::context &ctx) const {$/;"	f	struct:WorklistAI
+getReachability	worklistai.cpp	/^  std::map<BasicBlock *, std::set<BasicBlock*>> getReachability(Function *F) {$/;"	f	struct:WorklistAI
+getReachingStores	worklistai.cpp	/^  static std::map<BasicBlock *, std::set<Instruction *>> getReachingStores(Function *f) {$/;"	f	struct:WorklistAI
+getReadFromRuleAndQuery	worklistai.cpp	/^  static std::string getReadFromRuleAndQuery(const std::string loader$/;"	f	struct:WorklistAI
+getReadsFromFuncDecl	worklistai.cpp	/^  z3::func_decl getReadsFromFuncDecl(z3::context &ctx) const {$/;"	f	struct:WorklistAI
+getRemVars	worklistai.cpp	/^  static std::set<Value *> getRemVars(BasicBlock *B) {$/;"	f	struct:WorklistAI
+getRets	worklistai.cpp	/^  std::vector<ReturnInst*> getRets(Function *f) {$/;"	f	struct:WorklistAI
+getStFuncDecl	worklistai.cpp	/^  z3::func_decl getStFuncDecl(z3::context &ctx) {$/;"	f	struct:WorklistAI
+getStorePtr	utils.cpp	/^Value *Utils::getStorePtr(Instruction *i) {$/;"	f	class:Utils
+getStores	worklistai.cpp	/^  std::vector<StoreInst *> getStores(BasicBlock *b) {$/;"	f	struct:WorklistAI
+getStores	worklistai.cpp	/^  std::vector<StoreInst *> getStores(Function *f) const {$/;"	f	struct:WorklistAI
+getStoresInBBBefore	worklistai.cpp	/^  std::vector<StoreInst *> getStoresInBBBefore(Instruction *i) {$/;"	f	struct:WorklistAI
+getSuccsFromBB	worklistai.cpp	/^  std::vector<BasicBlock*> getSuccsFromBB(BasicBlock *B) {$/;"	f	struct:WorklistAI
+getThreadCreate	worklistai.cpp	/^  std::vector<CallInst *> getThreadCreate(Function *F) const {$/;"	f	struct:WorklistAI
+getThreadCreate	worklistai.cpp	/^  std::vector<CallInst *> getThreadCreate(Module &M) const {$/;"	f	struct:WorklistAI
+getThreadLocalNotRead	worklistai.cpp	/^  std::vector<StoreInst *> getThreadLocalNotRead(CallInst *ci) {$/;"	f	struct:WorklistAI
+getThreads	worklistai.cpp	/^  std::set<Function *> getThreads(Module &M) const {$/;"	f	struct:WorklistAI
+getTop	latticefact.cpp	/^LatticeFact LatticeFact::getTop() {$/;"	f	class:LatticeFact
+getValue	worklistai.cpp	/^  Value *getValue(const std::map<std::string, Value*> nameToVal$/;"	f	struct:WorklistAI
+getValueBVID	worklistai.cpp	/^  z3::expr getValueBVID(z3::context &ctx, Value *v) const {$/;"	f	struct:WorklistAI
+getVarInterval	latticefact.cpp	/^ap_interval_t *LatticeFact::getVarInterval(llvm::Value *v$/;"	f	class:LatticeFact
+getVarInterval	latticefact.cpp	/^ap_interval_t *LatticeFact::getVarInterval(std::string v) {$/;"	f	class:LatticeFact
+handleInstructionWithRet	varvisit.cpp	/^void VarVisitor::handleInstructionWithRet(Instruction &I) {$/;"	f	class:VarVisitor
+icmpEq	latticefact.cpp	/^LatticeFact LatticeFact::icmpEq(const std::string to$/;"	f	class:LatticeFact
+icmpGeq	latticefact.cpp	/^LatticeFact LatticeFact::icmpGeq(const std::string to, const int op1$/;"	f	class:LatticeFact
+icmpGeq	latticefact.cpp	/^LatticeFact LatticeFact::icmpGeq(const std::string to, const std::string op1$/;"	f	class:LatticeFact
+icmpGt	latticefact.cpp	/^LatticeFact LatticeFact::icmpGt(const std::string to$/;"	f	class:LatticeFact
+icmpLeq	latticefact.cpp	/^LatticeFact LatticeFact::icmpLeq(const std::string to$/;"	f	class:LatticeFact
+icmpLt	latticefact.cpp	/^LatticeFact LatticeFact::icmpLt(const std::string to$/;"	f	class:LatticeFact
+icmpNEq	latticefact.cpp	/^LatticeFact LatticeFact::icmpNEq(const std::string to$/;"	f	class:LatticeFact
+identity_transfer_func	bbops.cpp	/^LatticeFact BBOps::identity_transfer_func(LatticeFact in$/;"	f	class:BBOps
+initBBs	worklistai.cpp	/^  std::map<BasicBlock*, LatticeFact> initBBs(const LatticeFact &init$/;"	f	struct:WorklistAI
+init_	latticefact.h	/^    bool init_ = false;$/;"	m	class:LatticeFact
+instsWithMetadata	worklistai.cpp	/^  std::set<Instruction *> instsWithMetadata(Module &M, std::string md) {$/;"	f	struct:WorklistAI
+instsWithoutMetadata	worklistai.cpp	/^  std::set<Instruction *> instsWithoutMetadata(Module &M, std::string md) {$/;"	f	struct:WorklistAI
+ints	varvisit.h	/^      std::vector<llvm::Value*> ints;$/;"	m	struct:VarVisitor::Vars
+isArray	varvisit.cpp	/^bool isArray(Instruction &I) {$/;"	f
+isBottom	latticefact.cpp	/^bool LatticeFact::isBottom() {$/;"	f	class:LatticeFact
+isEq	latticefact.cpp	/^bool LatticeFact::isEq(const int op1, const std::string op2) {$/;"	f	class:LatticeFact
+isEq	latticefact.cpp	/^bool LatticeFact::isEq(const std::string op1, const int op2) {$/;"	f	class:LatticeFact
+isError	bbops.cpp	/^bool BBOps::isError(const CallInst * const ci) {$/;"	f	class:BBOps
+isFence	worklistai.cpp	/^  bool isFence(Instruction *i) {$/;"	f	struct:WorklistAI
+isFloatGlobal	utils.cpp	/^bool Utils::isFloatGlobal(GlobalVariable *gv) {$/;"	f	class:Utils
+isFloatingPoint	varvisit.cpp	/^bool isFloatingPoint(Instruction &I) {$/;"	f
+isGT	latticefact.cpp	/^bool LatticeFact::isGT(const int op1, const std::string op2) {$/;"	f	class:LatticeFact
+isGT	latticefact.cpp	/^bool LatticeFact::isGT(const std::string op1, const int op2) {$/;"	f	class:LatticeFact
+isGeq	latticefact.cpp	/^bool LatticeFact::isGeq(const int op1, const std::string op2) {$/;"	f	class:LatticeFact
+isGeq	latticefact.cpp	/^bool LatticeFact::isGeq(const std::string op1, const int op2) {$/;"	f	class:LatticeFact
+isInteger	varvisit.cpp	/^bool isInteger(Instruction &I) {$/;"	f
+isIntegerGlobal	utils.cpp	/^bool Utils::isIntegerGlobal(GlobalVariable *gv) {$/;"	f	class:Utils
+isLT	latticefact.cpp	/^bool LatticeFact::isLT(const int op1, const std::string op2) {$/;"	f	class:LatticeFact
+isLT	latticefact.cpp	/^bool LatticeFact::isLT(const std::string op1, const int op2) {$/;"	f	class:LatticeFact
+isLeq	latticefact.cpp	/^bool LatticeFact::isLeq(const int op1, std::string op2) {$/;"	f	class:LatticeFact
+isLeq	latticefact.cpp	/^bool LatticeFact::isLeq(const std::string op1, const int op2) {$/;"	f	class:LatticeFact
+isLwSync	worklistai.cpp	/^  bool isLwSync(Instruction *i) {$/;"	f	struct:WorklistAI
+isMFence	bbops.cpp	/^bool BBOps::isMFence(const CallInst * const ci) {$/;"	f	class:BBOps
+isNEq	latticefact.cpp	/^bool LatticeFact::isNEq(const int op1, const std::string op2) {$/;"	f	class:LatticeFact
+isNEq	latticefact.cpp	/^bool LatticeFact::isNEq(const std::string op1, const int op2) {$/;"	f	class:LatticeFact
+isPointer	varvisit.cpp	/^bool isPointer(Instruction &I) {$/;"	f
+isPthreadCreate	bbops.cpp	/^bool BBOps::isPthreadCreate(CallInst *ci) {$/;"	f	class:BBOps
+isSat	latticefact.cpp	/^bool LatticeFact::isSat(ap_lincons1_t cons) {$/;"	f	class:LatticeFact
+isSomeLoad	utils.cpp	/^bool Utils::isSomeLoad(Instruction *i) {$/;"	f	class:Utils
+isSomeStore	utils.cpp	/^bool Utils::isSomeStore(Instruction *i) {$/;"	f	class:Utils
+isStructure	varvisit.cpp	/^bool isStructure(Instruction &I) {$/;"	f
+isVector	varvisit.cpp	/^bool isVector(Instruction &I) {$/;"	f
+isaStoreLoadCallOrTerm	worklistai.cpp	/^  bool isaStoreLoadCallOrTerm(Instruction *I) const {$/;"	f	struct:WorklistAI
+joinInterfs	worklistai.cpp	/^  std::map<Instruction *, LatticeFact> joinInterfs($/;"	f	struct:WorklistAI
+joinStFacts	worklistai.cpp	/^  std::map<StoreInst *, LatticeFact> joinStFacts($/;"	f	struct:WorklistAI
+leq	latticefact.cpp	/^bool LatticeFact::leq(const LatticeFact &other) {$/;"	f	class:LatticeFact
+loadStoreSameVal	worklistai.cpp	/^  bool loadStoreSameVal(Instruction *si, Instruction *li) const {$/;"	f	struct:WorklistAI
+loadStoreSameValRMWL	worklistai.cpp	/^  bool loadStoreSameValRMWL(AtomicRMWInst *rmw, LoadInst *l) const {$/;"	f	struct:WorklistAI
+loadStoreSameValRMWRMW	worklistai.cpp	/^  bool loadStoreSameValRMWRMW(AtomicRMWInst *rmws, AtomicRMWInst *rmwl) const {$/;"	f	struct:WorklistAI
+loadStoreSameValSL	worklistai.cpp	/^  bool loadStoreSameValSL(StoreInst *s, LoadInst *l) const {$/;"	f	struct:WorklistAI
+loadStoreSameValSRMW	worklistai.cpp	/^  bool loadStoreSameValSRMW(StoreInst *s, AtomicRMWInst *rmw) const {$/;"	f	struct:WorklistAI
+mapAtUnsafe	utils.h	/^  V mapAtUnsafe(const std::map<K, V> m, K key) { $/;"	f	namespace:Utils
+mapInsertToVector	utils.h	/^  void mapInsertToVector(std::map<K, std::vector<V>> &m, K key, V val) {$/;"	f	namespace:Utils
+maxCombPermsG	worklistai.cpp	/^static unsigned maxCombPermsG = 0;$/;"	v	file:
+meetAndFreeConstr	latticefact.cpp	/^LatticeFact LatticeFact::meetAndFreeConstr(ap_lincons1_t *consExpr) {$/;"	f	class:LatticeFact
+meetConstrTy	latticefact.cpp	/^LatticeFact LatticeFact::meetConstrTy(const int op0, const std::string op1$/;"	f	class:LatticeFact
+meetConstrTy	latticefact.cpp	/^LatticeFact LatticeFact::meetConstrTy(const std::string op0$/;"	f	class:LatticeFact
+meetConstrTy	latticefact.cpp	/^LatticeFact LatticeFact::meetConstrTy(const std::string op0, const int op1$/;"	f	class:LatticeFact
+meetEq	latticefact.cpp	/^LatticeFact LatticeFact::meetEq(const int cv0, std::string op1) {$/;"	f	class:LatticeFact
+meetEq	latticefact.cpp	/^LatticeFact LatticeFact::meetEq(std::string op0, const int cv1) {$/;"	f	class:LatticeFact
+meetEq	latticefact.cpp	/^LatticeFact LatticeFact::meetEq(std::string op0, std::string op1) {$/;"	f	class:LatticeFact
+meetGeq	latticefact.cpp	/^LatticeFact LatticeFact::meetGeq(const int op0, std::string op1) {$/;"	f	class:LatticeFact
+meetGeq	latticefact.cpp	/^LatticeFact LatticeFact::meetGeq(std::string op0, const int op1) {$/;"	f	class:LatticeFact
+meetGeq	latticefact.cpp	/^LatticeFact LatticeFact::meetGeq(std::string op0, std::string op1) {$/;"	f	class:LatticeFact
+meetGt	latticefact.cpp	/^LatticeFact LatticeFact::meetGt(const int op0, std::string op1) {$/;"	f	class:LatticeFact
+meetGt	latticefact.cpp	/^LatticeFact LatticeFact::meetGt(std::string op0, const int op1) {$/;"	f	class:LatticeFact
+meetGt	latticefact.cpp	/^LatticeFact LatticeFact::meetGt(std::string op0, std::string op1) {$/;"	f	class:LatticeFact
+meetLeq	latticefact.cpp	/^LatticeFact LatticeFact::meetLeq(const int op0, std::string op1) {$/;"	f	class:LatticeFact
+meetLeq	latticefact.cpp	/^LatticeFact LatticeFact::meetLeq(std::string op0, const int op1) {$/;"	f	class:LatticeFact
+meetLeq	latticefact.cpp	/^LatticeFact LatticeFact::meetLeq(std::string op0, std::string op1) {$/;"	f	class:LatticeFact
+meetLt	latticefact.cpp	/^LatticeFact LatticeFact::meetLt(const int op0, std::string op1) {$/;"	f	class:LatticeFact
+meetLt	latticefact.cpp	/^LatticeFact LatticeFact::meetLt(std::string op0, const int op1) {$/;"	f	class:LatticeFact
+meetLt	latticefact.cpp	/^LatticeFact LatticeFact::meetLt(std::string op0, std::string op1) {$/;"	f	class:LatticeFact
+meetNEq	latticefact.cpp	/^LatticeFact LatticeFact::meetNEq(const int op0, std::string op1) {$/;"	f	class:LatticeFact
+meetNEq	latticefact.cpp	/^LatticeFact LatticeFact::meetNEq(std::string op0, const int op1) {$/;"	f	class:LatticeFact
+meetNEq	latticefact.cpp	/^LatticeFact LatticeFact::meetNEq(std::string op0, std::string op1) {$/;"	f	class:LatticeFact
+mergeFactMaps	worklistai.cpp	/^  std::map<BasicBlock *, LatticeFact> mergeFactMaps($/;"	f	struct:WorklistAI
+mergeVars	varvisit.cpp	/^VarVisitor::Vars VarVisitor::mergeVars(Vars v1, Vars v2) {$/;"	f	class:VarVisitor
+merge_worklist	worklistai.cpp	/^  void merge_worklist($/;"	f	struct:WorklistAI
+mod	latticefact.cpp	/^LatticeFact LatticeFact::mod(const std::string to, const std::string op$/;"	f	class:LatticeFact
+mul	latticefact.cpp	/^LatticeFact LatticeFact::mul(const std::string to$/;"	f	class:LatticeFact
+negateConstr	latticefact.cpp	/^ap_lincons1_t LatticeFact::negateConstr(const int op0$/;"	f	class:LatticeFact
+negateConstr	latticefact.cpp	/^ap_lincons1_t LatticeFact::negateConstr(const std::string op0$/;"	f	class:LatticeFact
+numInstructions	worklistai.cpp	/^  unsigned numInstructions(Module &M) {$/;"	f	struct:WorklistAI
+num_max_permutations_	cartesianprod.h	/^  int num_max_permutations_;$/;"	m	class:CartesianProduct
+num_permutations_processed	cartesianprod.h	/^  int num_permutations_processed(){$/;"	f	class:CartesianProduct
+num_permutations_processed_	cartesianprod.h	/^  int num_permutations_processed_;$/;"	m	class:CartesianProduct
+num_rows_	cartesianprod.h	/^  int num_rows_;$/;"	m	class:CartesianProduct
+operator =	latticefact.cpp	/^LatticeFact& LatticeFact::operator=(LatticeFact&& other) {$/;"	f	class:LatticeFact
+operator =	latticefact.cpp	/^LatticeFact& LatticeFact::operator=(const LatticeFact &other) {$/;"	f	class:LatticeFact
+performAssign	bbops.cpp	/^LatticeFact BBOps::performAssign(Value *to$/;"	f	class:BBOps
+performAssignCmp	bbops.cpp	/^LatticeFact BBOps::performAssignCmp(Value *to$/;"	f	class:BBOps
+performAssignWithInterf	bbops.cpp	/^LatticeFact BBOps::performAssignWithInterf(LoadInst *to$/;"	f	class:BBOps
+performAssignWithInterf	bbops.cpp	/^LatticeFact BBOps::performAssignWithInterf(Value *to$/;"	f	class:BBOps
+performAtomicRMW	bbops.cpp	/^LatticeFact BBOps::performAtomicRMW(AtomicRMWInst *rmw, const LatticeFact in$/;"	f	class:BBOps
+performBinOp	bbops.cpp	/^LatticeFact BBOps::performBinOp(Instruction::BinaryOps opTy$/;"	f	class:BBOps
+performBinOpMod	bbops.cpp	/^LatticeFact BBOps::performBinOpMod(Instruction::BinaryOps opTy$/;"	f	class:BBOps
+performCast	bbops.cpp	/^LatticeFact BBOps::performCast(Value *dst$/;"	f	class:BBOps
+performLogicOp	bbops.cpp	/^LatticeFact BBOps::performLogicOp(Instruction::BinaryOps opTy$/;"	f	class:BBOps
+performNonCombinAssign	bbops.cpp	/^LatticeFact BBOps::performNonCombinAssign(Instruction *to$/;"	f	class:BBOps
+performNonCombinAssign	bbops.cpp	/^LatticeFact BBOps::performNonCombinAssign(Value *to$/;"	f	class:BBOps
+performPhiInst	bbops.cpp	/^LatticeFact performPhiInst(PHINode *phi, const LatticeFact in$/;"	f
+permutation	cartesianprod.h	/^ std::vector<int> permutation(){$/;"	f	class:CartesianProduct
+permutation_	cartesianprod.h	/^  std::vector<int> permutation_;$/;"	m	class:CartesianProduct
+printFactMapStderr	worklistai.cpp	/^  void printFactMapStderr(std::map<BasicBlock*, LatticeFact> m) const {$/;"	f	struct:WorklistAI
+printFuncInterfMap	worklistai.cpp	/^  void printFuncInterfMap($/;"	f	struct:WorklistAI
+printStoreFacts	worklistai.cpp	/^  void printStoreFacts($/;"	f	struct:WorklistAI
+printValToNameStderr	worklistai.cpp	/^  void printValToNameStderr(const std::map<Value*, std::string> m) const {$/;"	f	struct:WorklistAI
+queryMHB	worklistai.cpp	/^  Z3_bool queryMHB(z3::context &ctx, Z3_fixedpoint &zfp, Instruction *l$/;"	f	struct:WorklistAI
+queryNotReads	worklistai.cpp	/^  Z3_bool queryNotReads(z3::context &ctx, Z3_fixedpoint &zfp, Instruction *l$/;"	f	struct:WorklistAI
+queryPri	worklistai.cpp	/^  Z3_bool queryPri(z3::context &ctx, Z3_fixedpoint &zfp, Instruction *l$/;"	f	struct:WorklistAI
+runOnModule	worklistai.cpp	/^  bool runOnModule(Module &M) {$/;"	f	struct:WorklistAI
+run_transfer_funcs	bbops.cpp	/^BBOps::run_transfer_funcs(BasicBlock *b$/;"	f	class:BBOps
+setBottom	latticefact.cpp	/^LatticeFact LatticeFact::setBottom(Value *v$/;"	f	class:LatticeFact
+setBottom	latticefact.cpp	/^LatticeFact LatticeFact::setBottom(std::string to) {$/;"	f	class:LatticeFact
+sizes_of_rows_	cartesianprod.h	/^  std::vector<int> sizes_of_rows_;$/;"	m	class:CartesianProduct
+skipCall	bbops.cpp	/^bool BBOps::skipCall(const CallInst * const ci) {$/;"	f	class:BBOps
+sortByCreation	worklistai.cpp	/^  std::vector<Function *> sortByCreation(Function *main$/;"	f	struct:WorklistAI
+stableStores	worklistai.cpp	/^  bool stableStores($/;"	f	struct:WorklistAI
+testCurPerm	worklistai.cpp	/^  bool testCurPerm(ap_manager_t *man$/;"	f	struct:WorklistAI
+transfer_func	bbops.cpp	/^LatticeFact BBOps::transfer_func(LatticeFact in$/;"	f	class:BBOps
+updateReachStores	bbops.cpp	/^std::map<Instruction*, LatticeFact> BBOps::updateReachStores($/;"	f	class:BBOps
+updateReachThreadCreate	bbops.cpp	/^std::map<CallInst *, LatticeFact> BBOps::updateReachThreadCreate(CallInst *ci$/;"	f	class:BBOps
+valid	latticefact.cpp	/^bool LatticeFact::valid() const {$/;"	f	class:LatticeFact
+validateParams	worklistai.cpp	/^  void validateParams(z3::context &ctx, Z3_fixedpoint &zfp, z3::params &params) {$/;"	f	struct:WorklistAI
+valueToStringUnsafe	utils.cpp	/^std::string Utils::valueToStringUnsafe($/;"	f	class:Utils
+vars	varvisit.h	/^    Vars vars;$/;"	m	class:VarVisitor
+violatesProgOrder	worklistai.cpp	/^  bool violatesProgOrder(const std::map<Instruction *, Instruction *> interfs$/;"	f	struct:WorklistAI
+visitAtomicRMWInst	varvisit.cpp	/^void VarVisitor::visitAtomicRMWInst(AtomicRMWInst &I) {$/;"	f	class:VarVisitor
+visitBinaryOperator	varvisit.cpp	/^void VarVisitor::visitBinaryOperator(BinaryOperator &I) {$/;"	f	class:VarVisitor
+visitCastInst	varvisit.cpp	/^void VarVisitor::visitCastInst(CastInst &I) {$/;"	f	class:VarVisitor
+visitCmpInst	varvisit.cpp	/^void VarVisitor::visitCmpInst(CmpInst &I) {$/;"	f	class:VarVisitor
+visitPHINode	varvisit.cpp	/^void VarVisitor::visitPHINode(PHINode &phi) {$/;"	f	class:VarVisitor
+visitUnaryInstruction	varvisit.cpp	/^void VarVisitor::visitUnaryInstruction(UnaryInstruction &I) {$/;"	f	class:VarVisitor
+worklist_t	worklistai.cpp	/^  typedef std::map<BasicBlock*, LatticeFact> worklist_t;$/;"	t	struct:WorklistAI	file:
+~CartesianProduct	cartesianprod.h	/^  ~CartesianProduct(){$/;"	f	class:CartesianProduct
+~LatticeFact	latticefact.cpp	/^LatticeFact::~LatticeFact() {$/;"	f	class:LatticeFact

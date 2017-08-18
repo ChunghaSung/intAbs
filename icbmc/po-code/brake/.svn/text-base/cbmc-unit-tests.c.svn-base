@@ -1,0 +1,115 @@
+#include "brake_acc_nodiv_ctrl.h"
+
+void brake_acc_nodiv_ct_ABS_RR_Wheel(real_T rtu_vVehicleVelocitykmh, real_T
+  rtu_TRequestedTorqueNm, real_T rtu_wwheelRotationrpm,
+  B_ABS_RR_Wheel_brake_acc_nodi_T *localB, P_ABS_RR_Wheel_brake_acc_nodi_T
+  *localP);
+
+boolean_T rtIsInf(real_T value);
+boolean_T rtIsInfF(real32_T value);
+boolean_T rtIsNaN(real_T value);
+boolean_T rtIsNaNF(real32_T value);
+real_T rtGetInf(void);
+real_T rtGetMinusInf(void);
+real32_T rtGetInfF(void);
+real32_T rtGetMinusInfF(void);
+real_T rtGetNaN(void);
+real32_T rtGetNaNF(void);
+
+real_T rt_roundd_snf(real_T u);
+
+#ifdef CBMC
+void brake_acc_nodiv_ct_ABS_RR_Wheel_test() {
+  real_T rtu_vVehicleVelocitykmh;
+  real_T rtu_TRequestedTorqueNm;
+  real_T rtu_wwheelRotationrpm;
+  B_ABS_RR_Wheel_brake_acc_nodi_T localB;
+  P_ABS_RR_Wheel_brake_acc_nodi_T *localP = &brake_acc_nodiv_ctrl_P.ABS_RR_Wheel;
+  brake_acc_nodiv_ct_ABS_RR_Wheel(rtu_vVehicleVelocitykmh, rtu_TRequestedTorqueNm, rtu_wwheelRotationrpm, &localB, localP);
+}
+
+void rtIsRtGet_test() {
+  real_T r;
+  rtIsInf(r);
+  real32_T r32;
+  rtIsInfF(r32);
+  rtIsNaN(r);
+  rtIsNaNF(r32);
+  rtGetInf();
+  rtGetMinusInf();
+  rtGetInfF();
+  rtGetMinusInfF();
+  rtGetNaN();
+  rtGetNaNF();
+}
+#else
+const ExtU_brake_acc_nodiv_ctrl_T brake_acc_nodiv_ctrl_U_data[] = {
+    { .In_BrakePedal=-0.000000, .In_RRRotation=-0.500000, .In_RLRotation=127.500000, .In_FRRotation=5686.815430, .In_FLRotation=208.000000 },
+    { .In_BrakePedal=0.000000, .In_RRRotation=0.500000, .In_RLRotation=0.000000, .In_FRRotation=7.500000, .In_FLRotation=-0.000000 },
+    { .In_BrakePedal=0.500000, .In_RRRotation=-1.378967, .In_RLRotation=1.000092, .In_FRRotation=-2047.500000, .In_FLRotation=2830.500000 },
+    { .In_BrakePedal=0.000000, .In_RRRotation=1.250000, .In_RLRotation=0.000000, .In_FRRotation=-8134.500122, .In_FLRotation=1.250000 },
+    { .In_BrakePedal=100.000000, .In_RRRotation=1.500000, .In_RLRotation=-6.500977, .In_FRRotation=-128.000000, .In_FLRotation=0.500000 },
+    { .In_BrakePedal=0.000000, .In_RRRotation=-7.625092, .In_RLRotation=8192.500000, .In_FRRotation=-255.625000, .In_FLRotation=-43.500000 },
+    { .In_BrakePedal=0.500000, .In_RRRotation=6144.500000, .In_RLRotation=-6160.500000, .In_FRRotation=-0.500000, .In_FLRotation=-0.500000 },
+    { .In_BrakePedal=0.000000, .In_RRRotation=0.500000, .In_RLRotation=-0.000000, .In_FRRotation=-1.500000, .In_FLRotation=8.023560 },
+    { .In_BrakePedal=0.500000, .In_RRRotation=-0.998048, .In_RLRotation=-128.500000, .In_FRRotation=-127.501953, .In_FLRotation=1.500000 },
+    { .In_BrakePedal=0.000000, .In_RRRotation=-0.000000, .In_RLRotation=-1.812683, .In_FRRotation=-5130.500000, .In_FLRotation=-256.000000 },
+    { .In_BrakePedal=100.000000, .In_RRRotation=-0.000000, .In_RLRotation=263.500000, .In_FRRotation=-256.062993, .In_FLRotation=-0.500000 },
+    { .In_BrakePedal=0.000000, .In_RRRotation=-0.250015, .In_RLRotation=-4096.468750, .In_FRRotation=7564.500000, .In_FLRotation=9471.500000 },
+    { .In_BrakePedal=1.937500, .In_RRRotation=127.500000, .In_RLRotation=-6.500000, .In_FRRotation=1320.500000, .In_FLRotation=-1976.546875 },
+    { .In_BrakePedal=0.000000, .In_RRRotation=511.500000, .In_RLRotation=0.500000, .In_FRRotation=9727.500002, .In_FLRotation=0.500000 },
+    { .In_BrakePedal=100.000000, .In_RRRotation=-0.500000, .In_RLRotation=0.500000, .In_FRRotation=0.500000, .In_FLRotation=150.789052 },
+    { .In_BrakePedal=0.000000, .In_RRRotation=0.499985, .In_RLRotation=-0.500000, .In_FRRotation=0.500000, .In_FLRotation=-2121.500000 },
+    { .In_BrakePedal=100.000000, .In_RRRotation=1791.500000, .In_RLRotation=-2048.000000, .In_FRRotation=255.750000, .In_FLRotation=0.500000 },
+    { .In_BrakePedal=0.000000, .In_RRRotation=574.000001, .In_RLRotation=1.250000, .In_FRRotation=299.500000, .In_FLRotation=40.000000 },
+    { .In_BrakePedal=0.438431, .In_RRRotation=4.125000, .In_RLRotation=31.500000, .In_FRRotation=-18.504166, .In_FLRotation=-15.500000 },
+    { .In_BrakePedal=0.000000, .In_RRRotation=0.001953, .In_RLRotation=4366.500000, .In_FRRotation=-0.500000, .In_FLRotation=127.500000 },
+    { .In_BrakePedal=0.000000, .In_RRRotation=-0.125000, .In_RLRotation=-21.500001, .In_FRRotation=4783.500000, .In_FLRotation=-0.500000 },
+    { .In_BrakePedal=0.000000, .In_RRRotation=-64.001953, .In_RLRotation=-4096.468750, .In_FRRotation=7564.500000, .In_FLRotation=9471.500000 },
+    { .In_BrakePedal=1.937500, .In_RRRotation=127.500000, .In_RLRotation=-6.500000, .In_FRRotation=1320.500000, .In_FLRotation=-1976.546875 },
+    { .In_BrakePedal=0.000000, .In_RRRotation=511.500000, .In_RLRotation=0.500000, .In_FRRotation=9727.500002, .In_FLRotation=0.500000 },
+    { .In_BrakePedal=100.000000, .In_RRRotation=-0.500000, .In_RLRotation=0.500000, .In_FRRotation=0.500000, .In_FLRotation=150.789052 },
+    { .In_BrakePedal=0.000000, .In_RRRotation=0.499985, .In_RLRotation=-0.500000, .In_FRRotation=0.500000, .In_FLRotation=-2121.500000 },
+    { .In_BrakePedal=100.000000, .In_RRRotation=1791.500000, .In_RLRotation=-2048.000000, .In_FRRotation=255.750000, .In_FLRotation=0.500000 },
+    { .In_BrakePedal=0.000000, .In_RRRotation=574.000001, .In_RLRotation=1.250000, .In_FRRotation=299.500000, .In_FLRotation=40.000000 },
+    { .In_BrakePedal=0.438431, .In_RRRotation=4.125000, .In_RLRotation=31.500000, .In_FRRotation=-18.504166, .In_FLRotation=-15.500000 },
+    { .In_BrakePedal=0.000000, .In_RRRotation=0.001953, .In_RLRotation=4366.500000, .In_FRRotation=-0.500000, .In_FLRotation=127.500000 } };
+size_t get_brake_acc_nodiv_ctrl_U_data_size() { return sizeof(brake_acc_nodiv_ctrl_U_data) / sizeof(ExtU_brake_acc_nodiv_ctrl_T); }
+
+static const real_T rtu_vVehicleVelocitykmh_data[] = { 0.000000, 0.000000, 0.000000 };
+static const real_T rtu_TRequestedTorqueNm_data[] = { 0.000000, 0.000000, 0.000000 };
+static const real_T rtu_wwheelRotationrpm_data[] = { 0.000000, -0.000000, 0.000000 };
+static B_ABS_RR_Wheel_brake_acc_nodi_T localB_data[] = { { .Threshold_10kmh=0.000000 }, { .Threshold_10kmh=0.000000 }, { .Threshold_10kmh=0.000000 }, { .Threshold_10kmh=0.000000 } };
+
+void brake_acc_nodiv_ct_ABS_RR_Wheel_test() {
+  P_ABS_RR_Wheel_brake_acc_nodi_T *localP = &brake_acc_nodiv_ctrl_P.ABS_RR_Wheel;
+  int i;
+  for(i = 0; i < sizeof(rtu_vVehicleVelocitykmh_data) / sizeof(real_T); ++i) {
+    brake_acc_nodiv_ct_ABS_RR_Wheel(rtu_vVehicleVelocitykmh_data[i], rtu_TRequestedTorqueNm_data[i], rtu_wwheelRotationrpm_data[i], &localB_data[i], localP);
+  }
+}
+
+void rtIsRtGet_test() {
+  rtIsInf(0.0f);
+  rtIsInf(rtGetInf());
+  rtIsInf(rtGetMinusInf());
+  rtIsInfF(0.0f);
+  rtIsInfF(rtGetInfF());
+  rtIsInfF(rtGetMinusInfF());
+  rtIsNaN(0.0f);
+  rtIsNaN(rtGetNaN());
+  rtIsNaNF(0.0f);
+  rtIsNaNF(rtGetNaNF());
+}
+
+void rt_roundd_snf_test() {
+  real_T u = 4.503599627370497E+15;
+  rt_roundd_snf(u);
+}
+#endif
+
+void runCbmcUnitTests() {
+  brake_acc_nodiv_ct_ABS_RR_Wheel_test();
+  rtIsRtGet_test();
+  rt_roundd_snf_test();
+}

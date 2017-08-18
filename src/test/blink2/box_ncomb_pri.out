@@ -1,0 +1,1760 @@
+[WARNING] Global which is neither Integer nor Float
+@.str = private unnamed_addr constant [2 x i8] c"0\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@.str.1 = private unnamed_addr constant [7 x i8] c"main.c\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.Timer_A = private unnamed_addr constant [22 x i8] c"void *Timer_A(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.Timer_B = private unnamed_addr constant [22 x i8] c"void *Timer_B(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.Timer_C = private unnamed_addr constant [22 x i8] c"void *Timer_C(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+Rules: (declare-fun dom ((_ BitVec 16) (_ BitVec 16)) Bool)
+(declare-fun postDom ((_ BitVec 16) (_ BitVec 16)) Bool)
+(declare-fun higher ((_ BitVec 16) (_ BitVec 16)) Bool)
+(declare-fun pri ((_ BitVec 16)) Bool)
+(declare-fun linehigh ((_ BitVec 16) (_ BitVec 16)) Bool)
+(declare-fun ld ((_ BitVec 16) (_ BitVec 16)) Bool)
+(declare-fun linepri ((_ BitVec 16) (_ BitVec 16)) Bool)
+(declare-fun st ((_ BitVec 16) (_ BitVec 16)) Bool)
+(declare-fun nonLastSt ((_ BitVec 16)) Bool)
+(declare-fun compLd ((_ BitVec 16)) Bool)
+(declare-rel st ((_ BitVec 16) (_ BitVec 16)))
+(declare-rel dom ((_ BitVec 16) (_ BitVec 16)))
+(declare-rel postDom ((_ BitVec 16) (_ BitVec 16)))
+(declare-rel higher ((_ BitVec 16) (_ BitVec 16)))
+(declare-rel pri ((_ BitVec 16)))
+(declare-rel linehigh ((_ BitVec 16) (_ BitVec 16)))
+(declare-rel ld ((_ BitVec 16) (_ BitVec 16)))
+(declare-rel nonLastSt ((_ BitVec 16)))
+(declare-rel compLd ((_ BitVec 16)))
+(declare-rel linepri ((_ BitVec 16) (_ BitVec 16)))
+(declare-var A (_ BitVec 16))
+(declare-var B (_ BitVec 16))
+(declare-var C (_ BitVec 16))
+(declare-var D (_ BitVec 16))
+(declare-var E (_ BitVec 16))
+(rule (=> (and (dom B C) (dom A B)) (dom A C)))
+(rule (=> (and (postDom B C) (postDom A B)) (postDom A C)))
+(rule (=> (and (pri A) (pri B) (= A #x0000) (= B #x0001)) (higher B A)))
+(rule (=> (and (pri A) (pri B) (= A #x0001) (= B #x0002)) (higher B A)))
+(rule (=> (and (pri A) (pri B) (= A #x0002) (= B #x0003)) (higher B A)))
+(rule (=> (and (pri A) (pri B) (= A #x0003) (= B #x0004)) (higher B A)))
+(rule (=> (and (pri A) (pri B) (= A #x0004) (= B #x0005)) (higher B A)))
+(rule (=> (and (pri A) (pri B) (= A #x0005) (= B #x0006)) (higher B A)))
+(rule (=> (and (pri A) (pri B) (= A #x0006) (= B #x0007)) (higher B A)))
+(rule (=> (and (pri A) (pri B) (= A #x0007) (= B #x0008)) (higher B A)))
+(rule (=> (and (higher B C) (higher A B)) (higher A C)))
+(rule (=> (and (st A B) (higher D E) (linepri C E) (linepri A D) (ld C B))
+    (linehigh A C)))
+(rule (=> (and (st A B) (postDom A C) (st C B)) (nonLastSt C)))
+(rule (=> (and (st A B) (dom A C) (ld C B)) (compLd C)))
+(rule (linepri #x0030 #x0003))
+(rule (st #x0030 #x000d))
+(rule (pri #x0000))
+(rule (pri #x0001))
+(rule (pri #x0002))
+(rule (pri #x0003))
+(rule (pri #x0004))
+(rule (pri #x0005))
+(rule (pri #x0006))
+(rule (pri #x0007))
+(rule (pri #x0008))
+(rule (postDom #x0031 #x0030))
+(rule (dom #x0030 #x0031))
+(rule (postDom #x002d #x002b))
+(rule (postDom #x002d #x002f))
+(rule (linepri #x002e #x0004))
+(rule (st #x002e #x0019))
+(rule (linepri #x002c #x0004))
+(rule (ld #x002c #x0017))
+(rule (postDom #x002f #x002e))
+(rule (dom #x002e #x002f))
+(rule (postDom #x002e #x002c))
+(rule (dom #x002c #x002e))
+(rule (dom #x0009 #x000a))
+(rule (postDom #x000a #x0009))
+(rule (dom #x000a #x000b))
+(rule (postDom #x000b #x000a))
+(rule (dom #x000b #x000c))
+(rule (postDom #x000c #x000b))
+(rule (ld #x0009 #x000d))
+(rule (linepri #x0009 #x0003))
+(rule (st #x000a #x000d))
+(rule (linepri #x000a #x0003))
+(rule (ld #x000b #x000d))
+(rule (linepri #x000b #x0003))
+(rule (postDom #x000e #x000c))
+(rule (dom #x000c #x000f))
+(rule (dom #x000c #x000e))
+(rule (dom #x000f #x0010))
+(rule (postDom #x0010 #x000f))
+(rule (dom #x000e #x0011))
+(rule (postDom #x0011 #x000e))
+(rule (ld #x000e #x000d))
+(rule (linepri #x000e #x0003))
+(rule (dom #x0011 #x0012))
+(rule (dom #x0011 #x0013))
+(rule (dom #x0012 #x0014))
+(rule (postDom #x0014 #x0012))
+(rule (dom #x0014 #x0015))
+(rule (postDom #x0015 #x0014))
+(rule (dom #x0015 #x0016))
+(rule (postDom #x0016 #x0015))
+(rule (ld #x0012 #x0017))
+(rule (linepri #x0012 #x0003))
+(rule (ld #x0014 #x0018))
+(rule (linepri #x0014 #x0003))
+(rule (st #x0015 #x0019))
+(rule (linepri #x0015 #x0003))
+(rule (postDom #x0013 #x0016))
+(rule (postDom #x0013 #x0011))
+(rule (dom #x001a #x001b))
+(rule (postDom #x001b #x001a))
+(rule (dom #x001b #x001c))
+(rule (postDom #x001c #x001b))
+(rule (st #x001a #x000d))
+(rule (linepri #x001a #x0002))
+(rule (ld #x001b #x000d))
+(rule (linepri #x001b #x0002))
+(rule (postDom #x001d #x001c))
+(rule (dom #x001c #x001e))
+(rule (dom #x001c #x001d))
+(rule (dom #x001e #x001f))
+(rule (postDom #x001f #x001e))
+(rule (dom #x001d #x0020))
+(rule (postDom #x0020 #x001d))
+(rule (ld #x001d #x000d))
+(rule (linepri #x001d #x0002))
+(rule (dom #x0020 #x0021))
+(rule (dom #x0020 #x0022))
+(rule (dom #x0021 #x0023))
+(rule (postDom #x0023 #x0021))
+(rule (dom #x0023 #x0024))
+(rule (postDom #x0024 #x0023))
+(rule (ld #x0021 #x0017))
+(rule (linepri #x0021 #x0002))
+(rule (st #x0023 #x0019))
+(rule (linepri #x0023 #x0002))
+(rule (postDom #x0022 #x0024))
+(rule (postDom #x0022 #x0020))
+(rule (dom #x0025 #x0026))
+(rule (postDom #x0026 #x0025))
+(rule (dom #x0026 #x0027))
+(rule (postDom #x0027 #x0026))
+(rule (st #x0025 #x000d))
+(rule (linepri #x0025 #x0004))
+(rule (ld #x0026 #x000d))
+(rule (linepri #x0026 #x0004))
+(rule (postDom #x0028 #x0027))
+(rule (dom #x0027 #x0029))
+(rule (dom #x0027 #x0028))
+(rule (dom #x0029 #x002a))
+(rule (postDom #x002a #x0029))
+(rule (dom #x0028 #x002b))
+(rule (postDom #x002b #x0028))
+(rule (ld #x0028 #x000d))
+(rule (linepri #x0028 #x0004))
+(rule (dom #x002b #x002c))
+(rule (dom #x002b #x002d))
+
+[WARNING] Initializing unhandled global type: @.str = private unnamed_addr constant [2 x i8] c"0\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @.str.1 = private unnamed_addr constant [7 x i8] c"main.c\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.Timer_A = private unnamed_addr constant [22 x i8] c"void *Timer_A(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.Timer_B = private unnamed_addr constant [22 x i8] c"void *Timer_B(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.Timer_C = private unnamed_addr constant [22 x i8] c"void *Timer_C(void *)\00", align 1
+Setting to default initial value
+Interference Iteration: 1
+Analyzing thread: 0
+Analyzing thread: 1
+Analyzing thread: 2
+Analyzing thread: 3
+Analyzing thread: 4
+Interference Iteration: 2
+Analyzing thread: 0
+======================================
+ID of Load: 9
+  %0 = load i32, i32* @timerCount, align 4
+ID of Store: 26
+  store i32 0, i32* @timerCount, align 4
+St is NOT nonLast
+Load is not completeLoad
+======================================
+======================================
+ID of Load: 9
+  %0 = load i32, i32* @timerCount, align 4
+ID of Store: 37
+  store i32 0, i32* @timerCount, align 4
+St is NOT nonLast
+Load is not completeLoad
+======================================
+======================================
+ID of Load: 9
+  %0 = load i32, i32* @timerCount, align 4
+ID of Store: 48
+  store i32 1, i32* @timerCount, align 4
+St is NOT nonLast
+Load is not completeLoad
+======================================
+======================================
+ID of Load: 9
+  %0 = load i32, i32* @timerCount, align 4
+ID of Store: 50
+  store i32 0, i32* @timerCount, align 4
+St is NOT nonLast
+Load is not completeLoad
+======================================
+======================================
+ID of Load: 11
+  %1 = load i32, i32* @timerCount, align 4
+ID of Store: 26
+  store i32 0, i32* @timerCount, align 4
+St is NOT nonLast
+Load is completeLoad
+st is not higher than ld
+======================================
+======================================
+ID of Load: 11
+  %1 = load i32, i32* @timerCount, align 4
+ID of Store: 37
+  store i32 0, i32* @timerCount, align 4
+St is NOT nonLast
+Load is completeLoad
+st is higher than ld
+======================================
+======================================
+ID of Load: 11
+  %1 = load i32, i32* @timerCount, align 4
+ID of Store: 48
+  store i32 1, i32* @timerCount, align 4
+St is NOT nonLast
+Load is completeLoad
+st is not higher than ld
+======================================
+======================================
+ID of Load: 11
+  %1 = load i32, i32* @timerCount, align 4
+ID of Store: 50
+  store i32 0, i32* @timerCount, align 4
+St is NOT nonLast
+Load is completeLoad
+st is not higher than ld
+======================================
+======================================
+ID of Load: 14
+  %2 = load i32, i32* @timerCount, align 4
+ID of Store: 26
+  store i32 0, i32* @timerCount, align 4
+St is NOT nonLast
+Load is completeLoad
+st is not higher than ld
+======================================
+======================================
+ID of Load: 14
+  %2 = load i32, i32* @timerCount, align 4
+ID of Store: 37
+  store i32 0, i32* @timerCount, align 4
+St is NOT nonLast
+Load is completeLoad
+st is higher than ld
+======================================
+======================================
+ID of Load: 14
+  %2 = load i32, i32* @timerCount, align 4
+ID of Store: 48
+  store i32 1, i32* @timerCount, align 4
+St is NOT nonLast
+Load is completeLoad
+st is not higher than ld
+======================================
+======================================
+ID of Load: 14
+  %2 = load i32, i32* @timerCount, align 4
+ID of Store: 50
+  store i32 0, i32* @timerCount, align 4
+St is NOT nonLast
+Load is completeLoad
+st is not higher than ld
+======================================
+Analyzing thread: 1
+======================================
+ID of Load: 27
+  %0 = load i32, i32* @timerCount, align 4
+ID of Store: 10
+  store i32 %add, i32* @timerCount, align 4
+St is NOT nonLast
+Load is completeLoad
+st is higher than ld
+======================================
+======================================
+ID of Load: 27
+  %0 = load i32, i32* @timerCount, align 4
+ID of Store: 37
+  store i32 0, i32* @timerCount, align 4
+St is NOT nonLast
+Load is completeLoad
+st is higher than ld
+======================================
+======================================
+ID of Load: 27
+  %0 = load i32, i32* @timerCount, align 4
+ID of Store: 48
+  store i32 1, i32* @timerCount, align 4
+St is NOT nonLast
+Load is completeLoad
+st is higher than ld
+======================================
+======================================
+ID of Load: 27
+  %0 = load i32, i32* @timerCount, align 4
+ID of Store: 50
+  store i32 0, i32* @timerCount, align 4
+St is NOT nonLast
+Load is completeLoad
+st is not higher than ld
+======================================
+======================================
+ID of Load: 29
+  %1 = load i32, i32* @timerCount, align 4
+ID of Store: 10
+  store i32 %add, i32* @timerCount, align 4
+St is NOT nonLast
+Load is completeLoad
+st is higher than ld
+======================================
+======================================
+ID of Load: 29
+  %1 = load i32, i32* @timerCount, align 4
+ID of Store: 37
+  store i32 0, i32* @timerCount, align 4
+St is NOT nonLast
+Load is completeLoad
+st is higher than ld
+======================================
+======================================
+ID of Load: 29
+  %1 = load i32, i32* @timerCount, align 4
+ID of Store: 48
+  store i32 1, i32* @timerCount, align 4
+St is NOT nonLast
+Load is completeLoad
+st is higher than ld
+======================================
+======================================
+ID of Load: 29
+  %1 = load i32, i32* @timerCount, align 4
+ID of Store: 50
+  store i32 0, i32* @timerCount, align 4
+St is NOT nonLast
+Load is completeLoad
+st is not higher than ld
+======================================
+Analyzing thread: 2
+======================================
+ID of Load: 38
+  %0 = load i32, i32* @timerCount, align 4
+ID of Store: 10
+  store i32 %add, i32* @timerCount, align 4
+St is NOT nonLast
+Load is completeLoad
+st is not higher than ld
+======================================
+======================================
+ID of Load: 38
+  %0 = load i32, i32* @timerCount, align 4
+ID of Store: 26
+  store i32 0, i32* @timerCount, align 4
+St is NOT nonLast
+Load is completeLoad
+st is not higher than ld
+======================================
+======================================
+ID of Load: 38
+  %0 = load i32, i32* @timerCount, align 4
+ID of Store: 48
+  store i32 1, i32* @timerCount, align 4
+St is NOT nonLast
+Load is completeLoad
+st is not higher than ld
+======================================
+======================================
+ID of Load: 38
+  %0 = load i32, i32* @timerCount, align 4
+ID of Store: 50
+  store i32 0, i32* @timerCount, align 4
+St is NOT nonLast
+Load is completeLoad
+st is not higher than ld
+======================================
+======================================
+ID of Load: 40
+  %1 = load i32, i32* @timerCount, align 4
+ID of Store: 10
+  store i32 %add, i32* @timerCount, align 4
+St is NOT nonLast
+Load is completeLoad
+st is not higher than ld
+======================================
+======================================
+ID of Load: 40
+  %1 = load i32, i32* @timerCount, align 4
+ID of Store: 26
+  store i32 0, i32* @timerCount, align 4
+St is NOT nonLast
+Load is completeLoad
+st is not higher than ld
+======================================
+======================================
+ID of Load: 40
+  %1 = load i32, i32* @timerCount, align 4
+ID of Store: 48
+  store i32 1, i32* @timerCount, align 4
+St is NOT nonLast
+Load is completeLoad
+st is not higher than ld
+======================================
+======================================
+ID of Load: 40
+  %1 = load i32, i32* @timerCount, align 4
+ID of Store: 50
+  store i32 0, i32* @timerCount, align 4
+St is NOT nonLast
+Load is completeLoad
+st is not higher than ld
+======================================
+Analyzing thread: 3
+Analyzing thread: 4
+Interference Iteration: 3
+Analyzing thread: 0
+Analyzing thread: 1
+Analyzing thread: 2
+Analyzing thread: 3
+Analyzing thread: 4
+v37: @timerCount = global i32 0, align 4
+v14:   %0 = load i32, i32* @timerCount, align 4
+v15:   %cmp = icmp ne i32 %0, 0
+v45: @LED_OUT = common global i32 0, align 4
+v56: i8* %unused
+v38: @LED_0 = common global i32 0, align 4
+v39: @LED_1 = common global i32 0, align 4
+v40: @P1OUT = common global i32 0, align 4
+v0:   %0 = load i32, i32* @timerCount, align 4
+v41: @WDTPW = common global i32 0, align 4
+v42: @WDTHOLD = common global i32 0, align 4
+v43: @WDTCTL = common global i32 0, align 4
+v44: @LED_DIR = common global i32 0, align 4
+v46: @CCIE = common global i32 0, align 4
+v47: @CCTL0 = common global i32 0, align 4
+v48: @TASSEL_2 = common global i32 0, align 4
+v49: @MC_2 = common global i32 0, align 4
+v50: @TACTL = common global i32 0, align 4
+v51: @WDTCLT = common global i32 0, align 4
+v52: @cnt1 = common global i32 0, align 4
+v53: @cnt2 = common global i32 0, align 4
+v54: @cnt3 = common global i32 0, align 4
+v55: @cnt4 = common global i32 0, align 4
+v1:   %add = add i32 %0, 1
+v2:   %1 = load i32, i32* @timerCount, align 4
+v3:   %cmp = icmp ne i32 %1, 0
+v58: i8* %1
+v59: i32 %2
+v57: i8* %0
+v4:   %2 = load i32, i32* @timerCount, align 4
+v5:   %cmp1 = icmp eq i32 %2, 0
+v6:   %3 = load i32, i32* @LED_0, align 4
+v7:   %4 = load i32, i32* @LED_1, align 4
+v8:   %add3 = add nsw i32 %3, %4
+v60: i8* %3
+v61: i8* %unused
+v62: i8* %unused
+v9:   %0 = load i32, i32* @timerCount, align 4
+v10:   %cmp = icmp ne i32 %0, 0
+v63: i8* %unused
+v11:   %1 = load i32, i32* @timerCount, align 4
+v12:   %cmp1 = icmp eq i32 %1, 0
+v13:   %2 = load i32, i32* @LED_0, align 4
+v16:   %1 = load i32, i32* @timerCount, align 4
+v17:   %cmp1 = icmp eq i32 %1, 0
+v18:   %2 = load i32, i32* @LED_0, align 4
+v19:   %t1 = alloca i64, align 8
+v20:   %t2 = alloca i64, align 8
+v21:   %t3 = alloca i64, align 8
+v22:   %t4 = alloca i64, align 8
+v23:   %0 = load i32, i32* @WDTPW, align 4
+v24:   %1 = load i32, i32* @WDTHOLD, align 4
+v25:   %add = add nsw i32 %0, %1
+v26:   %2 = load i32, i32* @LED_0, align 4
+v27:   %3 = load i32, i32* @LED_1, align 4
+v28:   %add1 = add nsw i32 %2, %3
+v29:   %4 = load i32, i32* @LED_0, align 4
+v30:   %5 = load i32, i32* @LED_1, align 4
+v31:   %add2 = add nsw i32 %4, %5
+v32:   %add3 = add nsw i32 1, %add2
+v33:   %6 = load i32, i32* @CCIE, align 4
+v34:   %7 = load i32, i32* @TASSEL_2, align 4
+v35:   %8 = load i32, i32* @MC_2, align 4
+v65: %union.pthread_attr_t* %1
+v36:   %add4 = add nsw i32 %7, %8
+v64: i64* %0
+v66: i8* (i8*)* %2
+v67: i8* %3
+==== Timer_A() Results ====
+BasicBlock: 
+entry:
+  %0 = load i32, i32* @timerCount, align 4
+  %add = add i32 %0, 1
+  store i32 %add, i32* @timerCount, align 4
+  %1 = load i32, i32* @timerCount, align 4
+  %cmp = icmp ne i32 %1, 0
+  br i1 %cmp, label %if.then, label %if.end
+Facts: interval of dim (68,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [0,0]
+     v38 in [0,0]
+     v39 in [0,0]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [0,0]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [-oo,+oo]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.then:                                          ; preds = %entry
+  call void @__assert_fail(i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.1, i32 0, i32 0), i32 100, i8* getelementptr inbounds ([22 x i8], [22 x i8]* @__PRETTY_FUNCTION__.Timer_A, i32 0, i32 0)) #3
+  unreachable
+Facts: interval of dim (68,0):
+      v0 in [0,1]
+      v1 in [1,2]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [0,2]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [1,1]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [0,2]
+     v38 in [0,0]
+     v39 in [0,0]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [0,0]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [-oo,+oo]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.end:                                           ; preds = %entry
+  %2 = load i32, i32* @timerCount, align 4
+  %cmp1 = icmp eq i32 %2, 0
+  br i1 %cmp1, label %if.then2, label %if.end4
+Facts: interval of dim (68,0):
+      v0 in [0,1]
+      v1 in [1,2]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [0,0]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [0,0]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [0,2]
+     v38 in [0,0]
+     v39 in [0,0]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [0,0]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [-oo,+oo]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.then2:                                         ; preds = %if.end
+  %3 = load i32, i32* @LED_0, align 4
+  %4 = load i32, i32* @LED_1, align 4
+  %add3 = add nsw i32 %3, %4
+  store i32 %add3, i32* @P1OUT, align 4
+  br label %if.end4
+Facts: interval of dim (68,0):
+      v0 in [0,1]
+      v1 in [1,2]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [0,0]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [0,0]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [0,2]
+     v38 in [0,0]
+     v39 in [0,0]
+      v4 in [0,0]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [1,1]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [0,0]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [-oo,+oo]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.end4:                                          ; preds = %if.then2, %if.end
+  ret i8* undef
+Facts: interval of dim (68,0):
+      v0 in [0,1]
+      v1 in [1,2]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [0,0]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [0,0]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [0,2]
+     v38 in [0,0]
+     v39 in [0,0]
+      v4 in [0,2]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [0,1]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [0,0]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [-oo,+oo]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+======================
+==== Timer_B() Results ====
+BasicBlock: 
+entry:
+  store i32 0, i32* @timerCount, align 4
+  %0 = load i32, i32* @timerCount, align 4
+  %cmp = icmp ne i32 %0, 0
+  br i1 %cmp, label %if.then, label %if.end
+Facts: interval of dim (68,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [0,0]
+     v38 in [0,0]
+     v39 in [0,0]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [0,0]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [-oo,+oo]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.then:                                          ; preds = %entry
+  call void @__assert_fail(i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.1, i32 0, i32 0), i32 118, i8* getelementptr inbounds ([22 x i8], [22 x i8]* @__PRETTY_FUNCTION__.Timer_B, i32 0, i32 0)) #3
+  unreachable
+Facts: interval of dim (68,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [1,1]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [0,2]
+     v38 in [0,0]
+     v39 in [0,0]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [0,0]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [-oo,+oo]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [0,2]
+
+BasicBlock: 
+if.end:                                           ; preds = %entry
+  %1 = load i32, i32* @timerCount, align 4
+  %cmp1 = icmp eq i32 %1, 0
+  br i1 %cmp1, label %if.then2, label %if.end3
+Facts: interval of dim (68,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [0,0]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [0,2]
+     v38 in [0,0]
+     v39 in [0,0]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [0,0]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [-oo,+oo]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [0,0]
+
+BasicBlock: 
+if.then2:                                         ; preds = %if.end
+  %2 = load i32, i32* @LED_0, align 4
+  store i32 %2, i32* @P1OUT, align 4
+  br label %if.end3
+Facts: interval of dim (68,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [0,0]
+     v11 in [0,0]
+     v12 in [1,1]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [0,2]
+     v38 in [0,0]
+     v39 in [0,0]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [0,0]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [-oo,+oo]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [0,0]
+
+BasicBlock: 
+if.end3:                                          ; preds = %if.then2, %if.end
+  ret i8* undef
+Facts: interval of dim (68,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [0,0]
+     v11 in [0,2]
+     v12 in [0,1]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [0,2]
+     v38 in [0,0]
+     v39 in [0,0]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [0,0]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [-oo,+oo]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [0,0]
+
+======================
+==== Timer_C() Results ====
+BasicBlock: 
+if.then:                                          ; preds = %entry
+  call void @__assert_fail(i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.1, i32 0, i32 0), i32 136, i8* getelementptr inbounds ([22 x i8], [22 x i8]* @__PRETTY_FUNCTION__.Timer_C, i32 0, i32 0)) #3
+  unreachable
+Facts: interval of dim (68,0): bottom
+
+BasicBlock: 
+if.end:                                           ; preds = %entry
+  %1 = load i32, i32* @timerCount, align 4
+  %cmp1 = icmp eq i32 %1, 0
+  br i1 %cmp1, label %if.then2, label %if.end3
+Facts: interval of dim (68,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [0,0]
+     v15 in [0,0]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [0,0]
+     v38 in [0,0]
+     v39 in [0,0]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [0,0]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [-oo,+oo]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+entry:
+  store i32 0, i32* @timerCount, align 4
+  %0 = load i32, i32* @timerCount, align 4
+  %cmp = icmp ne i32 %0, 0
+  br i1 %cmp, label %if.then, label %if.end
+Facts: interval of dim (68,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [0,0]
+     v38 in [0,0]
+     v39 in [0,0]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [0,0]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [-oo,+oo]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.then2:                                         ; preds = %if.end
+  %2 = load i32, i32* @LED_0, align 4
+  store i32 %2, i32* @P1OUT, align 4
+  br label %if.end3
+Facts: interval of dim (68,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [0,0]
+     v15 in [0,0]
+     v16 in [0,0]
+     v17 in [1,1]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [0,0]
+     v38 in [0,0]
+     v39 in [0,0]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [0,0]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [-oo,+oo]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.end3:                                          ; preds = %if.then2, %if.end
+  ret i8* undef
+Facts: interval of dim (68,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [0,0]
+     v15 in [0,0]
+     v16 in [0,0]
+     v17 in [1,1]
+     v18 in [0,0]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [0,0]
+     v38 in [0,0]
+     v39 in [0,0]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [0,0]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [-oo,+oo]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+======================
+==== Timer_Force() Results ====
+BasicBlock: 
+entry:
+  store i32 1, i32* @timerCount, align 4
+  ret i8* undef
+Facts: interval of dim (68,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [0,0]
+     v38 in [0,0]
+     v39 in [0,0]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [0,0]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [-oo,+oo]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+======================
+==== main() Results ====
+BasicBlock: 
+entry:
+  %t1 = alloca i64, align 8
+  %t2 = alloca i64, align 8
+  %t3 = alloca i64, align 8
+  %t4 = alloca i64, align 8
+  %0 = load i32, i32* @WDTPW, align 4
+  %1 = load i32, i32* @WDTHOLD, align 4
+  %add = add nsw i32 %0, %1
+  store i32 %add, i32* @WDTCTL, align 4
+  %2 = load i32, i32* @LED_0, align 4
+  %3 = load i32, i32* @LED_1, align 4
+  %add1 = add nsw i32 %2, %3
+  store i32 %add1, i32* @LED_DIR, align 4
+  %4 = load i32, i32* @LED_0, align 4
+  %5 = load i32, i32* @LED_1, align 4
+  %add2 = add nsw i32 %4, %5
+  %add3 = add nsw i32 1, %add2
+  store i32 %add3, i32* @LED_OUT, align 4
+  %6 = load i32, i32* @CCIE, align 4
+  store i32 %6, i32* @CCTL0, align 4
+  %7 = load i32, i32* @TASSEL_2, align 4
+  %8 = load i32, i32* @MC_2, align 4
+  %add4 = add nsw i32 %7, %8
+  store i32 %add4, i32* @TACTL, align 4
+  store i32 0, i32* @timerCount, align 4
+  %call = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @Timer_A, i8* null) #3
+  %call5 = call i32 @pthread_create(i64* %t2, %union.pthread_attr_t* null, i8* (i8*)* @Timer_B, i8* null) #3
+  %call6 = call i32 @pthread_create(i64* %t3, %union.pthread_attr_t* null, i8* (i8*)* @Timer_C, i8* null) #3
+  %call7 = call i32 @pthread_create(i64* %t4, %union.pthread_attr_t* null, i8* (i8*)* @Timer_Force, i8* null) #3
+  ret i32 0
+Facts: interval of dim (68,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [0,0]
+     v38 in [0,0]
+     v39 in [0,0]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [0,0]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [-oo,+oo]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+======================
+[WARNING] Value not dumped to metadata: @timerCount = global i32 0, align 4
+	type not handled
+[WARNING] Value not dumped to metadata: @LED_0 = common global i32 0, align 4
+	type not handled
+[WARNING] Value not dumped to metadata: @LED_1 = common global i32 0, align 4
+	type not handled
+[WARNING] Value not dumped to metadata: @P1OUT = common global i32 0, align 4
+	type not handled
+Errors found: 2
+Max Permutations: 0
+Total pairs: 56
+Filtered pairs: 32

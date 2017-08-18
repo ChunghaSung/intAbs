@@ -1,0 +1,515 @@
+CBMC version 4.9 64-bit linux
+Parsing main.c
+Converting
+Type-checking main
+Generating GOTO Program
+Adding CPROVER library
+Function Pointer Removal
+Partial Inlining
+Generic Property Instrumentation
+Starting Bounded Model Checking
+Adding interrupt constraints
+size of program expression: 1994 steps
+no slicing due to threads
+Generated 3 VCC(s), 3 remaining after simplification
+Passing problem to propositional reduction
+Running propositional reduction
+Post-processing
+Solving with MiniSAT 2.2.0 with simplifier
+21411 variables, 85902 clauses
+SAT checker: negated claim is SATISFIABLE, i.e., does not hold
+Runtime decision procedure: 0.378s
+Building error trace
+
+Counterexample:
+
+State 3 file main.c line 173 thread 0
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_B_local_RT2=0 (00000000000000000000000000000000)
+
+State 4 file main.c line 174 thread 0
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_B_local_RT3=0 (00000000000000000000000000000000)
+
+State 5 file main.c line 175 thread 0
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_B_local_RT14=0 (00000000000000000000000000000000)
+
+State 6 file main.c line 177 thread 0
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_B_local_ABS_FL_Wheel_Threshold_10kmh=100 (00000000000000000000000001100100)
+
+State 7 file main.c line 178 thread 0
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_B_local_ABS_RL_Wheel_Threshold_10kmh=100 (00000000000000000000000001100100)
+
+State 8 file main.c line 179 thread 0
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_B_local_ABS_RR_Wheel_Threshold_10kmh=100 (00000000000000000000000001100100)
+
+State 9 file main.c line 180 thread 0
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_B_local_ABS_FR_Wheel_Threshold_10kmh=100 (00000000000000000000000001100100)
+
+State 10 file main.c line 182 thread 0
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_P_RT_X0=0 (00000000000000000000000000000000)
+
+State 11 file main.c line 183 thread 0
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_P_RT4_X0=0 (00000000000000000000000000000000)
+
+State 12 file main.c line 184 thread 0
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_P_RT1_X0=0 (00000000000000000000000000000000)
+
+State 13 file main.c line 185 thread 0
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_P_RT2_X0=0 (00000000000000000000000000000000)
+
+State 14 file main.c line 186 thread 0
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_P_RT3_X0=0 (00000000000000000000000000000000)
+
+State 15 file main.c line 188 thread 0
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_P_Gain1_Gain=0 (00000000000000000000000000000000)
+
+State 16 file main.c line 190 thread 0
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_P_Distribution_Gain0=0 (00000000000000000000000000000000)
+
+State 17 file main.c line 191 thread 0
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_P_Distribution_Gain1=0 (00000000000000000000000000000000)
+
+State 18 file main.c line 192 thread 0
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_P_Distribution_Gain2=0 (00000000000000000000000000000000)
+
+State 19 file main.c line 193 thread 0
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_P_Distribution_Gain3=0 (00000000000000000000000000000000)
+
+State 20 file main.c line 196 thread 0
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_P_average_rpm_Gain=0 (00000000000000000000000000000000)
+
+State 21 file main.c line 197 thread 0
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_P_wgrads_Gain=0 (00000000000000000000000000000000)
+
+State 22 file main.c line 198 thread 0
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_P_vkmh_Gain=0 (00000000000000000000000000000000)
+
+State 23 file main.c line 245 thread 0
+----------------------------------------------------
+  vkmh=0 (00000000000000000000000000000000)
+
+State 24 file main.c line 246 thread 0
+----------------------------------------------------
+  test=0 (00000000000000000000000000000000)
+
+State 25 file main.c line 248 thread 0
+----------------------------------------------------
+  RT9=0 (00000000000000000000000000000000)
+
+State 26 file main.c line 249 thread 0
+----------------------------------------------------
+  RT10=0 (00000000000000000000000000000000)
+
+State 27 file main.c line 250 thread 0
+----------------------------------------------------
+  RT11=0 (00000000000000000000000000000000)
+
+State 28 file main.c line 251 thread 0
+----------------------------------------------------
+  RT12=0 (00000000000000000000000000000000)
+
+State 29 file main.c line 252 thread 0
+----------------------------------------------------
+  RT14=0 (00000000000000000000000000000000)
+
+State 30 file main.c line 254 thread 0
+----------------------------------------------------
+  RT_Buffer0=0 (00000000000000000000000000000000)
+
+State 31 file main.c line 255 thread 0
+----------------------------------------------------
+  RT0_Buffer0=0 (00000000000000000000000000000000)
+
+State 32 file main.c line 256 thread 0
+----------------------------------------------------
+  RT1_Buffer0=0 (00000000000000000000000000000000)
+
+State 33 file main.c line 257 thread 0
+----------------------------------------------------
+  RT2_Buffer0=0 (00000000000000000000000000000000)
+
+State 34 file main.c line 258 thread 0
+----------------------------------------------------
+  RT3_Buffer0=0 (00000000000000000000000000000000)
+
+State 35 file main.c line 259 thread 0
+----------------------------------------------------
+  RT4_Buffer0=0 (00000000000000000000000000000000)
+
+State 36 file main.c line 261 thread 0
+----------------------------------------------------
+  Distribution_idx=0 (00000000000000000000000000000000)
+
+State 37 file main.c line 262 thread 0
+----------------------------------------------------
+  Distribution_idx_0=0 (00000000000000000000000000000000)
+
+State 38 file main.c line 263 thread 0
+----------------------------------------------------
+  Distribution_idx_1=0 (00000000000000000000000000000000)
+
+State 39 file main.c line 267 thread 0
+----------------------------------------------------
+  cnt1=0 (00000000000000000000000000000000)
+
+State 40 file main.c line 267 thread 0
+----------------------------------------------------
+  cnt2=0 (00000000000000000000000000000000)
+
+State 41 file main.c line 267 thread 0
+----------------------------------------------------
+  cnt3=0 (00000000000000000000000000000000)
+
+State 42 file <built-in-additions> line 21 thread 0
+----------------------------------------------------
+  __CPROVER_thread_id=0 (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 43 file <built-in-additions> line 22 thread 0
+----------------------------------------------------
+  __CPROVER_threads_exited=__CPROVER_threads_exited#1 (?)
+
+State 44 file <built-in-additions> line 23 thread 0
+----------------------------------------------------
+  __CPROVER_next_thread_id=0 (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 45 file <built-in-additions> line 30 thread 0
+----------------------------------------------------
+  __CPROVER_deallocated=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 46 file <built-in-additions> line 31 thread 0
+----------------------------------------------------
+  __CPROVER_dead_object=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 47 file <built-in-additions> line 32 thread 0
+----------------------------------------------------
+  __CPROVER_malloc_object=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 48 file <built-in-additions> line 33 thread 0
+----------------------------------------------------
+  __CPROVER_malloc_size=0 (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 49 file <built-in-additions> line 34 thread 0
+----------------------------------------------------
+  __CPROVER_malloc_is_new_array=FALSE (0)
+
+State 50 file <built-in-additions> line 35 thread 0
+----------------------------------------------------
+  __CPROVER_memory_leak=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 51 file <built-in-additions> line 57 thread 0
+----------------------------------------------------
+  __CPROVER_rounding_mode=0 (00000000000000000000000000000000)
+
+State 52 file main.c line 163 thread 0
+----------------------------------------------------
+  __VERIFIER_thread_priorities={ 5, 5, 5, 5, 22 } ({ 00000000000000000000000000000101, 00000000000000000000000000000101, 00000000000000000000000000000101, 00000000000000000000000000000101, 00000000000000000000000000010110 })
+
+State 53 file main.c line 164 thread 0
+----------------------------------------------------
+  __VERIFIER_threads={ "c::task_RR_Wheel", "c::task_FR_Wheel", "c::task_FL_Wheel", "c::task_RL_Wheel", "c::task_compute" } ({ 0000001000000000000000000000000000000000000000000000000000000000, 0000001100000000000000000000000000000000000000000000000000000000, 0000010000000000000000000000000000000000000000000000000000000000, 0000010100000000000000000000000000000000000000000000000000000000, 0000011000000000000000000000000000000000000000000000000000000000 })
+
+State 54 file main.c line 169 thread 0
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_B_local_RT_h=0 (00000000000000000000000000000000)
+
+State 55 file <built-in-additions> line 78 thread 0
+----------------------------------------------------
+  __CPROVER_pipe_count=0 (00000000000000000000000000000000)
+
+State 56 file main.c line 170 thread 0
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_B_local_RTH=0 (00000000000000000000000000000000)
+
+State 57 file main.c line 171 thread 0
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_B_local_RT4=0 (00000000000000000000000000000000)
+
+State 58 file main.c line 172 thread 0
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_B_local_RT1=0 (00000000000000000000000000000000)
+
+State 62 file main.c line 816 function main thread 0
+----------------------------------------------------
+  test=0 (00000000000000000000000000000000)
+
+State 70 file main.c line 370 function task_RR_Wheel thread 1
+----------------------------------------------------
+  cnt2=1 (00000000000000000000000000000001)
+
+State 71 file main.c line 275 function task_compute thread 2
+----------------------------------------------------
+  cnt1=1 (00000000000000000000000000000001)
+
+State 72 file main.c line 472 function task_FL_Wheel thread 3
+----------------------------------------------------
+  cnt3=1 (00000000000000000000000000000001)
+
+State 73 file main.c line 279 function task_compute thread 2
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_B_local_RT_h=0 (00000000000000000000000000000000)
+
+State 74 file main.c line 282 function task_compute thread 2
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_B_local_RT4=0 (00000000000000000000000000000000)
+
+State 75 file main.c line 285 function task_compute thread 2
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_B_local_RT1=0 (00000000000000000000000000000000)
+
+State 76 file main.c line 288 function task_compute thread 2
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_B_local_RT2=0 (00000000000000000000000000000000)
+
+State 77 file main.c line 291 function task_compute thread 2
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_B_local_RT3=0 (00000000000000000000000000000000)
+
+State 78 file main.c line 371 function task_RR_Wheel thread 1
+----------------------------------------------------
+  test=0 (00000000000000000000000000000000)
+
+State 79 file main.c line 294 function task_compute thread 2
+----------------------------------------------------
+  test=0 (00000000000000000000000000000000)
+
+State 80 file main.c line 473 function task_FL_Wheel thread 3
+----------------------------------------------------
+  test=0 (00000000000000000000000000000000)
+
+State 82 file main.c line 480 function task_FL_Wheel thread 3
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_B_local_RT_h=0 (00000000000000000000000000000000)
+
+State 83 file main.c line 482 function task_FL_Wheel thread 3
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_B_local_RT4=0 (00000000000000000000000000000000)
+
+State 84 file main.c line 302 function task_compute thread 2
+----------------------------------------------------
+  Distribution_idx=0 (00000000000000000000000000000000)
+
+State 85 file main.c line 484 function task_FL_Wheel thread 3
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_B_local_RT1=0 (00000000000000000000000000000000)
+
+State 86 file main.c line 304 function task_compute thread 2
+----------------------------------------------------
+  Distribution_idx_0=0 (00000000000000000000000000000000)
+
+State 87 file main.c line 306 function task_compute thread 2
+----------------------------------------------------
+  Distribution_idx_1=0 (00000000000000000000000000000000)
+
+State 88 file main.c line 486 function task_FL_Wheel thread 3
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_B_local_RT2=0 (00000000000000000000000000000000)
+
+State 89 file main.c line 488 function task_FL_Wheel thread 3
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_B_local_RT3=0 (00000000000000000000000000000000)
+
+State 90 file main.c line 489 function task_FL_Wheel thread 3
+----------------------------------------------------
+  rtb_to_int1=0 (00000000000000000000000000000000)
+
+State 91 file main.c line 494 function task_FL_Wheel thread 3
+----------------------------------------------------
+  rtb_to_int1=10 (00000000000000000000000000001010)
+
+State 92 file main.c line 321 function task_compute thread 2
+----------------------------------------------------
+  vkmh=0 (00000000000000000000000000000000)
+
+State 93 file main.c line 496 function task_FL_Wheel thread 3
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_B_local_RT_h=0 (00000000000000000000000000000000)
+
+State 94 file main.c line 498 function task_FL_Wheel thread 3
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_B_local_RT4=0 (00000000000000000000000000000000)
+
+State 95 file main.c line 509 function task_FL_Wheel thread 3
+----------------------------------------------------
+  rtb_RelationalOperator=0 (00000000)
+
+State 96 file main.c line 510 function task_FL_Wheel thread 3
+----------------------------------------------------
+  rtb_vms=0 (00000000000000000000000000000000)
+
+State 97 file main.c line 511 function task_FL_Wheel thread 3
+----------------------------------------------------
+  u=0 (00000000000000000000000000000000)
+
+State 98 file main.c line 514 function task_FL_Wheel thread 3
+----------------------------------------------------
+  rtb_vms=10 (00000000000000000000000000001010)
+
+State 99 file main.c line 518 function task_FL_Wheel thread 3
+----------------------------------------------------
+  u=20 (00000000000000000000000000010100)
+
+State 100 file main.c line 519 function task_FL_Wheel thread 3
+----------------------------------------------------
+  u=30 (00000000000000000000000000011110)
+
+State 101 file main.c line 522 function task_FL_Wheel thread 3
+----------------------------------------------------
+  positive_UpperSat_local=0 (00000000000000000000000000000000)
+
+State 102 file main.c line 522 function task_FL_Wheel thread 3
+----------------------------------------------------
+  positive_UpperSat_local=100 (00000000000000000000000001100100)
+
+State 104 file main.c line 528 function task_FL_Wheel thread 3
+----------------------------------------------------
+  positive_LowerSat_local=0 (00000000000000000000000000000000)
+
+State 105 file main.c line 528 function task_FL_Wheel thread 3
+----------------------------------------------------
+  positive_LowerSat_local=5 (00000000000000000000000000000101)
+
+State 107 file main.c line 540 function task_FL_Wheel thread 3
+----------------------------------------------------
+  tmp0=0 (00000000000000000000000000000000)
+
+State 108 file main.c line 540 function task_FL_Wheel thread 3
+----------------------------------------------------
+  tmp0=10 (00000000000000000000000000001010)
+
+State 109 file main.c line 541 function task_FL_Wheel thread 3
+----------------------------------------------------
+  tmp1=0 (00000000000000000000000000000000)
+
+State 110 file main.c line 541 function task_FL_Wheel thread 3
+----------------------------------------------------
+  tmp1=20 (00000000000000000000000000010100)
+
+State 112 file main.c line 545 function task_FL_Wheel thread 3
+----------------------------------------------------
+  rtb_RelationalOperator=0 (00000000)
+
+State 113 file main.c line 549 function task_FL_Wheel thread 3
+----------------------------------------------------
+  Threshold_10kmh_Threshold_local=0 (00000000000000000000000000000000)
+
+State 114 file main.c line 549 function task_FL_Wheel thread 3
+----------------------------------------------------
+  Threshold_10kmh_Threshold_local=100 (00000000000000000000000001100100)
+
+State 116 file main.c line 322 function task_compute thread 2
+----------------------------------------------------
+  vkmh=0 (00000000000000000000000000000000)
+
+State 117 file main.c line 323 function task_compute thread 2
+----------------------------------------------------
+  vkmh=0 (00000000000000000000000000000000)
+
+State 118 file main.c line 564 function task_FL_Wheel thread 3
+----------------------------------------------------
+  brake_acc_nodiv_ctrl_B_local_ABS_FL_Wheel_Threshold_10kmh=0 (00000000000000000000000000000000)
+
+State 119 file main.c line 576 function task_FL_Wheel thread 3
+----------------------------------------------------
+  In_BrakePedal=0 (00000000000000000000000000000000)
+
+State 121 file main.c line 580 function task_FL_Wheel thread 3
+----------------------------------------------------
+  In_BrakePedal=65 (00000000000000000000000001000001)
+
+State 122 file main.c line 582 function task_FL_Wheel thread 3
+----------------------------------------------------
+  Pedal_map_UpperSat=0 (00000000000000000000000000000000)
+
+State 123 file main.c line 582 function task_FL_Wheel thread 3
+----------------------------------------------------
+  Pedal_map_UpperSat=50 (00000000000000000000000000110010)
+
+State 124 file main.c line 583 function task_FL_Wheel thread 3
+----------------------------------------------------
+  Pedal_map_LowerSat=0 (00000000000000000000000000000000)
+
+State 125 file main.c line 583 function task_FL_Wheel thread 3
+----------------------------------------------------
+  Pedal_map_LowerSat=20 (00000000000000000000000000010100)
+
+State 126 file main.c line 584 function task_FL_Wheel thread 3
+----------------------------------------------------
+  tmp=0 (00000000000000000000000000000000)
+
+State 128 file main.c line 586 function task_FL_Wheel thread 3
+----------------------------------------------------
+  tmp=50 (00000000000000000000000000110010)
+
+State 130 file main.c line 591 function task_FL_Wheel thread 3
+----------------------------------------------------
+  tmp=15 (00000000000000000000000000001111)
+
+State 131 file main.c line 324 function task_compute thread 2
+----------------------------------------------------
+  vkmh=0 (00000000000000000000000000000000)
+
+State 132 file main.c line 597 function task_FL_Wheel thread 3
+----------------------------------------------------
+  RT14=15 (00000000000000000000000000001111)
+
+State 133 file main.c line 599 function task_FL_Wheel thread 3
+----------------------------------------------------
+  RT12=10 (00000000000000000000000000001010)
+
+State 135 file main.c line 325 function task_compute thread 2
+----------------------------------------------------
+  vkmh=0 (00000000000000000000000000000000)
+
+State 136 file main.c line 326 function task_compute thread 2
+----------------------------------------------------
+  vkmh=0 (00000000000000000000000000000000)
+
+State 137 file main.c line 329 function task_compute thread 2
+----------------------------------------------------
+  test=1 (00000000000000000000000000000001)
+
+State 139 file main.c line 348 function task_compute thread 2
+----------------------------------------------------
+  RT_Buffer0=0 (00000000000000000000000000000000)
+
+State 140 file main.c line 351 function task_compute thread 2
+----------------------------------------------------
+  RT4_Buffer0=0 (00000000000000000000000000000000)
+
+State 141 file main.c line 354 function task_compute thread 2
+----------------------------------------------------
+  RT1_Buffer0=0 (00000000000000000000000000000000)
+
+State 142 file main.c line 357 function task_compute thread 2
+----------------------------------------------------
+  RT2_Buffer0=0 (00000000000000000000000000000000)
+
+State 143 file main.c line 360 function task_compute thread 2
+----------------------------------------------------
+  RT3_Buffer0=0 (00000000000000000000000000000000)
+
+Violated property:
+  file main.c line 374 function task_RR_Wheel
+  assertion 0
+  FALSE
+
+VERIFICATION FAILED

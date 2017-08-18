@@ -1,0 +1,1338 @@
+[WARNING] Global which is neither Integer nor Float
+@.str = private unnamed_addr constant [16 x i8] c"timerCount == 0\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@.str.1 = private unnamed_addr constant [7 x i8] c"main.c\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.Timer_A = private unnamed_addr constant [22 x i8] c"void *Timer_A(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.Timer_B = private unnamed_addr constant [22 x i8] c"void *Timer_B(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.Timer_Force = private unnamed_addr constant [26 x i8] c"void *Timer_Force(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+Timer_A:::2
+Timer_B:::2
+Timer_Force:::3
+function: Timer_A
+function: Timer_B
+function: Timer_Force
+function: main
+[WARNING] Initializing unhandled global type: @.str = private unnamed_addr constant [16 x i8] c"timerCount == 0\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @.str.1 = private unnamed_addr constant [7 x i8] c"main.c\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.Timer_A = private unnamed_addr constant [22 x i8] c"void *Timer_A(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.Timer_B = private unnamed_addr constant [22 x i8] c"void *Timer_B(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.Timer_Force = private unnamed_addr constant [26 x i8] c"void *Timer_Force(void *)\00", align 1
+Setting to default initial value
+Interference Iteration: 1
+Analyzing thread: 0
+Analyzing thread: 1
+Analyzing thread: 2
+Analyzing thread: 3
+Interference Iteration: 2
+Analyzing thread: 0
+Analyzing thread: 1
+Analyzing thread: 2
+Analyzing thread: 3
+v39: @timerCount = global i32 0, align 4
+v18:   %0 = load i32, i32* @timerCount, align 4
+v19:   %cmp = icmp eq i32 %0, 0
+v47: @LED_OUT = common global i32 0, align 4
+v54: i8* %unused
+v40: @LED_0 = common global i32 0, align 4
+v41: @LED_1 = common global i32 0, align 4
+v42: @P1OUT = common global i32 0, align 4
+v0:   %0 = load i32, i32* @timerCount, align 4
+v43: @WDTPW = common global i32 0, align 4
+v44: @WDTHOLD = common global i32 0, align 4
+v45: @WDTCTL = common global i32 0, align 4
+v46: @LED_DIR = common global i32 0, align 4
+v48: @CCIE = common global i32 0, align 4
+v49: @CCTL0 = common global i32 0, align 4
+v50: @TASSEL_2 = common global i32 0, align 4
+v51: @MC_2 = common global i32 0, align 4
+v52: @TACTL = common global i32 0, align 4
+v53: @WDTCLT = common global i32 0, align 4
+v1:   %add = add i32 %0, 1
+v2:   %rem = urem i32 %add, 8
+v3:   %1 = load i32, i32* @timerCount, align 4
+v4:   %cmp = icmp eq i32 %1, 0
+v56: i8* %1
+v55: i8* %0
+v5:   %3 = load i32, i32* @timerCount, align 4
+v6:   %cmp1 = icmp eq i32 %3, 0
+v7:   %4 = load i32, i32* @LED_0, align 4
+v8:   %5 = load i32, i32* @LED_1, align 4
+v9:   %add2 = add nsw i32 %4, %5
+v57: i32 %2
+v58: i8* %3
+v59: i8* %unused
+v10:   %0 = load i32, i32* @timerCount, align 4
+v11:   %add = add i32 %0, 1
+v12:   %rem = urem i32 %add, 4
+v13:   %1 = load i32, i32* @timerCount, align 4
+v14:   %cmp = icmp eq i32 %1, 0
+v60: i8* %unused
+v15:   %3 = load i32, i32* @timerCount, align 4
+v16:   %cmp1 = icmp eq i32 %3, 0
+v17:   %4 = load i32, i32* @LED_0, align 4
+v62: %union.pthread_attr_t* %1
+v20:   %2 = load i32, i32* @timerCount, align 4
+v21:   %inc = add i32 %2, 1
+v22:   %t1 = alloca i64, align 8
+v23:   %t2 = alloca i64, align 8
+v24:   %t3 = alloca i64, align 8
+v25:   %0 = load i32, i32* @WDTPW, align 4
+v26:   %1 = load i32, i32* @WDTHOLD, align 4
+v27:   %add = add nsw i32 %0, %1
+v28:   %2 = load i32, i32* @LED_0, align 4
+v29:   %3 = load i32, i32* @LED_1, align 4
+v30:   %add1 = add nsw i32 %2, %3
+v31:   %4 = load i32, i32* @LED_0, align 4
+v32:   %5 = load i32, i32* @LED_1, align 4
+v33:   %add2 = add nsw i32 %4, %5
+v34:   %add3 = add nsw i32 1, %add2
+v35:   %6 = load i32, i32* @CCIE, align 4
+v36:   %7 = load i32, i32* @TASSEL_2, align 4
+v37:   %8 = load i32, i32* @MC_2, align 4
+v38:   %add4 = add nsw i32 %7, %8
+v61: i64* %0
+v63: i8* (i8*)* %2
+v64: i8* %3
+==== Timer_A() Results ====
+BasicBlock: 
+entry:
+  %0 = load i32, i32* @timerCount, align 4
+  %add = add i32 %0, 1
+  %rem = urem i32 %add, 8
+  store i32 %rem, i32* @timerCount, align 4
+  %1 = load i32, i32* @timerCount, align 4
+  %cmp = icmp eq i32 %1, 0
+  br i1 %cmp, label %cond.true, label %cond.false
+Facts: interval of dim (65,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [0,0]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [-oo,+oo]
+     v55 in [-oo,+oo]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [-oo,+oo]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+cond.true:                                        ; preds = %entry
+  br label %cond.end
+Facts: interval of dim (65,0):
+      v0 in [0,0]
+      v1 in [1,1]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [0,0]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [1,1]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [-oo,+oo]
+     v55 in [-oo,+oo]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [-oo,+oo]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+cond.false:                                       ; preds = %entry
+  call void @__assert_fail(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.1, i32 0, i32 0), i32 92, i8* getelementptr inbounds ([22 x i8], [22 x i8]* @__PRETTY_FUNCTION__.Timer_A, i32 0, i32 0)) #3
+  unreachable
+Facts: interval of dim (65,0):
+      v0 in [0,0]
+      v1 in [1,1]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [0,0]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [-oo,+oo]
+     v55 in [-oo,+oo]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [-oo,+oo]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+cond.end:                                         ; preds = %2, %cond.true
+  %3 = load i32, i32* @timerCount, align 4
+  %cmp1 = icmp eq i32 %3, 0
+  br i1 %cmp1, label %if.then, label %if.end
+Facts: interval of dim (65,0):
+      v0 in [0,0]
+      v1 in [1,1]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [0,0]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [1,1]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [-oo,+oo]
+     v55 in [-oo,+oo]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [-oo,+oo]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock:                                                   ; No predecessors!
+  br label %cond.end
+Facts: interval of dim (65,0): bottom
+
+BasicBlock: 
+if.then:                                          ; preds = %cond.end
+  %4 = load i32, i32* @LED_0, align 4
+  %5 = load i32, i32* @LED_1, align 4
+  %add2 = add nsw i32 %4, %5
+  store i32 %add2, i32* @P1OUT, align 4
+  br label %if.end
+Facts: interval of dim (65,0):
+      v0 in [0,0]
+      v1 in [1,1]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [0,0]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [1,1]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [0,0]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [-oo,+oo]
+     v55 in [-oo,+oo]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [1,1]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.end:                                           ; preds = %if.then, %cond.end
+  ret i8* undef
+Facts: interval of dim (65,0):
+      v0 in [0,0]
+      v1 in [1,1]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [0,0]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [1,1]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [-oo,+oo]
+     v55 in [-oo,+oo]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [0,1]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+======================
+==== Timer_B() Results ====
+BasicBlock: 
+entry:
+  %0 = load i32, i32* @timerCount, align 4
+  %add = add i32 %0, 1
+  %rem = urem i32 %add, 4
+  store i32 %rem, i32* @timerCount, align 4
+  %1 = load i32, i32* @timerCount, align 4
+  %cmp = icmp eq i32 %1, 0
+  br i1 %cmp, label %cond.true, label %cond.false
+Facts: interval of dim (65,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [0,0]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [-oo,+oo]
+     v55 in [-oo,+oo]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [-oo,+oo]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+cond.true:                                        ; preds = %entry
+  br label %cond.end
+Facts: interval of dim (65,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [0,0]
+     v11 in [1,1]
+     v12 in [-oo,+oo]
+     v13 in [0,0]
+     v14 in [1,1]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [-oo,+oo]
+     v55 in [-oo,+oo]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [-oo,+oo]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+cond.false:                                       ; preds = %entry
+  call void @__assert_fail(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.1, i32 0, i32 0), i32 102, i8* getelementptr inbounds ([22 x i8], [22 x i8]* @__PRETTY_FUNCTION__.Timer_B, i32 0, i32 0)) #3
+  unreachable
+Facts: interval of dim (65,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [0,0]
+     v11 in [1,1]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [0,0]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [-oo,+oo]
+     v55 in [-oo,+oo]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [-oo,+oo]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+cond.end:                                         ; preds = %2, %cond.true
+  %3 = load i32, i32* @timerCount, align 4
+  %cmp1 = icmp eq i32 %3, 0
+  br i1 %cmp1, label %if.then, label %if.end
+Facts: interval of dim (65,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [0,0]
+     v11 in [1,1]
+     v12 in [-oo,+oo]
+     v13 in [0,0]
+     v14 in [1,1]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [-oo,+oo]
+     v55 in [-oo,+oo]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [-oo,+oo]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock:                                                   ; No predecessors!
+  br label %cond.end
+Facts: interval of dim (65,0): bottom
+
+BasicBlock: 
+if.then:                                          ; preds = %cond.end
+  %4 = load i32, i32* @LED_0, align 4
+  store i32 %4, i32* @P1OUT, align 4
+  br label %if.end
+Facts: interval of dim (65,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [0,0]
+     v11 in [1,1]
+     v12 in [-oo,+oo]
+     v13 in [0,0]
+     v14 in [1,1]
+     v15 in [0,0]
+     v16 in [1,1]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [-oo,+oo]
+     v55 in [-oo,+oo]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [-oo,+oo]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.end:                                           ; preds = %if.then, %cond.end
+  ret i8* undef
+Facts: interval of dim (65,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [0,0]
+     v11 in [1,1]
+     v12 in [-oo,+oo]
+     v13 in [0,0]
+     v14 in [1,1]
+     v15 in [-oo,+oo]
+     v16 in [0,1]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [-oo,+oo]
+     v55 in [-oo,+oo]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [-oo,+oo]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+======================
+==== Timer_Force() Results ====
+BasicBlock: 
+entry:
+  %0 = load i32, i32* @timerCount, align 4
+  %cmp = icmp eq i32 %0, 0
+  br i1 %cmp, label %cond.true, label %cond.false
+Facts: interval of dim (65,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [0,0]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [-oo,+oo]
+     v55 in [-oo,+oo]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [-oo,+oo]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+cond.true:                                        ; preds = %entry
+  br label %cond.end
+Facts: interval of dim (65,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [0,0]
+     v19 in [1,1]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [0,0]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [-oo,+oo]
+     v55 in [-oo,+oo]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [-oo,+oo]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+cond.false:                                       ; preds = %entry
+  call void @__assert_fail(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.1, i32 0, i32 0), i32 111, i8* getelementptr inbounds ([26 x i8], [26 x i8]* @__PRETTY_FUNCTION__.Timer_Force, i32 0, i32 0)) #3
+  unreachable
+Facts: interval of dim (65,0): bottom
+
+BasicBlock: 
+cond.end:                                         ; preds = %1, %cond.true
+  %2 = load i32, i32* @timerCount, align 4
+  %inc = add i32 %2, 1
+  store i32 %inc, i32* @timerCount, align 4
+  ret i8* undef
+Facts: interval of dim (65,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [0,0]
+     v19 in [1,1]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [0,0]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [-oo,+oo]
+     v55 in [-oo,+oo]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [-oo,+oo]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock:                                                   ; No predecessors!
+  br label %cond.end
+Facts: interval of dim (65,0): bottom
+
+======================
+==== main() Results ====
+BasicBlock: 
+entry:
+  %t1 = alloca i64, align 8
+  %t2 = alloca i64, align 8
+  %t3 = alloca i64, align 8
+  %0 = load i32, i32* @WDTPW, align 4
+  %1 = load i32, i32* @WDTHOLD, align 4
+  %add = add nsw i32 %0, %1
+  store i32 %add, i32* @WDTCTL, align 4
+  %2 = load i32, i32* @LED_0, align 4
+  %3 = load i32, i32* @LED_1, align 4
+  %add1 = add nsw i32 %2, %3
+  store i32 %add1, i32* @LED_DIR, align 4
+  %4 = load i32, i32* @LED_0, align 4
+  %5 = load i32, i32* @LED_1, align 4
+  %add2 = add nsw i32 %4, %5
+  %add3 = add nsw i32 1, %add2
+  store i32 %add3, i32* @LED_OUT, align 4
+  %6 = load i32, i32* @CCIE, align 4
+  store i32 %6, i32* @CCTL0, align 4
+  %7 = load i32, i32* @TASSEL_2, align 4
+  %8 = load i32, i32* @MC_2, align 4
+  %add4 = add nsw i32 %7, %8
+  store i32 %add4, i32* @TACTL, align 4
+  store i32 0, i32* @timerCount, align 4
+  %call = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @Timer_A, i8* null) #3
+  %call5 = call i32 @pthread_create(i64* %t2, %union.pthread_attr_t* null, i8* (i8*)* @Timer_B, i8* null) #3
+  %call6 = call i32 @pthread_create(i64* %t3, %union.pthread_attr_t* null, i8* (i8*)* @Timer_Force, i8* null) #3
+  ret i32 0
+Facts: interval of dim (65,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [0,0]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,0]
+     v42 in [0,0]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [0,0]
+     v47 in [0,0]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [-oo,+oo]
+     v55 in [-oo,+oo]
+     v56 in [-oo,+oo]
+     v57 in [-oo,+oo]
+     v58 in [-oo,+oo]
+     v59 in [-oo,+oo]
+      v6 in [-oo,+oo]
+     v60 in [-oo,+oo]
+     v61 in [-oo,+oo]
+     v62 in [-oo,+oo]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+======================
+[WARNING] Value not dumped to metadata: @timerCount = global i32 0, align 4
+	type not handled
+[WARNING] Value not dumped to metadata: @LED_OUT = common global i32 0, align 4
+	type not handled
+[WARNING] Value not dumped to metadata: @LED_0 = common global i32 0, align 4
+	type not handled
+[WARNING] Value not dumped to metadata: @LED_1 = common global i32 0, align 4
+	type not handled
+[WARNING] Value not dumped to metadata: @P1OUT = common global i32 0, align 4
+	type not handled
+[WARNING] Value not dumped to metadata: @WDTPW = common global i32 0, align 4
+	type not handled
+[WARNING] Value not dumped to metadata: @WDTHOLD = common global i32 0, align 4
+	type not handled
+[WARNING] Value not dumped to metadata: @WDTCTL = common global i32 0, align 4
+	type not handled
+[WARNING] Value not dumped to metadata: @LED_DIR = common global i32 0, align 4
+	type not handled
+[WARNING] Value not dumped to metadata: @CCIE = common global i32 0, align 4
+	type not handled
+[WARNING] Value not dumped to metadata: @CCTL0 = common global i32 0, align 4
+	type not handled
+[WARNING] Value not dumped to metadata: @TASSEL_2 = common global i32 0, align 4
+	type not handled
+[WARNING] Value not dumped to metadata: @MC_2 = common global i32 0, align 4
+	type not handled
+[WARNING] Value not dumped to metadata: @TACTL = common global i32 0, align 4
+	type not handled
+Errors found: 2
+Max Permutations: 1

@@ -1,0 +1,155 @@
+[WARNING] Global which is neither Integer nor Float
+@.str = private unnamed_addr constant [9 x i8] c"dev_open\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@.str.1 = private unnamed_addr constant [7 x i8] c"main.c\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer1 = private unnamed_addr constant [22 x i8] c"void *writer1(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@.str.2 = private unnamed_addr constant [2 x i8] c"0\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer2 = private unnamed_addr constant [22 x i8] c"void *writer2(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer3 = private unnamed_addr constant [22 x i8] c"void *writer3(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer4 = private unnamed_addr constant [22 x i8] c"void *writer4(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer5 = private unnamed_addr constant [22 x i8] c"void *writer5(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer6 = private unnamed_addr constant [22 x i8] c"void *writer6(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer7 = private unnamed_addr constant [22 x i8] c"void *writer7(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer8 = private unnamed_addr constant [22 x i8] c"void *writer8(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer9 = private unnamed_addr constant [22 x i8] c"void *writer9(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer10 = private unnamed_addr constant [23 x i8] c"void *writer10(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer11 = private unnamed_addr constant [23 x i8] c"void *writer11(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer12 = private unnamed_addr constant [23 x i8] c"void *writer12(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer13 = private unnamed_addr constant [23 x i8] c"void *writer13(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer14 = private unnamed_addr constant [23 x i8] c"void *writer14(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer15 = private unnamed_addr constant [23 x i8] c"void *writer15(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer16 = private unnamed_addr constant [23 x i8] c"void *writer16(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer17 = private unnamed_addr constant [23 x i8] c"void *writer17(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer18 = private unnamed_addr constant [23 x i8] c"void *writer18(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer19 = private unnamed_addr constant [23 x i8] c"void *writer19(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer20 = private unnamed_addr constant [23 x i8] c"void *writer20(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer21 = private unnamed_addr constant [23 x i8] c"void *writer21(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer22 = private unnamed_addr constant [23 x i8] c"void *writer22(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer23 = private unnamed_addr constant [23 x i8] c"void *writer23(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer24 = private unnamed_addr constant [23 x i8] c"void *writer24(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer25 = private unnamed_addr constant [23 x i8] c"void *writer25(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer26 = private unnamed_addr constant [23 x i8] c"void *writer26(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer27 = private unnamed_addr constant [23 x i8] c"void *writer27(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer28 = private unnamed_addr constant [23 x i8] c"void *writer28(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer29 = private unnamed_addr constant [23 x i8] c"void *writer29(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer30 = private unnamed_addr constant [23 x i8] c"void *writer30(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer31 = private unnamed_addr constant [23 x i8] c"void *writer31(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer32 = private unnamed_addr constant [23 x i8] c"void *writer32(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer33 = private unnamed_addr constant [23 x i8] c"void *writer33(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer34 = private unnamed_addr constant [23 x i8] c"void *writer34(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer35 = private unnamed_addr constant [23 x i8] c"void *writer35(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer36 = private unnamed_addr constant [23 x i8] c"void *writer36(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer37 = private unnamed_addr constant [23 x i8] c"void *writer37(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer38 = private unnamed_addr constant [23 x i8] c"void *writer38(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer39 = private unnamed_addr constant [23 x i8] c"void *writer39(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.closer = private unnamed_addr constant [21 x i8] c"void *closer(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+opt: /home/chungha/base_llvm/llvm/include/llvm/Support/Casting.h:95: static bool llvm::isa_impl_cl<To, const From*>::doit(const From*) [with To = llvm::LoadInst; From = llvm::Instruction]: Assertion `Val && "isa<> used on a null pointer"' failed.
+#0 0x00000000026af7bd llvm::sys::PrintStackTrace(llvm::raw_ostream&) (/home/chungha/base_llvm/llvm/build/bin/opt+0x26af7bd)
+#1 0x00000000026afad2 PrintStackTraceSignalHandler(void*) (/home/chungha/base_llvm/llvm/build/bin/opt+0x26afad2)
+#2 0x00000000026ae11f llvm::sys::RunSignalHandlers() (/home/chungha/base_llvm/llvm/build/bin/opt+0x26ae11f)
+#3 0x00000000026af233 SignalHandler(int) (/home/chungha/base_llvm/llvm/build/bin/opt+0x26af233)
+#4 0x00007f4e850ba330 __restore_rt (/lib/x86_64-linux-gnu/libpthread.so.0+0x10330)
+#5 0x00007f4e842dec37 gsignal /build/eglibc-MjiXCM/eglibc-2.19/signal/../nptl/sysdeps/unix/sysv/linux/raise.c:56:0
+#6 0x00007f4e842e2028 abort /build/eglibc-MjiXCM/eglibc-2.19/stdlib/abort.c:91:0
+#7 0x00007f4e842d7bf6 __assert_fail_base /build/eglibc-MjiXCM/eglibc-2.19/assert/assert.c:92:0
+#8 0x00007f4e842d7ca2 (/lib/x86_64-linux-gnu/libc.so.6+0x2fca2)
+#9 0x00007f4e84035ab4 llvm::isa_impl_cl<llvm::LoadInst, llvm::Instruction const*>::doit(llvm::Instruction const*) (/home/chungha/work/interruptabstract/src/build/worklist-ai/libworklistAI.so+0x133ab4)
+#10 0x00007f4e8402c956 llvm::isa_impl_wrap<llvm::LoadInst, llvm::Instruction const*, llvm::Instruction const*>::doit(llvm::Instruction const* const&) (/home/chungha/work/interruptabstract/src/build/worklist-ai/libworklistAI.so+0x12a956)
+#11 0x00007f4e8401c8da llvm::isa_impl_wrap<llvm::LoadInst, llvm::Instruction* const, llvm::Instruction const*>::doit(llvm::Instruction* const&) (/home/chungha/work/interruptabstract/src/build/worklist-ai/libworklistAI.so+0x11a8da)
+#12 0x00007f4e840116cb bool llvm::isa<llvm::LoadInst, llvm::Instruction*>(llvm::Instruction* const&) (/home/chungha/work/interruptabstract/src/build/worklist-ai/libworklistAI.so+0x10f6cb)
+#13 0x00007f4e8400911f WorklistAI::getFirstLoadStoreCallTerm(llvm::BasicBlock*) (/home/chungha/work/interruptabstract/src/build/worklist-ai/libworklistAI.so+0x10711f)
+#14 0x00007f4e83ffe9b1 WorklistAI::addDomLoadStoreFacts(std::set<llvm::Function*, std::less<llvm::Function*>, std::allocator<llvm::Function*> >, z3::context&, _Z3_fixedpoint*&) (/home/chungha/work/interruptabstract/src/build/worklist-ai/libworklistAI.so+0xfc9b1)
+#15 0x00007f4e83fff745 WorklistAI::runOnModule(llvm::Module&) (/home/chungha/work/interruptabstract/src/build/worklist-ai/libworklistAI.so+0xfd745)
+#16 0x0000000002193418 (anonymous namespace)::MPPassManager::runOnModule(llvm::Module&) (/home/chungha/base_llvm/llvm/build/bin/opt+0x2193418)
+#17 0x0000000002193b82 llvm::legacy::PassManagerImpl::run(llvm::Module&) (/home/chungha/base_llvm/llvm/build/bin/opt+0x2193b82)
+#18 0x0000000002193dc3 llvm::legacy::PassManager::run(llvm::Module&) (/home/chungha/base_llvm/llvm/build/bin/opt+0x2193dc3)
+#19 0x0000000000fa0de1 main (/home/chungha/base_llvm/llvm/build/bin/opt+0xfa0de1)
+#20 0x00007f4e842c9f45 __libc_start_main /build/eglibc-MjiXCM/eglibc-2.19/csu/libc-start.c:321:0
+#21 0x0000000000f7e269 _start (/home/chungha/base_llvm/llvm/build/bin/opt+0xf7e269)
+Stack dump:
+0.	Program arguments: /home/chungha/base_llvm/llvm/build/bin/opt -load /home/chungha/work/interruptabstract/src/build/worklist-ai/libworklistAI.so -worklist-ai -nocombs -box main.ll 
+1.	Running pass 'worklist based abstract interpretation' on module 'main.ll'.

@@ -1,0 +1,45 @@
+FILES = rt_main.c brake_acc_nodiv_ctrl.c brake_acc_nodiv_ctrl_data.c \
+        rtGetInf.c rtGetNaN.c rt_nonfinite.c \
+        cbmc-math.c cbmc-unit-tests.c
+PREPROC_FILES = $(FILES:%.c=./rvs/preproc/%.c)
+INSTR_FILES = $(FILES:%.c=./rvs/instr/%.c)
+
+RVS_LIB = ./rvs/rvslib_vetess/
+
+CFLAGS = -std=gnu++98 -Wall -g -O0
+
+all: $(PREPROC_FILES)
+	# Clean
+	rm -rf ./rvs/instr/
+	rm -rf ./rvs/xscs/
+	mkdir ./rvs/instr/
+	mkdir ./rvs/xscs/
+	
+	# Instrument
+	cp ./rvs/annot/rvs_instr.h $(RVS_LIB)rvs_instr.h
+	cins --cext GCC --output-dir ./rvs/instr/ --xsc-dir ./rvs/xscs/ --exf tmp.exf -c $(RVS_LIB)rvs_instr.h -c $(RVS_LIB)rvs_ipoint.h --uniq-ipoints $(PREPROC_FILES)
+	# Make RVD
+	#xstutils -r "rt_main:rt_OneStep" ./rvs/xscs/* -o ./rvs/results/vtec-bbw-ctrl_c.rvd
+	xstutils --no-root ./rvs/xscs/* -o ./rvs/results/vtec-bbw-ctrl_c.rvd
+	rvdutils --coverage-map $(RVS_LIB)rvs_map.c ./rvs/results/vtec-bbw-ctrl_c.rvd
+	# Build
+	gcc -o bbw.exe -x c $(INSTR_FILES) $(RVS_LIB)rvs.c $(RVS_LIB)rvs_map.c -I$(RVS_LIB)
+	# Run
+	./bbw.exe
+	# Process trace
+	traceutils -f $(RVS_LIB)rvs_map.memdump.flt rvs_output_map.txt -o rvs_filtered_map.txt
+	covparser ./rvs/results/vtec-bbw-ctrl_c.rvd rvs_filtered_map.txt --map
+	
+	#gcc $(CFLAGS) $^ -o $@ -lm
+
+./rvs/preproc/%.c: %.c
+	cpp $^ > $@
+	
+clean:
+	rm -f bbw.exe XSC.davinci Debug_vetess.txt rvs.o tmp.exf rvs_output_map.txt rvs_filtered_map.txt
+	rm -f $(RVS_LIB)rvs_map.* ./rvs/rvslib_vetess/rvs_map.*
+	rm -f ./rvs/exf.exf
+	rm -rf ./rvs/instr
+	rm -rf ./rvs/vetess
+	rm -rf ./rvs/xscs
+	rm -rf ./rvs/preproc/*

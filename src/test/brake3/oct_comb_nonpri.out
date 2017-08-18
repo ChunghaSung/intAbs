@@ -1,0 +1,79 @@
+[WARNING] Global which is neither Integer nor Float
+@__VERIFIER_thread_priorities = constant [5 x i32] [i32 5, i32 5, i32 5, i32 5, i32 22], align 16
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@.str = private unnamed_addr constant [17 x i8] c"c::task_RR_Wheel\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@.str.1 = private unnamed_addr constant [17 x i8] c"c::task_FR_Wheel\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@.str.2 = private unnamed_addr constant [17 x i8] c"c::task_FL_Wheel\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@.str.3 = private unnamed_addr constant [17 x i8] c"c::task_RL_Wheel\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@.str.4 = private unnamed_addr constant [16 x i8] c"c::task_compute\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__VERIFIER_threads = global [5 x i8*] [i8* getelementptr inbounds ([17 x i8], [17 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([17 x i8], [17 x i8]* @.str.1, i32 0, i32 0), i8* getelementptr inbounds ([17 x i8], [17 x i8]* @.str.2, i32 0, i32 0), i8* getelementptr inbounds ([17 x i8], [17 x i8]* @.str.3, i32 0, i32 0), i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.4, i32 0, i32 0)], align 16
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@.str.5 = private unnamed_addr constant [10 x i8] c"test == 0\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@.str.6 = private unnamed_addr constant [7 x i8] c"main.c\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.task_compute = private unnamed_addr constant [27 x i8] c"void *task_compute(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@.str.7 = private unnamed_addr constant [10 x i8] c"test == 1\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.task_RR_Wheel = private unnamed_addr constant [28 x i8] c"void *task_RR_Wheel(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.task_FL_Wheel = private unnamed_addr constant [28 x i8] c"void *task_FL_Wheel(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.task_FR_Wheel = private unnamed_addr constant [28 x i8] c"void *task_FR_Wheel(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Initializing unhandled global type: @__VERIFIER_thread_priorities = constant [5 x i32] [i32 5, i32 5, i32 5, i32 5, i32 22], align 16
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @.str = private unnamed_addr constant [17 x i8] c"c::task_RR_Wheel\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @.str.1 = private unnamed_addr constant [17 x i8] c"c::task_FR_Wheel\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @.str.2 = private unnamed_addr constant [17 x i8] c"c::task_FL_Wheel\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @.str.3 = private unnamed_addr constant [17 x i8] c"c::task_RL_Wheel\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @.str.4 = private unnamed_addr constant [16 x i8] c"c::task_compute\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__VERIFIER_threads = global [5 x i8*] [i8* getelementptr inbounds ([17 x i8], [17 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([17 x i8], [17 x i8]* @.str.1, i32 0, i32 0), i8* getelementptr inbounds ([17 x i8], [17 x i8]* @.str.2, i32 0, i32 0), i8* getelementptr inbounds ([17 x i8], [17 x i8]* @.str.3, i32 0, i32 0), i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.4, i32 0, i32 0)], align 16
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @.str.5 = private unnamed_addr constant [10 x i8] c"test == 0\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @.str.6 = private unnamed_addr constant [7 x i8] c"main.c\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.task_compute = private unnamed_addr constant [27 x i8] c"void *task_compute(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @.str.7 = private unnamed_addr constant [10 x i8] c"test == 1\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.task_RR_Wheel = private unnamed_addr constant [28 x i8] c"void *task_RR_Wheel(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.task_FL_Wheel = private unnamed_addr constant [28 x i8] c"void *task_FL_Wheel(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.task_FR_Wheel = private unnamed_addr constant [28 x i8] c"void *task_FR_Wheel(void *)\00", align 1
+Setting to default initial value
+Interference Iteration: 1
+Analyzing thread: 0
+Analyzing thread: 1
+Analyzing thread: 2
+Analyzing thread: 3
+Analyzing thread: 4
+Analyzing thread: 5
+Interference Iteration: 2
+Analyzing thread: 0

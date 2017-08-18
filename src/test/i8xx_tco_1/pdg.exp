@@ -1,0 +1,3858 @@
+Starting context insensitive PDG pass
+[0mIterating over use-def of:   %seconds.addr = alloca i32, align 4
+saveAndGetID():
+	value:   %seconds.addr = alloca i32, align 4
+	value not found in map
+createAssign():
+	preConvert from: stack_0
+Instruction:   %seconds.addr = alloca i32, align 4
+Iterating over use-def of:   store i32 %seconds, i32* %seconds.addr, align 4
+createStore():
+	to:   %seconds.addr = alloca i32, align 4
+	fromi32 %seconds
+saveAndGetID():
+	value:   %seconds.addr = alloca i32, align 4
+	toStr: *0
+saveAndGetID():
+	value: i32 %seconds
+	value not found in map
+	fromStr: 1
+saveAndGetID():
+	value:   store i32 %seconds, i32* %seconds.addr, align 4
+	value not found in map
+createAssign():
+	preConvert from: *0
+saveAndGetID():
+	value:   store i32 %seconds, i32* %seconds.addr, align 4
+createAssign():
+	preConvert from: 1
+saveAndGetID():
+	value:   store i32 %seconds, i32* %seconds.addr, align 4
+createAssign():
+	preConvert from: 2
+Instruction:   store i32 %seconds, i32* %seconds.addr, align 4
+Iterating over use-def of:   %0 = load i32* %seconds.addr, align 4
+saveAndGetID():
+	value:   %0 = load i32* %seconds.addr, align 4
+	value not found in map
+saveAndGetID():
+	value:   %seconds.addr = alloca i32, align 4
+saveAndGetID():
+	value:   %0 = load i32* %seconds.addr, align 4
+createAssign():
+	preConvert from: *0
+createAssign():
+	preConvert from: 0
+Instruction:   %0 = load i32* %seconds.addr, align 4
+Iterating over use-def of:   %mul = mul nsw i32 %0, 10
+saveAndGetID():
+	value:   %mul = mul nsw i32 %0, 10
+	value not found in map
+saveAndGetID():
+	value:   %0 = load i32* %seconds.addr, align 4
+createAssign():
+	preConvert from: 3
+saveAndGetID():
+	value:   %mul = mul nsw i32 %0, 10
+saveAndGetID():
+	value: i32 10
+createAssign():
+	preConvert from: 10CONST_INT
+Instruction:   %mul = mul nsw i32 %0, 10
+Iterating over use-def of:   %div = sdiv i32 %mul, 6
+saveAndGetID():
+	value:   %div = sdiv i32 %mul, 6
+	value not found in map
+saveAndGetID():
+	value:   %mul = mul nsw i32 %0, 10
+createAssign():
+	preConvert from: 4
+saveAndGetID():
+	value:   %div = sdiv i32 %mul, 6
+saveAndGetID():
+	value: i32 6
+createAssign():
+	preConvert from: 6CONST_INT
+Instruction:   %div = sdiv i32 %mul, 6
+Iterating over use-def of:   %conv = trunc i32 %div to i8
+saveAndGetID():
+	value:   %conv = trunc i32 %div to i8
+	value not found in map
+saveAndGetID():
+	value:   %div = sdiv i32 %mul, 6
+createAssign():
+	preConvert from: 5
+Instruction:   %conv = trunc i32 %div to i8
+Iterating over use-def of:   ret i8 %conv
+Visiting RetInst:   ret i8 %conv
+	Function Name: seconds_to_ticks
+saveAndGetID():
+	value:   ret i8 %conv
+	value not found in map
+saveAndGetID():
+	value:   %conv = trunc i32 %div to i8
+createAssign():
+	preConvert from: 6
+saveAndGetID():
+	value:   ret i8 %conv
+createAssign():
+	preConvert from: 7
+Instruction:   ret i8 %conv
+Iterating over use-def of:   %retval = alloca i32, align 4
+saveAndGetID():
+	value:   %retval = alloca i32, align 4
+	value not found in map
+createAssign():
+	preConvert from: stack_1
+Instruction:   %retval = alloca i32, align 4
+Iterating over use-def of:   %t.addr = alloca i32, align 4
+saveAndGetID():
+	value:   %t.addr = alloca i32, align 4
+	value not found in map
+createAssign():
+	preConvert from: stack_2
+Instruction:   %t.addr = alloca i32, align 4
+Iterating over use-def of:   %val = alloca i8, align 1
+saveAndGetID():
+	value:   %val = alloca i8, align 1
+	value not found in map
+createAssign():
+	preConvert from: stack_3
+Instruction:   %val = alloca i8, align 1
+Iterating over use-def of:   %tmrval = alloca i8, align 1
+saveAndGetID():
+	value:   %tmrval = alloca i8, align 1
+	value not found in map
+createAssign():
+	preConvert from: stack_4
+Instruction:   %tmrval = alloca i8, align 1
+Iterating over use-def of:   store i32 %t, i32* %t.addr, align 4
+createStore():
+	to:   %t.addr = alloca i32, align 4
+	fromi32 %t
+saveAndGetID():
+	value:   %t.addr = alloca i32, align 4
+	toStr: *9
+saveAndGetID():
+	value: i32 %t
+	value not found in map
+	fromStr: 12
+saveAndGetID():
+	value:   store i32 %t, i32* %t.addr, align 4
+	value not found in map
+createAssign():
+	preConvert from: *9
+saveAndGetID():
+	value:   store i32 %t, i32* %t.addr, align 4
+createAssign():
+	preConvert from: 12
+saveAndGetID():
+	value:   store i32 %t, i32* %t.addr, align 4
+createAssign():
+	preConvert from: 13
+Instruction:   store i32 %t, i32* %t.addr, align 4
+Iterating over use-def of:   %0 = load i32* %t.addr, align 4
+saveAndGetID():
+	value:   %0 = load i32* %t.addr, align 4
+	value not found in map
+saveAndGetID():
+	value:   %t.addr = alloca i32, align 4
+saveAndGetID():
+	value:   %0 = load i32* %t.addr, align 4
+createAssign():
+	preConvert from: *9
+createAssign():
+	preConvert from: 9
+Instruction:   %0 = load i32* %t.addr, align 4
+Iterating over use-def of:   %call = call zeroext i8 @seconds_to_ticks(i32 %0)
+Visiting CallSite:   %call = call zeroext i8 @seconds_to_ticks(i32 %0)
+	Type? i8
+	Found 1 matching function(s)
+saveAndGetID():
+	value:   %call = call zeroext i8 @seconds_to_ticks(i32 %0)
+	value not found in map
+createAssign():
+	preConvert from: seconds_to_ticks_RETURN
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i32 %seconds
+saveAndGetID():
+	value:   %0 = load i32* %t.addr, align 4
+createAssign():
+	preConvert from: 14
+Finished callsite
+Instruction:   %call = call zeroext i8 @seconds_to_ticks(i32 %0)
+Iterating over use-def of:   store i8 %call, i8* %tmrval, align 1
+createStore():
+	to:   %tmrval = alloca i8, align 1
+	from  %call = call zeroext i8 @seconds_to_ticks(i32 %0)
+saveAndGetID():
+	value:   %tmrval = alloca i8, align 1
+	toStr: *11
+saveAndGetID():
+	value:   %call = call zeroext i8 @seconds_to_ticks(i32 %0)
+	fromStr: 15
+saveAndGetID():
+	value:   store i8 %call, i8* %tmrval, align 1
+	value not found in map
+createAssign():
+	preConvert from: *11
+saveAndGetID():
+	value:   store i8 %call, i8* %tmrval, align 1
+createAssign():
+	preConvert from: 15
+saveAndGetID():
+	value:   store i8 %call, i8* %tmrval, align 1
+createAssign():
+	preConvert from: 16
+Instruction:   store i8 %call, i8* %tmrval, align 1
+Iterating over use-def of:   %1 = load i8* %tmrval, align 1
+saveAndGetID():
+	value:   %1 = load i8* %tmrval, align 1
+	value not found in map
+saveAndGetID():
+	value:   %tmrval = alloca i8, align 1
+saveAndGetID():
+	value:   %1 = load i8* %tmrval, align 1
+createAssign():
+	preConvert from: *11
+createAssign():
+	preConvert from: 11
+Instruction:   %1 = load i8* %tmrval, align 1
+Iterating over use-def of:   %conv = zext i8 %1 to i32
+saveAndGetID():
+	value:   %conv = zext i8 %1 to i32
+	value not found in map
+saveAndGetID():
+	value:   %1 = load i8* %tmrval, align 1
+createAssign():
+	preConvert from: 17
+Instruction:   %conv = zext i8 %1 to i32
+Iterating over use-def of:   %cmp = icmp sgt i32 %conv, 63
+saveAndGetID():
+	value:   %cmp = icmp sgt i32 %conv, 63
+	value not found in map
+saveAndGetID():
+	value:   %conv = zext i8 %1 to i32
+createAssign():
+	preConvert from: 18
+saveAndGetID():
+	value:   %cmp = icmp sgt i32 %conv, 63
+saveAndGetID():
+	value: i32 63
+createAssign():
+	preConvert from: 63CONST_INT
+Instruction:   %cmp = icmp sgt i32 %conv, 63
+Iterating over use-def of:   br i1 %cmp, label %if.then, label %lor.lhs.false
+saveAndGetID():
+	value:   br i1 %cmp, label %if.then, label %lor.lhs.false
+	value not found in map
+saveAndGetID():
+	value:   %cmp = icmp sgt i32 %conv, 63
+createAssign():
+	preConvert from: 19
+Instruction:   br i1 %cmp, label %if.then, label %lor.lhs.false
+createCDep():
+	to:   %2 = load i8* %tmrval, align 1 0x13f7b78
+	from:   br i1 %cmp, label %if.then, label %lor.lhs.false
+saveAndGetID():
+	value:   %2 = load i8* %tmrval, align 1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp, label %if.then, label %lor.lhs.false
+	toStrID: 21
+	fromStrID: 20
+Iterating over use-def of:   %2 = load i8* %tmrval, align 1
+saveAndGetID():
+	value:   %2 = load i8* %tmrval, align 1
+saveAndGetID():
+	value:   %tmrval = alloca i8, align 1
+saveAndGetID():
+	value:   %2 = load i8* %tmrval, align 1
+createAssign():
+	preConvert from: *11
+createAssign():
+	preConvert from: 11
+Instruction:   %2 = load i8* %tmrval, align 1
+createCDep():
+	to:   %conv2 = zext i8 %2 to i32 0x13f7c18
+	from:   br i1 %cmp, label %if.then, label %lor.lhs.false
+saveAndGetID():
+	value:   %conv2 = zext i8 %2 to i32
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp, label %if.then, label %lor.lhs.false
+	toStrID: 22
+	fromStrID: 20
+Iterating over use-def of:   %conv2 = zext i8 %2 to i32
+saveAndGetID():
+	value:   %conv2 = zext i8 %2 to i32
+saveAndGetID():
+	value:   %2 = load i8* %tmrval, align 1
+createAssign():
+	preConvert from: 21
+Instruction:   %conv2 = zext i8 %2 to i32
+createCDep():
+	to:   %cmp3 = icmp slt i32 %conv2, 4 0x13f7cf0
+	from:   br i1 %cmp, label %if.then, label %lor.lhs.false
+saveAndGetID():
+	value:   %cmp3 = icmp slt i32 %conv2, 4
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp, label %if.then, label %lor.lhs.false
+	toStrID: 23
+	fromStrID: 20
+Iterating over use-def of:   %cmp3 = icmp slt i32 %conv2, 4
+saveAndGetID():
+	value:   %cmp3 = icmp slt i32 %conv2, 4
+saveAndGetID():
+	value:   %conv2 = zext i8 %2 to i32
+createAssign():
+	preConvert from: 22
+saveAndGetID():
+	value:   %cmp3 = icmp slt i32 %conv2, 4
+saveAndGetID():
+	value: i32 4
+createAssign():
+	preConvert from: 4CONST_INT
+Instruction:   %cmp3 = icmp slt i32 %conv2, 4
+createCDep():
+	to:   br i1 %cmp3, label %if.then, label %if.end 0x13f7f58
+	from:   br i1 %cmp, label %if.then, label %lor.lhs.false
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp, label %if.then, label %lor.lhs.false
+	toStrID: 24
+	fromStrID: 20
+Iterating over use-def of:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   %cmp3 = icmp slt i32 %conv2, 4
+createAssign():
+	preConvert from: 23
+Instruction:   br i1 %cmp3, label %if.then, label %if.end
+createCDep():
+	to:   store i32 -22, i32* %retval 0x13f8030
+	from:   br i1 %cmp, label %if.then, label %lor.lhs.false
+saveAndGetID():
+	value:   store i32 -22, i32* %retval
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp, label %if.then, label %lor.lhs.false
+	toStrID: 25
+	fromStrID: 20
+createCDep():
+	to:   store i32 -22, i32* %retval 0x13f8030
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   store i32 -22, i32* %retval
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 25
+	fromStrID: 24
+Iterating over use-def of:   store i32 -22, i32* %retval
+createStore():
+	to:   %retval = alloca i32, align 4
+	fromi32 -22
+saveAndGetID():
+	value:   %retval = alloca i32, align 4
+	toStr: *8
+saveAndGetID():
+	value: i32 -22
+	fromStr: -22CONST_INT
+saveAndGetID():
+	value:   store i32 -22, i32* %retval
+createAssign():
+	preConvert from: *8
+saveAndGetID():
+	value:   store i32 -22, i32* %retval
+createAssign():
+	preConvert from: -22CONST_INT
+saveAndGetID():
+	value:   store i32 -22, i32* %retval
+createAssign():
+	preConvert from: 25
+Instruction:   store i32 -22, i32* %retval
+createCDep():
+	to:   br label %return 0x13f8128
+	from:   br i1 %cmp, label %if.then, label %lor.lhs.false
+saveAndGetID():
+	value:   br label %return
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp, label %if.then, label %lor.lhs.false
+	toStrID: 26
+	fromStrID: 20
+createCDep():
+	to:   br label %return 0x13f8128
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   br label %return
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 26
+	fromStrID: 24
+Iterating over use-def of:   br label %return
+createCDep():
+	to:   br label %do.body 0x13f8218
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   br label %do.body
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 27
+	fromStrID: 24
+Iterating over use-def of:   br label %do.body
+createCDep():
+	to:   br label %while.cond 0x13f82e8
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   br label %while.cond
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 28
+	fromStrID: 24
+Iterating over use-def of:   br label %while.cond
+createCDep():
+	to:   %3 = load i8* @tco_lock, align 1 0x13f8358
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   %3 = load i8* @tco_lock, align 1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 29
+	fromStrID: 24
+Iterating over use-def of:   %3 = load i8* @tco_lock, align 1
+saveAndGetID():
+	value:   %3 = load i8* @tco_lock, align 1
+saveAndGetID():
+	value: @tco_lock = common global i8 0, align 1
+	value not found in map
+saveAndGetID():
+	value:   %3 = load i8* @tco_lock, align 1
+createAssign():
+	preConvert from: *30
+createAssign():
+	preConvert from: 30
+Instruction:   %3 = load i8* @tco_lock, align 1
+createCDep():
+	to:   %tobool = trunc i8 %3 to i1 0x13f83c8
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   %tobool = trunc i8 %3 to i1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 31
+	fromStrID: 24
+Iterating over use-def of:   %tobool = trunc i8 %3 to i1
+saveAndGetID():
+	value:   %tobool = trunc i8 %3 to i1
+saveAndGetID():
+	value:   %3 = load i8* @tco_lock, align 1
+createAssign():
+	preConvert from: 29
+Instruction:   %tobool = trunc i8 %3 to i1
+createCDep():
+	to:   br i1 %tobool, label %while.body, label %while.end 0x13f85f8
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   br i1 %tobool, label %while.body, label %while.end
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 32
+	fromStrID: 24
+Iterating over use-def of:   br i1 %tobool, label %while.body, label %while.end
+saveAndGetID():
+	value:   br i1 %tobool, label %while.body, label %while.end
+saveAndGetID():
+	value:   %tobool = trunc i8 %3 to i1
+createAssign():
+	preConvert from: 31
+Instruction:   br i1 %tobool, label %while.body, label %while.end
+createCDep():
+	to:   br label %while.cond 0x13f8668
+	from:   br i1 %tobool, label %while.body, label %while.end
+saveAndGetID():
+	value:   br label %while.cond
+	value not found in map
+saveAndGetID():
+	value:   br i1 %tobool, label %while.body, label %while.end
+	toStrID: 33
+	fromStrID: 32
+Iterating over use-def of:   br label %while.cond
+createCDep():
+	to:   br label %do.end 0x13f8758
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   br label %do.end
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 34
+	fromStrID: 24
+Iterating over use-def of:   br label %do.end
+createCDep():
+	to:   store i8 0, i8* %val, align 1 0x13f87e0
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   store i8 0, i8* %val, align 1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 35
+	fromStrID: 24
+Iterating over use-def of:   store i8 0, i8* %val, align 1
+createStore():
+	to:   %val = alloca i8, align 1
+	fromi8 0
+saveAndGetID():
+	value:   %val = alloca i8, align 1
+	toStr: *10
+saveAndGetID():
+	value: i8 0
+	fromStr: 0CONST_INT
+saveAndGetID():
+	value:   store i8 0, i8* %val, align 1
+createAssign():
+	preConvert from: *10
+saveAndGetID():
+	value:   store i8 0, i8* %val, align 1
+createAssign():
+	preConvert from: 0CONST_INT
+saveAndGetID():
+	value:   store i8 0, i8* %val, align 1
+createAssign():
+	preConvert from: 35
+Instruction:   store i8 0, i8* %val, align 1
+createCDep():
+	to:   %4 = load i8* %val, align 1 0x13f8858
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   %4 = load i8* %val, align 1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 36
+	fromStrID: 24
+Iterating over use-def of:   %4 = load i8* %val, align 1
+saveAndGetID():
+	value:   %4 = load i8* %val, align 1
+saveAndGetID():
+	value:   %val = alloca i8, align 1
+saveAndGetID():
+	value:   %4 = load i8* %val, align 1
+createAssign():
+	preConvert from: *10
+createAssign():
+	preConvert from: 10
+Instruction:   %4 = load i8* %val, align 1
+createCDep():
+	to:   %conv5 = zext i8 %4 to i32 0x13f8918
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   %conv5 = zext i8 %4 to i32
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 37
+	fromStrID: 24
+Iterating over use-def of:   %conv5 = zext i8 %4 to i32
+saveAndGetID():
+	value:   %conv5 = zext i8 %4 to i32
+saveAndGetID():
+	value:   %4 = load i8* %val, align 1
+createAssign():
+	preConvert from: 36
+Instruction:   %conv5 = zext i8 %4 to i32
+createCDep():
+	to:   %and = and i32 %conv5, 192 0x13f8a10
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   %and = and i32 %conv5, 192
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 38
+	fromStrID: 24
+Iterating over use-def of:   %and = and i32 %conv5, 192
+saveAndGetID():
+	value:   %and = and i32 %conv5, 192
+saveAndGetID():
+	value:   %conv5 = zext i8 %4 to i32
+createAssign():
+	preConvert from: 37
+saveAndGetID():
+	value:   %and = and i32 %conv5, 192
+saveAndGetID():
+	value: i32 192
+createAssign():
+	preConvert from: 192CONST_INT
+Instruction:   %and = and i32 %conv5, 192
+createCDep():
+	to:   %conv6 = trunc i32 %and to i8 0x13f8aa8
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   %conv6 = trunc i32 %and to i8
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 39
+	fromStrID: 24
+Iterating over use-def of:   %conv6 = trunc i32 %and to i8
+saveAndGetID():
+	value:   %conv6 = trunc i32 %and to i8
+saveAndGetID():
+	value:   %and = and i32 %conv5, 192
+createAssign():
+	preConvert from: 38
+Instruction:   %conv6 = trunc i32 %and to i8
+createCDep():
+	to:   store i8 %conv6, i8* %val, align 1 0x13f8b50
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   store i8 %conv6, i8* %val, align 1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 40
+	fromStrID: 24
+Iterating over use-def of:   store i8 %conv6, i8* %val, align 1
+createStore():
+	to:   %val = alloca i8, align 1
+	from  %conv6 = trunc i32 %and to i8
+saveAndGetID():
+	value:   %val = alloca i8, align 1
+	toStr: *10
+saveAndGetID():
+	value:   %conv6 = trunc i32 %and to i8
+	fromStr: 39
+saveAndGetID():
+	value:   store i8 %conv6, i8* %val, align 1
+createAssign():
+	preConvert from: *10
+saveAndGetID():
+	value:   store i8 %conv6, i8* %val, align 1
+createAssign():
+	preConvert from: 39
+saveAndGetID():
+	value:   store i8 %conv6, i8* %val, align 1
+createAssign():
+	preConvert from: 40
+Instruction:   store i8 %conv6, i8* %val, align 1
+createCDep():
+	to:   %5 = load i8* %tmrval, align 1 0x13f8bc8
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   %5 = load i8* %tmrval, align 1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 41
+	fromStrID: 24
+Iterating over use-def of:   %5 = load i8* %tmrval, align 1
+saveAndGetID():
+	value:   %5 = load i8* %tmrval, align 1
+saveAndGetID():
+	value:   %tmrval = alloca i8, align 1
+saveAndGetID():
+	value:   %5 = load i8* %tmrval, align 1
+createAssign():
+	preConvert from: *11
+createAssign():
+	preConvert from: 11
+Instruction:   %5 = load i8* %tmrval, align 1
+createCDep():
+	to:   %conv7 = zext i8 %5 to i32 0x13f8c38
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   %conv7 = zext i8 %5 to i32
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 42
+	fromStrID: 24
+Iterating over use-def of:   %conv7 = zext i8 %5 to i32
+saveAndGetID():
+	value:   %conv7 = zext i8 %5 to i32
+saveAndGetID():
+	value:   %5 = load i8* %tmrval, align 1
+createAssign():
+	preConvert from: 41
+Instruction:   %conv7 = zext i8 %5 to i32
+createCDep():
+	to:   %6 = load i8* %val, align 1 0x13f7d88
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   %6 = load i8* %val, align 1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 43
+	fromStrID: 24
+Iterating over use-def of:   %6 = load i8* %val, align 1
+saveAndGetID():
+	value:   %6 = load i8* %val, align 1
+saveAndGetID():
+	value:   %val = alloca i8, align 1
+saveAndGetID():
+	value:   %6 = load i8* %val, align 1
+createAssign():
+	preConvert from: *10
+createAssign():
+	preConvert from: 10
+Instruction:   %6 = load i8* %val, align 1
+createCDep():
+	to:   %conv8 = zext i8 %6 to i32 0x13f7df8
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   %conv8 = zext i8 %6 to i32
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 44
+	fromStrID: 24
+Iterating over use-def of:   %conv8 = zext i8 %6 to i32
+saveAndGetID():
+	value:   %conv8 = zext i8 %6 to i32
+saveAndGetID():
+	value:   %6 = load i8* %val, align 1
+createAssign():
+	preConvert from: 43
+Instruction:   %conv8 = zext i8 %6 to i32
+createCDep():
+	to:   %or = or i32 %conv8, %conv7 0x13f7ea0
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   %or = or i32 %conv8, %conv7
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 45
+	fromStrID: 24
+Iterating over use-def of:   %or = or i32 %conv8, %conv7
+saveAndGetID():
+	value:   %or = or i32 %conv8, %conv7
+saveAndGetID():
+	value:   %conv8 = zext i8 %6 to i32
+createAssign():
+	preConvert from: 44
+saveAndGetID():
+	value:   %or = or i32 %conv8, %conv7
+saveAndGetID():
+	value:   %conv7 = zext i8 %5 to i32
+createAssign():
+	preConvert from: 42
+Instruction:   %or = or i32 %conv8, %conv7
+createCDep():
+	to:   %conv9 = trunc i32 %or to i8 0x13f9008
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   %conv9 = trunc i32 %or to i8
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 46
+	fromStrID: 24
+Iterating over use-def of:   %conv9 = trunc i32 %or to i8
+saveAndGetID():
+	value:   %conv9 = trunc i32 %or to i8
+saveAndGetID():
+	value:   %or = or i32 %conv8, %conv7
+createAssign():
+	preConvert from: 45
+Instruction:   %conv9 = trunc i32 %or to i8
+createCDep():
+	to:   store i8 %conv9, i8* %val, align 1 0x13f90b0
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   store i8 %conv9, i8* %val, align 1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 47
+	fromStrID: 24
+Iterating over use-def of:   store i8 %conv9, i8* %val, align 1
+createStore():
+	to:   %val = alloca i8, align 1
+	from  %conv9 = trunc i32 %or to i8
+saveAndGetID():
+	value:   %val = alloca i8, align 1
+	toStr: *10
+saveAndGetID():
+	value:   %conv9 = trunc i32 %or to i8
+	fromStr: 46
+saveAndGetID():
+	value:   store i8 %conv9, i8* %val, align 1
+createAssign():
+	preConvert from: *10
+saveAndGetID():
+	value:   store i8 %conv9, i8* %val, align 1
+createAssign():
+	preConvert from: 46
+saveAndGetID():
+	value:   store i8 %conv9, i8* %val, align 1
+createAssign():
+	preConvert from: 47
+Instruction:   store i8 %conv9, i8* %val, align 1
+createCDep():
+	to:   store i8 0, i8* %val, align 1 0x13f9140
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   store i8 0, i8* %val, align 1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 48
+	fromStrID: 24
+Iterating over use-def of:   store i8 0, i8* %val, align 1
+createStore():
+	to:   %val = alloca i8, align 1
+	fromi8 0
+saveAndGetID():
+	value:   %val = alloca i8, align 1
+	toStr: *10
+saveAndGetID():
+	value: i8 0
+	fromStr: 0CONST_INT
+saveAndGetID():
+	value:   store i8 0, i8* %val, align 1
+createAssign():
+	preConvert from: *10
+saveAndGetID():
+	value:   store i8 0, i8* %val, align 1
+createAssign():
+	preConvert from: 0CONST_INT
+saveAndGetID():
+	value:   store i8 0, i8* %val, align 1
+createAssign():
+	preConvert from: 48
+Instruction:   store i8 0, i8* %val, align 1
+createCDep():
+	to:   br label %do.body10 0x13f9248
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   br label %do.body10
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 49
+	fromStrID: 24
+Iterating over use-def of:   br label %do.body10
+createCDep():
+	to:   store i8 0, i8* @tco_lock, align 1 0x13f92d0
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   store i8 0, i8* @tco_lock, align 1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 50
+	fromStrID: 24
+Iterating over use-def of:   store i8 0, i8* @tco_lock, align 1
+createStore():
+	to: @tco_lock = common global i8 0, align 1
+	fromi8 0
+saveAndGetID():
+	value: @tco_lock = common global i8 0, align 1
+	toStr: *30
+saveAndGetID():
+	value: i8 0
+	fromStr: 0CONST_INT
+saveAndGetID():
+	value:   store i8 0, i8* @tco_lock, align 1
+createAssign():
+	preConvert from: *30
+saveAndGetID():
+	value:   store i8 0, i8* @tco_lock, align 1
+createAssign():
+	preConvert from: 0CONST_INT
+saveAndGetID():
+	value:   store i8 0, i8* @tco_lock, align 1
+createAssign():
+	preConvert from: 50
+Instruction:   store i8 0, i8* @tco_lock, align 1
+createCDep():
+	to:   br label %do.end11 0x13f93a8
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   br label %do.end11
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 51
+	fromStrID: 24
+Iterating over use-def of:   br label %do.end11
+createCDep():
+	to:   %7 = load i8* %val, align 1 0x13f9418
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   %7 = load i8* %val, align 1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 52
+	fromStrID: 24
+Iterating over use-def of:   %7 = load i8* %val, align 1
+saveAndGetID():
+	value:   %7 = load i8* %val, align 1
+saveAndGetID():
+	value:   %val = alloca i8, align 1
+saveAndGetID():
+	value:   %7 = load i8* %val, align 1
+createAssign():
+	preConvert from: *10
+createAssign():
+	preConvert from: 10
+Instruction:   %7 = load i8* %val, align 1
+createCDep():
+	to:   %conv12 = zext i8 %7 to i32 0x13f9488
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   %conv12 = zext i8 %7 to i32
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 53
+	fromStrID: 24
+Iterating over use-def of:   %conv12 = zext i8 %7 to i32
+saveAndGetID():
+	value:   %conv12 = zext i8 %7 to i32
+saveAndGetID():
+	value:   %7 = load i8* %val, align 1
+createAssign():
+	preConvert from: 52
+Instruction:   %conv12 = zext i8 %7 to i32
+createCDep():
+	to:   %and13 = and i32 %conv12, 63 0x13f9530
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   %and13 = and i32 %conv12, 63
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 54
+	fromStrID: 24
+Iterating over use-def of:   %and13 = and i32 %conv12, 63
+saveAndGetID():
+	value:   %and13 = and i32 %conv12, 63
+saveAndGetID():
+	value:   %conv12 = zext i8 %7 to i32
+createAssign():
+	preConvert from: 53
+saveAndGetID():
+	value:   %and13 = and i32 %conv12, 63
+saveAndGetID():
+	value: i32 63
+createAssign():
+	preConvert from: 63CONST_INT
+Instruction:   %and13 = and i32 %conv12, 63
+createCDep():
+	to:   %8 = load i8* %tmrval, align 1 0x13f95c8
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   %8 = load i8* %tmrval, align 1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 55
+	fromStrID: 24
+Iterating over use-def of:   %8 = load i8* %tmrval, align 1
+saveAndGetID():
+	value:   %8 = load i8* %tmrval, align 1
+saveAndGetID():
+	value:   %tmrval = alloca i8, align 1
+saveAndGetID():
+	value:   %8 = load i8* %tmrval, align 1
+createAssign():
+	preConvert from: *11
+createAssign():
+	preConvert from: 11
+Instruction:   %8 = load i8* %tmrval, align 1
+createCDep():
+	to:   %conv14 = zext i8 %8 to i32 0x13f96c8
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   %conv14 = zext i8 %8 to i32
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 56
+	fromStrID: 24
+Iterating over use-def of:   %conv14 = zext i8 %8 to i32
+saveAndGetID():
+	value:   %conv14 = zext i8 %8 to i32
+saveAndGetID():
+	value:   %8 = load i8* %tmrval, align 1
+createAssign():
+	preConvert from: 55
+Instruction:   %conv14 = zext i8 %8 to i32
+createCDep():
+	to:   %cmp15 = icmp ne i32 %and13, %conv14 0x13f97a0
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   %cmp15 = icmp ne i32 %and13, %conv14
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 57
+	fromStrID: 24
+Iterating over use-def of:   %cmp15 = icmp ne i32 %and13, %conv14
+saveAndGetID():
+	value:   %cmp15 = icmp ne i32 %and13, %conv14
+saveAndGetID():
+	value:   %and13 = and i32 %conv12, 63
+createAssign():
+	preConvert from: 54
+saveAndGetID():
+	value:   %cmp15 = icmp ne i32 %and13, %conv14
+saveAndGetID():
+	value:   %conv14 = zext i8 %8 to i32
+createAssign():
+	preConvert from: 56
+Instruction:   %cmp15 = icmp ne i32 %and13, %conv14
+createCDep():
+	to:   br i1 %cmp15, label %if.then17, label %if.end18 0x13f9988
+	from:   br i1 %cmp3, label %if.then, label %if.end
+saveAndGetID():
+	value:   br i1 %cmp15, label %if.then17, label %if.end18
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end
+	toStrID: 58
+	fromStrID: 24
+Iterating over use-def of:   br i1 %cmp15, label %if.then17, label %if.end18
+saveAndGetID():
+	value:   br i1 %cmp15, label %if.then17, label %if.end18
+saveAndGetID():
+	value:   %cmp15 = icmp ne i32 %and13, %conv14
+createAssign():
+	preConvert from: 57
+Instruction:   br i1 %cmp15, label %if.then17, label %if.end18
+createCDep():
+	to:   store i32 -22, i32* %retval 0x13f9a10
+	from:   br i1 %cmp15, label %if.then17, label %if.end18
+saveAndGetID():
+	value:   store i32 -22, i32* %retval
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp15, label %if.then17, label %if.end18
+	toStrID: 59
+	fromStrID: 58
+Iterating over use-def of:   store i32 -22, i32* %retval
+createStore():
+	to:   %retval = alloca i32, align 4
+	fromi32 -22
+saveAndGetID():
+	value:   %retval = alloca i32, align 4
+	toStr: *8
+saveAndGetID():
+	value: i32 -22
+	fromStr: -22CONST_INT
+saveAndGetID():
+	value:   store i32 -22, i32* %retval
+createAssign():
+	preConvert from: *8
+saveAndGetID():
+	value:   store i32 -22, i32* %retval
+createAssign():
+	preConvert from: -22CONST_INT
+saveAndGetID():
+	value:   store i32 -22, i32* %retval
+createAssign():
+	preConvert from: 59
+Instruction:   store i32 -22, i32* %retval
+createCDep():
+	to:   br label %return 0x13f9a88
+	from:   br i1 %cmp15, label %if.then17, label %if.end18
+saveAndGetID():
+	value:   br label %return
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp15, label %if.then17, label %if.end18
+	toStrID: 60
+	fromStrID: 58
+Iterating over use-def of:   br label %return
+createCDep():
+	to:   %9 = load i32* %t.addr, align 4 0x13f9af8
+	from:   br i1 %cmp15, label %if.then17, label %if.end18
+saveAndGetID():
+	value:   %9 = load i32* %t.addr, align 4
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp15, label %if.then17, label %if.end18
+	toStrID: 61
+	fromStrID: 58
+Iterating over use-def of:   %9 = load i32* %t.addr, align 4
+saveAndGetID():
+	value:   %9 = load i32* %t.addr, align 4
+saveAndGetID():
+	value:   %t.addr = alloca i32, align 4
+saveAndGetID():
+	value:   %9 = load i32* %t.addr, align 4
+createAssign():
+	preConvert from: *9
+createAssign():
+	preConvert from: 9
+Instruction:   %9 = load i32* %t.addr, align 4
+createCDep():
+	to:   store i32 %9, i32* @heartbeat, align 4 0x13f9b80
+	from:   br i1 %cmp15, label %if.then17, label %if.end18
+saveAndGetID():
+	value:   store i32 %9, i32* @heartbeat, align 4
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp15, label %if.then17, label %if.end18
+	toStrID: 62
+	fromStrID: 58
+Iterating over use-def of:   store i32 %9, i32* @heartbeat, align 4
+createStore():
+	to: @heartbeat = global i32 30, align 4
+	from  %9 = load i32* %t.addr, align 4
+saveAndGetID():
+	value: @heartbeat = global i32 30, align 4
+	value not found in map
+	toStr: *63
+saveAndGetID():
+	value:   %9 = load i32* %t.addr, align 4
+	fromStr: 61
+saveAndGetID():
+	value:   store i32 %9, i32* @heartbeat, align 4
+createAssign():
+	preConvert from: *63
+saveAndGetID():
+	value:   store i32 %9, i32* @heartbeat, align 4
+createAssign():
+	preConvert from: 61
+saveAndGetID():
+	value:   store i32 %9, i32* @heartbeat, align 4
+createAssign():
+	preConvert from: 62
+Instruction:   store i32 %9, i32* @heartbeat, align 4
+createCDep():
+	to:   store i32 0, i32* %retval 0x13f9c10
+	from:   br i1 %cmp15, label %if.then17, label %if.end18
+saveAndGetID():
+	value:   store i32 0, i32* %retval
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp15, label %if.then17, label %if.end18
+	toStrID: 64
+	fromStrID: 58
+Iterating over use-def of:   store i32 0, i32* %retval
+createStore():
+	to:   %retval = alloca i32, align 4
+	fromi32 0
+saveAndGetID():
+	value:   %retval = alloca i32, align 4
+	toStr: *8
+saveAndGetID():
+	value: i32 0
+	fromStr: 0CONST_INT
+saveAndGetID():
+	value:   store i32 0, i32* %retval
+createAssign():
+	preConvert from: *8
+saveAndGetID():
+	value:   store i32 0, i32* %retval
+createAssign():
+	preConvert from: 0CONST_INT
+saveAndGetID():
+	value:   store i32 0, i32* %retval
+createAssign():
+	preConvert from: 64
+Instruction:   store i32 0, i32* %retval
+createCDep():
+	to:   br label %return 0x13f9c88
+	from:   br i1 %cmp15, label %if.then17, label %if.end18
+saveAndGetID():
+	value:   br label %return
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp15, label %if.then17, label %if.end18
+	toStrID: 65
+	fromStrID: 58
+Iterating over use-def of:   br label %return
+Iterating over use-def of:   %10 = load i32* %retval
+saveAndGetID():
+	value:   %10 = load i32* %retval
+	value not found in map
+saveAndGetID():
+	value:   %retval = alloca i32, align 4
+saveAndGetID():
+	value:   %10 = load i32* %retval
+createAssign():
+	preConvert from: *8
+createAssign():
+	preConvert from: 8
+Instruction:   %10 = load i32* %retval
+Iterating over use-def of:   ret i32 %10
+Visiting RetInst:   ret i32 %10
+	Function Name: tco_timer_set_heartbeat
+saveAndGetID():
+	value:   ret i32 %10
+	value not found in map
+saveAndGetID():
+	value:   %10 = load i32* %retval
+createAssign():
+	preConvert from: 66
+saveAndGetID():
+	value:   ret i32 %10
+createAssign():
+	preConvert from: 67
+Instruction:   ret i32 %10
+Iterating over use-def of:   %unused.addr = alloca i8*, align 8
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_5
+Instruction:   %unused.addr = alloca i8*, align 8
+Iterating over use-def of:   %val = alloca i8, align 1
+saveAndGetID():
+	value:   %val = alloca i8, align 1
+	value not found in map
+createAssign():
+	preConvert from: stack_6
+Instruction:   %val = alloca i8, align 1
+Iterating over use-def of:   %val1 = alloca i8, align 1
+saveAndGetID():
+	value:   %val1 = alloca i8, align 1
+	value not found in map
+createAssign():
+	preConvert from: stack_7
+Instruction:   %val1 = alloca i8, align 1
+Iterating over use-def of:   store i8* %unused, i8** %unused.addr, align 8
+createStore():
+	to:   %unused.addr = alloca i8*, align 8
+	fromi8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	toStr: **68
+saveAndGetID():
+	value: i8* %unused
+	value not found in map
+	fromStr: *71
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+	value not found in map
+createAssign():
+	preConvert from: **68
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: *71
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: 72
+Instruction:   store i8* %unused, i8** %unused.addr, align 8
+Iterating over use-def of:   store i8 86, i8* @tco_write_buf, align 1
+createStore():
+	to: @tco_write_buf = common global i8 0, align 1
+	fromi8 86
+saveAndGetID():
+	value: @tco_write_buf = common global i8 0, align 1
+	value not found in map
+	toStr: *73
+saveAndGetID():
+	value: i8 86
+	fromStr: 86CONST_INT
+saveAndGetID():
+	value:   store i8 86, i8* @tco_write_buf, align 1
+	value not found in map
+createAssign():
+	preConvert from: *73
+saveAndGetID():
+	value:   store i8 86, i8* @tco_write_buf, align 1
+createAssign():
+	preConvert from: 86CONST_INT
+saveAndGetID():
+	value:   store i8 86, i8* @tco_write_buf, align 1
+createAssign():
+	preConvert from: 74
+Instruction:   store i8 86, i8* @tco_write_buf, align 1
+Iterating over use-def of:   br label %do.body
+Iterating over use-def of:   %0 = load i32* @nowayout, align 4
+saveAndGetID():
+	value:   %0 = load i32* @nowayout, align 4
+	value not found in map
+saveAndGetID():
+	value: @nowayout = global i32 0, align 4
+	value not found in map
+saveAndGetID():
+	value:   %0 = load i32* @nowayout, align 4
+createAssign():
+	preConvert from: *76
+createAssign():
+	preConvert from: 76
+Instruction:   %0 = load i32* @nowayout, align 4
+Iterating over use-def of:   %tobool = icmp ne i32 %0, 0
+saveAndGetID():
+	value:   %tobool = icmp ne i32 %0, 0
+	value not found in map
+saveAndGetID():
+	value:   %0 = load i32* @nowayout, align 4
+createAssign():
+	preConvert from: 75
+saveAndGetID():
+	value:   %tobool = icmp ne i32 %0, 0
+saveAndGetID():
+	value: i32 0
+createAssign():
+	preConvert from: 0CONST_INT
+Instruction:   %tobool = icmp ne i32 %0, 0
+Iterating over use-def of:   br i1 %tobool, label %if.end3, label %if.then
+saveAndGetID():
+	value:   br i1 %tobool, label %if.end3, label %if.then
+	value not found in map
+saveAndGetID():
+	value:   %tobool = icmp ne i32 %0, 0
+createAssign():
+	preConvert from: 77
+Instruction:   br i1 %tobool, label %if.end3, label %if.then
+createCDep():
+	to:   store i8 0, i8* @tco_expect_close, align 1 0x13fa740
+	from:   br i1 %tobool, label %if.end3, label %if.then
+saveAndGetID():
+	value:   store i8 0, i8* @tco_expect_close, align 1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %tobool, label %if.end3, label %if.then
+	toStrID: 79
+	fromStrID: 78
+Iterating over use-def of:   store i8 0, i8* @tco_expect_close, align 1
+createStore():
+	to: @tco_expect_close = common global i8 0, align 1
+	fromi8 0
+saveAndGetID():
+	value: @tco_expect_close = common global i8 0, align 1
+	value not found in map
+	toStr: *80
+saveAndGetID():
+	value: i8 0
+	fromStr: 0CONST_INT
+saveAndGetID():
+	value:   store i8 0, i8* @tco_expect_close, align 1
+createAssign():
+	preConvert from: *80
+saveAndGetID():
+	value:   store i8 0, i8* @tco_expect_close, align 1
+createAssign():
+	preConvert from: 0CONST_INT
+saveAndGetID():
+	value:   store i8 0, i8* @tco_expect_close, align 1
+createAssign():
+	preConvert from: 79
+Instruction:   store i8 0, i8* @tco_expect_close, align 1
+createCDep():
+	to:   %1 = load i8* @tco_write_buf, align 1 0x13fa7b8
+	from:   br i1 %tobool, label %if.end3, label %if.then
+saveAndGetID():
+	value:   %1 = load i8* @tco_write_buf, align 1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %tobool, label %if.end3, label %if.then
+	toStrID: 81
+	fromStrID: 78
+Iterating over use-def of:   %1 = load i8* @tco_write_buf, align 1
+saveAndGetID():
+	value:   %1 = load i8* @tco_write_buf, align 1
+saveAndGetID():
+	value: @tco_write_buf = common global i8 0, align 1
+saveAndGetID():
+	value:   %1 = load i8* @tco_write_buf, align 1
+createAssign():
+	preConvert from: *73
+createAssign():
+	preConvert from: 73
+Instruction:   %1 = load i8* @tco_write_buf, align 1
+createCDep():
+	to:   %conv = sext i8 %1 to i32 0x13fa848
+	from:   br i1 %tobool, label %if.end3, label %if.then
+saveAndGetID():
+	value:   %conv = sext i8 %1 to i32
+	value not found in map
+saveAndGetID():
+	value:   br i1 %tobool, label %if.end3, label %if.then
+	toStrID: 82
+	fromStrID: 78
+Iterating over use-def of:   %conv = sext i8 %1 to i32
+saveAndGetID():
+	value:   %conv = sext i8 %1 to i32
+saveAndGetID():
+	value:   %1 = load i8* @tco_write_buf, align 1
+createAssign():
+	preConvert from: 81
+Instruction:   %conv = sext i8 %1 to i32
+createCDep():
+	to:   %cmp = icmp eq i32 %conv, 86 0x13fa920
+	from:   br i1 %tobool, label %if.end3, label %if.then
+saveAndGetID():
+	value:   %cmp = icmp eq i32 %conv, 86
+	value not found in map
+saveAndGetID():
+	value:   br i1 %tobool, label %if.end3, label %if.then
+	toStrID: 83
+	fromStrID: 78
+Iterating over use-def of:   %cmp = icmp eq i32 %conv, 86
+saveAndGetID():
+	value:   %cmp = icmp eq i32 %conv, 86
+saveAndGetID():
+	value:   %conv = sext i8 %1 to i32
+createAssign():
+	preConvert from: 82
+saveAndGetID():
+	value:   %cmp = icmp eq i32 %conv, 86
+saveAndGetID():
+	value: i32 86
+createAssign():
+	preConvert from: 86CONST_INT
+Instruction:   %cmp = icmp eq i32 %conv, 86
+createCDep():
+	to:   br i1 %cmp, label %if.then2, label %if.end 0x13f9ee8
+	from:   br i1 %tobool, label %if.end3, label %if.then
+saveAndGetID():
+	value:   br i1 %cmp, label %if.then2, label %if.end
+	value not found in map
+saveAndGetID():
+	value:   br i1 %tobool, label %if.end3, label %if.then
+	toStrID: 84
+	fromStrID: 78
+Iterating over use-def of:   br i1 %cmp, label %if.then2, label %if.end
+saveAndGetID():
+	value:   br i1 %cmp, label %if.then2, label %if.end
+saveAndGetID():
+	value:   %cmp = icmp eq i32 %conv, 86
+createAssign():
+	preConvert from: 83
+Instruction:   br i1 %cmp, label %if.then2, label %if.end
+createCDep():
+	to:   store i8 42, i8* @tco_expect_close, align 1 0x13fad00
+	from:   br i1 %cmp, label %if.then2, label %if.end
+saveAndGetID():
+	value:   store i8 42, i8* @tco_expect_close, align 1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp, label %if.then2, label %if.end
+	toStrID: 85
+	fromStrID: 84
+Iterating over use-def of:   store i8 42, i8* @tco_expect_close, align 1
+createStore():
+	to: @tco_expect_close = common global i8 0, align 1
+	fromi8 42
+saveAndGetID():
+	value: @tco_expect_close = common global i8 0, align 1
+	toStr: *80
+saveAndGetID():
+	value: i8 42
+	fromStr: 42CONST_INT
+saveAndGetID():
+	value:   store i8 42, i8* @tco_expect_close, align 1
+createAssign():
+	preConvert from: *80
+saveAndGetID():
+	value:   store i8 42, i8* @tco_expect_close, align 1
+createAssign():
+	preConvert from: 42CONST_INT
+saveAndGetID():
+	value:   store i8 42, i8* @tco_expect_close, align 1
+createAssign():
+	preConvert from: 85
+Instruction:   store i8 42, i8* @tco_expect_close, align 1
+createCDep():
+	to:   br label %if.end 0x13fad78
+	from:   br i1 %cmp, label %if.then2, label %if.end
+saveAndGetID():
+	value:   br label %if.end
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp, label %if.then2, label %if.end
+	toStrID: 86
+	fromStrID: 84
+Iterating over use-def of:   br label %if.end
+createCDep():
+	to:   br label %if.end3 0x13fade8
+	from:   br i1 %tobool, label %if.end3, label %if.then
+saveAndGetID():
+	value:   br label %if.end3
+	value not found in map
+saveAndGetID():
+	value:   br i1 %tobool, label %if.end3, label %if.then
+	toStrID: 87
+	fromStrID: 78
+Iterating over use-def of:   br label %if.end3
+Iterating over use-def of:   br label %do.body4
+Iterating over use-def of:   br label %do.body5
+Iterating over use-def of:   store i8 1, i8* @tco1_rld, align 1
+createStore():
+	to: @tco1_rld = common global i8 0, align 1
+	fromi8 1
+saveAndGetID():
+	value: @tco1_rld = common global i8 0, align 1
+	value not found in map
+	toStr: *88
+saveAndGetID():
+	value: i8 1
+	fromStr: 1CONST_INT
+saveAndGetID():
+	value:   store i8 1, i8* @tco1_rld, align 1
+	value not found in map
+createAssign():
+	preConvert from: *88
+saveAndGetID():
+	value:   store i8 1, i8* @tco1_rld, align 1
+createAssign():
+	preConvert from: 1CONST_INT
+saveAndGetID():
+	value:   store i8 1, i8* @tco1_rld, align 1
+createAssign():
+	preConvert from: 89
+Instruction:   store i8 1, i8* @tco1_rld, align 1
+Iterating over use-def of:   br label %do.end
+Iterating over use-def of:   br label %do.end6
+Iterating over use-def of:   br label %do.end7
+Iterating over use-def of:   store i8 42, i8* @tco_expect_close, align 1
+createStore():
+	to: @tco_expect_close = common global i8 0, align 1
+	fromi8 42
+saveAndGetID():
+	value: @tco_expect_close = common global i8 0, align 1
+	toStr: *80
+saveAndGetID():
+	value: i8 42
+	fromStr: 42CONST_INT
+saveAndGetID():
+	value:   store i8 42, i8* @tco_expect_close, align 1
+	value not found in map
+createAssign():
+	preConvert from: *80
+saveAndGetID():
+	value:   store i8 42, i8* @tco_expect_close, align 1
+createAssign():
+	preConvert from: 42CONST_INT
+saveAndGetID():
+	value:   store i8 42, i8* @tco_expect_close, align 1
+createAssign():
+	preConvert from: 90
+Instruction:   store i8 42, i8* @tco_expect_close, align 1
+Iterating over use-def of:   br label %do.body8
+Iterating over use-def of:   %2 = load i8* @tco_expect_close, align 1
+saveAndGetID():
+	value:   %2 = load i8* @tco_expect_close, align 1
+	value not found in map
+saveAndGetID():
+	value: @tco_expect_close = common global i8 0, align 1
+saveAndGetID():
+	value:   %2 = load i8* @tco_expect_close, align 1
+createAssign():
+	preConvert from: *80
+createAssign():
+	preConvert from: 80
+Instruction:   %2 = load i8* @tco_expect_close, align 1
+Iterating over use-def of:   %conv9 = sext i8 %2 to i32
+saveAndGetID():
+	value:   %conv9 = sext i8 %2 to i32
+	value not found in map
+saveAndGetID():
+	value:   %2 = load i8* @tco_expect_close, align 1
+createAssign():
+	preConvert from: 91
+Instruction:   %conv9 = sext i8 %2 to i32
+Iterating over use-def of:   %cmp10 = icmp eq i32 %conv9, 42
+saveAndGetID():
+	value:   %cmp10 = icmp eq i32 %conv9, 42
+	value not found in map
+saveAndGetID():
+	value:   %conv9 = sext i8 %2 to i32
+createAssign():
+	preConvert from: 92
+saveAndGetID():
+	value:   %cmp10 = icmp eq i32 %conv9, 42
+saveAndGetID():
+	value: i32 42
+createAssign():
+	preConvert from: 42CONST_INT
+Instruction:   %cmp10 = icmp eq i32 %conv9, 42
+Iterating over use-def of:   br i1 %cmp10, label %if.then12, label %if.else
+saveAndGetID():
+	value:   br i1 %cmp10, label %if.then12, label %if.else
+	value not found in map
+saveAndGetID():
+	value:   %cmp10 = icmp eq i32 %conv9, 42
+createAssign():
+	preConvert from: 93
+Instruction:   br i1 %cmp10, label %if.then12, label %if.else
+createCDep():
+	to:   br label %do.body13 0x13fb988
+	from:   br i1 %cmp10, label %if.then12, label %if.else
+saveAndGetID():
+	value:   br label %do.body13
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp10, label %if.then12, label %if.else
+	toStrID: 95
+	fromStrID: 94
+Iterating over use-def of:   br label %do.body13
+createCDep():
+	to:   br label %do.body14 0x13faaf8
+	from:   br i1 %cmp10, label %if.then12, label %if.else
+saveAndGetID():
+	value:   br label %do.body14
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp10, label %if.then12, label %if.else
+	toStrID: 96
+	fromStrID: 94
+Iterating over use-def of:   br label %do.body14
+createCDep():
+	to:   br label %while.cond 0x13fabc8
+	from:   br i1 %cmp10, label %if.then12, label %if.else
+saveAndGetID():
+	value:   br label %while.cond
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp10, label %if.then12, label %if.else
+	toStrID: 97
+	fromStrID: 94
+Iterating over use-def of:   br label %while.cond
+createCDep():
+	to:   %3 = load i8* @tco_lock, align 1 0x13fbda8
+	from:   br i1 %cmp10, label %if.then12, label %if.else
+saveAndGetID():
+	value:   %3 = load i8* @tco_lock, align 1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp10, label %if.then12, label %if.else
+	toStrID: 98
+	fromStrID: 94
+Iterating over use-def of:   %3 = load i8* @tco_lock, align 1
+saveAndGetID():
+	value:   %3 = load i8* @tco_lock, align 1
+saveAndGetID():
+	value: @tco_lock = common global i8 0, align 1
+saveAndGetID():
+	value:   %3 = load i8* @tco_lock, align 1
+createAssign():
+	preConvert from: *30
+createAssign():
+	preConvert from: 30
+Instruction:   %3 = load i8* @tco_lock, align 1
+createCDep():
+	to:   %tobool15 = trunc i8 %3 to i1 0x13fbe18
+	from:   br i1 %cmp10, label %if.then12, label %if.else
+saveAndGetID():
+	value:   %tobool15 = trunc i8 %3 to i1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp10, label %if.then12, label %if.else
+	toStrID: 99
+	fromStrID: 94
+Iterating over use-def of:   %tobool15 = trunc i8 %3 to i1
+saveAndGetID():
+	value:   %tobool15 = trunc i8 %3 to i1
+saveAndGetID():
+	value:   %3 = load i8* @tco_lock, align 1
+createAssign():
+	preConvert from: 98
+Instruction:   %tobool15 = trunc i8 %3 to i1
+createCDep():
+	to:   br i1 %tobool15, label %while.body, label %while.end 0x13fbfd8
+	from:   br i1 %cmp10, label %if.then12, label %if.else
+saveAndGetID():
+	value:   br i1 %tobool15, label %while.body, label %while.end
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp10, label %if.then12, label %if.else
+	toStrID: 100
+	fromStrID: 94
+Iterating over use-def of:   br i1 %tobool15, label %while.body, label %while.end
+saveAndGetID():
+	value:   br i1 %tobool15, label %while.body, label %while.end
+saveAndGetID():
+	value:   %tobool15 = trunc i8 %3 to i1
+createAssign():
+	preConvert from: 99
+Instruction:   br i1 %tobool15, label %while.body, label %while.end
+createCDep():
+	to:   br label %while.cond 0x13fc048
+	from:   br i1 %tobool15, label %while.body, label %while.end
+saveAndGetID():
+	value:   br label %while.cond
+	value not found in map
+saveAndGetID():
+	value:   br i1 %tobool15, label %while.body, label %while.end
+	toStrID: 101
+	fromStrID: 100
+Iterating over use-def of:   br label %while.cond
+createCDep():
+	to:   br label %do.end16 0x13fc148
+	from:   br i1 %cmp10, label %if.then12, label %if.else
+saveAndGetID():
+	value:   br label %do.end16
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp10, label %if.then12, label %if.else
+	toStrID: 102
+	fromStrID: 94
+Iterating over use-def of:   br label %do.end16
+createCDep():
+	to:   store i8 1, i8* @tco1_cnt_b4, align 1 0x13fc1d0
+	from:   br i1 %cmp10, label %if.then12, label %if.else
+saveAndGetID():
+	value:   store i8 1, i8* @tco1_cnt_b4, align 1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp10, label %if.then12, label %if.else
+	toStrID: 103
+	fromStrID: 94
+Iterating over use-def of:   store i8 1, i8* @tco1_cnt_b4, align 1
+createStore():
+	to: @tco1_cnt_b4 = common global i8 0, align 1
+	fromi8 1
+saveAndGetID():
+	value: @tco1_cnt_b4 = common global i8 0, align 1
+	value not found in map
+	toStr: *104
+saveAndGetID():
+	value: i8 1
+	fromStr: 1CONST_INT
+saveAndGetID():
+	value:   store i8 1, i8* @tco1_cnt_b4, align 1
+createAssign():
+	preConvert from: *104
+saveAndGetID():
+	value:   store i8 1, i8* @tco1_cnt_b4, align 1
+createAssign():
+	preConvert from: 1CONST_INT
+saveAndGetID():
+	value:   store i8 1, i8* @tco1_cnt_b4, align 1
+createAssign():
+	preConvert from: 103
+Instruction:   store i8 1, i8* @tco1_cnt_b4, align 1
+createCDep():
+	to:   store i8 1, i8* %val, align 1 0x13fc260
+	from:   br i1 %cmp10, label %if.then12, label %if.else
+saveAndGetID():
+	value:   store i8 1, i8* %val, align 1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp10, label %if.then12, label %if.else
+	toStrID: 105
+	fromStrID: 94
+Iterating over use-def of:   store i8 1, i8* %val, align 1
+createStore():
+	to:   %val = alloca i8, align 1
+	fromi8 1
+saveAndGetID():
+	value:   %val = alloca i8, align 1
+	toStr: *69
+saveAndGetID():
+	value: i8 1
+	fromStr: 1CONST_INT
+saveAndGetID():
+	value:   store i8 1, i8* %val, align 1
+createAssign():
+	preConvert from: *69
+saveAndGetID():
+	value:   store i8 1, i8* %val, align 1
+createAssign():
+	preConvert from: 1CONST_INT
+saveAndGetID():
+	value:   store i8 1, i8* %val, align 1
+createAssign():
+	preConvert from: 105
+Instruction:   store i8 1, i8* %val, align 1
+createCDep():
+	to:   br label %do.body17 0x13fc338
+	from:   br i1 %cmp10, label %if.then12, label %if.else
+saveAndGetID():
+	value:   br label %do.body17
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp10, label %if.then12, label %if.else
+	toStrID: 106
+	fromStrID: 94
+Iterating over use-def of:   br label %do.body17
+createCDep():
+	to:   store i8 0, i8* @tco_lock, align 1 0x13fc3c0
+	from:   br i1 %cmp10, label %if.then12, label %if.else
+saveAndGetID():
+	value:   store i8 0, i8* @tco_lock, align 1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp10, label %if.then12, label %if.else
+	toStrID: 107
+	fromStrID: 94
+Iterating over use-def of:   store i8 0, i8* @tco_lock, align 1
+createStore():
+	to: @tco_lock = common global i8 0, align 1
+	fromi8 0
+saveAndGetID():
+	value: @tco_lock = common global i8 0, align 1
+	toStr: *30
+saveAndGetID():
+	value: i8 0
+	fromStr: 0CONST_INT
+saveAndGetID():
+	value:   store i8 0, i8* @tco_lock, align 1
+createAssign():
+	preConvert from: *30
+saveAndGetID():
+	value:   store i8 0, i8* @tco_lock, align 1
+createAssign():
+	preConvert from: 0CONST_INT
+saveAndGetID():
+	value:   store i8 0, i8* @tco_lock, align 1
+createAssign():
+	preConvert from: 107
+Instruction:   store i8 0, i8* @tco_lock, align 1
+createCDep():
+	to:   br label %do.end18 0x13fdc98
+	from:   br i1 %cmp10, label %if.then12, label %if.else
+saveAndGetID():
+	value:   br label %do.end18
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp10, label %if.then12, label %if.else
+	toStrID: 108
+	fromStrID: 94
+Iterating over use-def of:   br label %do.end18
+createCDep():
+	to:   br label %do.end19 0x13fdd98
+	from:   br i1 %cmp10, label %if.then12, label %if.else
+saveAndGetID():
+	value:   br label %do.end19
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp10, label %if.then12, label %if.else
+	toStrID: 109
+	fromStrID: 94
+Iterating over use-def of:   br label %do.end19
+createCDep():
+	to:   br label %if.end20 0x13fdec8
+	from:   br i1 %cmp10, label %if.then12, label %if.else
+saveAndGetID():
+	value:   br label %if.end20
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp10, label %if.then12, label %if.else
+	toStrID: 110
+	fromStrID: 94
+Iterating over use-def of:   br label %if.end20
+createCDep():
+	to:   call void @__assert_fail(i8* getelementptr inbounds ([2 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8]* @.str1, i32 0, i32 0), i32 716, i8* getelementptr inbounds ([21 x i8]* @__PRETTY_FUNCTION__.closer, i32 0, i32 0)) #4 0x13fe478
+	from:   br i1 %cmp10, label %if.then12, label %if.else
+saveAndGetID():
+	value:   call void @__assert_fail(i8* getelementptr inbounds ([2 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8]* @.str1, i32 0, i32 0), i32 716, i8* getelementptr inbounds ([21 x i8]* @__PRETTY_FUNCTION__.closer, i32 0, i32 0)) #4
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp10, label %if.then12, label %if.else
+	toStrID: 111
+	fromStrID: 94
+Iterating over use-def of:   call void @__assert_fail(i8* getelementptr inbounds ([2 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8]* @.str1, i32 0, i32 0), i32 716, i8* getelementptr inbounds ([21 x i8]* @__PRETTY_FUNCTION__.closer, i32 0, i32 0)) #4
+createCDep():
+	to:   unreachable 0x13fe530
+	from:   br i1 %cmp10, label %if.then12, label %if.else
+saveAndGetID():
+	value:   unreachable
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp10, label %if.then12, label %if.else
+	toStrID: 112
+	fromStrID: 94
+Iterating over use-def of:   unreachable
+createCDep():
+	to:   br label %do.body21 0x13fe638
+	from:   br i1 %cmp10, label %if.then12, label %if.else
+saveAndGetID():
+	value:   br label %do.body21
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp10, label %if.then12, label %if.else
+	toStrID: 113
+	fromStrID: 94
+Iterating over use-def of:   br label %do.body21
+createCDep():
+	to:   store i64 0, i64* @timer_alive, align 8 0x13fe6c0
+	from:   br i1 %cmp10, label %if.then12, label %if.else
+saveAndGetID():
+	value:   store i64 0, i64* @timer_alive, align 8
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp10, label %if.then12, label %if.else
+	toStrID: 114
+	fromStrID: 94
+Iterating over use-def of:   store i64 0, i64* @timer_alive, align 8
+createStore():
+	to: @timer_alive = common global i64 0, align 8
+	fromi64 0
+saveAndGetID():
+	value: @timer_alive = common global i64 0, align 8
+	value not found in map
+	toStr: *115
+saveAndGetID():
+	value: i64 0
+	fromStr: 0CONST_INT
+saveAndGetID():
+	value:   store i64 0, i64* @timer_alive, align 8
+createAssign():
+	preConvert from: *115
+saveAndGetID():
+	value:   store i64 0, i64* @timer_alive, align 8
+createAssign():
+	preConvert from: 0CONST_INT
+saveAndGetID():
+	value:   store i64 0, i64* @timer_alive, align 8
+createAssign():
+	preConvert from: 114
+Instruction:   store i64 0, i64* @timer_alive, align 8
+createCDep():
+	to:   br label %do.end22 0x13fe7c8
+	from:   br i1 %cmp10, label %if.then12, label %if.else
+saveAndGetID():
+	value:   br label %do.end22
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp10, label %if.then12, label %if.else
+	toStrID: 116
+	fromStrID: 94
+Iterating over use-def of:   br label %do.end22
+createCDep():
+	to:   store i8 0, i8* @tco_expect_close, align 1 0x13fe850
+	from:   br i1 %cmp10, label %if.then12, label %if.else
+saveAndGetID():
+	value:   store i8 0, i8* @tco_expect_close, align 1
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp10, label %if.then12, label %if.else
+	toStrID: 117
+	fromStrID: 94
+Iterating over use-def of:   store i8 0, i8* @tco_expect_close, align 1
+createStore():
+	to: @tco_expect_close = common global i8 0, align 1
+	fromi8 0
+saveAndGetID():
+	value: @tco_expect_close = common global i8 0, align 1
+	toStr: *80
+saveAndGetID():
+	value: i8 0
+	fromStr: 0CONST_INT
+saveAndGetID():
+	value:   store i8 0, i8* @tco_expect_close, align 1
+createAssign():
+	preConvert from: *80
+saveAndGetID():
+	value:   store i8 0, i8* @tco_expect_close, align 1
+createAssign():
+	preConvert from: 0CONST_INT
+saveAndGetID():
+	value:   store i8 0, i8* @tco_expect_close, align 1
+createAssign():
+	preConvert from: 117
+Instruction:   store i8 0, i8* @tco_expect_close, align 1
+createCDep():
+	to:   br label %do.end23 0x13fe958
+	from:   br i1 %cmp10, label %if.then12, label %if.else
+saveAndGetID():
+	value:   br label %do.end23
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp10, label %if.then12, label %if.else
+	toStrID: 118
+	fromStrID: 94
+Iterating over use-def of:   br label %do.end23
+createCDep():
+	to:   ret i8* null 0x13fedd8
+	from:   br i1 %cmp10, label %if.then12, label %if.else
+saveAndGetID():
+	value:   ret i8* null
+	value not found in map
+saveAndGetID():
+	value:   br i1 %cmp10, label %if.then12, label %if.else
+	toStrID: 119
+	fromStrID: 94
+Iterating over use-def of:   ret i8* null
+Visiting RetInst:   ret i8* null
+	Function Name: closer
+saveAndGetID():
+	value:   ret i8* null
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+saveAndGetID():
+	value:   ret i8* null
+createAssign():
+	preConvert from: 119
+Instruction:   ret i8* null
+Iterating over use-def of:   %unused.addr = alloca i8*, align 8
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_8
+Instruction:   %unused.addr = alloca i8*, align 8
+Iterating over use-def of:   store i8* %unused, i8** %unused.addr, align 8
+createStore():
+	to:   %unused.addr = alloca i8*, align 8
+	fromi8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8
+	toStr: **120
+saveAndGetID():
+	value: i8* %unused
+	value not found in map
+	fromStr: *121
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+	value not found in map
+createAssign():
+	preConvert from: **120
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: *121
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8
+createAssign():
+	preConvert from: 122
+Instruction:   store i8* %unused, i8** %unused.addr, align 8
+Iterating over use-def of:   br label %do.body
+Iterating over use-def of:   br label %do.body1
+Iterating over use-def of:   br label %do.body2
+Iterating over use-def of:   store i8 1, i8* @tco1_rld, align 1
+createStore():
+	to: @tco1_rld = common global i8 0, align 1
+	fromi8 1
+saveAndGetID():
+	value: @tco1_rld = common global i8 0, align 1
+	toStr: *88
+saveAndGetID():
+	value: i8 1
+	fromStr: 1CONST_INT
+saveAndGetID():
+	value:   store i8 1, i8* @tco1_rld, align 1
+	value not found in map
+createAssign():
+	preConvert from: *88
+saveAndGetID():
+	value:   store i8 1, i8* @tco1_rld, align 1
+createAssign():
+	preConvert from: 1CONST_INT
+saveAndGetID():
+	value:   store i8 1, i8* @tco1_rld, align 1
+createAssign():
+	preConvert from: 123
+Instruction:   store i8 1, i8* @tco1_rld, align 1
+Iterating over use-def of:   br label %do.end
+Iterating over use-def of:   br label %do.end3
+Iterating over use-def of:   br label %do.end4
+Iterating over use-def of:   ret i8* null
+Visiting RetInst:   ret i8* null
+	Function Name: writer
+saveAndGetID():
+	value:   ret i8* null
+	value not found in map
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+saveAndGetID():
+	value:   ret i8* null
+createAssign():
+	preConvert from: 124
+Instruction:   ret i8* null
+Iterating over use-def of:   %retval = alloca i32, align 4
+saveAndGetID():
+	value:   %retval = alloca i32, align 4
+	value not found in map
+createAssign():
+	preConvert from: stack_9
+Instruction:   %retval = alloca i32, align 4
+Iterating over use-def of:   %argc.addr = alloca i32, align 4
+saveAndGetID():
+	value:   %argc.addr = alloca i32, align 4
+	value not found in map
+createAssign():
+	preConvert from: stack_10
+Instruction:   %argc.addr = alloca i32, align 4
+Iterating over use-def of:   %argv.addr = alloca i8**, align 8
+saveAndGetID():
+	value:   %argv.addr = alloca i8**, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_11
+Instruction:   %argv.addr = alloca i8**, align 8
+Iterating over use-def of:   %t1 = alloca i64, align 8
+saveAndGetID():
+	value:   %t1 = alloca i64, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_12
+Instruction:   %t1 = alloca i64, align 8
+Iterating over use-def of:   %t2 = alloca i64, align 8
+saveAndGetID():
+	value:   %t2 = alloca i64, align 8
+	value not found in map
+createAssign():
+	preConvert from: stack_13
+Instruction:   %t2 = alloca i64, align 8
+Iterating over use-def of:   store i32 0, i32* %retval
+createStore():
+	to:   %retval = alloca i32, align 4
+	fromi32 0
+saveAndGetID():
+	value:   %retval = alloca i32, align 4
+	toStr: *125
+saveAndGetID():
+	value: i32 0
+	fromStr: 0CONST_INT
+saveAndGetID():
+	value:   store i32 0, i32* %retval
+	value not found in map
+createAssign():
+	preConvert from: *125
+saveAndGetID():
+	value:   store i32 0, i32* %retval
+createAssign():
+	preConvert from: 0CONST_INT
+saveAndGetID():
+	value:   store i32 0, i32* %retval
+createAssign():
+	preConvert from: 130
+Instruction:   store i32 0, i32* %retval
+Iterating over use-def of:   store i32 %argc, i32* %argc.addr, align 4
+createStore():
+	to:   %argc.addr = alloca i32, align 4
+	fromi32 %argc
+saveAndGetID():
+	value:   %argc.addr = alloca i32, align 4
+	toStr: *126
+saveAndGetID():
+	value: i32 %argc
+	value not found in map
+	fromStr: 131
+saveAndGetID():
+	value:   store i32 %argc, i32* %argc.addr, align 4
+	value not found in map
+createAssign():
+	preConvert from: *126
+saveAndGetID():
+	value:   store i32 %argc, i32* %argc.addr, align 4
+createAssign():
+	preConvert from: 131
+saveAndGetID():
+	value:   store i32 %argc, i32* %argc.addr, align 4
+createAssign():
+	preConvert from: 132
+Instruction:   store i32 %argc, i32* %argc.addr, align 4
+Iterating over use-def of:   store i8** %argv, i8*** %argv.addr, align 8
+createStore():
+	to:   %argv.addr = alloca i8**, align 8
+	fromi8** %argv
+saveAndGetID():
+	value:   %argv.addr = alloca i8**, align 8
+	toStr: ***127
+saveAndGetID():
+	value: i8** %argv
+	value not found in map
+	fromStr: **133
+saveAndGetID():
+	value:   store i8** %argv, i8*** %argv.addr, align 8
+	value not found in map
+createAssign():
+	preConvert from: ***127
+saveAndGetID():
+	value:   store i8** %argv, i8*** %argv.addr, align 8
+createAssign():
+	preConvert from: **133
+saveAndGetID():
+	value:   store i8** %argv, i8*** %argv.addr, align 8
+createAssign():
+	preConvert from: 134
+Instruction:   store i8** %argv, i8*** %argv.addr, align 8
+Iterating over use-def of:   store i8 0, i8* @tco_expect_close, align 1
+createStore():
+	to: @tco_expect_close = common global i8 0, align 1
+	fromi8 0
+saveAndGetID():
+	value: @tco_expect_close = common global i8 0, align 1
+	toStr: *80
+saveAndGetID():
+	value: i8 0
+	fromStr: 0CONST_INT
+saveAndGetID():
+	value:   store i8 0, i8* @tco_expect_close, align 1
+	value not found in map
+createAssign():
+	preConvert from: *80
+saveAndGetID():
+	value:   store i8 0, i8* @tco_expect_close, align 1
+createAssign():
+	preConvert from: 0CONST_INT
+saveAndGetID():
+	value:   store i8 0, i8* @tco_expect_close, align 1
+createAssign():
+	preConvert from: 135
+Instruction:   store i8 0, i8* @tco_expect_close, align 1
+Iterating over use-def of:   %call = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer, i8* null) #4
+Visiting CallSite:   %call = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer, i8* null) #4
+	Type? i32
+	Found 1 matching function(s)
+saveAndGetID():
+	value:   %call = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer, i8* null) #4
+	value not found in map
+createAssign():
+	preConvert from: pthread_create_RETURN
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i64* %0
+	value not found in map
+saveAndGetID():
+	value:   %t1 = alloca i64, align 8
+createAssign():
+	preConvert from: *128
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: %union.pthread_attr_t* %1
+	value not found in map
+saveAndGetID():
+	value: %union.pthread_attr_t* null
+createAssign():
+	preConvert from: NULL
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* (i8*)* %2
+	value not found in map
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8
+  store i8* %unused, i8** %unused.addr, align 8
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.body1
+
+do.body1:                                         ; preds = %do.body
+  br label %do.body2
+
+do.body2:                                         ; preds = %do.body1
+  store i8 1, i8* @tco1_rld, align 1
+  br label %do.end
+
+do.end:                                           ; preds = %do.body2
+  br label %do.end3
+
+do.end3:                                          ; preds = %do.end
+  br label %do.end4
+
+do.end4:                                          ; preds = %do.end3
+  ret i8* null
+}
+
+	value not found in map
+createAssign():
+	preConvert from: *140
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* %3
+	value not found in map
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+Finished callsite
+Instruction:   %call = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer, i8* null) #4
+Iterating over use-def of:   %call1 = call i32 @pthread_create(i64* %t2, %union.pthread_attr_t* null, i8* (i8*)* @closer, i8* null) #4
+Visiting CallSite:   %call1 = call i32 @pthread_create(i64* %t2, %union.pthread_attr_t* null, i8* (i8*)* @closer, i8* null) #4
+	Type? i32
+	Found 1 matching function(s)
+saveAndGetID():
+	value:   %call1 = call i32 @pthread_create(i64* %t2, %union.pthread_attr_t* null, i8* (i8*)* @closer, i8* null) #4
+	value not found in map
+createAssign():
+	preConvert from: pthread_create_RETURN
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i64* %0
+saveAndGetID():
+	value:   %t2 = alloca i64, align 8
+createAssign():
+	preConvert from: *129
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: %union.pthread_attr_t* %1
+saveAndGetID():
+	value: %union.pthread_attr_t* null
+createAssign():
+	preConvert from: NULL
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* (i8*)* %2
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @closer(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8
+  %val = alloca i8, align 1
+  %val1 = alloca i8, align 1
+  store i8* %unused, i8** %unused.addr, align 8
+  store i8 86, i8* @tco_write_buf, align 1
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  %0 = load i32* @nowayout, align 4
+  %tobool = icmp ne i32 %0, 0
+  br i1 %tobool, label %if.end3, label %if.then
+
+if.then:                                          ; preds = %do.body
+  store i8 0, i8* @tco_expect_close, align 1
+  %1 = load i8* @tco_write_buf, align 1
+  %conv = sext i8 %1 to i32
+  %cmp = icmp eq i32 %conv, 86
+  br i1 %cmp, label %if.then2, label %if.end
+
+if.then2:                                         ; preds = %if.then
+  store i8 42, i8* @tco_expect_close, align 1
+  br label %if.end
+
+if.end:                                           ; preds = %if.then2, %if.then
+  br label %if.end3
+
+if.end3:                                          ; preds = %if.end, %do.body
+  br label %do.body4
+
+do.body4:                                         ; preds = %if.end3
+  br label %do.body5
+
+do.body5:                                         ; preds = %do.body4
+  store i8 1, i8* @tco1_rld, align 1
+  br label %do.end
+
+do.end:                                           ; preds = %do.body5
+  br label %do.end6
+
+do.end6:                                          ; preds = %do.end
+  br label %do.end7
+
+do.end7:                                          ; preds = %do.end6
+  store i8 42, i8* @tco_expect_close, align 1
+  br label %do.body8
+
+do.body8:                                         ; preds = %do.end7
+  %2 = load i8* @tco_expect_close, align 1
+  %conv9 = sext i8 %2 to i32
+  %cmp10 = icmp eq i32 %conv9, 42
+  br i1 %cmp10, label %if.then12, label %if.else
+
+if.then12:                                        ; preds = %do.body8
+  br label %do.body13
+
+do.body13:                                        ; preds = %if.then12
+  br label %do.body14
+
+do.body14:                                        ; preds = %do.body13
+  br label %while.cond
+
+while.cond:                                       ; preds = %while.body, %do.body14
+  %3 = load i8* @tco_lock, align 1
+  %tobool15 = trunc i8 %3 to i1
+  br i1 %tobool15, label %while.body, label %while.end
+
+while.body:                                       ; preds = %while.cond
+  br label %while.cond
+
+while.end:                                        ; preds = %while.cond
+  br label %do.end16
+
+do.end16:                                         ; preds = %while.end
+  store i8 1, i8* @tco1_cnt_b4, align 1
+  store i8 1, i8* %val, align 1
+  br label %do.body17
+
+do.body17:                                        ; preds = %do.end16
+  store i8 0, i8* @tco_lock, align 1
+  br label %do.end18
+
+do.end18:                                         ; preds = %do.body17
+  br label %do.end19
+
+do.end19:                                         ; preds = %do.end18
+  br label %if.end20
+
+if.else:                                          ; preds = %do.body8
+  call void @__assert_fail(i8* getelementptr inbounds ([2 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8]* @.str1, i32 0, i32 0), i32 716, i8* getelementptr inbounds ([21 x i8]* @__PRETTY_FUNCTION__.closer, i32 0, i32 0)) #4
+  unreachable
+
+if.end20:                                         ; preds = %do.end19
+  br label %do.body21
+
+do.body21:                                        ; preds = %if.end20
+  store i64 0, i64* @timer_alive, align 8
+  br label %do.end22
+
+do.end22:                                         ; preds = %do.body21
+  store i8 0, i8* @tco_expect_close, align 1
+  br label %do.end23
+
+do.end23:                                         ; preds = %do.end22
+  ret i8* null
+}
+
+	value not found in map
+createAssign():
+	preConvert from: *143
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* %3
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+Finished callsite
+Instruction:   %call1 = call i32 @pthread_create(i64* %t2, %union.pthread_attr_t* null, i8* (i8*)* @closer, i8* null) #4
+Iterating over use-def of:   call void @pthread_exit(i8* null) #5
+Visiting CallSite:   call void @pthread_exit(i8* null) #5
+	Type? void
+	Found 1 matching function(s)
+saveAndGetID():
+	value:   call void @pthread_exit(i8* null) #5
+	value not found in map
+createAssign():
+	preConvert from: pthread_exit_RETURN
+	Linking function arg to callsite arg
+saveAndGetID():
+	value: i8* %0
+	value not found in map
+saveAndGetID():
+	value: i8* null
+createAssign():
+	preConvert from: NULL
+Finished callsite
+Instruction:   call void @pthread_exit(i8* null) #5
+Iterating over use-def of:   unreachable
+Iterating over use-def of:   %0 = load i32* %retval
+saveAndGetID():
+	value:   %0 = load i32* %retval
+	value not found in map
+saveAndGetID():
+	value:   %retval = alloca i32, align 4
+saveAndGetID():
+	value:   %0 = load i32* %retval
+createAssign():
+	preConvert from: *125
+createAssign():
+	preConvert from: 125
+Instruction:   %0 = load i32* %retval
+Iterating over use-def of:   ret i32 %0
+Visiting RetInst:   ret i32 %0
+	Function Name: main
+saveAndGetID():
+	value:   ret i32 %0
+	value not found in map
+saveAndGetID():
+	value:   %0 = load i32* %retval
+createAssign():
+	preConvert from: 146
+saveAndGetID():
+	value:   ret i32 %0
+createAssign():
+	preConvert from: 147
+Instruction:   ret i32 %0
+ValToStrDB: Visiting Global: @heartbeat = global i32 30, align 4
+ValToStrDB: Visiting Global: @tco1_cnt_b4 = common global i8 0, align 1
+ValToStrDB: Visiting Global: @timer_alive = common global i64 0, align 8
+Dumping argument to module
+	i32 %argc
+Dumping argument to module
+	i8** %argv
+Dumping argument to module
+	i32 %seconds
+Dumping instruction to module
+	  %seconds.addr = alloca i32, align 4
+Dumping instruction to module
+	  store i32 %seconds, i32* %seconds.addr, align 4
+Dumping instruction to module
+	  %0 = load i32* %seconds.addr, align 4
+Dumping instruction to module
+	  %mul = mul nsw i32 %0, 10
+Dumping instruction to module
+	  %div = sdiv i32 %mul, 6
+Dumping instruction to module
+	  %conv = trunc i32 %div to i8
+Dumping instruction to module
+	  ret i8 %conv
+Dumping argument to module
+	i32 %t
+Dumping instruction to module
+	  %retval = alloca i32, align 4
+Dumping instruction to module
+	  %t.addr = alloca i32, align 4
+Dumping instruction to module
+	  %val = alloca i8, align 1
+Dumping instruction to module
+	  %tmrval = alloca i8, align 1
+Dumping instruction to module
+	  store i32 %t, i32* %t.addr, align 4
+Dumping instruction to module
+	  %0 = load i32* %t.addr, align 4
+Dumping instruction to module
+	  %call = call zeroext i8 @seconds_to_ticks(i32 %0)
+Dumping instruction to module
+	  store i8 %call, i8* %tmrval, align 1
+Dumping instruction to module
+	  %1 = load i8* %tmrval, align 1
+Dumping instruction to module
+	  %conv = zext i8 %1 to i32
+Dumping instruction to module
+	  %cmp = icmp sgt i32 %conv, 63
+Dumping instruction to module
+	  br i1 %cmp, label %if.then, label %lor.lhs.false
+Dumping instruction to module
+	  %2 = load i8* %tmrval, align 1
+Dumping instruction to module
+	  %conv2 = zext i8 %2 to i32
+Dumping instruction to module
+	  %cmp3 = icmp slt i32 %conv2, 4
+Dumping instruction to module
+	  %6 = load i8* %val, align 1
+Dumping instruction to module
+	  %conv8 = zext i8 %6 to i32
+Dumping instruction to module
+	  %or = or i32 %conv8, %conv7
+Dumping instruction to module
+	  br i1 %cmp3, label %if.then, label %if.end
+Dumping instruction to module
+	  store i32 -22, i32* %retval
+Dumping instruction to module
+	  br label %return
+Dumping instruction to module
+	  br label %do.body
+Dumping instruction to module
+	  br label %while.cond
+Dumping instruction to module
+	  %3 = load i8* @tco_lock, align 1
+Dumping instruction to module
+	  %tobool = trunc i8 %3 to i1
+Dumping instruction to module
+	  br i1 %tobool, label %while.body, label %while.end
+Dumping instruction to module
+	  br label %while.cond
+Dumping instruction to module
+	  br label %do.end
+Dumping instruction to module
+	  store i8 0, i8* %val, align 1
+Dumping instruction to module
+	  %4 = load i8* %val, align 1
+Dumping instruction to module
+	  %conv5 = zext i8 %4 to i32
+Dumping instruction to module
+	  %and = and i32 %conv5, 192
+Dumping instruction to module
+	  %conv6 = trunc i32 %and to i8
+Dumping instruction to module
+	  store i8 %conv6, i8* %val, align 1
+Dumping instruction to module
+	  %5 = load i8* %tmrval, align 1
+Dumping instruction to module
+	  %conv7 = zext i8 %5 to i32
+Dumping instruction to module
+	  %conv9 = trunc i32 %or to i8
+Dumping instruction to module
+	  store i8 %conv9, i8* %val, align 1
+Dumping instruction to module
+	  store i8 0, i8* %val, align 1
+Dumping instruction to module
+	  br label %do.body10
+Dumping instruction to module
+	  store i8 0, i8* @tco_lock, align 1
+Dumping instruction to module
+	  br label %do.end11
+Dumping instruction to module
+	  %7 = load i8* %val, align 1
+Dumping instruction to module
+	  %conv12 = zext i8 %7 to i32
+Dumping instruction to module
+	  %and13 = and i32 %conv12, 63
+Dumping instruction to module
+	  %8 = load i8* %tmrval, align 1
+Dumping argument to module
+	i8* %unused
+Dumping instruction to module
+	  %conv14 = zext i8 %8 to i32
+Dumping instruction to module
+	  %cmp15 = icmp ne i32 %and13, %conv14
+Dumping instruction to module
+	  br i1 %cmp15, label %if.then17, label %if.end18
+Dumping instruction to module
+	  store i32 -22, i32* %retval
+Dumping instruction to module
+	  br label %return
+Dumping instruction to module
+	  %9 = load i32* %t.addr, align 4
+Dumping instruction to module
+	  store i32 %9, i32* @heartbeat, align 4
+Dumping instruction to module
+	  store i32 0, i32* %retval
+Dumping instruction to module
+	  br label %return
+Dumping instruction to module
+	  %10 = load i32* %retval
+Dumping instruction to module
+	  ret i32 %10
+Dumping instruction to module
+	  br i1 %cmp, label %if.then2, label %if.end
+Dumping instruction to module
+	  %unused.addr = alloca i8*, align 8
+Dumping instruction to module
+	  %val = alloca i8, align 1
+Dumping instruction to module
+	  %val1 = alloca i8, align 1
+Dumping instruction to module
+	  store i8* %unused, i8** %unused.addr, align 8
+Dumping instruction to module
+	  store i8 86, i8* @tco_write_buf, align 1
+Dumping instruction to module
+	  %0 = load i32* @nowayout, align 4
+Dumping instruction to module
+	  %tobool = icmp ne i32 %0, 0
+Dumping instruction to module
+	  br i1 %tobool, label %if.end3, label %if.then
+Dumping instruction to module
+	  store i8 0, i8* @tco_expect_close, align 1
+Dumping instruction to module
+	  %1 = load i8* @tco_write_buf, align 1
+Dumping instruction to module
+	  %conv = sext i8 %1 to i32
+Dumping instruction to module
+	  %cmp = icmp eq i32 %conv, 86
+Dumping instruction to module
+	  br label %do.body14
+Dumping instruction to module
+	  br label %while.cond
+Dumping instruction to module
+	  store i8 42, i8* @tco_expect_close, align 1
+Dumping instruction to module
+	  br label %if.end
+Dumping instruction to module
+	  br label %if.end3
+Dumping instruction to module
+	  store i8 1, i8* @tco1_rld, align 1
+Dumping instruction to module
+	  store i8 42, i8* @tco_expect_close, align 1
+Dumping instruction to module
+	  %2 = load i8* @tco_expect_close, align 1
+Dumping instruction to module
+	  %conv9 = sext i8 %2 to i32
+Dumping instruction to module
+	  %cmp10 = icmp eq i32 %conv9, 42
+Dumping instruction to module
+	  br i1 %cmp10, label %if.then12, label %if.else
+Dumping instruction to module
+	  br label %do.body13
+Dumping instruction to module
+	  %3 = load i8* @tco_lock, align 1
+Dumping instruction to module
+	  %tobool15 = trunc i8 %3 to i1
+Dumping instruction to module
+	  br i1 %tobool15, label %while.body, label %while.end
+Dumping instruction to module
+	  br label %while.cond
+Dumping instruction to module
+	  br label %do.end16
+Dumping instruction to module
+	  store i8 1, i8* @tco1_cnt_b4, align 1
+Dumping instruction to module
+	  store i8 1, i8* %val, align 1
+Dumping instruction to module
+	  br label %do.body17
+Dumping instruction to module
+	  store i8 0, i8* @tco_lock, align 1
+ValToStrDB: Visiting Global: @tco_write_buf = common global i8 0, align 1
+ValToStrDB: Visiting Global: @tco_expect_close = common global i8 0, align 1
+ValToStrDB: Visiting Global: @tco1_rld = common global i8 0, align 1
+ValToStrDB: Visiting Global: @nowayout = global i32 0, align 4
+ValToStrDB: Visiting Global: @tco_lock = common global i8 0, align 1
+Dumping instruction to module
+	  br label %do.end18
+Dumping instruction to module
+	  br label %do.end19
+Dumping instruction to module
+	  br label %if.end20
+Dumping instruction to module
+	  call void @__assert_fail(i8* getelementptr inbounds ([2 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8]* @.str1, i32 0, i32 0), i32 716, i8* getelementptr inbounds ([21 x i8]* @__PRETTY_FUNCTION__.closer, i32 0, i32 0)) #4
+Dumping instruction to module
+	  unreachable
+Dumping instruction to module
+	  br label %do.body21
+Dumping instruction to module
+	  store i64 0, i64* @timer_alive, align 8
+Dumping instruction to module
+	  br label %do.end22
+Dumping instruction to module
+	  store i8 0, i8* @tco_expect_close, align 1
+Dumping instruction to module
+	  br label %do.end23
+Dumping instruction to module
+	  ret i8* null
+Dumping argument to module
+	i8* %unused
+Dumping instruction to module
+	  %unused.addr = alloca i8*, align 8
+Dumping instruction to module
+	  store i8* %unused, i8** %unused.addr, align 8
+Dumping instruction to module
+	  store i8 1, i8* @tco1_rld, align 1
+Dumping instruction to module
+	  ret i8* null
+Dumping instruction to module
+	  %retval = alloca i32, align 4
+Dumping instruction to module
+	  %argc.addr = alloca i32, align 4
+Dumping instruction to module
+	  %argv.addr = alloca i8**, align 8
+Dumping instruction to module
+	  %t1 = alloca i64, align 8
+Dumping instruction to module
+	  %t2 = alloca i64, align 8
+Dumping instruction to module
+	  store i32 0, i32* %retval
+Dumping instruction to module
+	  store i32 %argc, i32* %argc.addr, align 4
+Dumping instruction to module
+	  store i8** %argv, i8*** %argv.addr, align 8
+Dumping instruction to module
+	  store i8 0, i8* @tco_expect_close, align 1
+Dumping instruction to module
+	  %call = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer, i8* null) #4
+Dumping instruction to module
+	  %call1 = call i32 @pthread_create(i64* %t2, %union.pthread_attr_t* null, i8* (i8*)* @closer, i8* null) #4
+Dumping instruction to module
+	  call void @pthread_exit(i8* null) #5
+Dumping instruction to module
+	  %0 = load i32* %retval
+Dumping instruction to module
+	  ret i32 %0
+Dumping argument to module
+	i64* %0
+Dumping argument to module
+	%union.pthread_attr_t* %1
+Dumping argument to module
+	i8* (i8*)* %2
+Dumping argument to module
+	i8* %3
+Dumping argument to module
+	i8* %0
+Found instruction with metadata: #x00000000
+Found instruction with metadata: #x00000003
+Found instruction with metadata: #x00000005
+Found instruction with metadata: #x00000006
+Found instruction with metadata: #x00000008
+Found instruction with metadata: #x0000000a
+Found instruction with metadata: #x0000000b
+Found instruction with metadata: #x0000000d
+Found instruction with metadata: #x0000000f
+Found instruction with metadata: #x00000011
+Found instruction with metadata: #x00000013
+Found instruction with metadata: #x00000016
+Found instruction with metadata: #x00000018
+Found instruction with metadata: #x00000019
+Found instruction with metadata: #x0000001a
+Found instruction with metadata: #x0000001c
+Found instruction with metadata: #x0000001d
+Found instruction with metadata: #x0000001e
+Found instruction with metadata: #x00000020
+Found instruction with metadata: #x00000021
+Found instruction with metadata: #x00000022
+Found instruction with metadata: #x00000023
+Found instruction with metadata: #x00000025
+Found instruction with metadata: #x00000026
+Found instruction with metadata: #x00000029
+Found instruction with metadata: #x0000002a
+Found instruction with metadata: #x0000002b
+Found instruction with metadata: #x0000002c
+Found instruction with metadata: #x0000002f
+Found instruction with metadata: #x00000030
+Found instruction with metadata: #x00000031
+Found instruction with metadata: #x00000032
+Found instruction with metadata: #x00000033
+Found instruction with metadata: #x00000036
+Found instruction with metadata: #x00000037
+Found instruction with metadata: #x00000038
+Found instruction with metadata: #x0000003a
+Found instruction with metadata: #x0000003b
+Found instruction with metadata: #x0000003c
+Found instruction with metadata: #x0000003d
+Found instruction with metadata: #x0000003e
+Found instruction with metadata: #x0000003f
+Found instruction with metadata: #x00000040
+Found instruction with metadata: #x00000041
+Found instruction with metadata: #x00000042
+Found instruction with metadata: #x00000043
+Found instruction with metadata: #x00000044
+Found instruction with metadata: #x00000045
+Found instruction with metadata: #x00000046
+Found instruction with metadata: #x00000047
+Found instruction with metadata: #x00000048
+Found instruction with metadata: #x00000049
+Found instruction with metadata: #x0000004a
+Found instruction with metadata: #x0000004b
+Found instruction with metadata: #x0000004c
+Found instruction with metadata: #x0000004d
+Found instruction with metadata: #x0000004e
+Found instruction with metadata: #x0000004f
+Found instruction with metadata: #x00000050
+Found instruction with metadata: #x00000051
+Found instruction with metadata: #x00000054
+Found instruction with metadata: #x00000055
+Found instruction with metadata: #x00000056
+Found instruction with metadata: #x00000057
+Found instruction with metadata: #x00000059
+Found instruction with metadata: #x0000005b
+Found instruction with metadata: #x0000005d
+Found instruction with metadata: #x00000060
+Found instruction with metadata: #x00000063
+Found instruction with metadata: #x00000066
+Found instruction with metadata: #x00000069
+Found instruction with metadata: #x0000006a
+Found instruction with metadata: #x0000006b
+Found instruction with metadata: #x0000006e
+Found instruction with metadata: #x0000006f
+Found instruction with metadata: #x00000070
+Found instruction with metadata: #x00000071
+Found instruction with metadata: #x00000072
+Found instruction with metadata: #x00000074
+Found instruction with metadata: #x00000075
+Found instruction with metadata: #x00000077
+Found instruction with metadata: #x0000007a
+Found instruction with metadata: #x0000007b
+Found instruction with metadata: #x0000007c
+Found instruction with metadata: #x0000007d
+Found instruction with metadata: #x0000007e
+Found instruction with metadata: #x0000007f
+Found instruction with metadata: #x00000080
+Found instruction with metadata: #x00000081
+Found instruction with metadata: #x00000082
+Found instruction with metadata: #x00000083
+Found instruction with metadata: #x00000084
+Found instruction with metadata: #x00000085
+Found instruction with metadata: #x00000086
+Found instruction with metadata: #x00000087
+Found instruction with metadata: #x0000008a
+Found instruction with metadata: #x0000008c
+Found instruction with metadata: #x0000008d
+Found instruction with metadata: #x0000008e
+Found instruction with metadata: #x0000008f
+Found instruction with metadata: #x00000090
+Found instruction with metadata: #x00000091
+Found instruction with metadata: #x00000092
+Found instruction with metadata: #x00000093
+Found instruction with metadata: #x00000094
+Found instruction with metadata: #x00000097
+Found instruction with metadata: #x00000098
+Found instruction with metadata: #x00000099
+Found instruction with metadata: #x0000009a
+Found instruction with metadata: #x0000009d
+Found instruction with metadata: #x000000a0
+Found instruction with metadata: #x000000a2
+Found instruction with metadata: #x000000a3
+Found instruction with metadata: #x000000a5
+Found instruction with metadata: #x000000a7
+Found instruction with metadata: #x000000a9
+Found instruction with metadata: #x000000ab
+Found instruction with metadata: #x000000ad
+Found instruction with metadata: #x000000af
+Found instruction with metadata: #x000000b2
+Found instruction with metadata: #x000000b5
+Found instruction with metadata: #x000000b7
+Found instruction with metadata: #x000000b8
+Found instruction with metadata: #x000000bf
+Found instruction with metadata: #x000000c1
+Found instruction with metadata: #x000000c4
+Found instruction with metadata: #x000000c5
+Found Function argument metadata
+	ID: #x000000b1
+Found Function argument metadata
+	ID: #x000000b4
+Found Function argument metadata
+	ID: #x00000002
+Found Function argument metadata
+	ID: #x00000015
+Found Function argument metadata
+	ID: #x0000005f
+Found Function argument metadata
+	ID: #x0000009f
+Found Function argument metadata
+	ID: #x000000ba
+Found Function argument metadata
+	ID: #x000000bb
+Found Function argument metadata
+	ID: #x000000bc
+Found Function argument metadata
+	ID: #x000000be
+Found Function argument metadata
+	ID: #x000000c3
+Parsed ID Map: Size: 148
+saveAndGetID():
+	value: @heartbeat = global i32 30, align 4
+saveAndGetID():
+	value: @tco1_cnt_b4 = common global i8 0, align 1
+saveAndGetID():
+	value: @timer_alive = common global i64 0, align 8
+saveAndGetID():
+	value: i32 %argc
+saveAndGetID():
+	value: i8** %argv
+saveAndGetID():
+	value: i32 %seconds
+saveAndGetID():
+	value:   %seconds.addr = alloca i32, align 4, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i32 %seconds, i32* %seconds.addr, align 4, !CIAA_INFO !5
+saveAndGetID():
+	value:   %0 = load i32* %seconds.addr, align 4, !CIAA_INFO !6
+saveAndGetID():
+	value:   %mul = mul nsw i32 %0, 10, !CIAA_INFO !7
+saveAndGetID():
+	value:   %div = sdiv i32 %mul, 6, !CIAA_INFO !8
+saveAndGetID():
+	value:   %conv = trunc i32 %div to i8, !CIAA_INFO !9
+saveAndGetID():
+	value:   ret i8 %conv, !CIAA_INFO !10
+saveAndGetID():
+	value: i32 %t
+saveAndGetID():
+	value:   %retval = alloca i32, align 4, !CIAA_INFO !4
+saveAndGetID():
+	value:   %t.addr = alloca i32, align 4, !CIAA_INFO !5
+saveAndGetID():
+	value:   %val = alloca i8, align 1, !CIAA_INFO !6
+saveAndGetID():
+	value:   %tmrval = alloca i8, align 1, !CIAA_INFO !7
+saveAndGetID():
+	value:   store i32 %t, i32* %t.addr, align 4, !CIAA_INFO !8
+saveAndGetID():
+	value:   %0 = load i32* %t.addr, align 4, !CIAA_INFO !9
+saveAndGetID():
+	value:   %call = call zeroext i8 @seconds_to_ticks(i32 %0), !CIAA_INFO !10
+saveAndGetID():
+	value:   store i8 %call, i8* %tmrval, align 1, !CIAA_INFO !11
+saveAndGetID():
+	value:   %1 = load i8* %tmrval, align 1, !CIAA_INFO !12
+saveAndGetID():
+	value:   %conv = zext i8 %1 to i32, !CIAA_INFO !13
+saveAndGetID():
+	value:   %cmp = icmp sgt i32 %conv, 63, !CIAA_INFO !14
+saveAndGetID():
+	value:   br i1 %cmp, label %if.then, label %lor.lhs.false, !CIAA_INFO !15
+saveAndGetID():
+	value:   %2 = load i8* %tmrval, align 1, !CIAA_INFO !16
+saveAndGetID():
+	value:   %conv2 = zext i8 %2 to i32, !CIAA_INFO !17
+saveAndGetID():
+	value:   %cmp3 = icmp slt i32 %conv2, 4, !CIAA_INFO !18
+saveAndGetID():
+	value:   %6 = load i8* %val, align 1, !CIAA_INFO !37
+saveAndGetID():
+	value:   %conv8 = zext i8 %6 to i32, !CIAA_INFO !38
+saveAndGetID():
+	value:   %or = or i32 %conv8, %conv7, !CIAA_INFO !39
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end, !CIAA_INFO !19
+saveAndGetID():
+	value:   store i32 -22, i32* %retval, !CIAA_INFO !20
+saveAndGetID():
+	value:   br label %return, !CIAA_INFO !21
+saveAndGetID():
+	value:   br label %do.body, !CIAA_INFO !22
+saveAndGetID():
+	value:   br label %while.cond, !CIAA_INFO !23
+saveAndGetID():
+	value:   %3 = load i8* @tco_lock, align 1, !CIAA_INFO !24
+saveAndGetID():
+	value:   %tobool = trunc i8 %3 to i1, !CIAA_INFO !25
+saveAndGetID():
+	value:   br i1 %tobool, label %while.body, label %while.end, !CIAA_INFO !26
+saveAndGetID():
+	value:   br label %while.cond, !CIAA_INFO !27
+saveAndGetID():
+	value:   br label %do.end, !CIAA_INFO !28
+saveAndGetID():
+	value:   store i8 0, i8* %val, align 1, !CIAA_INFO !29
+saveAndGetID():
+	value:   %4 = load i8* %val, align 1, !CIAA_INFO !30
+saveAndGetID():
+	value:   %conv5 = zext i8 %4 to i32, !CIAA_INFO !31
+saveAndGetID():
+	value:   %and = and i32 %conv5, 192, !CIAA_INFO !32
+saveAndGetID():
+	value:   %conv6 = trunc i32 %and to i8, !CIAA_INFO !33
+saveAndGetID():
+	value:   store i8 %conv6, i8* %val, align 1, !CIAA_INFO !34
+saveAndGetID():
+	value:   %5 = load i8* %tmrval, align 1, !CIAA_INFO !35
+saveAndGetID():
+	value:   %conv7 = zext i8 %5 to i32, !CIAA_INFO !36
+saveAndGetID():
+	value:   %conv9 = trunc i32 %or to i8, !CIAA_INFO !40
+saveAndGetID():
+	value:   store i8 %conv9, i8* %val, align 1, !CIAA_INFO !41
+saveAndGetID():
+	value:   store i8 0, i8* %val, align 1, !CIAA_INFO !42
+saveAndGetID():
+	value:   br label %do.body10, !CIAA_INFO !43
+saveAndGetID():
+	value:   store i8 0, i8* @tco_lock, align 1, !CIAA_INFO !44
+saveAndGetID():
+	value:   br label %do.end11, !CIAA_INFO !45
+saveAndGetID():
+	value:   %7 = load i8* %val, align 1, !CIAA_INFO !46
+saveAndGetID():
+	value:   %conv12 = zext i8 %7 to i32, !CIAA_INFO !47
+saveAndGetID():
+	value:   %and13 = and i32 %conv12, 63, !CIAA_INFO !48
+saveAndGetID():
+	value:   %8 = load i8* %tmrval, align 1, !CIAA_INFO !49
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %conv14 = zext i8 %8 to i32, !CIAA_INFO !50
+saveAndGetID():
+	value:   %cmp15 = icmp ne i32 %and13, %conv14, !CIAA_INFO !51
+saveAndGetID():
+	value:   br i1 %cmp15, label %if.then17, label %if.end18, !CIAA_INFO !52
+saveAndGetID():
+	value:   store i32 -22, i32* %retval, !CIAA_INFO !53
+saveAndGetID():
+	value:   br label %return, !CIAA_INFO !54
+saveAndGetID():
+	value:   %9 = load i32* %t.addr, align 4, !CIAA_INFO !55
+saveAndGetID():
+	value:   store i32 %9, i32* @heartbeat, align 4, !CIAA_INFO !56
+saveAndGetID():
+	value:   store i32 0, i32* %retval, !CIAA_INFO !57
+saveAndGetID():
+	value:   br label %return, !CIAA_INFO !58
+saveAndGetID():
+	value:   %10 = load i32* %retval, !CIAA_INFO !59
+saveAndGetID():
+	value:   ret i32 %10, !CIAA_INFO !60
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @closer(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  %val = alloca i8, align 1, !CIAA_INFO !5
+  %val1 = alloca i8, align 1, !CIAA_INFO !6
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !7
+  store i8 86, i8* @tco_write_buf, align 1, !CIAA_INFO !8
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  %0 = load i32* @nowayout, align 4, !CIAA_INFO !9
+  %tobool = icmp ne i32 %0, 0, !CIAA_INFO !10
+  br i1 %tobool, label %if.end3, label %if.then, !CIAA_INFO !11
+
+if.then:                                          ; preds = %do.body
+  store i8 0, i8* @tco_expect_close, align 1, !CIAA_INFO !12
+  %1 = load i8* @tco_write_buf, align 1, !CIAA_INFO !13
+  %conv = sext i8 %1 to i32, !CIAA_INFO !14
+  %cmp = icmp eq i32 %conv, 86, !CIAA_INFO !15
+  br i1 %cmp, label %if.then2, label %if.end, !CIAA_INFO !16
+
+if.then2:                                         ; preds = %if.then
+  store i8 42, i8* @tco_expect_close, align 1, !CIAA_INFO !17
+  br label %if.end, !CIAA_INFO !18
+
+if.end:                                           ; preds = %if.then2, %if.then
+  br label %if.end3, !CIAA_INFO !19
+
+if.end3:                                          ; preds = %if.end, %do.body
+  br label %do.body4
+
+do.body4:                                         ; preds = %if.end3
+  br label %do.body5
+
+do.body5:                                         ; preds = %do.body4
+  store i8 1, i8* @tco1_rld, align 1, !CIAA_INFO !20
+  br label %do.end
+
+do.end:                                           ; preds = %do.body5
+  br label %do.end6
+
+do.end6:                                          ; preds = %do.end
+  br label %do.end7
+
+do.end7:                                          ; preds = %do.end6
+  store i8 42, i8* @tco_expect_close, align 1, !CIAA_INFO !21
+  br label %do.body8
+
+do.body8:                                         ; preds = %do.end7
+  %2 = load i8* @tco_expect_close, align 1, !CIAA_INFO !22
+  %conv9 = sext i8 %2 to i32, !CIAA_INFO !23
+  %cmp10 = icmp eq i32 %conv9, 42, !CIAA_INFO !24
+  br i1 %cmp10, label %if.then12, label %if.else, !CIAA_INFO !25
+
+if.then12:                                        ; preds = %do.body8
+  br label %do.body13, !CIAA_INFO !26
+
+do.body13:                                        ; preds = %if.then12
+  br label %do.body14, !CIAA_INFO !27
+
+do.body14:                                        ; preds = %do.body13
+  br label %while.cond, !CIAA_INFO !28
+
+while.cond:                                       ; preds = %while.body, %do.body14
+  %3 = load i8* @tco_lock, align 1, !CIAA_INFO !29
+  %tobool15 = trunc i8 %3 to i1, !CIAA_INFO !30
+  br i1 %tobool15, label %while.body, label %while.end, !CIAA_INFO !31
+
+while.body:                                       ; preds = %while.cond
+  br label %while.cond, !CIAA_INFO !32
+
+while.end:                                        ; preds = %while.cond
+  br label %do.end16, !CIAA_INFO !33
+
+do.end16:                                         ; preds = %while.end
+  store i8 1, i8* @tco1_cnt_b4, align 1, !CIAA_INFO !34
+  store i8 1, i8* %val, align 1, !CIAA_INFO !35
+  br label %do.body17, !CIAA_INFO !36
+
+do.body17:                                        ; preds = %do.end16
+  store i8 0, i8* @tco_lock, align 1, !CIAA_INFO !37
+  br label %do.end18, !CIAA_INFO !38
+
+do.end18:                                         ; preds = %do.body17
+  br label %do.end19, !CIAA_INFO !39
+
+do.end19:                                         ; preds = %do.end18
+  br label %if.end20, !CIAA_INFO !40
+
+if.else:                                          ; preds = %do.body8
+  call void @__assert_fail(i8* getelementptr inbounds ([2 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8]* @.str1, i32 0, i32 0), i32 716, i8* getelementptr inbounds ([21 x i8]* @__PRETTY_FUNCTION__.closer, i32 0, i32 0)) #4, !CIAA_INFO !41
+  unreachable, !CIAA_INFO !42
+
+if.end20:                                         ; preds = %do.end19
+  br label %do.body21, !CIAA_INFO !43
+
+do.body21:                                        ; preds = %if.end20
+  store i64 0, i64* @timer_alive, align 8, !CIAA_INFO !44
+  br label %do.end22, !CIAA_INFO !45
+
+do.end22:                                         ; preds = %do.body21
+  store i8 0, i8* @tco_expect_close, align 1, !CIAA_INFO !46
+  br label %do.end23, !CIAA_INFO !47
+
+do.end23:                                         ; preds = %do.end22
+  ret i8* null, !CIAA_INFO !48
+}
+
+saveAndGetID():
+	value:   br i1 %cmp, label %if.then2, label %if.end, !CIAA_INFO !16
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   %val = alloca i8, align 1, !CIAA_INFO !5
+saveAndGetID():
+	value:   %val1 = alloca i8, align 1, !CIAA_INFO !6
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !7
+saveAndGetID():
+	value:   store i8 86, i8* @tco_write_buf, align 1, !CIAA_INFO !8
+saveAndGetID():
+	value:   %0 = load i32* @nowayout, align 4, !CIAA_INFO !9
+saveAndGetID():
+	value:   %tobool = icmp ne i32 %0, 0, !CIAA_INFO !10
+saveAndGetID():
+	value:   br i1 %tobool, label %if.end3, label %if.then, !CIAA_INFO !11
+saveAndGetID():
+	value:   store i8 0, i8* @tco_expect_close, align 1, !CIAA_INFO !12
+saveAndGetID():
+	value:   %1 = load i8* @tco_write_buf, align 1, !CIAA_INFO !13
+saveAndGetID():
+	value:   %conv = sext i8 %1 to i32, !CIAA_INFO !14
+saveAndGetID():
+	value:   %cmp = icmp eq i32 %conv, 86, !CIAA_INFO !15
+saveAndGetID():
+	value:   br label %do.body14, !CIAA_INFO !27
+saveAndGetID():
+	value:   br label %while.cond, !CIAA_INFO !28
+saveAndGetID():
+	value:   store i8 42, i8* @tco_expect_close, align 1, !CIAA_INFO !17
+saveAndGetID():
+	value:   br label %if.end, !CIAA_INFO !18
+saveAndGetID():
+	value:   br label %if.end3, !CIAA_INFO !19
+saveAndGetID():
+	value:   store i8 1, i8* @tco1_rld, align 1, !CIAA_INFO !20
+saveAndGetID():
+	value:   store i8 42, i8* @tco_expect_close, align 1, !CIAA_INFO !21
+saveAndGetID():
+	value:   %2 = load i8* @tco_expect_close, align 1, !CIAA_INFO !22
+saveAndGetID():
+	value:   %conv9 = sext i8 %2 to i32, !CIAA_INFO !23
+saveAndGetID():
+	value:   %cmp10 = icmp eq i32 %conv9, 42, !CIAA_INFO !24
+saveAndGetID():
+	value:   br i1 %cmp10, label %if.then12, label %if.else, !CIAA_INFO !25
+saveAndGetID():
+	value:   br label %do.body13, !CIAA_INFO !26
+saveAndGetID():
+	value:   %3 = load i8* @tco_lock, align 1, !CIAA_INFO !29
+saveAndGetID():
+	value:   %tobool15 = trunc i8 %3 to i1, !CIAA_INFO !30
+saveAndGetID():
+	value:   br i1 %tobool15, label %while.body, label %while.end, !CIAA_INFO !31
+saveAndGetID():
+	value:   br label %while.cond, !CIAA_INFO !32
+saveAndGetID():
+	value:   br label %do.end16, !CIAA_INFO !33
+saveAndGetID():
+	value:   store i8 1, i8* @tco1_cnt_b4, align 1, !CIAA_INFO !34
+saveAndGetID():
+	value:   store i8 1, i8* %val, align 1, !CIAA_INFO !35
+saveAndGetID():
+	value:   br label %do.body17, !CIAA_INFO !36
+saveAndGetID():
+	value:   store i8 0, i8* @tco_lock, align 1, !CIAA_INFO !37
+saveAndGetID():
+	value: @tco_write_buf = common global i8 0, align 1
+saveAndGetID():
+	value: @tco_expect_close = common global i8 0, align 1
+saveAndGetID():
+	value: @tco1_rld = common global i8 0, align 1
+saveAndGetID():
+	value: @nowayout = global i32 0, align 4
+saveAndGetID():
+	value: @tco_lock = common global i8 0, align 1
+saveAndGetID():
+	value:   br label %do.end18, !CIAA_INFO !38
+saveAndGetID():
+	value:   br label %do.end19, !CIAA_INFO !39
+saveAndGetID():
+	value:   br label %if.end20, !CIAA_INFO !40
+saveAndGetID():
+	value:   call void @__assert_fail(i8* getelementptr inbounds ([2 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8]* @.str1, i32 0, i32 0), i32 716, i8* getelementptr inbounds ([21 x i8]* @__PRETTY_FUNCTION__.closer, i32 0, i32 0)) #4, !CIAA_INFO !41
+saveAndGetID():
+	value:   unreachable, !CIAA_INFO !42
+saveAndGetID():
+	value:   br label %do.body21, !CIAA_INFO !43
+saveAndGetID():
+	value:   store i64 0, i64* @timer_alive, align 8, !CIAA_INFO !44
+saveAndGetID():
+	value:   br label %do.end22, !CIAA_INFO !45
+saveAndGetID():
+	value:   store i8 0, i8* @tco_expect_close, align 1, !CIAA_INFO !46
+saveAndGetID():
+	value:   br label %do.end23, !CIAA_INFO !47
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !48
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.body1
+
+do.body1:                                         ; preds = %do.body
+  br label %do.body2
+
+do.body2:                                         ; preds = %do.body1
+  store i8 1, i8* @tco1_rld, align 1, !CIAA_INFO !6
+  br label %do.end
+
+do.end:                                           ; preds = %do.body2
+  br label %do.end3
+
+do.end3:                                          ; preds = %do.end
+  br label %do.end4
+
+do.end4:                                          ; preds = %do.end3
+  ret i8* null, !CIAA_INFO !7
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   store i8 1, i8* @tco1_rld, align 1, !CIAA_INFO !6
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !7
+saveAndGetID():
+	value:   %retval = alloca i32, align 4, !CIAA_INFO !4
+saveAndGetID():
+	value:   %argc.addr = alloca i32, align 4, !CIAA_INFO !5
+saveAndGetID():
+	value:   %argv.addr = alloca i8**, align 8, !CIAA_INFO !6
+saveAndGetID():
+	value:   %t1 = alloca i64, align 8, !CIAA_INFO !7
+saveAndGetID():
+	value:   %t2 = alloca i64, align 8, !CIAA_INFO !8
+saveAndGetID():
+	value:   store i32 0, i32* %retval, !CIAA_INFO !9
+saveAndGetID():
+	value:   store i32 %argc, i32* %argc.addr, align 4, !CIAA_INFO !10
+saveAndGetID():
+	value:   store i8** %argv, i8*** %argv.addr, align 8, !CIAA_INFO !11
+saveAndGetID():
+	value:   store i8 0, i8* @tco_expect_close, align 1, !CIAA_INFO !12
+saveAndGetID():
+	value:   %call = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer, i8* null) #4, !CIAA_INFO !13
+saveAndGetID():
+	value:   %call1 = call i32 @pthread_create(i64* %t2, %union.pthread_attr_t* null, i8* (i8*)* @closer, i8* null) #4, !CIAA_INFO !14
+saveAndGetID():
+	value:   call void @pthread_exit(i8* null) #5, !CIAA_INFO !15
+saveAndGetID():
+	value:   %0 = load i32* %retval, !CIAA_INFO !16
+saveAndGetID():
+	value:   ret i32 %0, !CIAA_INFO !17
+saveAndGetID():
+	value: i64* %0
+saveAndGetID():
+	value: %union.pthread_attr_t* %1
+saveAndGetID():
+	value: i8* (i8*)* %2
+saveAndGetID():
+	value: i8* %3
+saveAndGetID():
+	value: i8* %0
+saveAndGetID():
+	value: @heartbeat = global i32 30, align 4
+saveAndGetID():
+	value: @tco1_cnt_b4 = common global i8 0, align 1
+saveAndGetID():
+	value: @timer_alive = common global i64 0, align 8
+saveAndGetID():
+	value: i32 %argc
+saveAndGetID():
+	value: i8** %argv
+saveAndGetID():
+	value: i32 %seconds
+saveAndGetID():
+	value:   %seconds.addr = alloca i32, align 4, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i32 %seconds, i32* %seconds.addr, align 4, !CIAA_INFO !5
+saveAndGetID():
+	value:   %0 = load i32* %seconds.addr, align 4, !CIAA_INFO !6
+saveAndGetID():
+	value:   %mul = mul nsw i32 %0, 10, !CIAA_INFO !7
+saveAndGetID():
+	value:   %div = sdiv i32 %mul, 6, !CIAA_INFO !8
+saveAndGetID():
+	value:   %conv = trunc i32 %div to i8, !CIAA_INFO !9
+saveAndGetID():
+	value:   ret i8 %conv, !CIAA_INFO !10
+saveAndGetID():
+	value: i32 %t
+saveAndGetID():
+	value:   %retval = alloca i32, align 4, !CIAA_INFO !4
+saveAndGetID():
+	value:   %t.addr = alloca i32, align 4, !CIAA_INFO !5
+saveAndGetID():
+	value:   %val = alloca i8, align 1, !CIAA_INFO !6
+saveAndGetID():
+	value:   %tmrval = alloca i8, align 1, !CIAA_INFO !7
+saveAndGetID():
+	value:   store i32 %t, i32* %t.addr, align 4, !CIAA_INFO !8
+saveAndGetID():
+	value:   %0 = load i32* %t.addr, align 4, !CIAA_INFO !9
+saveAndGetID():
+	value:   %call = call zeroext i8 @seconds_to_ticks(i32 %0), !CIAA_INFO !10
+saveAndGetID():
+	value:   store i8 %call, i8* %tmrval, align 1, !CIAA_INFO !11
+saveAndGetID():
+	value:   %1 = load i8* %tmrval, align 1, !CIAA_INFO !12
+saveAndGetID():
+	value:   %conv = zext i8 %1 to i32, !CIAA_INFO !13
+saveAndGetID():
+	value:   %cmp = icmp sgt i32 %conv, 63, !CIAA_INFO !14
+saveAndGetID():
+	value:   br i1 %cmp, label %if.then, label %lor.lhs.false, !CIAA_INFO !15
+saveAndGetID():
+	value:   %2 = load i8* %tmrval, align 1, !CIAA_INFO !16
+saveAndGetID():
+	value:   %conv2 = zext i8 %2 to i32, !CIAA_INFO !17
+saveAndGetID():
+	value:   %cmp3 = icmp slt i32 %conv2, 4, !CIAA_INFO !18
+saveAndGetID():
+	value:   %6 = load i8* %val, align 1, !CIAA_INFO !37
+saveAndGetID():
+	value:   %conv8 = zext i8 %6 to i32, !CIAA_INFO !38
+saveAndGetID():
+	value:   %or = or i32 %conv8, %conv7, !CIAA_INFO !39
+saveAndGetID():
+	value:   br i1 %cmp3, label %if.then, label %if.end, !CIAA_INFO !19
+saveAndGetID():
+	value:   store i32 -22, i32* %retval, !CIAA_INFO !20
+saveAndGetID():
+	value:   br label %return, !CIAA_INFO !21
+saveAndGetID():
+	value:   br label %do.body, !CIAA_INFO !22
+saveAndGetID():
+	value:   br label %while.cond, !CIAA_INFO !23
+saveAndGetID():
+	value:   %3 = load i8* @tco_lock, align 1, !CIAA_INFO !24
+saveAndGetID():
+	value:   %tobool = trunc i8 %3 to i1, !CIAA_INFO !25
+saveAndGetID():
+	value:   br i1 %tobool, label %while.body, label %while.end, !CIAA_INFO !26
+saveAndGetID():
+	value:   br label %while.cond, !CIAA_INFO !27
+saveAndGetID():
+	value:   br label %do.end, !CIAA_INFO !28
+saveAndGetID():
+	value:   store i8 0, i8* %val, align 1, !CIAA_INFO !29
+saveAndGetID():
+	value:   %4 = load i8* %val, align 1, !CIAA_INFO !30
+saveAndGetID():
+	value:   %conv5 = zext i8 %4 to i32, !CIAA_INFO !31
+saveAndGetID():
+	value:   %and = and i32 %conv5, 192, !CIAA_INFO !32
+saveAndGetID():
+	value:   %conv6 = trunc i32 %and to i8, !CIAA_INFO !33
+saveAndGetID():
+	value:   store i8 %conv6, i8* %val, align 1, !CIAA_INFO !34
+saveAndGetID():
+	value:   %5 = load i8* %tmrval, align 1, !CIAA_INFO !35
+saveAndGetID():
+	value:   %conv7 = zext i8 %5 to i32, !CIAA_INFO !36
+saveAndGetID():
+	value:   %conv9 = trunc i32 %or to i8, !CIAA_INFO !40
+saveAndGetID():
+	value:   store i8 %conv9, i8* %val, align 1, !CIAA_INFO !41
+saveAndGetID():
+	value:   store i8 0, i8* %val, align 1, !CIAA_INFO !42
+saveAndGetID():
+	value:   br label %do.body10, !CIAA_INFO !43
+saveAndGetID():
+	value:   store i8 0, i8* @tco_lock, align 1, !CIAA_INFO !44
+saveAndGetID():
+	value:   br label %do.end11, !CIAA_INFO !45
+saveAndGetID():
+	value:   %7 = load i8* %val, align 1, !CIAA_INFO !46
+saveAndGetID():
+	value:   %conv12 = zext i8 %7 to i32, !CIAA_INFO !47
+saveAndGetID():
+	value:   %and13 = and i32 %conv12, 63, !CIAA_INFO !48
+saveAndGetID():
+	value:   %8 = load i8* %tmrval, align 1, !CIAA_INFO !49
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %conv14 = zext i8 %8 to i32, !CIAA_INFO !50
+saveAndGetID():
+	value:   %cmp15 = icmp ne i32 %and13, %conv14, !CIAA_INFO !51
+saveAndGetID():
+	value:   br i1 %cmp15, label %if.then17, label %if.end18, !CIAA_INFO !52
+saveAndGetID():
+	value:   store i32 -22, i32* %retval, !CIAA_INFO !53
+saveAndGetID():
+	value:   br label %return, !CIAA_INFO !54
+saveAndGetID():
+	value:   %9 = load i32* %t.addr, align 4, !CIAA_INFO !55
+saveAndGetID():
+	value:   store i32 %9, i32* @heartbeat, align 4, !CIAA_INFO !56
+saveAndGetID():
+	value:   store i32 0, i32* %retval, !CIAA_INFO !57
+saveAndGetID():
+	value:   br label %return, !CIAA_INFO !58
+saveAndGetID():
+	value:   %10 = load i32* %retval, !CIAA_INFO !59
+saveAndGetID():
+	value:   ret i32 %10, !CIAA_INFO !60
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @closer(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  %val = alloca i8, align 1, !CIAA_INFO !5
+  %val1 = alloca i8, align 1, !CIAA_INFO !6
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !7
+  store i8 86, i8* @tco_write_buf, align 1, !CIAA_INFO !8
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  %0 = load i32* @nowayout, align 4, !CIAA_INFO !9
+  %tobool = icmp ne i32 %0, 0, !CIAA_INFO !10
+  br i1 %tobool, label %if.end3, label %if.then, !CIAA_INFO !11
+
+if.then:                                          ; preds = %do.body
+  store i8 0, i8* @tco_expect_close, align 1, !CIAA_INFO !12
+  %1 = load i8* @tco_write_buf, align 1, !CIAA_INFO !13
+  %conv = sext i8 %1 to i32, !CIAA_INFO !14
+  %cmp = icmp eq i32 %conv, 86, !CIAA_INFO !15
+  br i1 %cmp, label %if.then2, label %if.end, !CIAA_INFO !16
+
+if.then2:                                         ; preds = %if.then
+  store i8 42, i8* @tco_expect_close, align 1, !CIAA_INFO !17
+  br label %if.end, !CIAA_INFO !18
+
+if.end:                                           ; preds = %if.then2, %if.then
+  br label %if.end3, !CIAA_INFO !19
+
+if.end3:                                          ; preds = %if.end, %do.body
+  br label %do.body4
+
+do.body4:                                         ; preds = %if.end3
+  br label %do.body5
+
+do.body5:                                         ; preds = %do.body4
+  store i8 1, i8* @tco1_rld, align 1, !CIAA_INFO !20
+  br label %do.end
+
+do.end:                                           ; preds = %do.body5
+  br label %do.end6
+
+do.end6:                                          ; preds = %do.end
+  br label %do.end7
+
+do.end7:                                          ; preds = %do.end6
+  store i8 42, i8* @tco_expect_close, align 1, !CIAA_INFO !21
+  br label %do.body8
+
+do.body8:                                         ; preds = %do.end7
+  %2 = load i8* @tco_expect_close, align 1, !CIAA_INFO !22
+  %conv9 = sext i8 %2 to i32, !CIAA_INFO !23
+  %cmp10 = icmp eq i32 %conv9, 42, !CIAA_INFO !24
+  br i1 %cmp10, label %if.then12, label %if.else, !CIAA_INFO !25
+
+if.then12:                                        ; preds = %do.body8
+  br label %do.body13, !CIAA_INFO !26
+
+do.body13:                                        ; preds = %if.then12
+  br label %do.body14, !CIAA_INFO !27
+
+do.body14:                                        ; preds = %do.body13
+  br label %while.cond, !CIAA_INFO !28
+
+while.cond:                                       ; preds = %while.body, %do.body14
+  %3 = load i8* @tco_lock, align 1, !CIAA_INFO !29
+  %tobool15 = trunc i8 %3 to i1, !CIAA_INFO !30
+  br i1 %tobool15, label %while.body, label %while.end, !CIAA_INFO !31
+
+while.body:                                       ; preds = %while.cond
+  br label %while.cond, !CIAA_INFO !32
+
+while.end:                                        ; preds = %while.cond
+  br label %do.end16, !CIAA_INFO !33
+
+do.end16:                                         ; preds = %while.end
+  store i8 1, i8* @tco1_cnt_b4, align 1, !CIAA_INFO !34
+  store i8 1, i8* %val, align 1, !CIAA_INFO !35
+  br label %do.body17, !CIAA_INFO !36
+
+do.body17:                                        ; preds = %do.end16
+  store i8 0, i8* @tco_lock, align 1, !CIAA_INFO !37
+  br label %do.end18, !CIAA_INFO !38
+
+do.end18:                                         ; preds = %do.body17
+  br label %do.end19, !CIAA_INFO !39
+
+do.end19:                                         ; preds = %do.end18
+  br label %if.end20, !CIAA_INFO !40
+
+if.else:                                          ; preds = %do.body8
+  call void @__assert_fail(i8* getelementptr inbounds ([2 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8]* @.str1, i32 0, i32 0), i32 716, i8* getelementptr inbounds ([21 x i8]* @__PRETTY_FUNCTION__.closer, i32 0, i32 0)) #4, !CIAA_INFO !41
+  unreachable, !CIAA_INFO !42
+
+if.end20:                                         ; preds = %do.end19
+  br label %do.body21, !CIAA_INFO !43
+
+do.body21:                                        ; preds = %if.end20
+  store i64 0, i64* @timer_alive, align 8, !CIAA_INFO !44
+  br label %do.end22, !CIAA_INFO !45
+
+do.end22:                                         ; preds = %do.body21
+  store i8 0, i8* @tco_expect_close, align 1, !CIAA_INFO !46
+  br label %do.end23, !CIAA_INFO !47
+
+do.end23:                                         ; preds = %do.end22
+  ret i8* null, !CIAA_INFO !48
+}
+
+saveAndGetID():
+	value:   br i1 %cmp, label %if.then2, label %if.end, !CIAA_INFO !16
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   %val = alloca i8, align 1, !CIAA_INFO !5
+saveAndGetID():
+	value:   %val1 = alloca i8, align 1, !CIAA_INFO !6
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !7
+saveAndGetID():
+	value:   store i8 86, i8* @tco_write_buf, align 1, !CIAA_INFO !8
+saveAndGetID():
+	value:   %0 = load i32* @nowayout, align 4, !CIAA_INFO !9
+saveAndGetID():
+	value:   %tobool = icmp ne i32 %0, 0, !CIAA_INFO !10
+saveAndGetID():
+	value:   br i1 %tobool, label %if.end3, label %if.then, !CIAA_INFO !11
+saveAndGetID():
+	value:   store i8 0, i8* @tco_expect_close, align 1, !CIAA_INFO !12
+saveAndGetID():
+	value:   %1 = load i8* @tco_write_buf, align 1, !CIAA_INFO !13
+saveAndGetID():
+	value:   %conv = sext i8 %1 to i32, !CIAA_INFO !14
+saveAndGetID():
+	value:   %cmp = icmp eq i32 %conv, 86, !CIAA_INFO !15
+saveAndGetID():
+	value:   br label %do.body14, !CIAA_INFO !27
+saveAndGetID():
+	value:   br label %while.cond, !CIAA_INFO !28
+saveAndGetID():
+	value:   store i8 42, i8* @tco_expect_close, align 1, !CIAA_INFO !17
+saveAndGetID():
+	value:   br label %if.end, !CIAA_INFO !18
+saveAndGetID():
+	value:   br label %if.end3, !CIAA_INFO !19
+saveAndGetID():
+	value:   store i8 1, i8* @tco1_rld, align 1, !CIAA_INFO !20
+saveAndGetID():
+	value:   store i8 42, i8* @tco_expect_close, align 1, !CIAA_INFO !21
+saveAndGetID():
+	value:   %2 = load i8* @tco_expect_close, align 1, !CIAA_INFO !22
+saveAndGetID():
+	value:   %conv9 = sext i8 %2 to i32, !CIAA_INFO !23
+saveAndGetID():
+	value:   %cmp10 = icmp eq i32 %conv9, 42, !CIAA_INFO !24
+saveAndGetID():
+	value:   br i1 %cmp10, label %if.then12, label %if.else, !CIAA_INFO !25
+saveAndGetID():
+	value:   br label %do.body13, !CIAA_INFO !26
+saveAndGetID():
+	value:   %3 = load i8* @tco_lock, align 1, !CIAA_INFO !29
+saveAndGetID():
+	value:   %tobool15 = trunc i8 %3 to i1, !CIAA_INFO !30
+saveAndGetID():
+	value:   br i1 %tobool15, label %while.body, label %while.end, !CIAA_INFO !31
+saveAndGetID():
+	value:   br label %while.cond, !CIAA_INFO !32
+saveAndGetID():
+	value:   br label %do.end16, !CIAA_INFO !33
+saveAndGetID():
+	value:   store i8 1, i8* @tco1_cnt_b4, align 1, !CIAA_INFO !34
+saveAndGetID():
+	value:   store i8 1, i8* %val, align 1, !CIAA_INFO !35
+saveAndGetID():
+	value:   br label %do.body17, !CIAA_INFO !36
+saveAndGetID():
+	value:   store i8 0, i8* @tco_lock, align 1, !CIAA_INFO !37
+saveAndGetID():
+	value: @tco_write_buf = common global i8 0, align 1
+saveAndGetID():
+	value: @tco_expect_close = common global i8 0, align 1
+saveAndGetID():
+	value: @tco1_rld = common global i8 0, align 1
+saveAndGetID():
+	value: @nowayout = global i32 0, align 4
+saveAndGetID():
+	value: @tco_lock = common global i8 0, align 1
+saveAndGetID():
+	value:   br label %do.end18, !CIAA_INFO !38
+saveAndGetID():
+	value:   br label %do.end19, !CIAA_INFO !39
+saveAndGetID():
+	value:   br label %if.end20, !CIAA_INFO !40
+saveAndGetID():
+	value:   call void @__assert_fail(i8* getelementptr inbounds ([2 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8]* @.str1, i32 0, i32 0), i32 716, i8* getelementptr inbounds ([21 x i8]* @__PRETTY_FUNCTION__.closer, i32 0, i32 0)) #4, !CIAA_INFO !41
+saveAndGetID():
+	value:   unreachable, !CIAA_INFO !42
+saveAndGetID():
+	value:   br label %do.body21, !CIAA_INFO !43
+saveAndGetID():
+	value:   store i64 0, i64* @timer_alive, align 8, !CIAA_INFO !44
+saveAndGetID():
+	value:   br label %do.end22, !CIAA_INFO !45
+saveAndGetID():
+	value:   store i8 0, i8* @tco_expect_close, align 1, !CIAA_INFO !46
+saveAndGetID():
+	value:   br label %do.end23, !CIAA_INFO !47
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !48
+saveAndGetID():
+	value: 
+; Function Attrs: nounwind uwtable
+define i8* @writer(i8* %unused) #0 {
+entry:
+  %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+  store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+  br label %do.body
+
+do.body:                                          ; preds = %entry
+  br label %do.body1
+
+do.body1:                                         ; preds = %do.body
+  br label %do.body2
+
+do.body2:                                         ; preds = %do.body1
+  store i8 1, i8* @tco1_rld, align 1, !CIAA_INFO !6
+  br label %do.end
+
+do.end:                                           ; preds = %do.body2
+  br label %do.end3
+
+do.end3:                                          ; preds = %do.end
+  br label %do.end4
+
+do.end4:                                          ; preds = %do.end3
+  ret i8* null, !CIAA_INFO !7
+}
+
+saveAndGetID():
+	value: i8* %unused
+saveAndGetID():
+	value:   %unused.addr = alloca i8*, align 8, !CIAA_INFO !4
+saveAndGetID():
+	value:   store i8* %unused, i8** %unused.addr, align 8, !CIAA_INFO !5
+saveAndGetID():
+	value:   store i8 1, i8* @tco1_rld, align 1, !CIAA_INFO !6
+saveAndGetID():
+	value:   ret i8* null, !CIAA_INFO !7
+saveAndGetID():
+	value:   %retval = alloca i32, align 4, !CIAA_INFO !4
+saveAndGetID():
+	value:   %argc.addr = alloca i32, align 4, !CIAA_INFO !5
+saveAndGetID():
+	value:   %argv.addr = alloca i8**, align 8, !CIAA_INFO !6
+saveAndGetID():
+	value:   %t1 = alloca i64, align 8, !CIAA_INFO !7
+saveAndGetID():
+	value:   %t2 = alloca i64, align 8, !CIAA_INFO !8
+saveAndGetID():
+	value:   store i32 0, i32* %retval, !CIAA_INFO !9
+saveAndGetID():
+	value:   store i32 %argc, i32* %argc.addr, align 4, !CIAA_INFO !10
+saveAndGetID():
+	value:   store i8** %argv, i8*** %argv.addr, align 8, !CIAA_INFO !11
+saveAndGetID():
+	value:   store i8 0, i8* @tco_expect_close, align 1, !CIAA_INFO !12
+saveAndGetID():
+	value:   %call = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @writer, i8* null) #4, !CIAA_INFO !13
+saveAndGetID():
+	value:   %call1 = call i32 @pthread_create(i64* %t2, %union.pthread_attr_t* null, i8* (i8*)* @closer, i8* null) #4, !CIAA_INFO !14
+saveAndGetID():
+	value:   call void @pthread_exit(i8* null) #5, !CIAA_INFO !15
+saveAndGetID():
+	value:   %0 = load i32* %retval, !CIAA_INFO !16
+saveAndGetID():
+	value:   ret i32 %0, !CIAA_INFO !17
+saveAndGetID():
+	value: i64* %0
+saveAndGetID():
+	value: %union.pthread_attr_t* %1
+saveAndGetID():
+	value: i8* (i8*)* %2
+saveAndGetID():
+	value: i8* %3
+saveAndGetID():
+	value: i8* %0
+saveAndGetID():
+	value:   call void @__assert_fail(i8* getelementptr inbounds ([2 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8]* @.str1, i32 0, i32 0), i32 716, i8* getelementptr inbounds ([21 x i8]* @__PRETTY_FUNCTION__.closer, i32 0, i32 0)) #4, !CIAA_INFO !41
+Done
+  line: 0000007e
+[DEBUG] getValueOrNULL(unsigned)
+id: 126
+  line: 0000007d
+[DEBUG] getValueOrNULL(unsigned)
+id: 125
+  line: 0000007c
+[DEBUG] getValueOrNULL(unsigned)
+id: 124
+  line: 00000073
+[DEBUG] getValueOrNULL(unsigned)
+id: 115
+	not found in RevStrIDToInt
+  line: 0000007b
+[DEBUG] getValueOrNULL(unsigned)
+id: 123
+  line: 0000006d
+[DEBUG] getValueOrNULL(unsigned)
+id: 109
+	not found in RevStrIDToInt
+  line: 0000006c
+[DEBUG] getValueOrNULL(unsigned)
+id: 108
+  line: 000000b7
+[DEBUG] getValueOrNULL(unsigned)
+id: 183
+  line: 00000098
+[DEBUG] getValueOrNULL(unsigned)
+id: 152
+  line: 0000007a
+[DEBUG] getValueOrNULL(unsigned)
+id: 122
+  line: 00000072
+[DEBUG] getValueOrNULL(unsigned)
+id: 114
+  line: 0000006b
+[DEBUG] getValueOrNULL(unsigned)
+id: 107
+  line: 0000006a
+[DEBUG] getValueOrNULL(unsigned)
+id: 106
+  line: 00000070
+[DEBUG] getValueOrNULL(unsigned)
+id: 112
+  line: 00000069
+[DEBUG] getValueOrNULL(unsigned)
+id: 105
+  line: 00000034
+[DEBUG] getValueOrNULL(unsigned)
+id: 52
+	not found in RevStrIDToInt
+  line: 00000071
+[DEBUG] getValueOrNULL(unsigned)
+id: 113
+  line: 0000006f
+[DEBUG] getValueOrNULL(unsigned)
+id: 111
+  line: 00000064
+[DEBUG] getValueOrNULL(unsigned)
+id: 100
+	not found in RevStrIDToInt
+  line: 00000066
+[DEBUG] getValueOrNULL(unsigned)
+id: 102
+  line: 0000006e
+[DEBUG] getValueOrNULL(unsigned)
+id: 110
+  line: 00000068
+[DEBUG] getValueOrNULL(unsigned)
+id: 104
+	not found in RevStrIDToInt
+  line: 00000067
+[DEBUG] getValueOrNULL(unsigned)
+id: 103
+  line: 00000065
+[DEBUG] getValueOrNULL(unsigned)
+id: 101
+	not found in RevStrIDToInt
+  line: 00000062
+[DEBUG] getValueOrNULL(unsigned)
+id: 98
+  line: 00000063
+[DEBUG] getValueOrNULL(unsigned)
+id: 99

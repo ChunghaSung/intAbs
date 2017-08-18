@@ -1,0 +1,263 @@
+CBMC version 4.9 64-bit linux
+Parsing main.c
+Converting
+Type-checking main
+Generating GOTO Program
+Adding CPROVER library
+Function Pointer Removal
+Partial Inlining
+Generic Property Instrumentation
+Starting Bounded Model Checking
+Adding interrupt constraints
+size of program expression: 9032 steps
+no slicing due to threads
+Generated 3 VCC(s), 3 remaining after simplification
+Passing problem to propositional reduction
+Running propositional reduction
+Post-processing
+Solving with MiniSAT 2.2.0 with simplifier
+29955 variables, 144303 clauses
+SAT checker: negated claim is SATISFIABLE, i.e., does not hold
+Runtime decision procedure: 0.321s
+Building error trace
+
+Counterexample:
+
+State 3 file main.c line 117 thread 0
+----------------------------------------------------
+  wdtpci_write_buf=0 (00000000)
+
+State 4 file main.c line 120 thread 0
+----------------------------------------------------
+  wdt_dc_port=0 (00000000)
+
+State 5 file main.c line 123 thread 0
+----------------------------------------------------
+  jiffies=0 (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 6 file main.c line 185 thread 0
+----------------------------------------------------
+  dev_count=0 (00000000000000000000000000000000)
+
+State 7 file main.c line 188 thread 0
+----------------------------------------------------
+  open_sem=0 (00000000000000000000000000000000)
+
+State 8 file main.c line 190 thread 0
+----------------------------------------------------
+  wdtpci_lock=0 (00000000)
+
+State 9 file main.c line 191 thread 0
+----------------------------------------------------
+  expect_close=0 (00000000000000000000000000000000)
+
+State 10 file main.c line 193 thread 0
+----------------------------------------------------
+  io=0 (00000000000000000000000000000000)
+
+State 11 file main.c line 194 thread 0
+----------------------------------------------------
+  irq=0 (00000000000000000000000000000000)
+
+State 12 file main.c line 199 thread 0
+----------------------------------------------------
+  heartbeat=60 (00000000000000000000000000111100)
+
+State 13 file main.c line 200 thread 0
+----------------------------------------------------
+  wd_heartbeat=0 (00000000000000000000000000000000)
+
+State 14 file main.c line 205 thread 0
+----------------------------------------------------
+  nowayout=0 (00000000000000000000000000000000)
+
+State 15 file main.c line 944 thread 0
+----------------------------------------------------
+  cnt1=0 (00000000000000000000000000000000)
+
+State 16 file main.c line 944 thread 0
+----------------------------------------------------
+  cnt2=0 (00000000000000000000000000000000)
+
+State 17 file main.c line 944 thread 0
+----------------------------------------------------
+  cnt3=0 (00000000000000000000000000000000)
+
+State 18 file main.c line 944 thread 0
+----------------------------------------------------
+  cnt4=0 (00000000000000000000000000000000)
+
+State 19 file main.c line 944 thread 0
+----------------------------------------------------
+  cnt5=0 (00000000000000000000000000000000)
+
+State 20 file main.c line 944 thread 0
+----------------------------------------------------
+  cnt6=0 (00000000000000000000000000000000)
+
+State 21 file main.c line 944 thread 0
+----------------------------------------------------
+  cnt7=0 (00000000000000000000000000000000)
+
+State 22 file main.c line 944 thread 0
+----------------------------------------------------
+  cnt8=0 (00000000000000000000000000000000)
+
+State 23 file main.c line 945 thread 0
+----------------------------------------------------
+  count=0 (00000000000000000000000000000000)
+
+State 24 file <built-in-additions> line 21 thread 0
+----------------------------------------------------
+  __CPROVER_thread_id=0 (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 25 file main.c line 946 thread 0
+----------------------------------------------------
+  buf=0 (00000000000000000000000000000000)
+
+State 26 file <built-in-additions> line 22 thread 0
+----------------------------------------------------
+  __CPROVER_threads_exited={ [0]=FALSE } (?)
+
+State 27 file <built-in-additions> line 23 thread 0
+----------------------------------------------------
+  __CPROVER_next_thread_id=0 (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 28 file <built-in-additions> line 30 thread 0
+----------------------------------------------------
+  __CPROVER_deallocated=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 29 file <built-in-additions> line 31 thread 0
+----------------------------------------------------
+  __CPROVER_dead_object=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 30 file <built-in-additions> line 32 thread 0
+----------------------------------------------------
+  __CPROVER_malloc_object=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 31 file <built-in-additions> line 33 thread 0
+----------------------------------------------------
+  __CPROVER_malloc_size=0 (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 32 file <built-in-additions> line 34 thread 0
+----------------------------------------------------
+  __CPROVER_malloc_is_new_array=FALSE (0)
+
+State 33 file <built-in-additions> line 35 thread 0
+----------------------------------------------------
+  __CPROVER_memory_leak=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 34 file <built-in-additions> line 57 thread 0
+----------------------------------------------------
+  __CPROVER_rounding_mode=0 (00000000000000000000000000000000)
+
+State 35 file <built-in-additions> line 78 thread 0
+----------------------------------------------------
+  __CPROVER_pipe_count=0 (00000000000000000000000000000000)
+
+State 39  thread 0
+----------------------------------------------------
+  argv'[16384]=irep("(\"nil\")")[16384] (?)
+
+State 42 file main.c line 1315 thread 0
+----------------------------------------------------
+  argc=16384 (00000000000000000100000000000000)
+
+State 43 file main.c line 1315 thread 0
+----------------------------------------------------
+  argv=argv' (0000001000000000000000000000000000000000000000000000000000000000)
+
+State 44 file main.c line 1317 function main thread 0
+----------------------------------------------------
+  t1=0 (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 45 file main.c line 1318 function main thread 0
+----------------------------------------------------
+  t2=0 (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 48 file main.c line 1364 function main thread 0
+----------------------------------------------------
+  value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 49 file main.c line 1364 function main thread 0
+----------------------------------------------------
+  value_ptr=NULL (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 51 file main.c line 1099 function writer1 thread 1
+----------------------------------------------------
+  count=0 (00000000000000000000000000000000)
+
+State 52 file main.c line 1100 function writer1 thread 1
+----------------------------------------------------
+  expect_close=0 (00000000000000000000000000000000)
+
+State 53 file main.c line 1168 function writer4 thread 4
+----------------------------------------------------
+  count=0 (00000000000000000000000000000000)
+
+State 54 file main.c line 1169 function writer4 thread 4
+----------------------------------------------------
+  expect_close=0 (00000000000000000000000000000000)
+
+State 55 file main.c line 961 function closer1 thread 5
+----------------------------------------------------
+  wdtpci_write_buf=86 (01010110)
+
+State 56 file main.c line 962 function closer1 thread 5
+----------------------------------------------------
+  expect_close=42 (00000000000000000000000000101010)
+
+State 57 file main.c line 963 function closer1 thread 5
+----------------------------------------------------
+  count=1 (00000000000000000000000000000001)
+
+State 58 file main.c line 996 function closer2 thread 6
+----------------------------------------------------
+  wdtpci_write_buf=86 (01010110)
+
+State 60 file main.c line 1032 function closer3 thread 7
+----------------------------------------------------
+  wdtpci_write_buf=86 (01010110)
+
+State 61 file main.c line 997 function closer2 thread 6
+----------------------------------------------------
+  expect_close=42 (00000000000000000000000000101010)
+
+State 63 file main.c line 1033 function closer3 thread 7
+----------------------------------------------------
+  expect_close=42 (00000000000000000000000000101010)
+
+State 64 file main.c line 1034 function closer3 thread 7
+----------------------------------------------------
+  count=1 (00000000000000000000000000000001)
+
+State 69 file main.c line 1055 function closer3 thread 7
+----------------------------------------------------
+  expect_close=0 (00000000000000000000000000000000)
+
+State 70 file main.c line 1057 function closer3 thread 7
+----------------------------------------------------
+  cnt5=1 (00000000000000000000000000000001)
+
+State 77 file main.c line 998 function closer2 thread 6
+----------------------------------------------------
+  count=1 (00000000000000000000000000000001)
+
+State 82 file main.c line 1019 function closer2 thread 6
+----------------------------------------------------
+  expect_close=0 (00000000000000000000000000000000)
+
+State 84 file main.c line 1021 function closer2 thread 6
+----------------------------------------------------
+  cnt2=1 (00000000000000000000000000000001)
+
+State 93 file main.c line 1182 function writer4 thread 4
+----------------------------------------------------
+  cnt7=1 (00000000000000000000000000000001)
+
+Violated property:
+  file main.c line 979 function closer1
+  assertion 0
+  FALSE
+
+VERIFICATION FAILED

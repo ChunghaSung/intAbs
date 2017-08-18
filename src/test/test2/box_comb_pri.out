@@ -1,0 +1,458 @@
+[WARNING] Global which is neither Integer nor Float
+@.str = private unnamed_addr constant [7 x i8] c"a == 1\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@.str.1 = private unnamed_addr constant [7 x i8] c"main.c\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.f1 = private unnamed_addr constant [17 x i8] c"void *f1(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@.str.2 = private unnamed_addr constant [7 x i8] c"b == 2\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.f2 = private unnamed_addr constant [17 x i8] c"void *f2(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@.str.3 = private unnamed_addr constant [7 x i8] c"b == 1\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.f3 = private unnamed_addr constant [17 x i8] c"void *f3(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+f1:::2
+f2:::1
+f3:::3
+function: f1
+function: f2
+function: f3
+function: main
+[WARNING] Initializing unhandled global type: @.str = private unnamed_addr constant [7 x i8] c"a == 1\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @.str.1 = private unnamed_addr constant [7 x i8] c"main.c\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.f1 = private unnamed_addr constant [17 x i8] c"void *f1(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @.str.2 = private unnamed_addr constant [7 x i8] c"b == 2\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.f2 = private unnamed_addr constant [17 x i8] c"void *f2(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @.str.3 = private unnamed_addr constant [7 x i8] c"b == 1\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.f3 = private unnamed_addr constant [17 x i8] c"void *f3(void *)\00", align 1
+Setting to default initial value
+Interference Iteration: 1
+Analyzing thread: 0
+Analyzing thread: 1
+**** Found Reachable Error ****
+Fact: interval of dim (24,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [2,2]
+     v12 in [0,0]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [0,0]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+      v3 in [0,0]
+      v4 in [-oo,+oo]
+      v5 in [-oo,+oo]
+      v6 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+  call void @__assert_fail(i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.2, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.1, i32 0, i32 0), i32 23, i8* getelementptr inbounds ([17 x i8], [17 x i8]* @__PRETTY_FUNCTION__.f2, i32 0, i32 0)) #3
+Analyzing thread: 2
+Analyzing thread: 3
+Interference Iteration: 2
+Analyzing thread: 0
+Analyzing thread: 1
+**** Found Reachable Error ****
+Fact: interval of dim (24,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [2,2]
+     v12 in [0,0]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [0,0]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+      v3 in [0,0]
+      v4 in [-oo,+oo]
+      v5 in [-oo,+oo]
+      v6 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+  call void @__assert_fail(i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.2, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.1, i32 0, i32 0), i32 23, i8* getelementptr inbounds ([17 x i8], [17 x i8]* @__PRETTY_FUNCTION__.f2, i32 0, i32 0)) #3
+Analyzing thread: 2
+Analyzing thread: 3
+v11: @a = common global i32 0, align 4
+v12: @b = common global i32 0, align 4
+v13: i8* %unused
+v0:   %0 = load i32, i32* @a, align 4
+v1:   %cmp = icmp eq i32 %0, 1
+v16: i32 %2
+v14: i8* %0
+v15: i8* %1
+v17: i8* %3
+v18: i8* %unused
+v2:   %0 = load i32, i32* @b, align 4
+v3:   %cmp = icmp eq i32 %0, 2
+v20: i64* %0
+v19: i8* %unused
+v4:   %0 = load i32, i32* @b, align 4
+v5:   %inc = add nsw i32 %0, 1
+v6:   %1 = load i32, i32* @b, align 4
+v7:   %cmp = icmp eq i32 %1, 1
+v8:   %t1 = alloca i64, align 8
+v9:   %t2 = alloca i64, align 8
+v10:   %t3 = alloca i64, align 8
+v21: %union.pthread_attr_t* %1
+v22: i8* (i8*)* %2
+v23: i8* %3
+==== f1() Results ====
+BasicBlock: 
+entry:
+  store i32 1, i32* @a, align 4
+  %0 = load i32, i32* @a, align 4
+  %cmp = icmp eq i32 %0, 1
+  br i1 %cmp, label %cond.true, label %cond.false
+Facts: interval of dim (24,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [0,0]
+     v12 in [0,0]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+      v3 in [-oo,+oo]
+      v4 in [-oo,+oo]
+      v5 in [-oo,+oo]
+      v6 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+cond.true:                                        ; preds = %entry
+  br label %cond.end
+Facts: interval of dim (24,0):
+      v0 in [1,1]
+      v1 in [1,1]
+     v10 in [-oo,+oo]
+     v11 in [1,1]
+     v12 in [0,0]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+      v3 in [-oo,+oo]
+      v4 in [-oo,+oo]
+      v5 in [-oo,+oo]
+      v6 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+cond.false:                                       ; preds = %entry
+  call void @__assert_fail(i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.1, i32 0, i32 0), i32 13, i8* getelementptr inbounds ([17 x i8], [17 x i8]* @__PRETTY_FUNCTION__.f1, i32 0, i32 0)) #3
+  unreachable
+Facts: interval of dim (24,0): bottom
+
+BasicBlock: 
+cond.end:                                         ; preds = %1, %cond.true
+  ret i8* null
+Facts: interval of dim (24,0):
+      v0 in [1,1]
+      v1 in [1,1]
+     v10 in [-oo,+oo]
+     v11 in [1,1]
+     v12 in [0,0]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+      v3 in [-oo,+oo]
+      v4 in [-oo,+oo]
+      v5 in [-oo,+oo]
+      v6 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock:                                                   ; No predecessors!
+  br label %cond.end
+Facts: interval of dim (24,0): bottom
+
+======================
+==== f2() Results ====
+BasicBlock: 
+entry:
+  store i32 0, i32* @b, align 4
+  store i32 2, i32* @a, align 4
+  %0 = load i32, i32* @b, align 4
+  %cmp = icmp eq i32 %0, 2
+  br i1 %cmp, label %cond.true, label %cond.false
+Facts: interval of dim (24,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [0,0]
+     v12 in [0,0]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+      v3 in [-oo,+oo]
+      v4 in [-oo,+oo]
+      v5 in [-oo,+oo]
+      v6 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+cond.true:                                        ; preds = %entry
+  br label %cond.end
+Facts: interval of dim (24,0): bottom
+
+BasicBlock: 
+cond.false:                                       ; preds = %entry
+  call void @__assert_fail(i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.2, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.1, i32 0, i32 0), i32 23, i8* getelementptr inbounds ([17 x i8], [17 x i8]* @__PRETTY_FUNCTION__.f2, i32 0, i32 0)) #3
+  unreachable
+Facts: interval of dim (24,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [2,2]
+     v12 in [0,0]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [0,0]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+      v3 in [0,0]
+      v4 in [-oo,+oo]
+      v5 in [-oo,+oo]
+      v6 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+cond.end:                                         ; preds = %1, %cond.true
+  ret i8* null
+Facts: interval of dim (24,0): bottom
+
+BasicBlock:                                                   ; No predecessors!
+  br label %cond.end
+Facts: interval of dim (24,0): bottom
+
+======================
+==== f3() Results ====
+BasicBlock: 
+entry:
+  %0 = load i32, i32* @b, align 4
+  %inc = add nsw i32 %0, 1
+  store i32 %inc, i32* @b, align 4
+  %1 = load i32, i32* @b, align 4
+  %cmp = icmp eq i32 %1, 1
+  br i1 %cmp, label %cond.true, label %cond.false
+Facts: interval of dim (24,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [0,0]
+     v12 in [0,0]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+      v3 in [-oo,+oo]
+      v4 in [-oo,+oo]
+      v5 in [-oo,+oo]
+      v6 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+cond.true:                                        ; preds = %entry
+  br label %cond.end
+Facts: interval of dim (24,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [0,0]
+     v12 in [1,1]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+      v3 in [-oo,+oo]
+      v4 in [0,0]
+      v5 in [1,1]
+      v6 in [1,1]
+      v7 in [1,1]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+cond.false:                                       ; preds = %entry
+  call void @__assert_fail(i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.3, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.1, i32 0, i32 0), i32 32, i8* getelementptr inbounds ([17 x i8], [17 x i8]* @__PRETTY_FUNCTION__.f3, i32 0, i32 0)) #3
+  unreachable
+Facts: interval of dim (24,0): bottom
+
+BasicBlock: 
+cond.end:                                         ; preds = %2, %cond.true
+  ret i8* null
+Facts: interval of dim (24,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [0,0]
+     v12 in [1,1]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+      v3 in [-oo,+oo]
+      v4 in [0,0]
+      v5 in [1,1]
+      v6 in [1,1]
+      v7 in [1,1]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock:                                                   ; No predecessors!
+  br label %cond.end
+Facts: interval of dim (24,0): bottom
+
+======================
+==== main() Results ====
+BasicBlock: 
+entry:
+  %t1 = alloca i64, align 8
+  %t2 = alloca i64, align 8
+  %t3 = alloca i64, align 8
+  %call = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @f1, i8* null) #3
+  %call1 = call i32 @pthread_create(i64* %t2, %union.pthread_attr_t* null, i8* (i8*)* @f2, i8* null) #3
+  %call2 = call i32 @pthread_create(i64* %t3, %union.pthread_attr_t* null, i8* (i8*)* @f3, i8* null) #3
+  ret i32 0
+Facts: interval of dim (24,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [0,0]
+     v12 in [0,0]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+      v3 in [-oo,+oo]
+      v4 in [-oo,+oo]
+      v5 in [-oo,+oo]
+      v6 in [-oo,+oo]
+      v7 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+======================
+[WARNING] Value not dumped to metadata: @a = common global i32 0, align 4
+	type not handled
+[WARNING] Value not dumped to metadata: @b = common global i32 0, align 4
+	type not handled
+Errors found: 1
+Max Permutations: 1

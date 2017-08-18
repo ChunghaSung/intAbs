@@ -1,0 +1,204 @@
+[WARNING] Global which is neither Integer nor Float
+@.str = private unnamed_addr constant [2 x i8] c"0\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@.str.1 = private unnamed_addr constant [7 x i8] c"main.c\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer1 = private unnamed_addr constant [22 x i8] c"void *writer1(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@.str.2 = private unnamed_addr constant [20 x i8] c"sc1200wdt_lock_init\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer2 = private unnamed_addr constant [22 x i8] c"void *writer2(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer3 = private unnamed_addr constant [22 x i8] c"void *writer3(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer4 = private unnamed_addr constant [22 x i8] c"void *writer4(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer5 = private unnamed_addr constant [22 x i8] c"void *writer5(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer6 = private unnamed_addr constant [22 x i8] c"void *writer6(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer7 = private unnamed_addr constant [22 x i8] c"void *writer7(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer8 = private unnamed_addr constant [22 x i8] c"void *writer8(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer9 = private unnamed_addr constant [22 x i8] c"void *writer9(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer10 = private unnamed_addr constant [23 x i8] c"void *writer10(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer11 = private unnamed_addr constant [23 x i8] c"void *writer11(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer12 = private unnamed_addr constant [23 x i8] c"void *writer12(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer13 = private unnamed_addr constant [23 x i8] c"void *writer13(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer14 = private unnamed_addr constant [23 x i8] c"void *writer14(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer15 = private unnamed_addr constant [23 x i8] c"void *writer15(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer16 = private unnamed_addr constant [23 x i8] c"void *writer16(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer17 = private unnamed_addr constant [23 x i8] c"void *writer17(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer18 = private unnamed_addr constant [23 x i8] c"void *writer18(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer19 = private unnamed_addr constant [23 x i8] c"void *writer19(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer20 = private unnamed_addr constant [23 x i8] c"void *writer20(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer21 = private unnamed_addr constant [23 x i8] c"void *writer21(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer22 = private unnamed_addr constant [23 x i8] c"void *writer22(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer23 = private unnamed_addr constant [23 x i8] c"void *writer23(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer24 = private unnamed_addr constant [23 x i8] c"void *writer24(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer25 = private unnamed_addr constant [23 x i8] c"void *writer25(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer26 = private unnamed_addr constant [23 x i8] c"void *writer26(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer27 = private unnamed_addr constant [23 x i8] c"void *writer27(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer28 = private unnamed_addr constant [23 x i8] c"void *writer28(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.writer29 = private unnamed_addr constant [23 x i8] c"void *writer29(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.closer = private unnamed_addr constant [21 x i8] c"void *closer(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Initializing unhandled global type: @.str = private unnamed_addr constant [2 x i8] c"0\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @.str.1 = private unnamed_addr constant [7 x i8] c"main.c\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.writer1 = private unnamed_addr constant [22 x i8] c"void *writer1(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @.str.2 = private unnamed_addr constant [20 x i8] c"sc1200wdt_lock_init\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.writer2 = private unnamed_addr constant [22 x i8] c"void *writer2(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.writer3 = private unnamed_addr constant [22 x i8] c"void *writer3(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.writer4 = private unnamed_addr constant [22 x i8] c"void *writer4(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.writer5 = private unnamed_addr constant [22 x i8] c"void *writer5(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.writer6 = private unnamed_addr constant [22 x i8] c"void *writer6(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.writer7 = private unnamed_addr constant [22 x i8] c"void *writer7(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.writer8 = private unnamed_addr constant [22 x i8] c"void *writer8(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.writer9 = private unnamed_addr constant [22 x i8] c"void *writer9(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.writer10 = private unnamed_addr constant [23 x i8] c"void *writer10(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.writer11 = private unnamed_addr constant [23 x i8] c"void *writer11(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.writer12 = private unnamed_addr constant [23 x i8] c"void *writer12(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.writer13 = private unnamed_addr constant [23 x i8] c"void *writer13(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.writer14 = private unnamed_addr constant [23 x i8] c"void *writer14(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.writer15 = private unnamed_addr constant [23 x i8] c"void *writer15(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.writer16 = private unnamed_addr constant [23 x i8] c"void *writer16(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.writer17 = private unnamed_addr constant [23 x i8] c"void *writer17(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.writer18 = private unnamed_addr constant [23 x i8] c"void *writer18(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.writer19 = private unnamed_addr constant [23 x i8] c"void *writer19(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.writer20 = private unnamed_addr constant [23 x i8] c"void *writer20(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.writer21 = private unnamed_addr constant [23 x i8] c"void *writer21(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.writer22 = private unnamed_addr constant [23 x i8] c"void *writer22(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.writer23 = private unnamed_addr constant [23 x i8] c"void *writer23(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.writer24 = private unnamed_addr constant [23 x i8] c"void *writer24(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.writer25 = private unnamed_addr constant [23 x i8] c"void *writer25(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.writer26 = private unnamed_addr constant [23 x i8] c"void *writer26(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.writer27 = private unnamed_addr constant [23 x i8] c"void *writer27(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.writer28 = private unnamed_addr constant [23 x i8] c"void *writer28(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.writer29 = private unnamed_addr constant [23 x i8] c"void *writer29(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.closer = private unnamed_addr constant [21 x i8] c"void *closer(void *)\00", align 1
+Setting to default initial value
+Interference Iteration: 1
+Analyzing thread: 0
+Analyzing thread: 1
+Analyzing thread: 2
+Analyzing thread: 3
+Analyzing thread: 4
+Analyzing thread: 5
+Analyzing thread: 6
+Analyzing thread: 7
+Analyzing thread: 8
+Analyzing thread: 9
+Analyzing thread: 10
+Analyzing thread: 11
+Analyzing thread: 12
+Analyzing thread: 13
+Analyzing thread: 14
+Analyzing thread: 15
+Analyzing thread: 16
+Analyzing thread: 17
+Analyzing thread: 18
+Analyzing thread: 19
+Analyzing thread: 20
+Analyzing thread: 21
+Analyzing thread: 22
+Analyzing thread: 23
+Analyzing thread: 24
+Analyzing thread: 25
+Analyzing thread: 26
+Analyzing thread: 27
+Analyzing thread: 28
+Analyzing thread: 29
+Analyzing thread: 30
+Interference Iteration: 2
+Analyzing thread: 0
+Analyzing thread: 1
+Analyzing thread: 2
+Analyzing thread: 3
+Analyzing thread: 4
+Analyzing thread: 5

@@ -1,0 +1,9 @@
+#!/bin/bash
+output=basicblockentry10-3.txt
+#output=conditionedge10-3.txt
+input="cover @BASICBLOCKENTRY\nexit\n"
+#input="cover @CONDITIONEDGE\nexit\n"
+
+date >$output
+echo -e "$input" | fshell -DCBMC --unwindset c::main.0:10 --partial-loops *.c 1>>$output 2>&1
+date >>$output

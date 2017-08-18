@@ -1,0 +1,333 @@
+[WARNING] Global which is neither Integer nor Float
+@.str = private unnamed_addr constant [2 x i8] c"0\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@.str.1 = private unnamed_addr constant [7 x i8] c"main.c\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.f1 = private unnamed_addr constant [17 x i8] c"void *f1(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.f2 = private unnamed_addr constant [17 x i8] c"void *f2(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+Rules: (declare-fun dom ((_ BitVec 16) (_ BitVec 16)) Bool)
+(declare-fun postDom ((_ BitVec 16) (_ BitVec 16)) Bool)
+(declare-fun higher ((_ BitVec 16) (_ BitVec 16)) Bool)
+(declare-fun pri ((_ BitVec 16)) Bool)
+(declare-fun linehigh ((_ BitVec 16) (_ BitVec 16)) Bool)
+(declare-fun ld ((_ BitVec 16) (_ BitVec 16)) Bool)
+(declare-fun linepri ((_ BitVec 16) (_ BitVec 16)) Bool)
+(declare-fun st ((_ BitVec 16) (_ BitVec 16)) Bool)
+(declare-fun nonLastSt ((_ BitVec 16)) Bool)
+(declare-fun compLd ((_ BitVec 16)) Bool)
+(declare-rel st ((_ BitVec 16) (_ BitVec 16)))
+(declare-rel dom ((_ BitVec 16) (_ BitVec 16)))
+(declare-rel postDom ((_ BitVec 16) (_ BitVec 16)))
+(declare-rel higher ((_ BitVec 16) (_ BitVec 16)))
+(declare-rel pri ((_ BitVec 16)))
+(declare-rel linehigh ((_ BitVec 16) (_ BitVec 16)))
+(declare-rel ld ((_ BitVec 16) (_ BitVec 16)))
+(declare-rel nonLastSt ((_ BitVec 16)))
+(declare-rel compLd ((_ BitVec 16)))
+(declare-rel linepri ((_ BitVec 16) (_ BitVec 16)))
+(declare-var A (_ BitVec 16))
+(declare-var B (_ BitVec 16))
+(declare-var C (_ BitVec 16))
+(declare-var D (_ BitVec 16))
+(declare-var E (_ BitVec 16))
+(rule (=> (and (dom B C) (dom A B)) (dom A C)))
+(rule (=> (and (postDom B C) (postDom A B)) (postDom A C)))
+(rule (=> (and (pri A) (pri B) (= A #x0000) (= B #x0001)) (higher B A)))
+(rule (=> (and (pri A) (pri B) (= A #x0001) (= B #x0002)) (higher B A)))
+(rule (=> (and (pri A) (pri B) (= A #x0002) (= B #x0003)) (higher B A)))
+(rule (=> (and (pri A) (pri B) (= A #x0003) (= B #x0004)) (higher B A)))
+(rule (=> (and (pri A) (pri B) (= A #x0004) (= B #x0005)) (higher B A)))
+(rule (=> (and (pri A) (pri B) (= A #x0005) (= B #x0006)) (higher B A)))
+(rule (=> (and (pri A) (pri B) (= A #x0006) (= B #x0007)) (higher B A)))
+(rule (=> (and (pri A) (pri B) (= A #x0007) (= B #x0008)) (higher B A)))
+(rule (=> (and (higher B C) (higher A B)) (higher A C)))
+(rule (=> (and (st A B) (higher D E) (linepri C E) (linepri A D) (ld C B))
+    (linehigh A C)))
+(rule (=> (and (st A B) (postDom A C) (st C B)) (nonLastSt C)))
+(rule (=> (and (st A B) (dom A C) (ld C B)) (compLd C)))
+(rule (postDom #x0017 #x0016))
+(rule (dom #x0016 #x0017))
+(rule (pri #x0000))
+(rule (pri #x0001))
+(rule (pri #x0002))
+(rule (pri #x0003))
+(rule (pri #x0004))
+(rule (pri #x0005))
+(rule (pri #x0006))
+(rule (pri #x0007))
+(rule (pri #x0008))
+(rule (dom #x0014 #x0015))
+(rule (dom #x0014 #x0016))
+(rule (postDom #x0015 #x0014))
+(rule (linepri #x0013 #x0001))
+(rule (ld #x0013 #x000c))
+(rule (linepri #x0012 #x0001))
+(rule (st #x0012 #x000c))
+(rule (linepri #x0011 #x0001))
+(rule (st #x0011 #x000c))
+(rule (postDom #x0014 #x0013))
+(rule (dom #x0013 #x0014))
+(rule (postDom #x0013 #x0012))
+(rule (dom #x0009 #x000a))
+(rule (postDom #x000a #x0009))
+(rule (dom #x000a #x000b))
+(rule (postDom #x000b #x000a))
+(rule (st #x0009 #x000c))
+(rule (linepri #x0009 #x0005))
+(rule (ld #x000a #x000c))
+(rule (linepri #x000a #x0005))
+(rule (postDom #x000d #x000b))
+(rule (dom #x000b #x000e))
+(rule (dom #x000b #x000d))
+(rule (dom #x000e #x000f))
+(rule (postDom #x000f #x000e))
+(rule (dom #x000d #x0010))
+(rule (postDom #x0010 #x000d))
+(rule (st #x000d #x000c))
+(rule (linepri #x000d #x0005))
+(rule (dom #x0011 #x0012))
+(rule (postDom #x0012 #x0011))
+(rule (dom #x0012 #x0013))
+
+[WARNING] Initializing unhandled global type: @.str = private unnamed_addr constant [2 x i8] c"0\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @.str.1 = private unnamed_addr constant [7 x i8] c"main.c\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.f1 = private unnamed_addr constant [17 x i8] c"void *f1(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.f2 = private unnamed_addr constant [17 x i8] c"void *f2(void *)\00", align 1
+Setting to default initial value
+Interference Iteration: 1
+Analyzing thread: 0
+Analyzing thread: 1
+Analyzing thread: 2
+Interference Iteration: 2
+Analyzing thread: 0
+======================================
+ID of Load: 10
+  %0 = load i32, i32* @a, align 4
+ID of Store: 17
+  store i32 0, i32* @a, align 4
+St is nonLast
+Load is completeLoad
+======================================
+======================================
+ID of Load: 10
+  %0 = load i32, i32* @a, align 4
+ID of Store: 18
+  store i32 1, i32* @a, align 4
+St is NOT nonLast
+Load is completeLoad
+st is not higher than ld
+======================================
+Analyzing thread: 1
+======================================
+ID of Load: 19
+  %0 = load i32, i32* @a, align 4
+ID of Store: 9
+  store i32 1, i32* @a, align 4
+St is nonLast
+Load is completeLoad
+======================================
+======================================
+ID of Load: 19
+  %0 = load i32, i32* @a, align 4
+ID of Store: 13
+  store i32 0, i32* @a, align 4
+St is NOT nonLast
+Load is completeLoad
+st is higher than ld
+======================================
+Analyzing thread: 2
+v6: @a = global i32 0, align 4
+v7: @t = global i32 0, align 4
+v8: i8* %unused
+v0:   %0 = load i32, i32* @a, align 4
+v1:   %cmp = icmp ne i32 %0, 1
+v10: i8* %1
+v11: i32 %2
+v9: i8* %0
+v12: i8* %3
+v13: i8* %unused
+v14: i64* %0
+v2:   %0 = load i32, i32* @a, align 4
+v3:   %cmp = icmp ne i32 %0, 1
+v15: %union.pthread_attr_t* %1
+v4:   %t1 = alloca i64, align 8
+v5:   %t2 = alloca i64, align 8
+v16: i8* (i8*)* %2
+v17: i8* %3
+==== f1() Results ====
+BasicBlock: 
+entry:
+  store i32 1, i32* @a, align 4
+  %0 = load i32, i32* @a, align 4
+  %cmp = icmp ne i32 %0, 1
+  br i1 %cmp, label %if.then, label %if.end
+Facts: interval of dim (18,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+      v2 in [-oo,+oo]
+      v3 in [-oo,+oo]
+      v4 in [-oo,+oo]
+      v5 in [-oo,+oo]
+      v6 in [0,0]
+      v7 in [0,0]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.then:                                          ; preds = %entry
+  call void @__assert_fail(i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.1, i32 0, i32 0), i32 21, i8* getelementptr inbounds ([17 x i8], [17 x i8]* @__PRETTY_FUNCTION__.f1, i32 0, i32 0)) #3
+  unreachable
+Facts: interval of dim (18,0): bottom
+
+BasicBlock: 
+if.end:                                           ; preds = %entry
+  store i32 0, i32* @a, align 4
+  ret i8* null
+Facts: interval of dim (18,0):
+      v0 in [1,1]
+      v1 in [0,0]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+      v2 in [-oo,+oo]
+      v3 in [-oo,+oo]
+      v4 in [-oo,+oo]
+      v5 in [-oo,+oo]
+      v6 in [1,1]
+      v7 in [0,0]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+======================
+==== f2() Results ====
+BasicBlock: 
+entry:
+  store i32 0, i32* @a, align 4
+  store i32 1, i32* @a, align 4
+  %0 = load i32, i32* @a, align 4
+  %cmp = icmp ne i32 %0, 1
+  br i1 %cmp, label %if.then, label %if.end
+Facts: interval of dim (18,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+      v2 in [-oo,+oo]
+      v3 in [-oo,+oo]
+      v4 in [-oo,+oo]
+      v5 in [-oo,+oo]
+      v6 in [0,0]
+      v7 in [0,0]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.then:                                          ; preds = %entry
+  call void @__assert_fail(i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.1, i32 0, i32 0), i32 39, i8* getelementptr inbounds ([17 x i8], [17 x i8]* @__PRETTY_FUNCTION__.f2, i32 0, i32 0)) #3
+  unreachable
+Facts: interval of dim (18,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+      v2 in [0,1]
+      v3 in [1,1]
+      v4 in [-oo,+oo]
+      v5 in [-oo,+oo]
+      v6 in [0,1]
+      v7 in [0,0]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.end:                                           ; preds = %entry
+  ret i8* null
+Facts: interval of dim (18,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+      v2 in [1,1]
+      v3 in [0,0]
+      v4 in [-oo,+oo]
+      v5 in [-oo,+oo]
+      v6 in [0,1]
+      v7 in [0,0]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+======================
+==== main() Results ====
+BasicBlock: 
+entry:
+  %t1 = alloca i64, align 8
+  %t2 = alloca i64, align 8
+  %call = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @f1, i8* null) #3
+  %call1 = call i32 @pthread_create(i64* %t2, %union.pthread_attr_t* null, i8* (i8*)* @f2, i8* null) #3
+  ret i32 0
+Facts: interval of dim (18,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+      v2 in [-oo,+oo]
+      v3 in [-oo,+oo]
+      v4 in [-oo,+oo]
+      v5 in [-oo,+oo]
+      v6 in [0,0]
+      v7 in [0,0]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+======================
+[WARNING] Value not dumped to metadata: @a = global i32 0, align 4
+	type not handled
+Errors found: 1
+Max Permutations: 0
+Total pairs: 4
+Filtered pairs: 3

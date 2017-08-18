@@ -1,0 +1,99 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+FER1	main.c	44;"	d	file:
+FER2	main.c	45;"	d	file:
+FULL_CODE	main.c	68;"	d	file:
+HZ	main.c	71;"	d	file:
+KBC_IRQ	main.c	54;"	d	file:
+MAX_TIMEOUT	main.c	39;"	d	file:
+MSE_IRQ	main.c	55;"	d	file:
+PFX	main.c	37;"	d	file:
+PMC1	main.c	46;"	d	file:
+PMC2	main.c	47;"	d	file:
+PMC3	main.c	48;"	d	file:
+PMDR	main.c	41;"	d	file:
+PMIR	main.c	40;"	d	file:
+SC1200_MODULE_NAME	main.c	36;"	d	file:
+SC1200_MODULE_VER	main.c	35;"	d	file:
+UART1_IRQ	main.c	56;"	d	file:
+UART2_IRQ	main.c	57;"	d	file:
+WATCHDOG_MINOR	main.c	/^MODULE_ALIAS_MISCDEV(WATCHDOG_MINOR);$/;"	v
+WATCHDOG_NOWAYOUT	main.c	137;"	d	file:
+WDCF	main.c	50;"	d	file:
+WDST	main.c	51;"	d	file:
+WDTO	main.c	49;"	d	file:
+clear_bit	main.c	101;"	d	file:
+closer	main.c	/^void *closer(void *unused) {$/;"	f
+expect_close	main.c	/^char expect_close;$/;"	v
+fops_write_buf	main.c	/^char fops_write_buf;$/;"	v
+inb_p	main.c	94;"	d	file:
+io	main.c	/^int io = 0;$/;"	v
+io_len	main.c	/^int io_len = 2;		\/* for non plug and play *\/$/;"	v
+isapnp	main.c	/^static int isapnp = 1;$/;"	v	file:
+jiffies	main.c	/^long jiffies;$/;"	v
+main	main.c	/^int main(int argc, char *argv[]) {$/;"	f
+nowayout	main.c	/^int nowayout = WATCHDOG_NOWAYOUT;$/;"	v
+open_sem	main.c	/^int open_sem;$/;"	v
+outb	main.c	87;"	d	file:
+outb_p	main.c	92;"	d	file:
+pci_enable_device	main.c	105;"	d	file:
+pci_resource_start	main.c	106;"	d	file:
+pmdr_port	main.c	/^char pmdr_port;$/;"	v
+pmir_port	main.c	/^char pmir_port;$/;"	v
+sc1200wdt_exit	main.c	/^module_exit(sc1200wdt_exit);$/;"	v
+sc1200wdt_exit	main.c	/^static void __exit sc1200wdt_exit(void)$/;"	f	file:
+sc1200wdt_fops	main.c	/^static const struct file_operations sc1200wdt_fops =$/;"	v	typeref:struct:file_operations	file:
+sc1200wdt_init	main.c	/^module_init(sc1200wdt_init);$/;"	v
+sc1200wdt_init	main.c	/^static int __init sc1200wdt_init(void)$/;"	f	file:
+sc1200wdt_ioctl	main.c	/^static int sc1200wdt_ioctl(struct inode *inode, struct file *file, unsigned int cmd, unsigned long arg)$/;"	f	file:
+sc1200wdt_lock	main.c	/^bool sc1200wdt_lock;	\/* io port access serialisation *\/$/;"	v
+sc1200wdt_miscdev	main.c	/^static struct miscdevice sc1200wdt_miscdev =$/;"	v	typeref:struct:miscdevice	file:
+sc1200wdt_notifier	main.c	/^static struct notifier_block sc1200wdt_notifier =$/;"	v	typeref:struct:notifier_block	file:
+sc1200wdt_notify_sys	main.c	/^static int sc1200wdt_notify_sys(struct notifier_block *this, unsigned long code, void *unused)$/;"	f	file:
+sc1200wdt_open	main.c	/^static int sc1200wdt_open(struct inode *inode, struct file *file)$/;"	f	file:
+sc1200wdt_probe	main.c	/^static int __init sc1200wdt_probe(void)$/;"	f	file:
+sc1200wdt_read_data	main.c	/^static inline void sc1200wdt_read_data(unsigned char index, unsigned char *data)$/;"	f	file:
+sc1200wdt_release	main.c	321;"	d	file:
+sc1200wdt_start	main.c	/^static void sc1200wdt_start(void)$/;"	f	file:
+sc1200wdt_status	main.c	/^static inline int sc1200wdt_status(void)$/;"	f	file:
+sc1200wdt_stop	main.c	/^static void sc1200wdt_stop(void)$/;"	f	file:
+sc1200wdt_stop	main.c	194;"	d	file:
+sc1200wdt_write	main.c	360;"	d	file:
+sc1200wdt_write_data	main.c	165;"	d	file:
+scl200wdt_pnp_devices	main.c	/^static struct pnp_device_id scl200wdt_pnp_devices[] = {$/;"	v	typeref:struct:pnp_device_id	file:
+scl200wdt_pnp_driver	main.c	/^static struct pnp_driver scl200wdt_pnp_driver = {$/;"	v	typeref:struct:pnp_driver	file:
+scl200wdt_pnp_probe	main.c	/^static int scl200wdt_pnp_probe(struct pnp_dev * dev, const struct pnp_device_id *dev_id)$/;"	f	file:
+scl200wdt_pnp_remove	main.c	/^static void scl200wdt_pnp_remove(struct pnp_dev * dev)$/;"	f	file:
+spin_lock	main.c	74;"	d	file:
+spin_unlock	main.c	81;"	d	file:
+time_before	main.c	72;"	d	file:
+timeout	main.c	/^int timeout = 1;$/;"	v
+udelay	main.c	97;"	d	file:
+up	main.c	108;"	d	file:
+wdt_dev	main.c	/^static struct pnp_dev *wdt_dev;$/;"	v	typeref:struct:pnp_dev	file:
+writer1	main.c	/^void *writer1(void *unused) {$/;"	f
+writer10	main.c	/^void *writer10(void *unused) {$/;"	f
+writer11	main.c	/^void *writer11(void *unused) {$/;"	f
+writer12	main.c	/^void *writer12(void *unused) {$/;"	f
+writer13	main.c	/^void *writer13(void *unused) {$/;"	f
+writer14	main.c	/^void *writer14(void *unused) {$/;"	f
+writer15	main.c	/^void *writer15(void *unused) {$/;"	f
+writer16	main.c	/^void *writer16(void *unused) {$/;"	f
+writer17	main.c	/^void *writer17(void *unused) {$/;"	f
+writer18	main.c	/^void *writer18(void *unused) {$/;"	f
+writer19	main.c	/^void *writer19(void *unused) {$/;"	f
+writer2	main.c	/^void *writer2(void *unused) {$/;"	f
+writer20	main.c	/^void *writer20(void *unused) {$/;"	f
+writer21	main.c	/^void *writer21(void *unused) {$/;"	f
+writer22	main.c	/^void *writer22(void *unused) {$/;"	f
+writer3	main.c	/^void *writer3(void *unused) {$/;"	f
+writer4	main.c	/^void *writer4(void *unused) {$/;"	f
+writer5	main.c	/^void *writer5(void *unused) {$/;"	f
+writer6	main.c	/^void *writer6(void *unused) {$/;"	f
+writer7	main.c	/^void *writer7(void *unused) {$/;"	f
+writer8	main.c	/^void *writer8(void *unused) {$/;"	f
+writer9	main.c	/^void *writer9(void *unused) {$/;"	f

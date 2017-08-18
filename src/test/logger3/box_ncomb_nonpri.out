@@ -1,0 +1,2970 @@
+[WARNING] Global which is neither Integer nor Float
+@__CPROVER_thread_priorities = constant [3 x i32] [i32 5, i32 2, i32 3], align 4
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@.str = private unnamed_addr constant [20 x i8] c"c::task_communicate\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@.str.1 = private unnamed_addr constant [17 x i8] c"c::task_measure1\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@.str.2 = private unnamed_addr constant [17 x i8] c"c::task_measure2\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__CPROVER_threads = global [3 x i8*] [i8* getelementptr inbounds ([20 x i8], [20 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([17 x i8], [17 x i8]* @.str.1, i32 0, i32 0), i8* getelementptr inbounds ([17 x i8], [17 x i8]* @.str.2, i32 0, i32 0)], align 16
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@.str.3 = private unnamed_addr constant [2 x i8] c"0\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@.str.4 = private unnamed_addr constant [7 x i8] c"main.c\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.task_measure1 = private unnamed_addr constant [28 x i8] c"void *task_measure1(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.task_measure2 = private unnamed_addr constant [28 x i8] c"void *task_measure2(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.task_measure3 = private unnamed_addr constant [28 x i8] c"void *task_measure3(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.task_communicate = private unnamed_addr constant [31 x i8] c"void *task_communicate(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@msgBuffer = common global [64 x i32] zeroinitializer, align 16
+It is not being monitored (there may be errors en route)
+Rules: (declare-fun dom ((_ BitVec 16) (_ BitVec 16)) Bool)
+(declare-fun postDom ((_ BitVec 16) (_ BitVec 16)) Bool)
+(declare-fun ld ((_ BitVec 16) (_ BitVec 16)) Bool)
+(declare-fun st ((_ BitVec 16) (_ BitVec 16)) Bool)
+(declare-rel st ((_ BitVec 16) (_ BitVec 16)))
+(declare-rel dom ((_ BitVec 16) (_ BitVec 16)))
+(declare-rel postDom ((_ BitVec 16) (_ BitVec 16)))
+(declare-rel ld ((_ BitVec 16) (_ BitVec 16)))
+(declare-var A (_ BitVec 16))
+(declare-var B (_ BitVec 16))
+(declare-var C (_ BitVec 16))
+(rule (=> (and (dom B C) (dom A B)) (dom A C)))
+(rule (=> (and (postDom B C) (postDom A B)) (postDom A C)))
+(rule (postDom #x003b #x0052))
+(rule (postDom #x0052 #x0055))
+(rule (dom #x0009 #x000a))
+(rule (postDom #x000a #x0009))
+(rule (dom #x000a #x000b))
+(rule (postDom #x000b #x000a))
+(rule (dom #x000b #x000c))
+(rule (postDom #x000c #x000b))
+(rule (ld #x0009 #x000d))
+(rule (ld #x000a #x000e))
+(rule (ld #x000b #x000d))
+(rule (postDom #x000f #x000c))
+(rule (dom #x000c #x0010))
+(rule (dom #x000c #x000f))
+(rule (dom #x0010 #x0011))
+(rule (postDom #x0011 #x0010))
+(rule (dom #x000f #x0012))
+(rule (postDom #x0012 #x000f))
+(rule (dom #x0012 #x0013))
+(rule (postDom #x0013 #x0012))
+(rule (dom #x0013 #x0014))
+(rule (postDom #x0014 #x0013))
+(rule (dom #x0014 #x0015))
+(rule (postDom #x0015 #x0014))
+(rule (dom #x0015 #x0016))
+(rule (postDom #x0016 #x0015))
+(rule (ld #x000f #x0017))
+(rule (st #x0012 #x0017))
+(rule (st #x0013 #x0018))
+(rule (ld #x0014 #x0019))
+(rule (st #x0015 #x0019))
+(rule (dom #x001a #x001b))
+(rule (postDom #x001b #x001a))
+(rule (dom #x001b #x001c))
+(rule (postDom #x001c #x001b))
+(rule (st #x001a #x000d))
+(rule (ld #x001b #x000d))
+(rule (postDom #x001d #x001c))
+(rule (dom #x001c #x001e))
+(rule (dom #x001c #x001d))
+(rule (dom #x001e #x001f))
+(rule (postDom #x001f #x001e))
+(rule (dom #x0020 #x0021))
+(rule (postDom #x0021 #x0020))
+(rule (dom #x0021 #x0022))
+(rule (postDom #x0022 #x0021))
+(rule (st #x0020 #x000d))
+(rule (ld #x0021 #x000d))
+(rule (postDom #x0023 #x0022))
+(rule (dom #x0022 #x0024))
+(rule (dom #x0022 #x0023))
+(rule (dom #x0024 #x0025))
+(rule (postDom #x0025 #x0024))
+(rule (dom #x0026 #x0027))
+(rule (postDom #x0027 #x0026))
+(rule (dom #x0027 #x0028))
+(rule (postDom #x0028 #x0027))
+(rule (dom #x0028 #x0029))
+(rule (postDom #x0029 #x0028))
+(rule (dom #x0029 #x002a))
+(rule (postDom #x002a #x0029))
+(rule (dom #x002a #x002b))
+(rule (postDom #x002b #x002a))
+(rule (dom #x002b #x002c))
+(rule (postDom #x002c #x002b))
+(rule (st #x0027 #x002d))
+(rule (st #x0029 #x002e))
+(rule (st #x002a #x002f))
+(rule (ld #x002b #x002d))
+(rule (dom #x002c #x0030))
+(rule (dom #x002c #x0031))
+(rule (dom #x002c #x0032))
+(rule (dom #x0032 #x0033))
+(rule (postDom #x0033 #x0032))
+(rule (ld #x0032 #x002d))
+(rule (dom #x0033 #x0034))
+(rule (dom #x0034 #x0035))
+(rule (postDom #x0035 #x0034))
+(rule (ld #x0034 #x002d))
+(rule (dom #x0035 #x0036))
+(rule (dom #x0036 #x0037))
+(rule (postDom #x0037 #x0036))
+(rule (ld #x0036 #x002d))
+(rule (dom #x0030 #x0038))
+(rule (postDom #x0038 #x0030))
+(rule (st #x0030 #x002f))
+(rule (dom #x0031 #x0039))
+(rule (postDom #x0039 #x0031))
+(rule (ld #x0031 #x002e))
+(rule (dom #x0039 #x003a))
+(rule (dom #x0039 #x003b))
+(rule (postDom #x0031 #x0038))
+(rule (postDom #x0031 #x0037))
+(rule (postDom #x0031 #x0035))
+(rule (postDom #x0031 #x0033))
+(rule (postDom #x0031 #x002c))
+(rule (dom #x003a #x003c))
+(rule (postDom #x003c #x003a))
+(rule (ld #x003a #x002d))
+(rule (dom #x003c #x003d))
+(rule (dom #x003c #x003e))
+(rule (dom #x003d #x003f))
+(rule (postDom #x003f #x003d))
+(rule (ld #x003d #x0040))
+(rule (dom #x003f #x0041))
+(rule (dom #x003f #x0042))
+(rule (dom #x003f #x0043))
+(rule (dom #x0041 #x0044))
+(rule (postDom #x0044 #x0041))
+(rule (st #x0041 #x002e))
+(rule (dom #x0043 #x0045))
+(rule (postDom #x0045 #x0043))
+(rule (st #x0043 #x0040))
+(rule (dom #x0042 #x0046))
+(rule (postDom #x0046 #x0042))
+(rule (st #x0042 #x0047))
+(rule (postDom #x0042 #x0045))
+(rule (postDom #x0042 #x003f))
+(rule (postDom #x0042 #x0044))
+(rule (dom #x003e #x0048))
+(rule (postDom #x0048 #x003e))
+(rule (ld #x003e #x002d))
+(rule (dom #x0048 #x0049))
+(rule (dom #x0048 #x004a))
+(rule (postDom #x003e #x0046))
+(rule (postDom #x003e #x003c))
+(rule (dom #x0049 #x004b))
+(rule (postDom #x004b #x0049))
+(rule (st #x0049 #x0047))
+(rule (dom #x004a #x004c))
+(rule (postDom #x004c #x004a))
+(rule (ld #x004a #x002d))
+(rule (dom #x004c #x004d))
+(rule (dom #x004c #x004e))
+(rule (postDom #x004a #x004b))
+(rule (postDom #x004a #x0048))
+(rule (dom #x004d #x004f))
+(rule (postDom #x004f #x004d))
+(rule (st #x004d #x0047))
+(rule (dom #x004e #x0050))
+(rule (postDom #x0050 #x004e))
+(rule (ld #x004e #x002d))
+(rule (dom #x0050 #x0051))
+(rule (dom #x0050 #x0052))
+(rule (postDom #x004e #x004f))
+(rule (postDom #x004e #x004c))
+(rule (dom #x0051 #x0053))
+(rule (postDom #x0053 #x0051))
+(rule (ld #x0051 #x0040))
+(rule (dom #x0053 #x0054))
+(rule (dom #x0053 #x0055))
+(rule (dom #x0053 #x0056))
+(rule (dom #x0054 #x0057))
+(rule (postDom #x0057 #x0054))
+(rule (st #x0054 #x002e))
+(rule (dom #x0056 #x0058))
+(rule (postDom #x0058 #x0056))
+(rule (ld #x0056 #x0019))
+(rule (dom #x0058 #x0059))
+(rule (dom #x0058 #x005a))
+(rule (dom #x0059 #x005b))
+(rule (postDom #x005b #x0059))
+(rule (st #x0059 #x0040))
+(rule (dom #x005a #x005c))
+(rule (postDom #x005c #x005a))
+(rule (dom #x005c #x005d))
+(rule (postDom #x005d #x005c))
+(rule (dom #x005d #x005e))
+(rule (postDom #x005e #x005d))
+(rule (dom #x005e #x005f))
+(rule (postDom #x005f #x005e))
+(rule (dom #x005f #x0060))
+(rule (postDom #x0060 #x005f))
+(rule (dom #x0060 #x0061))
+(rule (postDom #x0061 #x0060))
+(rule (dom #x0061 #x0062))
+(rule (postDom #x0062 #x0061))
+(rule (st #x005a #x0017))
+(rule (st #x005c #x000d))
+(rule (st #x005d #x0019))
+(rule (st #x005e #x0063))
+(rule (st #x005f #x000e))
+(rule (st #x0060 #x0040))
+(rule (ld #x0061 #x0019))
+(rule (postDom #x0064 #x0062))
+(rule (dom #x0062 #x0065))
+(rule (dom #x0062 #x0064))
+(rule (postDom #x005a #x005b))
+(rule (postDom #x005a #x0058))
+(rule (dom #x0065 #x0066))
+(rule (postDom #x0066 #x0065))
+(rule (dom #x0064 #x0067))
+(rule (postDom #x0067 #x0064))
+(rule (st #x0064 #x0047))
+(rule (postDom #x0055 #x0067))
+(rule (postDom #x0055 #x0057))
+
+[WARNING] Initializing unhandled global type: @__CPROVER_thread_priorities = constant [3 x i32] [i32 5, i32 2, i32 3], align 4
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @.str = private unnamed_addr constant [20 x i8] c"c::task_communicate\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @.str.1 = private unnamed_addr constant [17 x i8] c"c::task_measure1\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @.str.2 = private unnamed_addr constant [17 x i8] c"c::task_measure2\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__CPROVER_threads = global [3 x i8*] [i8* getelementptr inbounds ([20 x i8], [20 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([17 x i8], [17 x i8]* @.str.1, i32 0, i32 0), i8* getelementptr inbounds ([17 x i8], [17 x i8]* @.str.2, i32 0, i32 0)], align 16
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @.str.3 = private unnamed_addr constant [2 x i8] c"0\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @.str.4 = private unnamed_addr constant [7 x i8] c"main.c\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.task_measure1 = private unnamed_addr constant [28 x i8] c"void *task_measure1(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.task_measure2 = private unnamed_addr constant [28 x i8] c"void *task_measure2(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.task_measure3 = private unnamed_addr constant [28 x i8] c"void *task_measure3(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.task_communicate = private unnamed_addr constant [31 x i8] c"void *task_communicate(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @msgBuffer = common global [64 x i32] zeroinitializer, align 16
+Setting to default initial value
+Interference Iteration: 1
+Analyzing thread: 0
+Analyzing thread: 1
+Analyzing thread: 2
+Analyzing thread: 3
+Analyzing thread: 4
+Interference Iteration: 2
+Analyzing thread: 0
+Analyzing thread: 1
+Analyzing thread: 2
+Analyzing thread: 3
+Analyzing thread: 4
+Interference Iteration: 3
+Analyzing thread: 0
+Analyzing thread: 1
+Analyzing thread: 2
+Analyzing thread: 3
+Analyzing thread: 4
+v74: %union.pthread_attr_t* %1
+v11:   %0 = load i32, i32* @tickCounter, align 4
+v12:   %cmp = icmp ne i32 %0, 0
+v71: i8* %unused
+v48: @systemState = common global i32 0, align 4
+v49: @numberOfRecords = common global i32 0, align 4
+v50: @intervalCounter = common global i32 0, align 4
+v51: @tickCounter = common global i32 0, align 4
+v52: @startTime = common global i32 0, align 4
+v53: @interval = common global i32 0, align 4
+v61: @cnt3 = common global i32 0, align 4
+v62: @cnt4 = common global i32 0, align 4
+v63: i32 %_startTime
+v54: @records = common global i32 0, align 4
+v55: @cmd = common global i32 0, align 4
+v56: @rspStatus = common global i32 0, align 4
+v57: @decodingStatus = common global i32 0, align 4
+v58: @sendit = common global i32 0, align 4
+v59: @cnt1 = common global i32 0, align 4
+v60: @cnt2 = common global i32 0, align 4
+v64: i32 %_interval
+v0:   %0 = load i32, i32* @numberOfRecords, align 4
+v1:   %add = add nsw i32 %0, 1
+v2:   %cmp = icmp sge i32 %add, 64
+v67: i8* %1
+v65: i8* %unused
+v3:   %0 = load i32, i32* @tickCounter, align 4
+v4:   %1 = load i32, i32* @interval, align 4
+v5:   %2 = load i32, i32* @tickCounter, align 4
+v6:   %cmp = icmp ne i32 %2, 0
+v66: i8* %0
+v7:   %3 = load i32, i32* @intervalCounter, align 4
+v8:   %inc = add nsw i32 %3, 1
+v9:   %4 = load i32, i32* @numberOfRecords, align 4
+v10:   %inc1 = add nsw i32 %4, 1
+v68: i32 %2
+v69: i8* %3
+v70: i8* %unused
+v39:   %10 = load i32, i32* @systemState, align 4
+v40:   %cmp25 = icmp ne i32 %10, 0
+v41:   %11 = load i32, i32* @numberOfRecords, align 4
+v42:   %add28 = add nsw i32 %11, 1
+v43:   %cmp29 = icmp sge i32 %add28, 64
+v13:   %0 = load i32, i32* @tickCounter, align 4
+v14:   %cmp = icmp ne i32 %0, 0
+v72: i8* %unused
+v15:   %rem = srem i32 %call, 4
+v16:   %add = add nsw i32 %rem, 1
+v17:   %rem2 = srem i32 %call1, 2
+v18:   %add3 = add nsw i32 %rem2, 1
+v19:   %0 = load i32, i32* @cmd, align 4
+v20:   %cmp = icmp eq i32 %0, 2
+v21:   %1 = load i32, i32* @cmd, align 4
+v22:   %cmp4 = icmp eq i32 %1, 3
+v23:   %2 = load i32, i32* @cmd, align 4
+v24:   %cmp6 = icmp eq i32 %2, 4
+v25:   %3 = load i32, i32* @cmd, align 4
+v26:   %cmp8 = icmp eq i32 %3, 1
+v27:   %4 = load i32, i32* @rspStatus, align 4
+v28:   %cmp9 = icmp eq i32 %4, 1
+v29:   %5 = load i32, i32* @cmd, align 4
+v30:   %cmp11 = icmp eq i32 %5, 2
+v31:   %6 = load i32, i32* @systemState, align 4
+v32:   %cmp13 = icmp ne i32 %6, 1
+v33:   %7 = load i32, i32* @cmd, align 4
+v34:   %cmp17 = icmp eq i32 %7, 3
+v35:   %8 = load i32, i32* @cmd, align 4
+v36:   %cmp20 = icmp eq i32 %8, 4
+v37:   %9 = load i32, i32* @cmd, align 4
+v38:   %cmp23 = icmp eq i32 %9, 0
+v44:   %12 = load i32, i32* @numberOfRecords, align 4
+v45:   %cmp32 = icmp ne i32 %12, 0
+v73: i64* %0
+v46:   %t1 = alloca i64, align 8
+v47:   %t2 = alloca i64, align 8
+v75: i8* (i8*)* %2
+v76: i8* %3
+==== task_measure1() Results ====
+BasicBlock: 
+entry:
+  %0 = load i32, i32* @tickCounter, align 4
+  %1 = load i32, i32* @interval, align 4
+  %2 = load i32, i32* @tickCounter, align 4
+  %cmp = icmp ne i32 %2, 0
+  br i1 %cmp, label %if.then, label %if.end
+Facts: interval of dim (77,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [-oo,+oo]
+     v40 in [-oo,+oo]
+     v41 in [-oo,+oo]
+     v42 in [-oo,+oo]
+     v43 in [-oo,+oo]
+     v44 in [-oo,+oo]
+     v45 in [-oo,+oo]
+     v46 in [-oo,+oo]
+     v47 in [-oo,+oo]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [0,0]
+     v56 in [0,0]
+     v57 in [0,0]
+     v58 in [0,0]
+     v59 in [0,0]
+      v6 in [-oo,+oo]
+     v60 in [0,0]
+     v61 in [0,0]
+     v62 in [0,0]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+     v68 in [-oo,+oo]
+     v69 in [-oo,+oo]
+      v7 in [-oo,+oo]
+     v70 in [-oo,+oo]
+     v71 in [-oo,+oo]
+     v72 in [-oo,+oo]
+     v73 in [-oo,+oo]
+     v74 in [-oo,+oo]
+     v75 in [-oo,+oo]
+     v76 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.then:                                          ; preds = %entry
+  call void @__assert_fail(i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.3, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.4, i32 0, i32 0), i32 83, i8* getelementptr inbounds ([28 x i8], [28 x i8]* @__PRETTY_FUNCTION__.task_measure1, i32 0, i32 0)) #3
+  unreachable
+Facts: interval of dim (77,0): bottom
+
+BasicBlock: 
+if.end:                                           ; preds = %entry
+  %3 = load i32, i32* @intervalCounter, align 4
+  %inc = add nsw i32 %3, 1
+  store i32 %inc, i32* @intervalCounter, align 4
+  store i32 1, i32* @records, align 4
+  %4 = load i32, i32* @numberOfRecords, align 4
+  %inc1 = add nsw i32 %4, 1
+  store i32 %inc1, i32* @numberOfRecords, align 4
+  ret i8* undef
+Facts: interval of dim (77,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [0,0]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [0,1]
+     v40 in [-oo,+oo]
+     v41 in [-oo,+oo]
+     v42 in [-oo,+oo]
+     v43 in [-oo,+oo]
+     v44 in [-oo,+oo]
+     v45 in [-oo,+oo]
+     v46 in [-oo,+oo]
+     v47 in [-oo,+oo]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [0,0]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,1]
+     v54 in [0,0]
+     v55 in [0,0]
+     v56 in [0,0]
+     v57 in [0,0]
+     v58 in [0,0]
+     v59 in [0,0]
+      v6 in [0,0]
+     v60 in [0,0]
+     v61 in [0,0]
+     v62 in [0,0]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+     v68 in [-oo,+oo]
+     v69 in [-oo,+oo]
+      v7 in [-oo,+oo]
+     v70 in [-oo,+oo]
+     v71 in [-oo,+oo]
+     v72 in [-oo,+oo]
+     v73 in [-oo,+oo]
+     v74 in [-oo,+oo]
+     v75 in [-oo,+oo]
+     v76 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+======================
+==== task_measure2() Results ====
+BasicBlock: 
+entry:
+  store i32 0, i32* @tickCounter, align 4
+  %0 = load i32, i32* @tickCounter, align 4
+  %cmp = icmp ne i32 %0, 0
+  br i1 %cmp, label %if.then, label %if.end
+Facts: interval of dim (77,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [-oo,+oo]
+     v40 in [-oo,+oo]
+     v41 in [-oo,+oo]
+     v42 in [-oo,+oo]
+     v43 in [-oo,+oo]
+     v44 in [-oo,+oo]
+     v45 in [-oo,+oo]
+     v46 in [-oo,+oo]
+     v47 in [-oo,+oo]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [0,0]
+     v56 in [0,0]
+     v57 in [0,0]
+     v58 in [0,0]
+     v59 in [0,0]
+      v6 in [-oo,+oo]
+     v60 in [0,0]
+     v61 in [0,0]
+     v62 in [0,0]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+     v68 in [-oo,+oo]
+     v69 in [-oo,+oo]
+      v7 in [-oo,+oo]
+     v70 in [-oo,+oo]
+     v71 in [-oo,+oo]
+     v72 in [-oo,+oo]
+     v73 in [-oo,+oo]
+     v74 in [-oo,+oo]
+     v75 in [-oo,+oo]
+     v76 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.then:                                          ; preds = %entry
+  call void @__assert_fail(i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.3, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.4, i32 0, i32 0), i32 100, i8* getelementptr inbounds ([28 x i8], [28 x i8]* @__PRETTY_FUNCTION__.task_measure2, i32 0, i32 0)) #3
+  unreachable
+Facts: interval of dim (77,0): bottom
+
+BasicBlock: 
+if.end:                                           ; preds = %entry
+  ret i8* undef
+Facts: interval of dim (77,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [0,0]
+     v12 in [0,0]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [-oo,+oo]
+     v40 in [-oo,+oo]
+     v41 in [-oo,+oo]
+     v42 in [-oo,+oo]
+     v43 in [-oo,+oo]
+     v44 in [-oo,+oo]
+     v45 in [-oo,+oo]
+     v46 in [-oo,+oo]
+     v47 in [-oo,+oo]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [0,0]
+     v56 in [0,0]
+     v57 in [0,0]
+     v58 in [0,0]
+     v59 in [0,0]
+      v6 in [-oo,+oo]
+     v60 in [0,0]
+     v61 in [0,0]
+     v62 in [0,0]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+     v68 in [-oo,+oo]
+     v69 in [-oo,+oo]
+      v7 in [-oo,+oo]
+     v70 in [-oo,+oo]
+     v71 in [-oo,+oo]
+     v72 in [-oo,+oo]
+     v73 in [-oo,+oo]
+     v74 in [-oo,+oo]
+     v75 in [-oo,+oo]
+     v76 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+======================
+==== task_measure3() Results ====
+BasicBlock: 
+entry:
+  store i32 0, i32* @tickCounter, align 4
+  %0 = load i32, i32* @tickCounter, align 4
+  %cmp = icmp ne i32 %0, 0
+  br i1 %cmp, label %if.then, label %if.end
+Facts: interval of dim (77,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [-oo,+oo]
+     v40 in [-oo,+oo]
+     v41 in [-oo,+oo]
+     v42 in [-oo,+oo]
+     v43 in [-oo,+oo]
+     v44 in [-oo,+oo]
+     v45 in [-oo,+oo]
+     v46 in [-oo,+oo]
+     v47 in [-oo,+oo]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [0,0]
+     v56 in [0,0]
+     v57 in [0,0]
+     v58 in [0,0]
+     v59 in [0,0]
+      v6 in [-oo,+oo]
+     v60 in [0,0]
+     v61 in [0,0]
+     v62 in [0,0]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+     v68 in [-oo,+oo]
+     v69 in [-oo,+oo]
+      v7 in [-oo,+oo]
+     v70 in [-oo,+oo]
+     v71 in [-oo,+oo]
+     v72 in [-oo,+oo]
+     v73 in [-oo,+oo]
+     v74 in [-oo,+oo]
+     v75 in [-oo,+oo]
+     v76 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.then:                                          ; preds = %entry
+  call void @__assert_fail(i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.3, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.4, i32 0, i32 0), i32 113, i8* getelementptr inbounds ([28 x i8], [28 x i8]* @__PRETTY_FUNCTION__.task_measure3, i32 0, i32 0)) #3
+  unreachable
+Facts: interval of dim (77,0): bottom
+
+BasicBlock: 
+if.end:                                           ; preds = %entry
+  ret i8* undef
+Facts: interval of dim (77,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [0,0]
+     v14 in [0,0]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [-oo,+oo]
+     v40 in [-oo,+oo]
+     v41 in [-oo,+oo]
+     v42 in [-oo,+oo]
+     v43 in [-oo,+oo]
+     v44 in [-oo,+oo]
+     v45 in [-oo,+oo]
+     v46 in [-oo,+oo]
+     v47 in [-oo,+oo]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [0,0]
+     v56 in [0,0]
+     v57 in [0,0]
+     v58 in [0,0]
+     v59 in [0,0]
+      v6 in [-oo,+oo]
+     v60 in [0,0]
+     v61 in [0,0]
+     v62 in [0,0]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+     v68 in [-oo,+oo]
+     v69 in [-oo,+oo]
+      v7 in [-oo,+oo]
+     v70 in [-oo,+oo]
+     v71 in [-oo,+oo]
+     v72 in [-oo,+oo]
+     v73 in [-oo,+oo]
+     v74 in [-oo,+oo]
+     v75 in [-oo,+oo]
+     v76 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+======================
+==== task_communicate() Results ====
+BasicBlock: 
+if.then26:                                        ; preds = %if.then24
+  store i32 0, i32* @rspStatus, align 4
+  br label %if.end35
+Facts: interval of dim (77,0): bottom
+
+BasicBlock: 
+if.else27:                                        ; preds = %if.then24
+  %11 = load i32, i32* @numberOfRecords, align 4
+  %add28 = add nsw i32 %11, 1
+  %cmp29 = icmp sge i32 %add28, 64
+  br i1 %cmp29, label %if.then30, label %if.end31
+Facts: interval of dim (77,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-4294967295,4294967295]
+     v17 in [-oo,+oo]
+     v18 in [-4294967295,4294967295]
+     v19 in [-4294967295,4294967295]
+      v2 in [-oo,+oo]
+     v20 in [0,1]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [1,1]
+     v28 in [1,1]
+     v29 in [-4294967295,4294967295]
+      v3 in [-oo,+oo]
+     v30 in [0,1]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-4294967295,4294967295]
+     v34 in [0,1]
+     v35 in [-4294967295,4294967295]
+     v36 in [0,1]
+     v37 in [0,0]
+     v38 in [1,1]
+     v39 in [0,0]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [-oo,+oo]
+     v42 in [-oo,+oo]
+     v43 in [-oo,+oo]
+     v44 in [-oo,+oo]
+     v45 in [-oo,+oo]
+     v46 in [-oo,+oo]
+     v47 in [-oo,+oo]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [-4294967295,4294967295]
+     v56 in [-4294967295,4294967295]
+     v57 in [0,1]
+     v58 in [0,1]
+     v59 in [0,0]
+      v6 in [-oo,+oo]
+     v60 in [0,0]
+     v61 in [0,0]
+     v62 in [0,0]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+     v68 in [-oo,+oo]
+     v69 in [-oo,+oo]
+      v7 in [-oo,+oo]
+     v70 in [-oo,+oo]
+     v71 in [-oo,+oo]
+     v72 in [-oo,+oo]
+     v73 in [-oo,+oo]
+     v74 in [-oo,+oo]
+     v75 in [-oo,+oo]
+     v76 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.end35:                                         ; preds = %if.end34, %if.then26
+  br label %if.end36
+Facts: interval of dim (77,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-4294967295,4294967295]
+     v17 in [-oo,+oo]
+     v18 in [-4294967295,4294967295]
+     v19 in [-4294967295,4294967295]
+      v2 in [-oo,+oo]
+     v20 in [0,1]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [1,1]
+     v28 in [1,1]
+     v29 in [-4294967295,4294967295]
+      v3 in [-oo,+oo]
+     v30 in [0,1]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-4294967295,4294967295]
+     v34 in [0,1]
+     v35 in [-4294967295,4294967295]
+     v36 in [0,1]
+     v37 in [0,0]
+     v38 in [1,1]
+     v39 in [0,0]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,1]
+     v42 in [1,2]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [-oo,+oo]
+     v47 in [-oo,+oo]
+     v48 in [1,1]
+     v49 in [0,1]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [1,1]
+     v53 in [1,1]
+     v54 in [0,0]
+     v55 in [-4294967295,4294967295]
+     v56 in [-4294967295,4294967295]
+     v57 in [0,1]
+     v58 in [1,1]
+     v59 in [0,0]
+      v6 in [-oo,+oo]
+     v60 in [0,0]
+     v61 in [0,0]
+     v62 in [0,0]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+     v68 in [-oo,+oo]
+     v69 in [-oo,+oo]
+      v7 in [-oo,+oo]
+     v70 in [-oo,+oo]
+     v71 in [-oo,+oo]
+     v72 in [-oo,+oo]
+     v73 in [-oo,+oo]
+     v74 in [-oo,+oo]
+     v75 in [-oo,+oo]
+     v76 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.then30:                                        ; preds = %if.else27
+  store i32 0, i32* @systemState, align 4
+  br label %if.end31
+Facts: interval of dim (77,0): bottom
+
+BasicBlock: 
+if.end31:                                         ; preds = %if.then30, %if.else27
+  store i32 0, i32* @intervalCounter, align 4
+  store i32 0, i32* @tickCounter, align 4
+  store i32 0, i32* @numberOfRecords, align 4
+  store i32 1, i32* @startTime, align 4
+  store i32 1, i32* @interval, align 4
+  store i32 1, i32* @systemState, align 4
+  %12 = load i32, i32* @numberOfRecords, align 4
+  %cmp32 = icmp ne i32 %12, 0
+  br i1 %cmp32, label %if.then33, label %if.end34
+Facts: interval of dim (77,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-4294967295,4294967295]
+     v17 in [-oo,+oo]
+     v18 in [-4294967295,4294967295]
+     v19 in [-4294967295,4294967295]
+      v2 in [-oo,+oo]
+     v20 in [0,1]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [1,1]
+     v28 in [1,1]
+     v29 in [-4294967295,4294967295]
+      v3 in [-oo,+oo]
+     v30 in [0,1]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-4294967295,4294967295]
+     v34 in [0,1]
+     v35 in [-4294967295,4294967295]
+     v36 in [0,1]
+     v37 in [0,0]
+     v38 in [1,1]
+     v39 in [0,0]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,1]
+     v42 in [1,2]
+     v43 in [0,0]
+     v44 in [-oo,+oo]
+     v45 in [-oo,+oo]
+     v46 in [-oo,+oo]
+     v47 in [-oo,+oo]
+     v48 in [0,0]
+     v49 in [0,1]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [-4294967295,4294967295]
+     v56 in [-4294967295,4294967295]
+     v57 in [0,1]
+     v58 in [0,1]
+     v59 in [0,0]
+      v6 in [-oo,+oo]
+     v60 in [0,0]
+     v61 in [0,0]
+     v62 in [0,0]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+     v68 in [-oo,+oo]
+     v69 in [-oo,+oo]
+      v7 in [-oo,+oo]
+     v70 in [-oo,+oo]
+     v71 in [-oo,+oo]
+     v72 in [-oo,+oo]
+     v73 in [-oo,+oo]
+     v74 in [-oo,+oo]
+     v75 in [-oo,+oo]
+     v76 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+entry:
+  %call = call i32 @rand() #3
+  %rem = srem i32 %call, 4
+  %add = add nsw i32 %rem, 1
+  store i32 %add, i32* @cmd, align 4
+  %call1 = call i32 @rand() #3
+  %rem2 = srem i32 %call1, 2
+  %add3 = add nsw i32 %rem2, 1
+  store i32 %add3, i32* @rspStatus, align 4
+  store i32 0, i32* @decodingStatus, align 4
+  %0 = load i32, i32* @cmd, align 4
+  %cmp = icmp eq i32 %0, 2
+  br i1 %cmp, label %if.then, label %lor.lhs.false
+Facts: interval of dim (77,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [-oo,+oo]
+     v40 in [-oo,+oo]
+     v41 in [-oo,+oo]
+     v42 in [-oo,+oo]
+     v43 in [-oo,+oo]
+     v44 in [-oo,+oo]
+     v45 in [-oo,+oo]
+     v46 in [-oo,+oo]
+     v47 in [-oo,+oo]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [0,0]
+     v56 in [0,0]
+     v57 in [0,0]
+     v58 in [0,0]
+     v59 in [0,0]
+      v6 in [-oo,+oo]
+     v60 in [0,0]
+     v61 in [0,0]
+     v62 in [0,0]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+     v68 in [-oo,+oo]
+     v69 in [-oo,+oo]
+      v7 in [-oo,+oo]
+     v70 in [-oo,+oo]
+     v71 in [-oo,+oo]
+     v72 in [-oo,+oo]
+     v73 in [-oo,+oo]
+     v74 in [-oo,+oo]
+     v75 in [-oo,+oo]
+     v76 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.then:                                          ; preds = %lor.lhs.false7, %lor.lhs.false5, %lor.lhs.false, %entry
+  store i32 1, i32* @decodingStatus, align 4
+  br label %if.end
+Facts: interval of dim (77,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-4294967295,4294967295]
+     v17 in [-oo,+oo]
+     v18 in [-4294967295,4294967295]
+     v19 in [-4294967295,4294967295]
+      v2 in [-oo,+oo]
+     v20 in [0,0]
+     v21 in [-4294967295,4294967295]
+     v22 in [0,0]
+     v23 in [-4294967295,4294967295]
+     v24 in [0,0]
+     v25 in [1,1]
+     v26 in [1,1]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [-oo,+oo]
+     v40 in [-oo,+oo]
+     v41 in [-oo,+oo]
+     v42 in [-oo,+oo]
+     v43 in [-oo,+oo]
+     v44 in [-oo,+oo]
+     v45 in [-oo,+oo]
+     v46 in [-oo,+oo]
+     v47 in [-oo,+oo]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [-4294967295,4294967295]
+     v56 in [-4294967295,4294967295]
+     v57 in [0,0]
+     v58 in [0,0]
+     v59 in [0,0]
+      v6 in [-oo,+oo]
+     v60 in [0,0]
+     v61 in [0,0]
+     v62 in [0,0]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+     v68 in [-oo,+oo]
+     v69 in [-oo,+oo]
+      v7 in [-oo,+oo]
+     v70 in [-oo,+oo]
+     v71 in [-oo,+oo]
+     v72 in [-oo,+oo]
+     v73 in [-oo,+oo]
+     v74 in [-oo,+oo]
+     v75 in [-oo,+oo]
+     v76 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+lor.lhs.false:                                    ; preds = %entry
+  %1 = load i32, i32* @cmd, align 4
+  %cmp4 = icmp eq i32 %1, 3
+  br i1 %cmp4, label %if.then, label %lor.lhs.false5
+Facts: interval of dim (77,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-4294967295,4294967295]
+     v17 in [-oo,+oo]
+     v18 in [-4294967295,4294967295]
+     v19 in [-4294967295,4294967295]
+      v2 in [-oo,+oo]
+     v20 in [0,0]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [-oo,+oo]
+     v40 in [-oo,+oo]
+     v41 in [-oo,+oo]
+     v42 in [-oo,+oo]
+     v43 in [-oo,+oo]
+     v44 in [-oo,+oo]
+     v45 in [-oo,+oo]
+     v46 in [-oo,+oo]
+     v47 in [-oo,+oo]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [-4294967295,4294967295]
+     v56 in [-4294967295,4294967295]
+     v57 in [0,0]
+     v58 in [0,0]
+     v59 in [0,0]
+      v6 in [-oo,+oo]
+     v60 in [0,0]
+     v61 in [0,0]
+     v62 in [0,0]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+     v68 in [-oo,+oo]
+     v69 in [-oo,+oo]
+      v7 in [-oo,+oo]
+     v70 in [-oo,+oo]
+     v71 in [-oo,+oo]
+     v72 in [-oo,+oo]
+     v73 in [-oo,+oo]
+     v74 in [-oo,+oo]
+     v75 in [-oo,+oo]
+     v76 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+lor.lhs.false5:                                   ; preds = %lor.lhs.false
+  %2 = load i32, i32* @cmd, align 4
+  %cmp6 = icmp eq i32 %2, 4
+  br i1 %cmp6, label %if.then, label %lor.lhs.false7
+Facts: interval of dim (77,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-4294967295,4294967295]
+     v17 in [-oo,+oo]
+     v18 in [-4294967295,4294967295]
+     v19 in [-4294967295,4294967295]
+      v2 in [-oo,+oo]
+     v20 in [0,0]
+     v21 in [-4294967295,4294967295]
+     v22 in [0,0]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [-oo,+oo]
+     v40 in [-oo,+oo]
+     v41 in [-oo,+oo]
+     v42 in [-oo,+oo]
+     v43 in [-oo,+oo]
+     v44 in [-oo,+oo]
+     v45 in [-oo,+oo]
+     v46 in [-oo,+oo]
+     v47 in [-oo,+oo]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [-4294967295,4294967295]
+     v56 in [-4294967295,4294967295]
+     v57 in [0,0]
+     v58 in [0,0]
+     v59 in [0,0]
+      v6 in [-oo,+oo]
+     v60 in [0,0]
+     v61 in [0,0]
+     v62 in [0,0]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+     v68 in [-oo,+oo]
+     v69 in [-oo,+oo]
+      v7 in [-oo,+oo]
+     v70 in [-oo,+oo]
+     v71 in [-oo,+oo]
+     v72 in [-oo,+oo]
+     v73 in [-oo,+oo]
+     v74 in [-oo,+oo]
+     v75 in [-oo,+oo]
+     v76 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.else:                                          ; preds = %if.then12
+  store i32 0, i32* @systemState, align 4
+  br label %if.end15
+Facts: interval of dim (77,0): bottom
+
+BasicBlock: 
+lor.lhs.false7:                                   ; preds = %lor.lhs.false5
+  %3 = load i32, i32* @cmd, align 4
+  %cmp8 = icmp eq i32 %3, 1
+  br i1 %cmp8, label %if.then, label %if.end
+Facts: interval of dim (77,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-4294967295,4294967295]
+     v17 in [-oo,+oo]
+     v18 in [-4294967295,4294967295]
+     v19 in [-4294967295,4294967295]
+      v2 in [-oo,+oo]
+     v20 in [0,0]
+     v21 in [-4294967295,4294967295]
+     v22 in [0,0]
+     v23 in [-4294967295,4294967295]
+     v24 in [0,0]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [-oo,+oo]
+     v40 in [-oo,+oo]
+     v41 in [-oo,+oo]
+     v42 in [-oo,+oo]
+     v43 in [-oo,+oo]
+     v44 in [-oo,+oo]
+     v45 in [-oo,+oo]
+     v46 in [-oo,+oo]
+     v47 in [-oo,+oo]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [-4294967295,4294967295]
+     v56 in [-4294967295,4294967295]
+     v57 in [0,0]
+     v58 in [0,0]
+     v59 in [0,0]
+      v6 in [-oo,+oo]
+     v60 in [0,0]
+     v61 in [0,0]
+     v62 in [0,0]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+     v68 in [-oo,+oo]
+     v69 in [-oo,+oo]
+      v7 in [-oo,+oo]
+     v70 in [-oo,+oo]
+     v71 in [-oo,+oo]
+     v72 in [-oo,+oo]
+     v73 in [-oo,+oo]
+     v74 in [-oo,+oo]
+     v75 in [-oo,+oo]
+     v76 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.end:                                           ; preds = %if.then, %lor.lhs.false7
+  %4 = load i32, i32* @rspStatus, align 4
+  %cmp9 = icmp eq i32 %4, 1
+  br i1 %cmp9, label %if.then10, label %if.end37
+Facts: interval of dim (77,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-4294967295,4294967295]
+     v17 in [-oo,+oo]
+     v18 in [-4294967295,4294967295]
+     v19 in [-4294967295,4294967295]
+      v2 in [-oo,+oo]
+     v20 in [0,1]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [-oo,+oo]
+     v40 in [-oo,+oo]
+     v41 in [-oo,+oo]
+     v42 in [-oo,+oo]
+     v43 in [-oo,+oo]
+     v44 in [-oo,+oo]
+     v45 in [-oo,+oo]
+     v46 in [-oo,+oo]
+     v47 in [-oo,+oo]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [-4294967295,4294967295]
+     v56 in [-4294967295,4294967295]
+     v57 in [0,1]
+     v58 in [0,0]
+     v59 in [0,0]
+      v6 in [-oo,+oo]
+     v60 in [0,0]
+     v61 in [0,0]
+     v62 in [0,0]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+     v68 in [-oo,+oo]
+     v69 in [-oo,+oo]
+      v7 in [-oo,+oo]
+     v70 in [-oo,+oo]
+     v71 in [-oo,+oo]
+     v72 in [-oo,+oo]
+     v73 in [-oo,+oo]
+     v74 in [-oo,+oo]
+     v75 in [-oo,+oo]
+     v76 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.then21:                                        ; preds = %if.end19
+  store i32 1, i32* @sendit, align 4
+  br label %if.end22
+Facts: interval of dim (77,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-4294967295,4294967295]
+     v17 in [-oo,+oo]
+     v18 in [-4294967295,4294967295]
+     v19 in [-4294967295,4294967295]
+      v2 in [-oo,+oo]
+     v20 in [0,1]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [1,1]
+     v28 in [1,1]
+     v29 in [-4294967295,4294967295]
+      v3 in [-oo,+oo]
+     v30 in [0,1]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-4294967295,4294967295]
+     v34 in [0,1]
+     v35 in [4,4]
+     v36 in [1,1]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [-oo,+oo]
+     v40 in [-oo,+oo]
+     v41 in [-oo,+oo]
+     v42 in [-oo,+oo]
+     v43 in [-oo,+oo]
+     v44 in [-oo,+oo]
+     v45 in [-oo,+oo]
+     v46 in [-oo,+oo]
+     v47 in [-oo,+oo]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [-4294967295,4294967295]
+     v56 in [-4294967295,4294967295]
+     v57 in [0,1]
+     v58 in [0,1]
+     v59 in [0,0]
+      v6 in [-oo,+oo]
+     v60 in [0,0]
+     v61 in [0,0]
+     v62 in [0,0]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+     v68 in [-oo,+oo]
+     v69 in [-oo,+oo]
+      v7 in [-oo,+oo]
+     v70 in [-oo,+oo]
+     v71 in [-oo,+oo]
+     v72 in [-oo,+oo]
+     v73 in [-oo,+oo]
+     v74 in [-oo,+oo]
+     v75 in [-oo,+oo]
+     v76 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.then10:                                        ; preds = %if.end
+  %5 = load i32, i32* @cmd, align 4
+  %cmp11 = icmp eq i32 %5, 2
+  br i1 %cmp11, label %if.then12, label %if.end16
+Facts: interval of dim (77,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-4294967295,4294967295]
+     v17 in [-oo,+oo]
+     v18 in [-4294967295,4294967295]
+     v19 in [-4294967295,4294967295]
+      v2 in [-oo,+oo]
+     v20 in [0,1]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [1,1]
+     v28 in [1,1]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [-oo,+oo]
+     v40 in [-oo,+oo]
+     v41 in [-oo,+oo]
+     v42 in [-oo,+oo]
+     v43 in [-oo,+oo]
+     v44 in [-oo,+oo]
+     v45 in [-oo,+oo]
+     v46 in [-oo,+oo]
+     v47 in [-oo,+oo]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [-4294967295,4294967295]
+     v56 in [-4294967295,4294967295]
+     v57 in [0,1]
+     v58 in [0,0]
+     v59 in [0,0]
+      v6 in [-oo,+oo]
+     v60 in [0,0]
+     v61 in [0,0]
+     v62 in [0,0]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+     v68 in [-oo,+oo]
+     v69 in [-oo,+oo]
+      v7 in [-oo,+oo]
+     v70 in [-oo,+oo]
+     v71 in [-oo,+oo]
+     v72 in [-oo,+oo]
+     v73 in [-oo,+oo]
+     v74 in [-oo,+oo]
+     v75 in [-oo,+oo]
+     v76 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.end37:                                         ; preds = %if.end36, %if.end
+  ret i8* undef
+Facts: interval of dim (77,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-4294967295,4294967295]
+     v17 in [-oo,+oo]
+     v18 in [-4294967295,4294967295]
+     v19 in [-4294967295,4294967295]
+      v2 in [-oo,+oo]
+     v20 in [0,1]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [1,1]
+     v28 in [1,1]
+     v29 in [-4294967295,4294967295]
+      v3 in [-oo,+oo]
+     v30 in [0,1]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-4294967295,4294967295]
+     v34 in [0,1]
+     v35 in [-4294967295,4294967295]
+     v36 in [0,1]
+     v37 in [0,0]
+     v38 in [1,1]
+     v39 in [0,0]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,1]
+     v42 in [1,2]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [-oo,+oo]
+     v47 in [-oo,+oo]
+     v48 in [1,1]
+     v49 in [0,1]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [1,1]
+     v53 in [1,1]
+     v54 in [0,0]
+     v55 in [-4294967295,4294967295]
+     v56 in [-4294967295,4294967295]
+     v57 in [0,1]
+     v58 in [1,1]
+     v59 in [0,0]
+      v6 in [-oo,+oo]
+     v60 in [0,0]
+     v61 in [0,0]
+     v62 in [0,0]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+     v68 in [-oo,+oo]
+     v69 in [-oo,+oo]
+      v7 in [-oo,+oo]
+     v70 in [-oo,+oo]
+     v71 in [-oo,+oo]
+     v72 in [-oo,+oo]
+     v73 in [-oo,+oo]
+     v74 in [-oo,+oo]
+     v75 in [-oo,+oo]
+     v76 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.then12:                                        ; preds = %if.then10
+  %6 = load i32, i32* @systemState, align 4
+  %cmp13 = icmp ne i32 %6, 1
+  br i1 %cmp13, label %if.then14, label %if.else
+Facts: interval of dim (77,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-4294967295,4294967295]
+     v17 in [-oo,+oo]
+     v18 in [-4294967295,4294967295]
+     v19 in [-4294967295,4294967295]
+      v2 in [-oo,+oo]
+     v20 in [0,1]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [1,1]
+     v28 in [1,1]
+     v29 in [2,2]
+      v3 in [-oo,+oo]
+     v30 in [1,1]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [-oo,+oo]
+     v40 in [-oo,+oo]
+     v41 in [-oo,+oo]
+     v42 in [-oo,+oo]
+     v43 in [-oo,+oo]
+     v44 in [-oo,+oo]
+     v45 in [-oo,+oo]
+     v46 in [-oo,+oo]
+     v47 in [-oo,+oo]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [-4294967295,4294967295]
+     v56 in [-4294967295,4294967295]
+     v57 in [0,1]
+     v58 in [0,0]
+     v59 in [0,0]
+      v6 in [-oo,+oo]
+     v60 in [0,0]
+     v61 in [0,0]
+     v62 in [0,0]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+     v68 in [-oo,+oo]
+     v69 in [-oo,+oo]
+      v7 in [-oo,+oo]
+     v70 in [-oo,+oo]
+     v71 in [-oo,+oo]
+     v72 in [-oo,+oo]
+     v73 in [-oo,+oo]
+     v74 in [-oo,+oo]
+     v75 in [-oo,+oo]
+     v76 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.end16:                                         ; preds = %if.end15, %if.then10
+  %7 = load i32, i32* @cmd, align 4
+  %cmp17 = icmp eq i32 %7, 3
+  br i1 %cmp17, label %if.then18, label %if.end19
+Facts: interval of dim (77,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-4294967295,4294967295]
+     v17 in [-oo,+oo]
+     v18 in [-4294967295,4294967295]
+     v19 in [-4294967295,4294967295]
+      v2 in [-oo,+oo]
+     v20 in [0,1]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [1,1]
+     v28 in [1,1]
+     v29 in [2,2]
+      v3 in [-oo,+oo]
+     v30 in [1,1]
+     v31 in [0,0]
+     v32 in [1,1]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [-oo,+oo]
+     v40 in [-oo,+oo]
+     v41 in [-oo,+oo]
+     v42 in [-oo,+oo]
+     v43 in [-oo,+oo]
+     v44 in [-oo,+oo]
+     v45 in [-oo,+oo]
+     v46 in [-oo,+oo]
+     v47 in [-oo,+oo]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [-4294967295,4294967295]
+     v56 in [0,0]
+     v57 in [0,1]
+     v58 in [1,1]
+     v59 in [0,0]
+      v6 in [-oo,+oo]
+     v60 in [0,0]
+     v61 in [0,0]
+     v62 in [0,0]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+     v68 in [-oo,+oo]
+     v69 in [-oo,+oo]
+      v7 in [-oo,+oo]
+     v70 in [-oo,+oo]
+     v71 in [-oo,+oo]
+     v72 in [-oo,+oo]
+     v73 in [-oo,+oo]
+     v74 in [-oo,+oo]
+     v75 in [-oo,+oo]
+     v76 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.then14:                                        ; preds = %if.then12
+  store i32 0, i32* @rspStatus, align 4
+  br label %if.end15
+Facts: interval of dim (77,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-4294967295,4294967295]
+     v17 in [-oo,+oo]
+     v18 in [-4294967295,4294967295]
+     v19 in [-4294967295,4294967295]
+      v2 in [-oo,+oo]
+     v20 in [0,1]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [1,1]
+     v28 in [1,1]
+     v29 in [2,2]
+      v3 in [-oo,+oo]
+     v30 in [1,1]
+     v31 in [0,0]
+     v32 in [1,1]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [-oo,+oo]
+     v40 in [-oo,+oo]
+     v41 in [-oo,+oo]
+     v42 in [-oo,+oo]
+     v43 in [-oo,+oo]
+     v44 in [-oo,+oo]
+     v45 in [-oo,+oo]
+     v46 in [-oo,+oo]
+     v47 in [-oo,+oo]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [-4294967295,4294967295]
+     v56 in [-4294967295,4294967295]
+     v57 in [0,1]
+     v58 in [0,0]
+     v59 in [0,0]
+      v6 in [-oo,+oo]
+     v60 in [0,0]
+     v61 in [0,0]
+     v62 in [0,0]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+     v68 in [-oo,+oo]
+     v69 in [-oo,+oo]
+      v7 in [-oo,+oo]
+     v70 in [-oo,+oo]
+     v71 in [-oo,+oo]
+     v72 in [-oo,+oo]
+     v73 in [-oo,+oo]
+     v74 in [-oo,+oo]
+     v75 in [-oo,+oo]
+     v76 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.end15:                                         ; preds = %if.else, %if.then14
+  store i32 1, i32* @sendit, align 4
+  br label %if.end16
+Facts: interval of dim (77,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-4294967295,4294967295]
+     v17 in [-oo,+oo]
+     v18 in [-4294967295,4294967295]
+     v19 in [-4294967295,4294967295]
+      v2 in [-oo,+oo]
+     v20 in [0,1]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [1,1]
+     v28 in [1,1]
+     v29 in [2,2]
+      v3 in [-oo,+oo]
+     v30 in [1,1]
+     v31 in [0,0]
+     v32 in [1,1]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [-oo,+oo]
+     v40 in [-oo,+oo]
+     v41 in [-oo,+oo]
+     v42 in [-oo,+oo]
+     v43 in [-oo,+oo]
+     v44 in [-oo,+oo]
+     v45 in [-oo,+oo]
+     v46 in [-oo,+oo]
+     v47 in [-oo,+oo]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [-4294967295,4294967295]
+     v56 in [0,0]
+     v57 in [0,1]
+     v58 in [0,0]
+     v59 in [0,0]
+      v6 in [-oo,+oo]
+     v60 in [0,0]
+     v61 in [0,0]
+     v62 in [0,0]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+     v68 in [-oo,+oo]
+     v69 in [-oo,+oo]
+      v7 in [-oo,+oo]
+     v70 in [-oo,+oo]
+     v71 in [-oo,+oo]
+     v72 in [-oo,+oo]
+     v73 in [-oo,+oo]
+     v74 in [-oo,+oo]
+     v75 in [-oo,+oo]
+     v76 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.then18:                                        ; preds = %if.end16
+  store i32 1, i32* @sendit, align 4
+  br label %if.end19
+Facts: interval of dim (77,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-4294967295,4294967295]
+     v17 in [-oo,+oo]
+     v18 in [-4294967295,4294967295]
+     v19 in [-4294967295,4294967295]
+      v2 in [-oo,+oo]
+     v20 in [0,1]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [1,1]
+     v28 in [1,1]
+     v29 in [-4294967295,4294967295]
+      v3 in [-oo,+oo]
+     v30 in [0,1]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [3,3]
+     v34 in [1,1]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [-oo,+oo]
+     v40 in [-oo,+oo]
+     v41 in [-oo,+oo]
+     v42 in [-oo,+oo]
+     v43 in [-oo,+oo]
+     v44 in [-oo,+oo]
+     v45 in [-oo,+oo]
+     v46 in [-oo,+oo]
+     v47 in [-oo,+oo]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [-4294967295,4294967295]
+     v56 in [-4294967295,4294967295]
+     v57 in [0,1]
+     v58 in [0,1]
+     v59 in [0,0]
+      v6 in [-oo,+oo]
+     v60 in [0,0]
+     v61 in [0,0]
+     v62 in [0,0]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+     v68 in [-oo,+oo]
+     v69 in [-oo,+oo]
+      v7 in [-oo,+oo]
+     v70 in [-oo,+oo]
+     v71 in [-oo,+oo]
+     v72 in [-oo,+oo]
+     v73 in [-oo,+oo]
+     v74 in [-oo,+oo]
+     v75 in [-oo,+oo]
+     v76 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.end19:                                         ; preds = %if.then18, %if.end16
+  %8 = load i32, i32* @cmd, align 4
+  %cmp20 = icmp eq i32 %8, 4
+  br i1 %cmp20, label %if.then21, label %if.end22
+Facts: interval of dim (77,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-4294967295,4294967295]
+     v17 in [-oo,+oo]
+     v18 in [-4294967295,4294967295]
+     v19 in [-4294967295,4294967295]
+      v2 in [-oo,+oo]
+     v20 in [0,1]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [1,1]
+     v28 in [1,1]
+     v29 in [-4294967295,4294967295]
+      v3 in [-oo,+oo]
+     v30 in [0,1]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-4294967295,4294967295]
+     v34 in [0,1]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [-oo,+oo]
+     v40 in [-oo,+oo]
+     v41 in [-oo,+oo]
+     v42 in [-oo,+oo]
+     v43 in [-oo,+oo]
+     v44 in [-oo,+oo]
+     v45 in [-oo,+oo]
+     v46 in [-oo,+oo]
+     v47 in [-oo,+oo]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [-4294967295,4294967295]
+     v56 in [-4294967295,4294967295]
+     v57 in [0,1]
+     v58 in [0,1]
+     v59 in [0,0]
+      v6 in [-oo,+oo]
+     v60 in [0,0]
+     v61 in [0,0]
+     v62 in [0,0]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+     v68 in [-oo,+oo]
+     v69 in [-oo,+oo]
+      v7 in [-oo,+oo]
+     v70 in [-oo,+oo]
+     v71 in [-oo,+oo]
+     v72 in [-oo,+oo]
+     v73 in [-oo,+oo]
+     v74 in [-oo,+oo]
+     v75 in [-oo,+oo]
+     v76 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.end22:                                         ; preds = %if.then21, %if.end19
+  %9 = load i32, i32* @cmd, align 4
+  %cmp23 = icmp eq i32 %9, 0
+  br i1 %cmp23, label %if.then24, label %if.end36
+Facts: interval of dim (77,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-4294967295,4294967295]
+     v17 in [-oo,+oo]
+     v18 in [-4294967295,4294967295]
+     v19 in [-4294967295,4294967295]
+      v2 in [-oo,+oo]
+     v20 in [0,1]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [1,1]
+     v28 in [1,1]
+     v29 in [-4294967295,4294967295]
+      v3 in [-oo,+oo]
+     v30 in [0,1]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-4294967295,4294967295]
+     v34 in [0,1]
+     v35 in [-4294967295,4294967295]
+     v36 in [0,1]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [-oo,+oo]
+     v40 in [-oo,+oo]
+     v41 in [-oo,+oo]
+     v42 in [-oo,+oo]
+     v43 in [-oo,+oo]
+     v44 in [-oo,+oo]
+     v45 in [-oo,+oo]
+     v46 in [-oo,+oo]
+     v47 in [-oo,+oo]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [-4294967295,4294967295]
+     v56 in [-4294967295,4294967295]
+     v57 in [0,1]
+     v58 in [0,1]
+     v59 in [0,0]
+      v6 in [-oo,+oo]
+     v60 in [0,0]
+     v61 in [0,0]
+     v62 in [0,0]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+     v68 in [-oo,+oo]
+     v69 in [-oo,+oo]
+      v7 in [-oo,+oo]
+     v70 in [-oo,+oo]
+     v71 in [-oo,+oo]
+     v72 in [-oo,+oo]
+     v73 in [-oo,+oo]
+     v74 in [-oo,+oo]
+     v75 in [-oo,+oo]
+     v76 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.then24:                                        ; preds = %if.end22
+  %10 = load i32, i32* @systemState, align 4
+  %cmp25 = icmp ne i32 %10, 0
+  br i1 %cmp25, label %if.then26, label %if.else27
+Facts: interval of dim (77,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-4294967295,4294967295]
+     v17 in [-oo,+oo]
+     v18 in [-4294967295,4294967295]
+     v19 in [-4294967295,4294967295]
+      v2 in [-oo,+oo]
+     v20 in [0,1]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [1,1]
+     v28 in [1,1]
+     v29 in [-4294967295,4294967295]
+      v3 in [-oo,+oo]
+     v30 in [0,1]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-4294967295,4294967295]
+     v34 in [0,1]
+     v35 in [-4294967295,4294967295]
+     v36 in [0,1]
+     v37 in [0,0]
+     v38 in [1,1]
+     v39 in [-oo,+oo]
+      v4 in [-oo,+oo]
+     v40 in [-oo,+oo]
+     v41 in [-oo,+oo]
+     v42 in [-oo,+oo]
+     v43 in [-oo,+oo]
+     v44 in [-oo,+oo]
+     v45 in [-oo,+oo]
+     v46 in [-oo,+oo]
+     v47 in [-oo,+oo]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [-4294967295,4294967295]
+     v56 in [-4294967295,4294967295]
+     v57 in [0,1]
+     v58 in [0,1]
+     v59 in [0,0]
+      v6 in [-oo,+oo]
+     v60 in [0,0]
+     v61 in [0,0]
+     v62 in [0,0]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+     v68 in [-oo,+oo]
+     v69 in [-oo,+oo]
+      v7 in [-oo,+oo]
+     v70 in [-oo,+oo]
+     v71 in [-oo,+oo]
+     v72 in [-oo,+oo]
+     v73 in [-oo,+oo]
+     v74 in [-oo,+oo]
+     v75 in [-oo,+oo]
+     v76 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.end36:                                         ; preds = %if.end35, %if.end22
+  br label %if.end37
+Facts: interval of dim (77,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-4294967295,4294967295]
+     v17 in [-oo,+oo]
+     v18 in [-4294967295,4294967295]
+     v19 in [-4294967295,4294967295]
+      v2 in [-oo,+oo]
+     v20 in [0,1]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [1,1]
+     v28 in [1,1]
+     v29 in [-4294967295,4294967295]
+      v3 in [-oo,+oo]
+     v30 in [0,1]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-4294967295,4294967295]
+     v34 in [0,1]
+     v35 in [-4294967295,4294967295]
+     v36 in [0,1]
+     v37 in [0,0]
+     v38 in [1,1]
+     v39 in [0,0]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,1]
+     v42 in [1,2]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [-oo,+oo]
+     v47 in [-oo,+oo]
+     v48 in [1,1]
+     v49 in [0,1]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [1,1]
+     v53 in [1,1]
+     v54 in [0,0]
+     v55 in [-4294967295,4294967295]
+     v56 in [-4294967295,4294967295]
+     v57 in [0,1]
+     v58 in [1,1]
+     v59 in [0,0]
+      v6 in [-oo,+oo]
+     v60 in [0,0]
+     v61 in [0,0]
+     v62 in [0,0]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+     v68 in [-oo,+oo]
+     v69 in [-oo,+oo]
+      v7 in [-oo,+oo]
+     v70 in [-oo,+oo]
+     v71 in [-oo,+oo]
+     v72 in [-oo,+oo]
+     v73 in [-oo,+oo]
+     v74 in [-oo,+oo]
+     v75 in [-oo,+oo]
+     v76 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.then33:                                        ; preds = %if.end31
+  call void @__assert_fail(i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.3, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.4, i32 0, i32 0), i32 174, i8* getelementptr inbounds ([31 x i8], [31 x i8]* @__PRETTY_FUNCTION__.task_communicate, i32 0, i32 0)) #4
+  unreachable
+Facts: interval of dim (77,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-4294967295,4294967295]
+     v17 in [-oo,+oo]
+     v18 in [-4294967295,4294967295]
+     v19 in [-4294967295,4294967295]
+      v2 in [-oo,+oo]
+     v20 in [0,1]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [1,1]
+     v28 in [1,1]
+     v29 in [-4294967295,4294967295]
+      v3 in [-oo,+oo]
+     v30 in [0,1]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-4294967295,4294967295]
+     v34 in [0,1]
+     v35 in [-4294967295,4294967295]
+     v36 in [0,1]
+     v37 in [0,0]
+     v38 in [1,1]
+     v39 in [0,0]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,1]
+     v42 in [1,2]
+     v43 in [0,0]
+     v44 in [0,1]
+     v45 in [1,1]
+     v46 in [-oo,+oo]
+     v47 in [-oo,+oo]
+     v48 in [1,1]
+     v49 in [0,1]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [1,1]
+     v53 in [1,1]
+     v54 in [0,0]
+     v55 in [-4294967295,4294967295]
+     v56 in [-4294967295,4294967295]
+     v57 in [0,1]
+     v58 in [0,1]
+     v59 in [0,0]
+      v6 in [-oo,+oo]
+     v60 in [0,0]
+     v61 in [0,0]
+     v62 in [0,0]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+     v68 in [-oo,+oo]
+     v69 in [-oo,+oo]
+      v7 in [-oo,+oo]
+     v70 in [-oo,+oo]
+     v71 in [-oo,+oo]
+     v72 in [-oo,+oo]
+     v73 in [-oo,+oo]
+     v74 in [-oo,+oo]
+     v75 in [-oo,+oo]
+     v76 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+BasicBlock: 
+if.end34:                                         ; preds = %if.end31
+  store i32 1, i32* @sendit, align 4
+  br label %if.end35
+Facts: interval of dim (77,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-4294967295,4294967295]
+     v17 in [-oo,+oo]
+     v18 in [-4294967295,4294967295]
+     v19 in [-4294967295,4294967295]
+      v2 in [-oo,+oo]
+     v20 in [0,1]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [1,1]
+     v28 in [1,1]
+     v29 in [-4294967295,4294967295]
+      v3 in [-oo,+oo]
+     v30 in [0,1]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-4294967295,4294967295]
+     v34 in [0,1]
+     v35 in [-4294967295,4294967295]
+     v36 in [0,1]
+     v37 in [0,0]
+     v38 in [1,1]
+     v39 in [0,0]
+      v4 in [-oo,+oo]
+     v40 in [0,0]
+     v41 in [0,1]
+     v42 in [1,2]
+     v43 in [0,0]
+     v44 in [0,0]
+     v45 in [0,0]
+     v46 in [-oo,+oo]
+     v47 in [-oo,+oo]
+     v48 in [1,1]
+     v49 in [0,1]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [1,1]
+     v53 in [1,1]
+     v54 in [0,0]
+     v55 in [-4294967295,4294967295]
+     v56 in [-4294967295,4294967295]
+     v57 in [0,1]
+     v58 in [0,1]
+     v59 in [0,0]
+      v6 in [-oo,+oo]
+     v60 in [0,0]
+     v61 in [0,0]
+     v62 in [0,0]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+     v68 in [-oo,+oo]
+     v69 in [-oo,+oo]
+      v7 in [-oo,+oo]
+     v70 in [-oo,+oo]
+     v71 in [-oo,+oo]
+     v72 in [-oo,+oo]
+     v73 in [-oo,+oo]
+     v74 in [-oo,+oo]
+     v75 in [-oo,+oo]
+     v76 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+======================
+==== main() Results ====
+BasicBlock: 
+entry:
+  %t1 = alloca i64, align 8
+  %t2 = alloca i64, align 8
+  store i32 0, i32* @systemState, align 4
+  %call = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @task_communicate, i8* null) #3
+  %call1 = call i32 @pthread_create(i64* %t2, %union.pthread_attr_t* null, i8* (i8*)* @task_measure1, i8* null) #3
+  %call2 = call i32 @pthread_create(i64* %t2, %union.pthread_attr_t* null, i8* (i8*)* @task_measure2, i8* null) #3
+  %call3 = call i32 @pthread_create(i64* %t2, %union.pthread_attr_t* null, i8* (i8*)* @task_measure3, i8* null) #3
+  ret i32 0
+Facts: interval of dim (77,0):
+      v0 in [-oo,+oo]
+      v1 in [-oo,+oo]
+     v10 in [-oo,+oo]
+     v11 in [-oo,+oo]
+     v12 in [-oo,+oo]
+     v13 in [-oo,+oo]
+     v14 in [-oo,+oo]
+     v15 in [-oo,+oo]
+     v16 in [-oo,+oo]
+     v17 in [-oo,+oo]
+     v18 in [-oo,+oo]
+     v19 in [-oo,+oo]
+      v2 in [-oo,+oo]
+     v20 in [-oo,+oo]
+     v21 in [-oo,+oo]
+     v22 in [-oo,+oo]
+     v23 in [-oo,+oo]
+     v24 in [-oo,+oo]
+     v25 in [-oo,+oo]
+     v26 in [-oo,+oo]
+     v27 in [-oo,+oo]
+     v28 in [-oo,+oo]
+     v29 in [-oo,+oo]
+      v3 in [-oo,+oo]
+     v30 in [-oo,+oo]
+     v31 in [-oo,+oo]
+     v32 in [-oo,+oo]
+     v33 in [-oo,+oo]
+     v34 in [-oo,+oo]
+     v35 in [-oo,+oo]
+     v36 in [-oo,+oo]
+     v37 in [-oo,+oo]
+     v38 in [-oo,+oo]
+     v39 in [-oo,+oo]
+      v4 in [-oo,+oo]
+     v40 in [-oo,+oo]
+     v41 in [-oo,+oo]
+     v42 in [-oo,+oo]
+     v43 in [-oo,+oo]
+     v44 in [-oo,+oo]
+     v45 in [-oo,+oo]
+     v46 in [-oo,+oo]
+     v47 in [-oo,+oo]
+     v48 in [0,0]
+     v49 in [0,0]
+      v5 in [-oo,+oo]
+     v50 in [0,0]
+     v51 in [0,0]
+     v52 in [0,0]
+     v53 in [0,0]
+     v54 in [0,0]
+     v55 in [0,0]
+     v56 in [0,0]
+     v57 in [0,0]
+     v58 in [0,0]
+     v59 in [0,0]
+      v6 in [-oo,+oo]
+     v60 in [0,0]
+     v61 in [0,0]
+     v62 in [0,0]
+     v63 in [-oo,+oo]
+     v64 in [-oo,+oo]
+     v65 in [-oo,+oo]
+     v66 in [-oo,+oo]
+     v67 in [-oo,+oo]
+     v68 in [-oo,+oo]
+     v69 in [-oo,+oo]
+      v7 in [-oo,+oo]
+     v70 in [-oo,+oo]
+     v71 in [-oo,+oo]
+     v72 in [-oo,+oo]
+     v73 in [-oo,+oo]
+     v74 in [-oo,+oo]
+     v75 in [-oo,+oo]
+     v76 in [-oo,+oo]
+      v8 in [-oo,+oo]
+      v9 in [-oo,+oo]
+
+======================
+[WARNING] Value not dumped to metadata: @systemState = common global i32 0, align 4
+	type not handled
+[WARNING] Value not dumped to metadata: @numberOfRecords = common global i32 0, align 4
+	type not handled
+[WARNING] Value not dumped to metadata: @intervalCounter = common global i32 0, align 4
+	type not handled
+[WARNING] Value not dumped to metadata: @tickCounter = common global i32 0, align 4
+	type not handled
+[WARNING] Value not dumped to metadata: @startTime = common global i32 0, align 4
+	type not handled
+[WARNING] Value not dumped to metadata: @interval = common global i32 0, align 4
+	type not handled
+[WARNING] Value not dumped to metadata: @records = common global i32 0, align 4
+	type not handled
+[WARNING] Value not dumped to metadata: @cmd = common global i32 0, align 4
+	type not handled
+[WARNING] Value not dumped to metadata: @rspStatus = common global i32 0, align 4
+	type not handled
+[WARNING] Value not dumped to metadata: @decodingStatus = common global i32 0, align 4
+	type not handled
+[WARNING] Value not dumped to metadata: @sendit = common global i32 0, align 4
+	type not handled
+Errors found: 1
+Max Permutations: 0
+Total pairs: 0
+Filtered pairs: 0

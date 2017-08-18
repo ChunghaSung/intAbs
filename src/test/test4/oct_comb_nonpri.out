@@ -1,0 +1,348 @@
+[WARNING] Global which is neither Integer nor Float
+@.str = private unnamed_addr constant [7 x i8] c"a == 1\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@.str.1 = private unnamed_addr constant [7 x i8] c"main.c\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.f1 = private unnamed_addr constant [17 x i8] c"void *f1(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@.str.2 = private unnamed_addr constant [7 x i8] c"b == 0\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Global which is neither Integer nor Float
+@__PRETTY_FUNCTION__.f2 = private unnamed_addr constant [17 x i8] c"void *f2(void *)\00", align 1
+It is not being monitored (there may be errors en route)
+[WARNING] Initializing unhandled global type: @.str = private unnamed_addr constant [7 x i8] c"a == 1\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @.str.1 = private unnamed_addr constant [7 x i8] c"main.c\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.f1 = private unnamed_addr constant [17 x i8] c"void *f1(void *)\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @.str.2 = private unnamed_addr constant [7 x i8] c"b == 0\00", align 1
+Setting to default initial value
+[WARNING] Initializing unhandled global type: @__PRETTY_FUNCTION__.f2 = private unnamed_addr constant [17 x i8] c"void *f2(void *)\00", align 1
+Setting to default initial value
+Interference Iteration: 1
+Analyzing thread: 0
+Analyzing thread: 1
+Analyzing thread: 2
+Interference Iteration: 2
+Analyzing thread: 0
+**** Found Reachable Error ****
+Fact: octagon of dim (18,0)
+v0 - 2 >= 0
+-v0 + 2 >= 0
+-v0 + v1 + 2 >= 0
+v0 + v1 - 2 >= 0
+v1 >= 0
+-v0 - v1 + 2 >= 0
+v0 - v1 - 2 >= 0
+-v1 >= 0
+-v0 + v6 >= 0
+v0 + v6 - 4 >= 0
+-v1 + v6 - 2 >= 0
+v1 + v6 - 2 >= 0
+v6 - 2 >= 0
+-v0 - v6 + 4 >= 0
+v0 - v6 >= 0
+-v1 - v6 + 2 >= 0
+v1 - v6 + 2 >= 0
+-v6 + 2 >= 0
+-v0 + v7 + 2 >= 0
+v0 + v7 - 2 >= 0
+-v1 + v7 >= 0
+v1 + v7 >= 0
+-v6 + v7 + 2 >= 0
+v6 + v7 - 2 >= 0
+v7 >= 0
+-v0 - v7 + 2 >= 0
+v0 - v7 - 2 >= 0
+-v1 - v7 >= 0
+v1 - v7 >= 0
+-v6 - v7 + 2 >= 0
+v6 - v7 - 2 >= 0
+-v7 >= 0
+  call void @__assert_fail(i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.1, i32 0, i32 0), i32 13, i8* getelementptr inbounds ([17 x i8], [17 x i8]* @__PRETTY_FUNCTION__.f1, i32 0, i32 0)) #3
+Analyzing thread: 1
+Analyzing thread: 2
+v6: @a = common global i32 0, align 4
+v8: i8* %unused
+v7: @b = common global i32 0, align 4
+v0:   %0 = load i32, i32* @a, align 4
+v1:   %cmp = icmp eq i32 %0, 1
+v11: i32 %2
+v9: i8* %0
+v10: i8* %1
+v12: i8* %3
+v13: i8* %unused
+v2:   %0 = load i32, i32* @b, align 4
+v3:   %cmp = icmp eq i32 %0, 0
+v14: i64* %0
+v4:   %t1 = alloca i64, align 8
+v5:   %t2 = alloca i64, align 8
+v15: %union.pthread_attr_t* %1
+v16: i8* (i8*)* %2
+v17: i8* %3
+==== f1() Results ====
+BasicBlock: 
+entry:
+  store i32 1, i32* @a, align 4
+  %0 = load i32, i32* @a, align 4
+  %cmp = icmp eq i32 %0, 1
+  br i1 %cmp, label %cond.true, label %cond.false
+Facts: octagon of dim (18,0)
+v6 >= 0
+-v6 >= 0
+-v6 + v7 >= 0
+v6 + v7 >= 0
+v7 >= 0
+-v6 - v7 >= 0
+v6 - v7 >= 0
+-v7 >= 0
+
+BasicBlock: 
+cond.true:                                        ; preds = %entry
+  br label %cond.end
+Facts: octagon of dim (18,0)
+v0 - 1 >= 0
+-v0 + 1 >= 0
+-v0 + v1 >= 0
+v0 + v1 - 2 >= 0
+v1 - 1 >= 0
+-v0 - v1 + 2 >= 0
+v0 - v1 >= 0
+-v1 + 1 >= 0
+-v0 + v6 >= 0
+v0 + v6 - 2 >= 0
+-v1 + v6 >= 0
+v1 + v6 - 2 >= 0
+v6 - 1 >= 0
+-v0 - v6 + 2 >= 0
+v0 - v6 >= 0
+-v1 - v6 + 2 >= 0
+v1 - v6 >= 0
+-v6 + 1 >= 0
+-v0 + v7 + 1 >= 0
+v0 + v7 - 1 >= 0
+-v1 + v7 + 1 >= 0
+v1 + v7 - 1 >= 0
+-v6 + v7 + 1 >= 0
+v6 + v7 - 1 >= 0
+v7 >= 0
+-v0 - v7 + 1 >= 0
+v0 - v7 - 1 >= 0
+-v1 - v7 + 1 >= 0
+v1 - v7 - 1 >= 0
+-v6 - v7 + 1 >= 0
+v6 - v7 - 1 >= 0
+-v7 >= 0
+
+BasicBlock: 
+cond.false:                                       ; preds = %entry
+  call void @__assert_fail(i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.1, i32 0, i32 0), i32 13, i8* getelementptr inbounds ([17 x i8], [17 x i8]* @__PRETTY_FUNCTION__.f1, i32 0, i32 0)) #3
+  unreachable
+Facts: octagon of dim (18,0)
+v0 - 2 >= 0
+-v0 + 2 >= 0
+-v0 + v1 + 2 >= 0
+v0 + v1 - 2 >= 0
+v1 >= 0
+-v0 - v1 + 2 >= 0
+v0 - v1 - 2 >= 0
+-v1 >= 0
+-v0 + v6 >= 0
+v0 + v6 - 4 >= 0
+-v1 + v6 - 2 >= 0
+v1 + v6 - 2 >= 0
+v6 - 2 >= 0
+-v0 - v6 + 4 >= 0
+v0 - v6 >= 0
+-v1 - v6 + 2 >= 0
+v1 - v6 + 2 >= 0
+-v6 + 2 >= 0
+-v0 + v7 + 2 >= 0
+v0 + v7 - 2 >= 0
+-v1 + v7 >= 0
+v1 + v7 >= 0
+-v6 + v7 + 2 >= 0
+v6 + v7 - 2 >= 0
+v7 >= 0
+-v0 - v7 + 2 >= 0
+v0 - v7 - 2 >= 0
+-v1 - v7 >= 0
+v1 - v7 >= 0
+-v6 - v7 + 2 >= 0
+v6 - v7 - 2 >= 0
+-v7 >= 0
+
+BasicBlock: 
+cond.end:                                         ; preds = %1, %cond.true
+  ret i8* null
+Facts: octagon of dim (18,0)
+v0 - 1 >= 0
+-v0 + 1 >= 0
+-v0 + v1 >= 0
+v0 + v1 - 2 >= 0
+v1 - 1 >= 0
+-v0 - v1 + 2 >= 0
+v0 - v1 >= 0
+-v1 + 1 >= 0
+-v0 + v6 >= 0
+v0 + v6 - 2 >= 0
+-v1 + v6 >= 0
+v1 + v6 - 2 >= 0
+v6 - 1 >= 0
+-v0 - v6 + 2 >= 0
+v0 - v6 >= 0
+-v1 - v6 + 2 >= 0
+v1 - v6 >= 0
+-v6 + 1 >= 0
+-v0 + v7 + 1 >= 0
+v0 + v7 - 1 >= 0
+-v1 + v7 + 1 >= 0
+v1 + v7 - 1 >= 0
+-v6 + v7 + 1 >= 0
+v6 + v7 - 1 >= 0
+v7 >= 0
+-v0 - v7 + 1 >= 0
+v0 - v7 - 1 >= 0
+-v1 - v7 + 1 >= 0
+v1 - v7 - 1 >= 0
+-v6 - v7 + 1 >= 0
+v6 - v7 - 1 >= 0
+-v7 >= 0
+
+BasicBlock:                                                   ; No predecessors!
+  br label %cond.end
+Facts: empty octagon of dim (18,0)
+
+======================
+==== f2() Results ====
+BasicBlock: 
+entry:
+  store i32 0, i32* @b, align 4
+  store i32 2, i32* @a, align 4
+  %0 = load i32, i32* @b, align 4
+  %cmp = icmp eq i32 %0, 0
+  br i1 %cmp, label %cond.true, label %cond.false
+Facts: octagon of dim (18,0)
+v6 >= 0
+-v6 >= 0
+-v6 + v7 >= 0
+v6 + v7 >= 0
+v7 >= 0
+-v6 - v7 >= 0
+v6 - v7 >= 0
+-v7 >= 0
+
+BasicBlock: 
+cond.true:                                        ; preds = %entry
+  br label %cond.end
+Facts: octagon of dim (18,0)
+v2 >= 0
+-v2 >= 0
+-v2 + v3 - 1 >= 0
+v2 + v3 - 1 >= 0
+v3 - 1 >= 0
+-v2 - v3 + 1 >= 0
+v2 - v3 + 1 >= 0
+-v3 + 1 >= 0
+-v2 + v6 - 2 >= 0
+v2 + v6 - 2 >= 0
+-v3 + v6 - 1 >= 0
+v3 + v6 - 3 >= 0
+v6 - 2 >= 0
+-v2 - v6 + 2 >= 0
+v2 - v6 + 2 >= 0
+-v3 - v6 + 3 >= 0
+v3 - v6 + 1 >= 0
+-v6 + 2 >= 0
+-v2 + v7 >= 0
+v2 + v7 >= 0
+-v3 + v7 + 1 >= 0
+v3 + v7 - 1 >= 0
+-v6 + v7 + 2 >= 0
+v6 + v7 - 2 >= 0
+v7 >= 0
+-v2 - v7 >= 0
+v2 - v7 >= 0
+-v3 - v7 + 1 >= 0
+v3 - v7 - 1 >= 0
+-v6 - v7 + 2 >= 0
+v6 - v7 - 2 >= 0
+-v7 >= 0
+
+BasicBlock: 
+cond.false:                                       ; preds = %entry
+  call void @__assert_fail(i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.2, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.1, i32 0, i32 0), i32 23, i8* getelementptr inbounds ([17 x i8], [17 x i8]* @__PRETTY_FUNCTION__.f2, i32 0, i32 0)) #3
+  unreachable
+Facts: empty octagon of dim (18,0)
+
+BasicBlock: 
+cond.end:                                         ; preds = %1, %cond.true
+  ret i8* null
+Facts: octagon of dim (18,0)
+v2 >= 0
+-v2 >= 0
+-v2 + v3 - 1 >= 0
+v2 + v3 - 1 >= 0
+v3 - 1 >= 0
+-v2 - v3 + 1 >= 0
+v2 - v3 + 1 >= 0
+-v3 + 1 >= 0
+-v2 + v6 - 2 >= 0
+v2 + v6 - 2 >= 0
+-v3 + v6 - 1 >= 0
+v3 + v6 - 3 >= 0
+v6 - 2 >= 0
+-v2 - v6 + 2 >= 0
+v2 - v6 + 2 >= 0
+-v3 - v6 + 3 >= 0
+v3 - v6 + 1 >= 0
+-v6 + 2 >= 0
+-v2 + v7 >= 0
+v2 + v7 >= 0
+-v3 + v7 + 1 >= 0
+v3 + v7 - 1 >= 0
+-v6 + v7 + 2 >= 0
+v6 + v7 - 2 >= 0
+v7 >= 0
+-v2 - v7 >= 0
+v2 - v7 >= 0
+-v3 - v7 + 1 >= 0
+v3 - v7 - 1 >= 0
+-v6 - v7 + 2 >= 0
+v6 - v7 - 2 >= 0
+-v7 >= 0
+
+BasicBlock:                                                   ; No predecessors!
+  br label %cond.end
+Facts: empty octagon of dim (18,0)
+
+======================
+==== main() Results ====
+BasicBlock: 
+entry:
+  %t1 = alloca i64, align 8
+  %t2 = alloca i64, align 8
+  %call = call i32 @pthread_create(i64* %t1, %union.pthread_attr_t* null, i8* (i8*)* @f1, i8* null) #3
+  %call1 = call i32 @pthread_create(i64* %t2, %union.pthread_attr_t* null, i8* (i8*)* @f2, i8* null) #3
+  ret i32 0
+Facts: octagon of dim (18,0)
+v6 >= 0
+-v6 >= 0
+-v6 + v7 >= 0
+v6 + v7 >= 0
+v7 >= 0
+-v6 - v7 >= 0
+v6 - v7 >= 0
+-v7 >= 0
+
+======================
+[WARNING] Value not dumped to metadata: @a = common global i32 0, align 4
+	type not handled
+[WARNING] Value not dumped to metadata: @b = common global i32 0, align 4
+	type not handled
+Errors found: 1
+Max Permutations: 2

@@ -1,0 +1,13 @@
+K 10
+svn:ignore
+V 112
+bbw.exe
+rvs_filtered_map.txt
+rvs_output_map.txt
+tmp.exf
+vtec-bbw-ctrl_c.tgz
+.cproject
+.fshell2_history
+.project
+
+END

@@ -1,0 +1,14 @@
+MODULES = rt_main brake_acc_nodiv_ctrl brake_acc_nodiv_ctrl_data \
+          rtGetInf rtGetNaN rt_nonfinite \
+          cbmc-math cbmc-unit-tests
+
+CFLAGS = -Wall -g -O0
+
+bbw: $(MODULES:%=%.o)
+	gcc $(CFLAGS) $^ -o $@ -lm
+
+%.o: %.c
+	gcc  $(CFLAGS) -c $^ -o $@
+
+clean:
+	rm -f *.o bbw
