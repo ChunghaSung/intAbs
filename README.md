@@ -13,7 +13,7 @@ However, subset of result tables can be printed since some output files are uplo
 # Building
 
 The program is an LLVM opt pass. It is built using CMake. 
-Since we are using CMake, this likely requires LLVM version greater than or equal to 3.7 (tested on 3.7).
+Since we are using CMake, this likely requires LLVM version 3.6.0
 
 Modify the CMakeLists file variable APRON_PREFIX to be the location where Apron is installed
 
