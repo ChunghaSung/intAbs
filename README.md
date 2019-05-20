@@ -9,6 +9,26 @@ Right now, all files are not cleaned up including test files.
 
 However, subset of result tables can be printed since some output files are uploaded.
 
+# Citing IntAbs
+```
+@inproceedings{DBLP:conf/kbse/SungKW17,
+  author    = {Chungha Sung and
+               Markus Kusano and
+               Chao Wang},
+  title     = {Modular verification of interrupt-driven software},
+  booktitle = {Proceedings of the 32nd {IEEE/ACM} International Conference on Automated
+               Software Engineering, {ASE} 2017, Urbana, IL, USA, October 30 - November
+               03, 2017},
+  pages     = {206--216},
+  year      = {2017},
+  crossref  = {DBLP:conf/kbse/2017},
+  url       = {https://doi.org/10.1109/ASE.2017.8115634},
+  doi       = {10.1109/ASE.2017.8115634},
+  timestamp = {Fri, 01 Dec 2017 22:44:10 +0100},
+  biburl    = {https://dblp.org/rec/bib/conf/kbse/SungKW17},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+```
 
 # Building
 
